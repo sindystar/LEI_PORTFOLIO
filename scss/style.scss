@@ -73,7 +73,7 @@ a {
                         color :rgb(2, 126, 196);
                         &:hover {
                             // color: rgb(25, 2, 154);
-                            color: rgb(67, 231, 81);
+                            color: rgb(253, 216, 4);
                         }
                     }
                 }
@@ -272,14 +272,14 @@ a {
             width: 100%;
             article {
                 float: left;
-                width: 285px;
-                margin-left: 10px;
+                width: 280px;
+                margin-left: 10px;   // 마진값을 조정 하지 않으면 아래로 계속 떨어짐;;
                 &:last-of-type {
                     margin-right: 0; 
                 }
                 .pic {
                     width: 100%;
-                    height: 120px;
+                    height: 280px;   // 갑갑하니 상관없는 높이값까지 수정해서 확인해봄;;
                     overflow: hidden;
                     img {
                         width: 100%;
@@ -287,22 +287,27 @@ a {
                         object-fit: cover;
                         transition: 0.5s;
                     }
+                    
                     &:hover {
+                        cursor: pointer;
                         img {
                             transform: scale(1.2);
                         }
                     }
+                    
                 }
                 h2 {
                     margin-bottom: 10px;
                     a {
                         font-size: 18px;
                         color: rgb(2, 126, 196);
+                        
                     }
                 }
                 p {
                     font-size: 14px;
                     color: #777;
+                    // margin-bottom: 50px;
                 }
             }
         }
@@ -317,7 +322,6 @@ a {
         width: 1180px;
         margin: 0 auto;
         position: relative;
-        // font-size: 0px;
         h1 {
             font-size: 30px ; 
             color:  rgb(2, 126, 196);
@@ -332,7 +336,7 @@ a {
                     height: 620px;
                     background: rgb(199, 209, 216);
                     float: left;
-                    margin-right: 20px;
+                    margin-right: 20px;    
                     padding: 170px 50px 0;
                     text-align: center;
                     i {
@@ -353,8 +357,8 @@ a {
                     a {
                         display: block;
                         width: 150px;
-                        height: 30px;
-                        font :11px/30px ;
+                        height: 24px;
+                        font-size: 12px;
                         color: #fff;
                         border: 1px solid #fff;
                         margin: 0 auto;
@@ -364,7 +368,7 @@ a {
                     width: 380px;
                     height: 300px;
                     float: left;
-                    margin-right: 20px;
+                    margin-right: 20px;    
                     img {
                         width: 100%;
                         height: 100%;
@@ -375,7 +379,7 @@ a {
                     width: 380px;
                     height: 300px;
                     float: left;
-                    margin-right: 10px;
+                    // margin-right: 0px;
                     img {
                         width: 100%;
                         height: 100%;
@@ -386,7 +390,7 @@ a {
                     width: 780px;
                     height: 300px;
                     float: left;
-                    margin-right: 20px;
+                    margin-top: 20px;
                     position: relative;
                     img {
                         width: 100%;
@@ -401,13 +405,20 @@ a {
                         position: absolute;
                         top: 0;
                         left: 0;
+                        // filter: grayscale(100%);
                         background: linear-gradient(
-                            45deg,
-                        rgba(255, 192, 203, 0.4),
-                        rgba(173, 216, 230, 0.4)
+                            -45deg,
+                        rgba(192, 213, 255, 0.4),
+                        rgba(208, 173, 230, 0.4)
                         );
                         opacity: 0;
                         transition: 0.5s;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        &::after {
+                            opacity:1 ;
+                        }
                     }
                 }
             }
