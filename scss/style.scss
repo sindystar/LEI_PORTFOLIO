@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
+// design Guide
+// $keyColor :rgb(34, 90, 193);
+// color :rgb(2, 126, 196);
+
 * {
     margin: 0px;
     padding: 0px;
@@ -50,7 +54,7 @@ a {
                 font-size: 24px;
                 font-weight: 600;
                 // color: rgba(255,255,255,0.8); //풀화면 
-                color :rgb(34, 90, 193); // 스크롤 내렸을때 함께 딸려 내려가는 현상 방지하여 (디자인2안)헤더칸 보일때 2안으로 컬러 입힘
+                color :rgb(2, 126, 196); // 스크롤 내렸을때 함께 딸려 내려가는 현상 방지하여 (디자인2안)헤더칸 보일때 2안으로 컬러 입힘
             }
         }
         .menuWeb {
@@ -63,29 +67,30 @@ a {
                     a {
                         display: block;
                         padding: 12px 18px;
-                        font-size: 12px;
+                        font-size: 13px;
+                        font-weight: 550;
                         // color:rgba(255,255,255,0.8); //풀화면 
-                        color :rgb(34, 90, 193);
+                        color :rgb(2, 126, 196);
                         &:hover {
-                            color: rgb(25, 2, 154);
-                            // color: #ddd;
+                            // color: rgb(25, 2, 154);
+                            color: rgb(67, 231, 81);
                         }
                     }
                 }
             }
-            .util {
-                position: absolute;
-                top: 20px;
-                right: 40px;
-                li {
-                    float: left;
-                    margin-left: 20px;
-                    a {
-                        font: 10px/1;
-                        color: #999;
-                    }
-                }
-            }
+            // .util {
+            //     position: absolute;
+            //     top: 20px;
+            //     right: 40px;
+            //     li {
+            //         float: left;
+            //         margin-left: 20px;
+            //         a {
+            //             font: 10px/1;
+            //             color: #999;
+            //         }
+            //     }
+            // }
         }
         .btnCall {
             position: absolute;
@@ -216,7 +221,7 @@ a {
         text-align: center;
         h1 {
             font-style: italic;
-            font-size: 110px;
+            font-size: 100px;
             color: rgba(255,255,255,0.9);
             // margin-bottom: 5px;
         }
@@ -227,13 +232,13 @@ a {
         //     // text-align: left;
         // }
         p {
-            font-size: 38px;
+            font-size: 30px;
             color: rgba(255,255,255,0.9);
             margin-bottom: 80px;
         }
         a {
             display: block;
-            width:390px;
+            width:310px;
             height: 28px;
             margin: 0 auto;
             border: 1px solid rgba(255,255,255,0.5);
@@ -242,7 +247,7 @@ a {
             text-align: center;
             &:hover {
                 background:rgba(255,255,255,0.5);
-                color: rgb(34, 90, 193);
+                color: rgb(2, 126, 196);
                 font-weight: 600;
             }
         }
@@ -258,8 +263,8 @@ a {
         margin: 0 auto;
         position: relative;
         h1 {
-            font: bold 24px/1 ;
-            color: #555;
+            font-size: 30px;
+            color: rgb(2, 126, 196);
             text-align: center;
             margin-bottom: 50px;
         }
@@ -267,10 +272,10 @@ a {
             width: 100%;
             article {
                 float: left;
-                width: 280px;
-                margin-right: 20px;
+                width: 285px;
+                margin-left: 10px;
                 &:last-of-type {
-                    margin-right: 0; // 마지막 그림 왜 혼자 놀까?
+                    margin-right: 0; 
                 }
                 .pic {
                     width: 100%;
@@ -291,12 +296,12 @@ a {
                 h2 {
                     margin-bottom: 10px;
                     a {
-                        font: bold 16px/1;
-                        color: #555;
+                        font-size: 18px;
+                        color: rgb(2, 126, 196);
                     }
                 }
                 p {
-                    font :bold 14px/1.3;
+                    font-size: 14px;
                     color: #777;
                 }
             }
@@ -312,5 +317,100 @@ a {
         width: 1180px;
         margin: 0 auto;
         position: relative;
+        // font-size: 0px;
+        h1 {
+            font-size: 30px ; 
+            color:  rgb(2, 126, 196);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .wrap {
+            width: 100%;
+            article {
+                &:nth-of-type(1) {
+                    width: 380px;
+                    height: 620px;
+                    background: rgb(199, 209, 216);
+                    float: left;
+                    margin-right: 20px;
+                    padding: 170px 50px 0;
+                    text-align: center;
+                    i {
+                        font-size: 100px;
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        font-size: 20px ;
+                        color: #fff;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                        margin-bottom: 30px;
+                    }
+                    a {
+                        display: block;
+                        width: 150px;
+                        height: 30px;
+                        font :11px/30px ;
+                        color: #fff;
+                        border: 1px solid #fff;
+                        margin: 0 auto;
+                    }
+                }
+                &:nth-of-type(2) {
+                    width: 380px;
+                    height: 300px;
+                    float: left;
+                    margin-right: 20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-of-type(3) {
+                    width: 380px;
+                    height: 300px;
+                    float: left;
+                    margin-right: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-of-type(4) {
+                    width: 780px;
+                    height: 300px;
+                    float: left;
+                    margin-right: 20px;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(
+                            45deg,
+                        rgba(255, 192, 203, 0.4),
+                        rgba(173, 216, 230, 0.4)
+                        );
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
     }
 }
