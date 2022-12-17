@@ -254,7 +254,7 @@ a {
     }
 }
 
-
+//news
 #news {
     width: 100%;
     padding: 200px 0;
@@ -273,13 +273,13 @@ a {
             article {
                 float: left;
                 width: 280px;
-                margin-left: 10px;   // 마진값을 조정 하지 않으면 아래로 계속 떨어짐;;
+                margin-right: 20px;  
                 &:last-of-type {
                     margin-right: 0; 
                 }
                 .pic {
                     width: 100%;
-                    height: 280px;   // 갑갑하니 상관없는 높이값까지 수정해서 확인해봄;;
+                    height: 130px;   
                     overflow: hidden;
                     img {
                         width: 100%;
@@ -314,6 +314,7 @@ a {
     }
 }
 
+//brand
 #brand {
     width: 100%;
     padding: 200px 0;
@@ -405,7 +406,7 @@ a {
                         position: absolute;
                         top: 0;
                         left: 0;
-                        // filter: grayscale(100%);
+                        // filter: grayscale(100%); 그레이 스케일 넣고 싶은데 안됨;;;
                         background: linear-gradient(
                             -45deg,
                         rgba(192, 213, 255, 0.4),
@@ -421,6 +422,54 @@ a {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// banner
+#banner {
+    width: 100%;
+    padding: 150px 0;
+    background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed; // 필터 효과 주기 
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        // position: relative;
+        h1 {
+            font-size: 50px;
+            font-style: italic;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px; 
+        }
+        p {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+//comment 
+#comment {
+    width: 100%;
+    padding: 150px 0;
+    background: #ddd;
+    .iner {
+        width: 1180px;
+        margin: 0 auto;
+        h1 {
+            font-size: 30px;
+            color:  rgb(2, 126, 196);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        ul {
+            width: 100%;
+            li {
+                width: 100%;
+                border: 1px solid #111;
             }
         }
     }

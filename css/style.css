@@ -227,14 +227,14 @@ a {
 #news .inner .wrap article {
   float: left;
   width: 280px;
-  margin-left: 10px;
+  margin-right: 20px;
 }
 #news .inner .wrap article:last-of-type {
   margin-right: 0;
 }
 #news .inner .wrap article .pic {
   width: 100%;
-  height: 280px;
+  height: 130px;
   overflow: hidden;
 }
 #news .inner .wrap article .pic img {
@@ -363,6 +363,51 @@ a {
 }
 #brand .inner .wrap article:nth-of-type(4):hover::after {
   opacity: 1;
+}
+
+#banner {
+  width: 100%;
+  padding: 150px 0;
+  background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed;
+}
+#banner .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#banner .inner h1 {
+  font-size: 50px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#banner .inner p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+#comment {
+  width: 100%;
+  padding: 150px 0;
+  background: #ddd;
+}
+#comment .iner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#comment .iner h1 {
+  font-size: 30px;
+  color: rgb(2, 126, 196);
+  text-align: center;
+  margin-bottom: 50px;
+}
+#comment .iner ul {
+  width: 100%;
+}
+#comment .iner ul li {
+  width: 100%;
+  border: 1px solid #111;
 }
 
 /*# sourceMappingURL=style.css.map */
