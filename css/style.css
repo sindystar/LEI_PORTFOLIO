@@ -44,6 +44,7 @@ a {
   position: absolute;
   left: 0;
   bottom: 10px;
+  letter-spacing: 1px;
 }
 #header .inner > h1 > a {
   font-size: 24px;
@@ -126,12 +127,12 @@ a {
   opacity: 0;
 }
 #header .inner .menuMo {
-  width: 220px;
+  width: 270px;
   height: 100vh;
   background: rgb(134, 195, 241);
   position: fixed;
   top: 0;
-  left: -220px;
+  left: -270px;
   padding: 35px 30px;
   z-index: 10;
   transition: 0.5s;
@@ -141,34 +142,35 @@ a {
   left: 0;
 }
 #header .inner .menuMo h1 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #fff;
+  text-align: center;
 }
 #header .inner .menuMo h1 a {
   display: block;
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
-  text-align: center;
 }
 #header .inner .menuMo h1 span {
   display: block;
   font-size: 12px;
+  letter-spacing: 1px;
   color: #fff;
-  text-align: center;
 }
 #header .inner .menuMo #gnbMo li a {
   display: block;
+  text-align: center;
   width: 100%;
   padding: 20px 0;
   border-bottom: 1px solid #fff;
-  font-size: 14px;
+  font-size: 0px;
   color: #fff;
-  text-align: center;
 }
 
 #visual {
   width: 100%;
-  height: calc(100vh - 101px);
+  height: 100vh;
   overflow: hidden;
   background: #ddd;
 }
@@ -189,10 +191,11 @@ a {
 #visual .inner h1 {
   font-style: italic;
   font-size: 100px;
+  letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.9);
 }
 #visual .inner p {
-  font-size: 30px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 80px;
 }
