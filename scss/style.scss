@@ -281,8 +281,8 @@ a {
                 }
                 .pic {
                     width: 100%;
-                    height: 380px;  
-                    border-radius: 5px; 
+                    height: 120px;    // 다양한 높이로 진행해 보았으나 모니터 스크린의 가로 비율로 디자인하는게 나음;;
+                    // border-radius: 5px; 
                     // border: 2px solid rgb(2, 126, 196);
                     overflow: hidden;
                     img {
@@ -340,7 +340,7 @@ a {
                     width: 380px;
                     height: 620px;
                     background: rgb(199, 209, 216);
-                    border-radius: 5px;
+                    // border-radius: 5px;
                     float: left;
                     margin-right: 20px;    
                     padding: 170px 50px 0;
@@ -378,7 +378,7 @@ a {
                     img {
                         width: 100%;
                         height: 100%;
-                        border-radius: 5px;
+                        // border-radius: 5px; //보더값을 주고 진행해보니 부드럽기는 하나 신뢰감을 주는 기업홈페이지에서는 직각이 더나음 pass
                         object-fit: cover;
                     }
                 }
@@ -390,7 +390,7 @@ a {
                     img {
                         width: 100%;
                         height: 100%;
-                        border-radius: 5px;
+                        // border-radius: 5px;
                         object-fit: cover;
                     }
                 }
@@ -480,7 +480,7 @@ a {
             li {
                 width: 85%;
                 margin: 0 auto;
-                border: 2px solid rgb(2, 126, 196);
+                border: 1px solid rgb(2, 126, 196);
                 // border: 2px solid #555;
                 border-radius: 3px;
                 padding: 10px 30px;
@@ -491,30 +491,32 @@ a {
                     clear: both;
                 }
                 &:hover {
-                    // background: rgba(2, 126, 196,0.5);
-                    background: rgba(255,255,255,0.5);
-                    border: 2px solid rgba(2, 126, 196,0.5);
+                    background: rgba(2, 126, 196); 
+                    // background: rgba(255,255,255,0.5);  //부드럽게 호버 되고 싶어 진행 했지만, 누구나 인지할수 있는 페이지로 인지성 올리려면 pass
+                    // border: 2px solid rgba(2, 126, 196,0.5); 
                     a {
                         color: #fff;
-                        color: rgb(2, 126, 196);
+                        // color: rgb(2, 126, 196);
                         font-weight: 700;
                         transform: scale(1.1);
                     }
                     span {
                         color: #fff;
-                        color: rgb(2, 126, 196);
+                        // color: rgb(2, 126, 196);
                         font-weight: 700;
                         transform: scale(1.1);
                     }
                 }
                 a {
                     font-size: 14px;
-                    color: #555;
+                    color: #777;
+                    color: rgba(2, 126, 196);
                     float: left ;
                 }
                 span {
                     font-size: 14px;
-                    columns: #888;
+                    color: #888;
+                    color: rgba(2, 126, 196);
                     float: right;
                 }
             }
