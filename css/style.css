@@ -388,6 +388,22 @@ a {
   color: #fff;
   text-align: center;
 }
+#banner .inner a {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+  height: 24px;
+  text-align: center;
+  margin-top: 50px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  color: #fff;
+}
+#banner .inner a :hover {
+  background: #fff;
+  color: #333;
+  font-weight: 500;
+}
 
 #comments {
   width: 100%;

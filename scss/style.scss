@@ -31,6 +31,22 @@ a {
     clear: both;
 }
 
+// @mixin btnStyle {
+//     display: block;
+//     width: 170px;
+//     padding: 20px;
+//     font-size: 20px;
+//     color: #fff;
+//     border-radius: 5px;
+//     background-color: #777;
+//     text-align: center;
+//     transition: 0.4s;
+//     &:hover {
+//     background-color: #fff;
+//     }
+// }
+
+
 //header
 #header {
     width: 100%;
@@ -455,6 +471,31 @@ a {
             font-size: 16px;
             color: #fff;
             text-align: center;
+        }
+        // .btnView {
+        //     width: 100%;
+        //     float: left;
+        //     margin: 0 auto;
+        //     @include btnStyle ;
+        //     background-color: #fff;
+        // }
+        a { 
+            display: block;
+            margin: 0 auto;
+            width: 310px;
+            height: 24px;
+            text-align: center;
+            margin-top: 50px;
+            // padding: 15px 20px;
+            border: 1px solid #eee;
+            font-size: 14px;
+            color: #fff;
+            & :hover {
+                background: #fff;  // 호버 안됨 체크 할것 
+                color: #333;
+                font-weight: 500;
+            }
+
         }
     }
 }
