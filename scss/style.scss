@@ -114,7 +114,7 @@ a {
             // border: 1px solid red;
             position: absolute;
             right: 30px;
-            top: 50%;
+            top : 72px;
             transform: translateY(-50%);  // 오타 조심!
             display: none;
             width: 20px;
@@ -178,11 +178,11 @@ a {
             background: rgb(134, 195, 241);
             position: fixed;
             top:0;
-            // left: -220px;
+            left: -220px;
             padding: 35px 30px;
             z-index: 10;
             transition: 0.5s;
-            // display: none;
+            display: none;
             &.on {
                 left: 0;
             }
@@ -243,6 +243,7 @@ a {
         transform: translate(-50%, -50%);
         text-align: center;
         h1 {
+            margin-top: 120px;    // 높이 출력 화면에서 확인해보기!
             font-style: italic;
             font-size: 100px;
             color: rgba(255,255,255,0.9);
@@ -322,7 +323,7 @@ a {
                     
                 }
                 h2 {
-                    margin-bottom: 10px;
+                    margin-bottom: 0px;
                     a {
                         font-size: 18px;
                         color: $keycolor;
@@ -332,7 +333,7 @@ a {
                 p {
                     font-size: 14px;
                     color: #777;
-                    // margin-bottom: 50px;
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -524,7 +525,7 @@ a {
         ul {
             width: 100%;
             li {
-                width: 85%;
+                width: 100%;  //반응형 사이즈 때문에 100% 로 유지하기로 변경 
                 margin: 0 auto;
                 border: 1px solid $keycolor;
                 // border: 2px solid #555;
@@ -560,7 +561,7 @@ a {
                     float: left ;
                 }
                 span {
-                    font-size: 14px;
+                    font-size: 12px;
                     color: #888;
                     color: $keycolor;
                     float: right;
@@ -632,16 +633,184 @@ a {
             h1 {
                 left: 20px;
             }
-            .menuMo {
+            .menuWeb {
                 display: none;
             }
             .btnCall {
                 display: block;
+
             }
             .menuMo {
                 display: block;
             }
         }
     }
+    //visual
+    #visual {
+        // height: calc(100vh - 101px);
+        height: 100vh;
+        background: url(../img/visual/pic7.jpg)no-repeat center/cover;
+        img {
+            display: none;
+        }
+        .inner {
+            width: 100%;
+            padding: 0px 30px ;
+            h1 {
+                font-size: 90px;
+                color:#444 ;
+            }
+            p {
+                font-size: 28px;
+                color: #444;
+            }
+            a {
+                // width: 30%;
+                color: #444;
+                font-weight: 600;
+                width: 50%;
+                border: 1px solid #444;
+            }
+        }
+    }
+    //news
+    #news {
+        padding: 100px 30px;
+        .inner {
+            width: 100%;
+            .wrap {
+                article {
+                    width: 49%;
+                    margin-right: 2%;
+                    &:nth-of-type(2n) {
+                        margin-right: 0;
+                    }
+                    .pic {
+                        height: 20vmax; 
+                    }
+                }
+            }
+        }
+    } 
+    //brand
+    #brand {
+        padding: 100px 30px;
+        .inner {
+            width: 100%;
+            .wrap {
+                article {
+                    &:nth-of-type(1) {
+                        width: 49%;
+                        margin-right: 2%;
+                    }
+                    &:nth-of-type(2){
+                        width: 49%;
+                        margin-right: 0px;
+                        margin-bottom: 20px;
+                    }
+                    &:nth-of-type(3){
+                        width: 49%;
+                    }
+                    &:nth-of-type(4) {
+                        width: 100%;
+                    }
+                    // p {
+                    //     margin-bottom: 20px;
+                    // } web에서 간격 조정함 
+                }
+            }
+        }
+    }
+    //baner 
+    #banner{
+        padding: 100px 30px;
+        .inner {
+            width: 100%;
+        }
+    }
+    //comments
+    #comments {
+        padding: 100px 30px;
+        .inner {
+            width: 100%;
+        }
+    }
     
+    //footer
+    #footer {
+        padding: 50px 30px;
+        .inner {
+            width: 100%;
+        }
+    }
+}
+
+//mobile 
+@media screen and (max-width: $mobile) {
+    //header 
+
+    //visual
+    #visual {
+        .inner {
+            h1 {
+                font-size: 80px ;  //vimin으로 변화 없어 px로;;
+            }
+        }
+    }
+
+    //news
+    #news {
+        .inner {
+            .wrap {
+                article {
+                    width: 100%;
+                    margin-right: 0%;
+                    .pic {
+                        height: 30vmax;
+                    }
+                }
+            }
+        }
+    }
+    //brand
+    #brand {
+        .inner {
+            .wrap {
+                article {
+                    &:nth-of-type(1){
+                        width: 100%;
+                        height: 400px;
+                        padding: 50px;
+                        margin-right: 0%;
+                        margin-bottom: 20px;
+                    }
+                    &:nth-of-type(2){
+                        width: 100%;
+                    }
+                    &:nth-of-type(3) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    //banner 
+
+    //comments
+
+    //footer 
+    #footer {
+        .inner {
+            h1 {
+                margin-bottom: 10px;
+            }
+            ul {
+                width: 100%;
+                li {
+                    margin-left: 0px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
 }
