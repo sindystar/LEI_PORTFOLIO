@@ -525,7 +525,7 @@ a {
         ul {
             width: 100%;
             li {
-                width: 100%;  //반응형 사이즈 때문에 100% 로 유지하기로 변경 
+                width: 95%;  //반응형 사이즈 때문에 85 ->95%로 수정
                 margin: 0 auto;
                 border: 1px solid $keycolor;
                 // border: 2px solid #555;
