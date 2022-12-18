@@ -38,7 +38,7 @@ a {
     // position: relative; // 풀화면 
     // display: flex;   // 풀화면 
     // justify-content: center;   // 화면을 위로 꽉 채워 올리면 세로스크롤을 내렸을때 ci와 gnb함께 내려감;;;
-    // z-index: 10;
+    z-index: 10;
     // background: #999;
     .inner {
         width: 1180px;
@@ -72,7 +72,7 @@ a {
                         // color:rgba(255,255,255,0.8); //풀화면 
                         color :rgb(2, 126, 196);
                         &:hover {
-                            // color: rgb(25, 2, 154);
+                            // color: rgb(25, 2, 154);    // 풀화면
                             color: rgb(253, 216, 4);
                         }
                     }
@@ -207,12 +207,14 @@ a {
     background: #ddd;
     img {
         width: 100%;
+        // height: 600px;
         height: 100%;
         object-fit: cover;
         // opacity: ;
     }
     .inner {
         width: 1180px;
+        // height: 600px;
         margin: 0 auto;
         position: absolute;
         top: 50%;
@@ -279,7 +281,9 @@ a {
                 }
                 .pic {
                     width: 100%;
-                    height: 130px;   
+                    height: 380px;  
+                    border-radius: 5px; 
+                    // border: 2px solid rgb(2, 126, 196);
                     overflow: hidden;
                     img {
                         width: 100%;
@@ -336,6 +340,7 @@ a {
                     width: 380px;
                     height: 620px;
                     background: rgb(199, 209, 216);
+                    border-radius: 5px;
                     float: left;
                     margin-right: 20px;    
                     padding: 170px 50px 0;
@@ -373,6 +378,7 @@ a {
                     img {
                         width: 100%;
                         height: 100%;
+                        border-radius: 5px;
                         object-fit: cover;
                     }
                 }
@@ -384,6 +390,7 @@ a {
                     img {
                         width: 100%;
                         height: 100%;
+                        border-radius: 5px;
                         object-fit: cover;
                     }
                 }
@@ -396,6 +403,7 @@ a {
                     img {
                         width: 100%;
                         height: 100%;
+                        border-radius: 5px;
                         object-fit: cover;
                     }
                     &::after {
@@ -452,25 +460,66 @@ a {
 }
 
 //comment 
-#comment {
+#comments {
     width: 100%;
     padding: 150px 0;
     background: #ddd;
-    .iner {
+    .inner {
         width: 1180px;
         margin: 0 auto;
         h1 {
             font-size: 30px;
-            color:  rgb(2, 126, 196);
+            font-weight: 550;
+            // color: #555;
+            color: rgb(2, 126, 196);
             text-align: center;
             margin-bottom: 50px;
         }
         ul {
             width: 100%;
             li {
-                width: 100%;
-                border: 1px solid #111;
+                width: 85%;
+                margin: 0 auto;
+                border: 2px solid rgb(2, 126, 196);
+                // border: 2px solid #555;
+                border-radius: 3px;
+                padding: 10px 30px;
+                margin-bottom: 14px;
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                &:hover {
+                    // background: rgba(2, 126, 196,0.5);
+                    background: rgba(255,255,255,0.5);
+                    border: 2px solid rgba(2, 126, 196,0.5);
+                    a {
+                        color: #fff;
+                        color: rgb(2, 126, 196);
+                        font-weight: 700;
+                        transform: scale(1.1);
+                    }
+                    span {
+                        color: #fff;
+                        color: rgb(2, 126, 196);
+                        font-weight: 700;
+                        transform: scale(1.1);
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    color: #555;
+                    float: left ;
+                }
+                span {
+                    font-size: 14px;
+                    columns: #888;
+                    float: right;
+                }
             }
         }
     }
 }
+
+//footer 

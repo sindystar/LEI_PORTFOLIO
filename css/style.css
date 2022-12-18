@@ -30,6 +30,7 @@ a {
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd;
+  z-index: 10;
 }
 #header .inner {
   width: 1180px;
@@ -234,7 +235,8 @@ a {
 }
 #news .inner .wrap article .pic {
   width: 100%;
-  height: 130px;
+  height: 380px;
+  border-radius: 5px;
   overflow: hidden;
 }
 #news .inner .wrap article .pic img {
@@ -284,6 +286,7 @@ a {
   width: 380px;
   height: 620px;
   background: rgb(199, 209, 216);
+  border-radius: 5px;
   float: left;
   margin-right: 20px;
   padding: 170px 50px 0;
@@ -322,6 +325,7 @@ a {
 #brand .inner .wrap article:nth-of-type(2) img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   object-fit: cover;
 }
 #brand .inner .wrap article:nth-of-type(3) {
@@ -332,6 +336,7 @@ a {
 #brand .inner .wrap article:nth-of-type(3) img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   object-fit: cover;
 }
 #brand .inner .wrap article:nth-of-type(4) {
@@ -344,6 +349,7 @@ a {
 #brand .inner .wrap article:nth-of-type(4) img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   object-fit: cover;
 }
 #brand .inner .wrap article:nth-of-type(4)::after {
@@ -387,27 +393,63 @@ a {
   text-align: center;
 }
 
-#comment {
+#comments {
   width: 100%;
   padding: 150px 0;
   background: #ddd;
 }
-#comment .iner {
+#comments .inner {
   width: 1180px;
   margin: 0 auto;
 }
-#comment .iner h1 {
+#comments .inner h1 {
   font-size: 30px;
+  font-weight: 550;
   color: rgb(2, 126, 196);
   text-align: center;
   margin-bottom: 50px;
 }
-#comment .iner ul {
+#comments .inner ul {
   width: 100%;
 }
-#comment .iner ul li {
-  width: 100%;
-  border: 1px solid #111;
+#comments .inner ul li {
+  width: 85%;
+  margin: 0 auto;
+  border: 2px solid rgb(2, 126, 196);
+  border-radius: 3px;
+  padding: 10px 30px;
+  margin-bottom: 14px;
+}
+#comments .inner ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#comments .inner ul li:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(2, 126, 196, 0.5);
+}
+#comments .inner ul li:hover a {
+  color: #fff;
+  color: rgb(2, 126, 196);
+  font-weight: 700;
+  transform: scale(1.1);
+}
+#comments .inner ul li:hover span {
+  color: #fff;
+  color: rgb(2, 126, 196);
+  font-weight: 700;
+  transform: scale(1.1);
+}
+#comments .inner ul li a {
+  font-size: 14px;
+  color: #555;
+  float: left;
+}
+#comments .inner ul li span {
+  font-size: 14px;
+  columns: #888;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
