@@ -1,53 +1,11 @@
 @charset "utf-8";
-// @import "reset.scss";
+@import "reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
 // design Guide
 $keycolor :rgb(2, 126, 196);
 $tablet : 1179px;
 $mobile : 539px;
-
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-ul,
-ol,
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
-
-.hodden {
-    position: absolute;
-    top : -99999px;
-    opacity: 0;
-}
-
-.wrap::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-// @mixin btnStyle {
-//     display: block;
-//     width: 170px;
-//     padding: 20px;
-//     font-size: 20px;
-//     color: #fff;
-//     border-radius: 5px;
-//     background-color: #777;
-//     text-align: center;
-//     transition: 0.4s;
-//     &:hover {
-//     background-color: #fff;
-//     }
-// }
 
 
 //header
@@ -102,19 +60,7 @@ a {
                     }
                 }
             }
-            // .util {
-            //     position: absolute;
-            //     top: 20px;
-            //     right: 40px;
-            //     li {
-            //         float: left;
-            //         margin-left: 20px;
-            //         a {
-            //             font: 10px/1;
-            //             color: #999;
-            //         }
-            //     }
-            // }
+            
         }
         .btnCall {
             // border: 1px solid red;
@@ -178,59 +124,58 @@ a {
                 }
             }
         }
-        // .menuMo {
-        //     width: 270px;
-        //     height: 100vh;
-        //     background: rgb(134, 195, 241);
-        //     position: fixed;    // fixed로!!
-        //     top:0;
-        //     left: -270px;
-        //     // padding: 35px 30px;
-        //     z-index: 10;
-        //     transition: 0.5s;
-        //     // display: none;
-        //     &.on {
-        //         left: 0;
-        //     }
-        //     h1 {
-        //         padding-top: 30px;
-        //         margin-bottom: 20px;
-        //         border-bottom: 1px solid #fff;
-        //         text-align: center;
-        //         a {
-        //             display: block;
-        //             font-size: 24px;
-        //             color: #fff;
-        //             // text-align: center;
-        //         }
-        //         span {
-        //             display: block;
-        //             font-size: 12px;
-        //             letter-spacing: 1px;
-        //             color: #fff;
-        //             // text-align: center;
-        //         }
-        //     }
-        //     #gnbMo {
-        //         li { 
-        //             // text-align: center;  
-        //             //뭐가 문제일까?? 지웠다 썼다 컴퓨터 껐다 켰다 ....할수 있는건 다했다....
-        //             a {
-        //                 display: block;
-        //                 // position: relative;
-        //                 // display: flex;
-        //                 // justify-content: center;
-        //                 width: 100%;
-        //                 padding: 20px 0;
-        //                 // margin: 0 auto;
-        //                 border-bottom: 1px solid #fff;
-        //                 font: bold 14px/1 "arial";
-        //                 color: #fff;
-        //                 text-align: center;                        
-        //             }
-        //         }
-        //     }
-        // }
+        .menuMo {
+            width: 270px;
+            height: 100vh;
+            background: rgb(134, 195, 241);
+            position: fixed;    // fixed로!!
+            top:0;
+            left: -270px;
+            padding: 35px 30px;
+            z-index: 10;
+            transition: 0.5s;
+            // display: none;
+            &.on {
+                left: 0;
+            }
+            h1 {
+                padding-top: 30px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #fff;
+                text-align: center;
+                a {
+                    display: block;
+                    font-size: 24px;
+                    color: #fff;
+                    // text-align: center;
+                }
+                span {
+                    display: block;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color: #fff;
+                    // text-align: center;
+                }
+            }
+            #gnbMo {
+                li { 
+
+                    a {
+                        display: block;
+                        // position: relative;
+                        // display: flex;
+                        // justify-content: center;
+                        width: 100%;
+                        padding: 20px 0;
+                        // margin: 0 auto;
+                        border-bottom: 1px solid #fff;
+                        font: bold 14px/1 "arial";
+                        color: #fff;
+                        text-align: center;                        
+                    }
+                }
+            }
+        }
     }
 }
 

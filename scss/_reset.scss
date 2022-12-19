@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 ul,
 ol,
@@ -11,16 +12,14 @@ a {
     text-decoration: none;
 }
 
-.wrap {
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+.hodden {
+    position: absolute;
+    top : -99999px;
+    opacity: 0;
 }
 
-.hidden {
-    position: absolute;
-    top:-99999px;
-    opacity: 0;
+.wrap::after {
+    content: "";
+    display: block;
+    clear: both;
 }
