@@ -1,0 +1,78 @@
+// design Guide
+$keycolor :rgb(2, 126, 196);
+$tablet : 1179px;
+$mobile : 539px;
+
+.department {
+    .sub_visual {
+        background: skyblue;
+    }
+    .wrap {
+        width: 100%;
+        // padding: 200px 0;
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        article {
+            width: 380px;
+            float: left;
+            margin-right: 20px;
+            margin-top: 50px;
+            &:nth-of-type(3n) {
+                margin-right: 0px;
+            }
+            .pic {
+                width: 100%;
+                height: 380px;
+                // border-radius: 50%;
+                overflow: hidden;
+                filter: grayscale(1);
+                margin-bottom: 20px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 5px;
+                a {
+                    font: 22px/1;
+                    color: #444;
+
+                }
+            }
+            P{
+                text-align: center;
+                margin-bottom: 100PX;
+                font: 10PX/1.2;
+                color: #777;
+            }
+        }
+    }                
+} 
+
+@media screen and (max-width: $tablet) {  // 미디어쿼리 확인 필!
+    .department {
+        .division {
+            height: 60vw;
+        }
+    }    
+}
+
+@media screen and (max-width:$mobile) {
+    .department{
+        .division{
+            background: none;
+            height: auto;
+            .div_tree {
+                position: relative;
+                top:0;
+                opacity: 1;
+            }
+        }
+    }    
+}

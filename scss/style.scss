@@ -1,10 +1,12 @@
 @charset "utf-8";
 @import "reset.scss";
 @import "sub_page.scss";
+@import "department.scss";
 @import "community.scss";
 @import "youtube.scss";
 @import "gallery.scss";
 @import "location.scss";
+@import "join.scss";
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
 // design Guide
@@ -16,7 +18,6 @@ $mobile : 539px;
 //header
 #header {
     width: 100%;
-    // border-bottom: 1px solid #ddd;
     position: absolute;
     top: 0;
     left: 0;
@@ -31,10 +32,10 @@ $mobile : 539px;
         > h1 {
             position: absolute;
             left: 0;
-            bottom: 10px;
+            bottom: -4px;
             letter-spacing: 1px;
             > a {
-                font-size: 24px;
+                font-size: 26px;
                 font-weight: 600;
                 color: #fff; //풀화면 
             }
@@ -50,21 +51,22 @@ $mobile : 539px;
                         display: block;
                         padding: 12px 18px;
                         font-size: 13px;
-                        font-weight: 500;
+                        font-weight: 600;
                         color:rgba(255,255,255,0.8); 
                         &:hover {
-                            color: rgb(25, 2, 154);  
+                            color: rgb(25, 2, 154);
+                            font-weight: 700;
+                            transform: scale(1.1);  
                         }
                     }
                 }
-            }
-            
+            }            
         }
         .btnCall {
             position: absolute;
             right: 30px;
             top : 72px;
-            transform: translateY(-50%);  // 오타 조심!
+            transform: translateY(-50%); 
             display: none;
             width: 20px;
             height: 20px;
@@ -262,9 +264,7 @@ $mobile : 539px;
                 }
                 .pic {
                     width: 100%;
-                    height: 120px;    // 다양한 높이로 진행해 보았으나 모니터 스크린의 가로 비율로 디자인하는게 나음;;
-                    // border-radius: 5px; 
-                    // border: 2px solid rgb(2, 126, 196);
+                    height: 120px;
                     overflow: hidden;
                     img {
                         width: 100%;
@@ -359,7 +359,6 @@ $mobile : 539px;
                     img {
                         width: 100%;
                         height: 100%;
-                        // border-radius: 5px; //보더값을 주고 진행해보니 부드럽기는 하나 신뢰감을 주는 기업홈페이지에서는 직각이 더나음 pass
                         object-fit: cover;
                     }
                 }
@@ -395,7 +394,6 @@ $mobile : 539px;
                         position: absolute;
                         top: 0;
                         left: 0;
-                        // filter: grayscale(100%); 그레이 스케일 넣고 싶은데 안됨;;;
                         background: linear-gradient(
                             -45deg,
                         rgba(192, 213, 255, 0.4),
@@ -437,13 +435,6 @@ $mobile : 539px;
             color: #fff;
             text-align: center;
         }
-        // .btnView {
-        //     width: 100%;
-        //     float: left;
-        //     margin: 0 auto;
-        //     @include btnStyle ;
-        //     background-color: #fff;
-        // }
         a { 
             display: block;
             margin: 0 auto;
@@ -460,7 +451,6 @@ $mobile : 539px;
                 color: $keycolor;
                 font-weight: 500;
             }
-
         }
     }
 }
@@ -498,13 +488,11 @@ $mobile : 539px;
                     background: $keycolor; 
                     a {
                         color: #fff;
-                        // color: rgb(2, 126, 196);
                         font-weight: 700;
                         transform: scale(1.05);
                     }
                     span {
                         color: #fff;
-                        // color: rgb(2, 126, 196);
                         font-weight: 700;
                         transform: scale(1.05);
                     }
@@ -720,7 +708,7 @@ $mobile : 539px;
         }
         .inner {
             h1 {
-                font-size: 80px ;  //vimin으로 변화 없어 px로;;
+                font-size: 80px ;  
             }
         }
     }

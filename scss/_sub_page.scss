@@ -20,10 +20,10 @@ $mobile : 539px;
         > h1 {
             position: absolute;
             left: 0;
-            bottom: 10px;
+            bottom: -4px;
             letter-spacing: 1px;
             > a {
-                font-size: 24px;
+                font-size: 26px;
                 font-weight: 600;
                 color: #fff; 
             }
@@ -42,7 +42,10 @@ $mobile : 539px;
                         font-weight: 600;
                         color:rgba(255,255,255,0.8); 
                         &:hover {
-                            color: rgb(25, 2, 154);  
+                            // color: rgb(25, 2, 154);
+                            color: $keycolor;
+                            font-weight: 700;
+                            transform: scale(1.1);  
                         }
                     }
                 }
@@ -174,6 +177,24 @@ $mobile : 539px;
         width: 1180px;
         margin: 0 auto;
         min-height: 500px;
+        h1 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin: 0 auto;
+            text-align: center;
+            color: $keycolor;
+            margin-bottom: 20px;
+            span {
+                font: nomal 20px/1;
+                color: #aaa;
+                &::before {
+                    content: "/";
+                    margin-left: 10px;
+                    margin-right:20px ;
+                    
+                }
+            }
+        }
     }
 }
 
@@ -182,7 +203,7 @@ $mobile : 539px;
 // banner
 #banner_sub {
     width: 100%;
-    padding: 150px 0;
+    padding: 100px 0;
     filter: grayscale(0.9);
     background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed; 
     .inner {

@@ -43,11 +43,11 @@ a {
 #header_sub .inner > h1 {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: -4px;
   letter-spacing: 1px;
 }
 #header_sub .inner > h1 > a {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   color: #fff;
 }
@@ -67,7 +67,9 @@ a {
   color: rgba(255, 255, 255, 0.8);
 }
 #header_sub .inner .menuWeb #gnb li a:hover {
-  color: rgb(25, 2, 154);
+  color: rgb(2, 126, 196);
+  font-weight: 700;
+  transform: scale(1.1);
 }
 #header_sub .inner .btnCall {
   position: absolute;
@@ -186,10 +188,27 @@ a {
   margin: 0 auto;
   min-height: 500px;
 }
+.content .inner h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(2, 126, 196);
+  margin-bottom: 20px;
+}
+.content .inner h1 span {
+  font: nomal 20px/1;
+  color: #aaa;
+}
+.content .inner h1 span::before {
+  content: "/";
+  margin-left: 10px;
+  margin-right: 20px;
+}
 
 #banner_sub {
   width: 100%;
-  padding: 150px 0;
+  padding: 100px 0;
   filter: grayscale(0.9);
   background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed;
 }
@@ -321,6 +340,69 @@ a {
   margin: 5px;
 }
 
+.department .sub_visual {
+  background: skyblue;
+}
+.department .wrap {
+  width: 100%;
+}
+.department .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.department .wrap article {
+  width: 380px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+.department .wrap article:nth-of-type(3n) {
+  margin-right: 0px;
+}
+.department .wrap article .pic {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  filter: grayscale(1);
+  margin-bottom: 20px;
+}
+.department .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.department .wrap article h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.department .wrap article h2 a {
+  font: 22px/1;
+  color: #444;
+}
+.department .wrap article P {
+  text-align: center;
+  margin-bottom: 100PX;
+  font: 10PX/1.2;
+  color: #777;
+}
+
+@media screen and (max-width: 1179px) {
+  .department .division {
+    height: 60vw;
+  }
+}
+@media screen and (max-width: 539px) {
+  .department .division {
+    background: none;
+    height: auto;
+  }
+  .department .division .div_tree {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}
 #header {
   width: 100%;
   position: absolute;
@@ -337,11 +419,11 @@ a {
 #header .inner > h1 {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: -4px;
   letter-spacing: 1px;
 }
 #header .inner > h1 > a {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   color: #fff;
 }
@@ -357,11 +439,13 @@ a {
   display: block;
   padding: 12px 18px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
 #header .inner .menuWeb #gnb li a:hover {
   color: rgb(25, 2, 154);
+  font-weight: 700;
+  transform: scale(1.1);
 }
 #header .inner .btnCall {
   position: absolute;
