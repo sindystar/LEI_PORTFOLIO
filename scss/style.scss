@@ -1,5 +1,10 @@
 @charset "utf-8";
 @import "reset.scss";
+@import "sub_page.scss";
+@import "community.scss";
+@import "youtube.scss";
+@import "gallery.scss";
+@import "location.scss";
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
 // design Guide
@@ -16,10 +21,6 @@ $mobile : 539px;
     top: 0;
     left: 0;
     z-index: 9;
-    // position: relative; // 풀화면 
-    // display: flex;   // 풀화면 
-    // justify-content: center;   // 화면을 위로 꽉 채워 올리면 세로스크롤을 내렸을때 ci와 gnb함께 내려감;;; absolute로 해결 
-    // z-index: 10;
     // background: #999;
     .inner {
         width: 1180px;
@@ -36,7 +37,6 @@ $mobile : 539px;
                 font-size: 24px;
                 font-weight: 600;
                 color: #fff; //풀화면 
-                // color : $keycolor; // 스크롤 내렸을때 함께 딸려 내려가는 현상 방지하여 (디자인2안)헤더칸 보일때 2안으로 컬러 입힘
             }
         }
         .menuWeb {
@@ -51,11 +51,9 @@ $mobile : 539px;
                         padding: 12px 18px;
                         font-size: 13px;
                         font-weight: 500;
-                        color:rgba(255,255,255,0.8); //풀화면 
-                        // color : $keycolor;
+                        color:rgba(255,255,255,0.8); 
                         &:hover {
-                            color: rgb(25, 2, 154);    // 풀화면
-                            // color: rgb(255, 204, 0);
+                            color: rgb(25, 2, 154);  
                         }
                     }
                 }
@@ -63,7 +61,6 @@ $mobile : 539px;
             
         }
         .btnCall {
-            // border: 1px solid red;
             position: absolute;
             right: 30px;
             top : 72px;
@@ -71,7 +68,7 @@ $mobile : 539px;
             display: none;
             width: 20px;
             height: 20px;
-            &::before {  // 왜 after와 span만 입력하면 사라지나 했는데 한칸 띄우기 조심;;;;
+            &::before {  
                 content: "";
                 display: block;
                 width: 100%;
@@ -113,7 +110,7 @@ $mobile : 539px;
                     transform: rotate(45deg);
                 
                 }
-                &::after {  //한칸 띄우기 조심!!
+                &::after {  
                     bottom: 50%;
                     margin-bottom: -1px;
                     transform:rotate(-45deg);
@@ -125,51 +122,46 @@ $mobile : 539px;
             }
         }
         .menuMo {
-            width: 270px;
+            width: 220px;
             height: 100vh;
             background: rgb(134, 195, 241);
             position: fixed;    // fixed로!!
             top:0;
-            left: -270px;
-            padding: 35px 30px;
+            left: -220px;
+            padding: 20px 30px;
             z-index: 10;
             transition: 0.5s;
-            // display: none;
+            display: none;
             &.on {
                 left: 0;
             }
-            h1 {
-                padding-top: 30px;
-                margin-bottom: 20px;
+            >h1 {
+                padding-top: 20px;
+                // margin-bottom: 10px;
                 border-bottom: 1px solid #fff;
                 text-align: center;
                 a {
                     display: block;
-                    font-size: 24px;
+                    font-size: 20px;
                     color: #fff;
-                    // text-align: center;
                 }
                 span {
                     display: block;
+                    padding-bottom: 20px;
                     font-size: 12px;
                     letter-spacing: 1px;
                     color: #fff;
-                    // text-align: center;
                 }
             }
-            #gnbMo {
+            #gnbMo {                
                 li { 
-
+                    padding: 0px;
                     a {
                         display: block;
-                        // position: relative;
-                        // display: flex;
-                        // justify-content: center;
                         width: 100%;
-                        padding: 20px 0;
-                        // margin: 0 auto;
-                        border-bottom: 1px solid #fff;
-                        font: bold 14px/1 "arial";
+                        padding: 10px 0;
+                        border-bottom: 1px dotted rgba(255,255,255,0.5);
+                        font: bold 14px/1 ;
                         color: #fff;
                         text-align: center;                        
                     }
@@ -428,12 +420,12 @@ $mobile : 539px;
 #banner {
     width: 100%;
     padding: 150px 0;
-    background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed; // 포토샵에서 컬러 수정 완료 !
+    background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed; 
     .inner {
         width: 1180px;
         margin: 0 auto;
         // position: relative;
-        h1 {
+        > h1 {
             font-size: 50px;
             font-style: italic;
             color: #fff;
@@ -463,9 +455,9 @@ $mobile : 539px;
             border: 1px solid #eee;
             font-size: 14px;
             color: #fff;
-            & :hover {
-                background: #fff;  // 호버 안됨 체크 할것 
-                color: #333;
+            &:hover {
+                background: #fff; 
+                color: $keycolor;
                 font-weight: 500;
             }
 
@@ -484,7 +476,6 @@ $mobile : 539px;
         h1 {
             font-size: 30px;
             font-weight: 550;
-            // color: #555;
             color: $keycolor;
             text-align: center;
             margin-bottom: 50px;
@@ -495,7 +486,6 @@ $mobile : 539px;
                 width: 95%;  //반응형 사이즈 때문에 85 ->95%로 수정
                 margin: 0 auto;
                 border: 1px solid $keycolor;
-                // border: 2px solid #555;
                 border-radius: 3px;
                 padding: 10px 30px;
                 margin-bottom: 14px;
@@ -506,8 +496,6 @@ $mobile : 539px;
                 }
                 &:hover {
                     background: $keycolor; 
-                    // background: rgba(255,255,255,0.5);  //부드럽게 호버 되고 싶어 진행 했지만, 누구나 인지할수 있는 페이지로 인지성 올리려면 pass
-                    // border: 2px solid rgba(2, 126, 196,0.5); 
                     a {
                         color: #fff;
                         // color: rgb(2, 126, 196);
@@ -551,7 +539,7 @@ $mobile : 539px;
             display: block;
             clear: both;
         }
-        h1 {  //ci 로고 대체 할지 고민
+        h1 {  
             font-size: 30px;
             color: #888;
             float: left;
