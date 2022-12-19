@@ -1,3 +1,4 @@
+// 버튼콜
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
@@ -8,3 +9,4 @@ btnCall.onclick = function(e){
 
     menuMo.classList.toggle("on");
 }
+

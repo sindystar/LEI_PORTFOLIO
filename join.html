@@ -7,6 +7,7 @@
     <title>JOIN</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/0ac8b4c1ba.js" crossorigin="anonymous"></script>
+    <script defer src="js/join.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -48,15 +49,276 @@
         </div>
     </header>
 
-    <!-- 서브 컨텐츠 -->
-    <section class="content join">
-        <div class="sub_visual">
-
-        </div>
+    <section class="join">
         <div class="inner">
-            join!
+            <h1>MEMBERSHIP</h1>
+
+            <form action="result.html" method="get" id="member">
+                <fieldset>
+                    <legend class="h">회원가입 폼 입력 양식 </legend>
+
+                    <table>
+                        <caption class="h">회원가입을 위한 아이디, 비밀번호, 이메일,성별,학력,취미, 남기는 말 입력 테이블</caption>
+
+                        <tbody>
+                            <!-- userid   -->
+                            <tr>
+                                <th scope="row"><label for="userid">User ID</label></th>
+                                <td>
+                                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
+                                </td>
+                            </tr>
+                            <!-- password -->
+                            <tr>
+                                <th scope="row"><label for="pwd1">Password</label></th>
+                                <td>
+                                    <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="pwd2">Re Password</label></th>
+                                <td>
+                                    <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요.">
+                                </td>
+                            </tr>
+                            <!-- email -->
+                            <tr>
+                                <th scope="row"><label for="email">E-mail</label></th>
+                                <td>
+                                    <input type="text" name="email" id="email" placeholder="이메일주소를 입력하세요.">
+                                </td>
+                            </tr>
+                            <!-- education -->
+                            <tr>
+                                <th scope="row"><label for="edu">Education</label></th>
+                                <td>
+                                    <select name="edu" id="edu">
+                                        <!-- <option value="">선택하세요</option> -->
+                                        <option value="elementary school">초등학교 졸업</option>
+                                        <option value="middle school">중학교 졸업</option>
+                                        <option value="high school">고등학교 졸업</option>
+                                        <option value="college">대학교 졸업</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <!-- gender -->
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </td>
+                            </tr>
+                            <!-- interest -->
+                            <tr>
+                                <th scope="row">Interests</th>
+                                <td>
+                                    <label for="sports">Sports</label>
+                                    <input type="checkbox" name="hobby" id="sports" value="sports">
+
+                                    <label for="music">Music</label>
+                                    <input type="checkbox" name="hobby" id="music" value="music">
+
+                                    <label for="game">Game</label>
+                                    <input type="checkbox" name="hobby" id="game" value="game">
+
+                                    <label for="reading">Reading</label>
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">
+                                </td>
+                            </tr>
+                            <!-- comments -->
+                            <tr>
+                                <th scope="row"><label for="comments">Comments</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" placeholder="남기는 말을 입력하세요"></textarea>
+                                </td>
+                            </tr>
+                            <!-- btns -->
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="cancel">
+                                    <input type="submit" value="submit">
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
         </div>
     </section>
+
+
+
+    <!-- 서브 컨텐츠 -->
+        <!-- <section class="content join">
+            <div class="sub_visual"></div>
+            <div class="inner">
+            <h1>JOIN <span>회원가입 페이지</span></h1>
+            <form action="index.html">
+
+                <fieldset>
+                <legend class="hidden">회원가입양식 폼</legend>
+                <h2><label for="terms">회원 약관</label></h2>
+                <textarea name="terms" id="terms" cols="30" rows="10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio velit a id aperiam modi quae, dolores error deleniti quis nesciunt nam, quisquam dicta nostrum odio. Exercitationem debitis quis libero!
+
+                </textarea>
+                <div class="agreement">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">약관에 동의합니다</label>
+                </div>
+
+                <h2>MEMBER INFORMATION</h2>
+                <table>
+                    <caption class="hidden">회원정보 입력양식 테이블</caption>
+
+                    <tr>
+                    <th scope="row"><label for="id">USER ID</label></th>
+                    <td>
+                        <input type="text" id="id" name="id" required placeholder="아이디를 입력해 주세요">
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row"><label for="pwd1">PASSWORD</label></th>
+                    <td>
+                        <input type="password" name="pwd1" id="pwd1" required placeholder="비밀번호를 입력해 주십시오">
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                    <td>
+                        <input type="password" name="pwd2" id="pwd2" required placeholder="비밀번호를 재입력해 주십시오">
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">HOBBY</th>
+                    <td>
+                        <label for="game">
+                        <input type="checkbox" name="hobby" id="game" value="game">GAME
+                        </label>
+                        <label for="music">
+                        <input type="checkbox" name="hobby" id="music" value="music">MUSIC
+                        </label>
+                        <label for="read">
+                        <input type="checkbox" name="hobby" id="read" value="read">READING
+                        </label>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">GENDER</th>
+                    <td>
+                        <label for="male">
+                        <input type="radio" name="gender" id="male" value="male">MAN
+                        </label>
+                        <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">WOMAN
+                        </label>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row"><label for="email">E-MAIL</label></th>
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="이메일 주소를 입력해 주세요">
+                        <select name="company" id="company">
+                        <option value="">선택하세요</option>
+                        <option value="naver">@naver.com</option>
+                        <option value="daum">@hanmail.net</option>
+                        <option value="nate">@nate.com</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row"><label for="comments">COMMENTS</label></th>
+                    <td>
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="남기는 말씀을 써주세요"></textarea>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th colspan="2">
+                        <input type="reset" value="CANCLE">
+                        <input type="submit" value="SUBMIT">
+                    </th>
+                    </tr>
+                </table>
+                </fieldset>
+
+
+            </form>
+            </div>
+
+        </section> -->
+
+
+
+    <!-- <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>JOIN</h1>
+            <div class="wrap"></div>
+            <form action="index.html"></form>
+            <fieldset>
+                <legend class="hidden">회원가입 양식폼</legend>
+
+                <table>
+                    <caption class="hidden">회원정보 입력 양식 테이블</caption>
+                    <tr>
+                        <th scope="row">
+                            <label for="id">NAME</label>
+                        </th>
+                        <td>
+                            <input type="text" name="id" id="id" required placeholder="your name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            <label for="email">E_MAIL</label>
+                        </th>
+                        <td>
+                            <input type="text" name="email" placeholder="your E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >PURPOSE</th>
+                        <td>
+                            <label for="purpose">
+                                <select name="purpose" id="purpose">
+                                    <option value="">Choose your Purpose</option>
+                                    <option value="purchasing">Purchasing</option>
+                                    <option value="associate">Associate</option>
+                                    <option value="jobApply">Job Apply</option>
+                                    <option value="etc">ETC.</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="message">MESSAGE</label>
+                        </th>
+                        <td>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please Input Here"></textarea>
+                        </td>
+                    </tr>
+                    <th>
+                        <input type="submit" value="SUBMIT">
+                    </th>
+                </table>
+            </fieldset>            
+        </div>
+    </section> -->
 
 
     <!-- banner -->

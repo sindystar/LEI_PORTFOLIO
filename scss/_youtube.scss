@@ -2,3 +2,64 @@
 $keycolor :rgb(2, 126, 196);
 $tablet : 1179px;
 $mobile : 539px;
+
+.sub_visual {
+    background: skyblue;
+}
+.vidList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    article {
+        width: 48%;
+        height: 400px;
+        bottom: 1px solid #555;
+        margin-bottom: 40px;
+        .pic {
+            display: block;
+            width: 100%;
+            height: 60%;
+            padding: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .con {
+            width: 100%;
+            height: 40%;
+            padding: 20px;
+            h2 {
+                font-size: 20px;
+                color: #444;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 16px;
+                color: $keycolor;
+            }
+        }
+    }
+    figure.pop {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top :0;
+        background: rgba(0,0,0,0.8);
+        overflow: hidden;
+        padding: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btnClose {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
