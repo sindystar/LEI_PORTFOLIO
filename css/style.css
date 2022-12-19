@@ -2,7 +2,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 
 ul,
@@ -15,16 +14,16 @@ a {
   text-decoration: none;
 }
 
-.hodden {
-  position: absolute;
-  top: -99999px;
-  opacity: 0;
-}
-
 .wrap::after {
   content: "";
   display: block;
   clear: both;
+}
+
+.hidden {
+  position: absolute;
+  top: -99999px;
+  opacity: 0;
 }
 
 #header {
