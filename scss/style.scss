@@ -178,59 +178,59 @@ a {
                 }
             }
         }
-        .menuMo {
-            width: 270px;
-            height: 100vh;
-            background: rgb(134, 195, 241);
-            position: fixed;
-            top:0;
-            left: -270px;
-            padding: 35px 30px;
-            z-index: 10;
-            transition: 0.5s;
-            // display: none;
-            &.on {
-                left: 0;
-            }
-            h1 {
-                padding-bottom: 30px;
-                margin-bottom: 20px;
-                border-bottom: 1px solid #fff;
-                text-align: center;
-                a {
-                    display: block;
-                    font-size: 30px;
-                    color: #fff;
-                    // text-align: center;
-                }
-                span {
-                    display: block;
-                    font-size: 12px;
-                    letter-spacing: 1px;
-                    color: #fff;
-                    // text-align: center;
-                }
-            }
-            #gnbMo {
-                li { 
-                    // text-align: center;  //뭐가 문제일까?? 지웠다 썼다 컴퓨터 껐다 켰다 ....할수 있는건 다했다....
-                    a {
-                        display: block;
-                        // position: relative;
-                        // display: flex;
-                        // justify-content: center;
-                        text-align: center;
-                        width: 100%;
-                        padding: 20px 0;
-                        // margin: 0 auto;
-                        border-bottom: 1px solid #fff;
-                        font-size: 0px;
-                        color: #fff;
-                        
-                    }
-                }
-            }
-        }
+        // .menuMo {
+        //     width: 270px;
+        //     height: 100vh;
+        //     background: rgb(134, 195, 241);
+        //     position: fixed;    // fixed로!!
+        //     top:0;
+        //     left: -270px;
+        //     // padding: 35px 30px;
+        //     z-index: 10;
+        //     transition: 0.5s;
+        //     // display: none;
+        //     &.on {
+        //         left: 0;
+        //     }
+        //     h1 {
+        //         padding-top: 30px;
+        //         margin-bottom: 20px;
+        //         border-bottom: 1px solid #fff;
+        //         text-align: center;
+        //         a {
+        //             display: block;
+        //             font-size: 24px;
+        //             color: #fff;
+        //             // text-align: center;
+        //         }
+        //         span {
+        //             display: block;
+        //             font-size: 12px;
+        //             letter-spacing: 1px;
+        //             color: #fff;
+        //             // text-align: center;
+        //         }
+        //     }
+        //     #gnbMo {
+        //         li { 
+        //             // text-align: center;  
+        //             //뭐가 문제일까?? 지웠다 썼다 컴퓨터 껐다 켰다 ....할수 있는건 다했다....
+        //             a {
+        //                 display: block;
+        //                 // position: relative;
+        //                 // display: flex;
+        //                 // justify-content: center;
+        //                 width: 100%;
+        //                 padding: 20px 0;
+        //                 // margin: 0 auto;
+        //                 border-bottom: 1px solid #fff;
+        //                 font: bold 14px/1 "arial";
+        //                 color: #fff;
+        //                 text-align: center;                        
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 
