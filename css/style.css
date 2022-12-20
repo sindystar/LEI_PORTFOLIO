@@ -411,6 +411,111 @@ table {
     opacity: 1;
   }
 }
+.community .sub_visual {
+  background: skyblue;
+}
+.community .inner {
+  overflow: hidden;
+}
+.community .inner #visual {
+  width: 100%;
+  height: 550px;
+  border: 3px solid #777;
+  border-radius: 5px;
+  background: no-repeat center/cover;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.community .inner table {
+  width: 100%;
+  border-bottom: 2px solid rgb(2, 126, 196);
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.community .inner table tr:nth-of-type(even) {
+  background: #fff;
+}
+.community .inner table tr:hover {
+  background: rgb(235, 247, 254);
+}
+.community .inner table tr th {
+  padding: 15px;
+  background: rgb(2, 126, 196);
+  color: #fff;
+}
+.community .inner table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.community .inner table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.community .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.community .inner table tr td {
+  padding: 13px;
+  border-bottom: 1px solid rgb(2, 126, 196);
+  text-align: center;
+}
+.community .inner table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.community .inner table tr td:nth-of-type(3) {
+  font-weight: 500;
+}
+.community .inner table tr td a {
+  color: #555;
+  line-height: 1.4;
+}
+.community .inner .pagination {
+  width: 100%;
+  text-align: center;
+}
+.community .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .pagination .prev {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: rgb(2, 126, 196);
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.community .inner .pagination .next {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: rgb(2, 126, 196);
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.community .inner .pagination .numbers {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.community .inner .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(2, 126, 196);
+  font: bold 12px/30px "arial";
+  color: rgb(2, 126, 196);
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.community .inner .pagination .numbers a:hover {
+  background: rgb(2, 126, 196);
+  color: #fff;
+}
+
 .youtube .sub_visual {
   background: skyblue;
 }
