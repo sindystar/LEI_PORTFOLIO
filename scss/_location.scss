@@ -2,3 +2,20 @@
 $keycolor :rgb(2, 126, 196);
 $tablet : 1179px;
 $mobile : 539px;
+
+
+.location {
+	width: 100%; //전체너비를 뜻하는 100%
+	.sub_visual {
+        background: skyblue;
+    }
+	.inner {
+		#map {
+			width: 100%; //여기map의 100% 1180
+			height: 550px;
+			border: 3px solid $keycolor;
+			border-radius: 5px;
+			margin-top: 60px;
+		}   margin-bottom: 100px ;
+	}
+}

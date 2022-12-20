@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-.hodden {
+.hidden {   //오타 조심! 
     position: absolute;
     top : -99999px;
     opacity: 0;
@@ -22,4 +22,11 @@ a {
     content: "";
     display: block;
     clear: both;
+}
+
+fieldset {
+	border: none;
+}
+table {
+	border-collapse: collapse;
 }

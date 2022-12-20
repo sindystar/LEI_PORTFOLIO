@@ -3,63 +3,67 @@ $keycolor :rgb(2, 126, 196);
 $tablet : 1179px;
 $mobile : 539px;
 
-.sub_visual {
-    background: skyblue;
-}
-.vidList {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    article {
-        width: 48%;
-        height: 400px;
-        bottom: 1px solid #555;
-        margin-bottom: 40px;
-        .pic {
-            display: block;
-            width: 100%;
-            height: 60%;
-            padding: 10px;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        .con {
-            width: 100%;
-            height: 40%;
-            padding: 20px;
-            h2 {
-                font-size: 20px;
-                color: #444;
-                margin-bottom: 15px;
-            }
-            p {
-                font-size: 16px;
-                color: $keycolor;
-            }
-        }
-    }
-    figure.pop {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top :0;
-        background: rgba(0,0,0,0.8);
-        overflow: hidden;
-        padding: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .btnClose {
-            position: absolute;
-            top: 50px;
-            right: 50px;
-            color: #fff;
-            cursor: pointer;
-        }
-    }
+.youtube {
+	.sub_visual {
+		background: skyblue;
+	}
+	.inner {
+		.vidList {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: flex-start;
+			margin-top: 20px;
+			article {
+				width: 48%;
+				// 48%의 너비값을 주고,부모인 vidList에는 space-between을 적용 하였기 때문에 양쪽 끝에 잘 배치가 되고 사이값으로 4%의 간격이 자연스럽게 적용되서 따로 마진은 필요가 없음
+				height: 300px;
+				border: 2px solid $keycolor;
+				border-radius: 3px;
+				margin-bottom: 40px;
+				padding : 5px 5px 5px;
+				// padding-left: 10px;
+				.pic {
+					display: block;
+					width: 100%;
+					height: 85%;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				p {
+					font: 14px/1.4;
+					font-weight: 600;
+					color: $keycolor;
+
+					margin-top: 10px;
+					margin-left: 20px;
+				}
+			}
+
+			figure.pop {
+				width: 100%;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.8);
+				overflow: hidden;
+				padding: 5vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.btnClose {
+					position: absolute;
+					top: 50px;
+					right: 50px;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }

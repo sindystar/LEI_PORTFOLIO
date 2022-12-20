@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 * {
   margin: 0px;
@@ -16,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-.hodden {
+.hidden {
   position: absolute;
   top: -99999px;
   opacity: 0;
@@ -26,6 +25,14 @@ a {
   content: "";
   display: block;
   clear: both;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 #header_sub {
@@ -404,53 +411,48 @@ a {
     opacity: 1;
   }
 }
-.sub_visual {
+.youtube .sub_visual {
   background: skyblue;
 }
-
-.vidList {
+.youtube .inner .vidList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
+  margin-top: 20px;
 }
-.vidList article {
+.youtube .inner .vidList article {
   width: 48%;
-  height: 400px;
-  bottom: 1px solid #555;
+  height: 300px;
+  border: 2px solid rgb(2, 126, 196);
+  border-radius: 3px;
   margin-bottom: 40px;
+  padding: 5px 5px 5px;
 }
-.vidList article .pic {
+.youtube .inner .vidList article .pic {
   display: block;
   width: 100%;
-  height: 60%;
-  padding: 10px;
+  height: 85%;
 }
-.vidList article .pic img {
+.youtube .inner .vidList article .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.vidList article .con {
-  width: 100%;
-  height: 40%;
-  padding: 20px;
-}
-.vidList article .con h2 {
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 15px;
-}
-.vidList article .con p {
-  font-size: 16px;
+.youtube .inner .vidList article p {
+  font: 14px/1.4;
+  font-weight: 600;
   color: rgb(2, 126, 196);
+  margin-top: 10px;
+  margin-left: 20px;
 }
-.vidList figure.pop {
+.youtube .inner .vidList figure.pop {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   padding: 5vw;
@@ -458,7 +460,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.vidList figure.pop .btnClose {
+.youtube .inner .vidList figure.pop .btnClose {
   position: absolute;
   top: 50px;
   right: 50px;
@@ -474,7 +476,7 @@ a {
 }
 .gallery .inner #wrap {
   width: 100%;
-  padding: 50px;
+  padding: 40px;
   overflow: hidden;
 }
 .gallery .inner #wrap #list {
@@ -495,90 +497,143 @@ a {
 .gallery .inner #wrap #list .item div {
   width: 100%;
   background: #fff;
-  padding: 20px;
-  border-radius: 50px;
+  padding: 10px;
+  border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 .gallery .inner #wrap #list .item div a img {
   width: 100%;
 }
 .gallery .inner #wrap #list .item div p {
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
   color: #777;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 .gallery .inner #wrap #list.on {
   opacity: 1;
   transform: translateY(0px);
 }
 
-.join {
+.location {
   width: 100%;
-  padding: 150px 0;
 }
+.location .sub_visual {
+  background: skyblue;
+}
+.location .inner {
+  margin-bottom: 100px;
+}
+.location .inner #map {
+  width: 100%;
+  height: 550px;
+  border: 3px solid rgb(2, 126, 196);
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
 .join .sub_visual {
   background: skyblue;
 }
-.join .inner {
-  width: 1180px;
-  margin: 0 auto;
+.join .inner h2 {
+  font: bold 18px/1;
+  color: rgb(2, 126, 196);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.join .inner #terms {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  font: 12px/1.3;
+  color: #888;
+  background: #eee;
+  margin-bottom: 20px;
+  resize: none;
+}
+.join .inner .agreement {
+  margin-bottom: 70px;
+}
+.join .inner .agreement label[for=agree] {
+  font-size: 12px;
 }
 .join .inner table {
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
-}
-.join .inner table th,
-.join .inner table td {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 25px;
+  width: 100%;
+  border-top: 2px solid rgb(2, 126, 196);
+  border-bottom: 2px solid rgb(2, 126, 196);
 }
 .join .inner table th {
   width: 20%;
+  text-align: left;
+  font: bold 14px/1 "arial";
+  color: rgb(2, 126, 196);
+  padding: 20px 30px;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background: rgb(230, 242, 250);
 }
-.join .inner table th input[type=reset],
-.join .inner table th input[type=submit] {
-  width: 30%;
-  height: 40px;
-  border: 1px solid #333;
-  margin: 10px;
-  font: bold 14px/40px "arial";
-  color: #555;
-  cursor: pointer;
-  transition: 0.5s;
+.join .inner table th:last-child {
+  background: #fff;
+  text-align: center;
+  border-right: none;
 }
-.join .inner table th input[type=reset]:hover,
-.join .inner table th input[type=submit]:hover {
-  background: #333;
+.join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
+  width: 150px;
+  height: 34px;
+  border: none;
+  border-radius: 3px;
+  background: rgb(2, 126, 196);
+  font: bold 14px/1 "arial";
   color: #fff;
+  margin-right: 10px;
 }
 .join .inner table td {
-  border-left: 1px solid #aaa;
+  border-bottom: 1px solid #bbb;
+  font-size: 0;
 }
 .join .inner table td input[type=text],
-.join .inner table td input[type=password],
-.join .inner table td select {
-  width: 40%;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 10px;
-  border: 1px solid #aaa;
+.join .inner table td input[type=password] {
+  width: 30%;
+  height: 30px;
+  border: 1px solid #bbb;
+  background: rgb(242, 246, 249);
+  padding-left: 20px;
+  margin-left: 20px;
 }
-.join .inner table td input[type=radio],
-.join .inner table td input[type=checkbox] {
-  margin-right: 30px;
+.join .inner table td input[type=checkbox],
+.join .inner table td input[type=radio] {
+  margin-right: 5px;
 }
-.join .inner table td textarea {
-  resize: none;
-  width: 60%;
+.join .inner table td label {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.join .inner table td .hobbyTxt,
+.join .inner table td .genderTxt {
+  font: 12px/1 "arial";
+  color: rgb(2, 126, 196);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.join .inner table td select#company {
+  width: 20%;
+  height: 30px;
+  border: 1px solid #bbb;
+  background: rgb(242, 246, 249);
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.join .inner table td textarea#comments {
+  width: 100%;
   height: 150px;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 10px;
-  border: 1px solid #aaa;
-}
-.join .inner table td p {
-  font: 11px/1 "맑은 고딕";
-  color: hotpink;
-  margin-top: 5px;
+  border: 1px solid #bbb;
+  background: rgb(242, 246, 249);
+  padding: 20px;
+  resize: none;
 }
 
 #header {
