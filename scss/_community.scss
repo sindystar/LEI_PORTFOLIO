@@ -1,31 +1,31 @@
-// Design Guide 
-$keycolor :rgb(2, 126, 196);
-$tablet : 1179px;
-$mobile : 539px;
+// Design Guide
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
 
 .community {
-    .sub_visual {
-        background: skyblue;
-    }
-    .inner {
-        overflow: hidden;
+	.sub_visual {
+		background: skyblue;
+	}
+	.inner {
+		overflow: hidden;
 		#visual {
-			width: 100%; 
+			width: 100%;
 			height: 550px;
 			border: 3px solid #777;
 			border-radius: 5px;
-            background: no-repeat center/cover;
-            background: #777;
-            margin-top: 60px;
-            margin-bottom: 100px;
-            video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0.8;
-            }
+			background: no-repeat center/cover;
+			background: #777;
+			margin-top: 60px;
+			margin-bottom: 100px;
+			video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: 0.8;
+			}
 		}
-        table {
+		table {
 			width: 100%;
 			border-bottom: 2px solid $keycolor;
 			border-collapse: collapse;
@@ -72,7 +72,7 @@ $mobile : 539px;
 			width: 100%;
 			text-align: center;
 			&::after {
-				content: "";
+				content: '';
 				display: block;
 				clear: both;
 			}
@@ -81,20 +81,22 @@ $mobile : 539px;
 				display: block;
 				width: 30px;
 				height: 30px;
-				background: $keycolor;
-				color: #eee;
-				font-size: 20px;
+				background: #fff;
+				color: $keycolor;
+				font-size: 24px;
 				text-align: center;
+				margin-top: -10px;
 			}
 			.next {
 				float: right;
 				display: block;
 				width: 30px;
 				height: 30px;
-				background: $keycolor;
-				color: #eee;
-				font-size: 20px;
+				background: #fff;
+				color: $keycolor;
+				font-size: 24px;
 				text-align: center;
+				margin-top: -10px;
 			}
 			.numbers {
 				display: inline-block;
@@ -104,8 +106,9 @@ $mobile : 539px;
 					display: inline-block;
 					width: 30px;
 					height: 30px;
-					border: 1px solid $keycolor;
-					font: bold 12px/30px "arial";
+					// border: 1px solid $keycolor;
+					// border-radius: 50%;
+					font: bold 12px/30px 'arial';
 					color: $keycolor;
 					margin: 0 5px;
 					transition: 0.5s;
@@ -115,7 +118,6 @@ $mobile : 539px;
 					}
 				}
 			}
-		}   		            
+		}
 	}
-
 }

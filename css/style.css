@@ -488,20 +488,22 @@ table {
   display: block;
   width: 30px;
   height: 30px;
-  background: rgb(2, 126, 196);
-  color: #eee;
-  font-size: 20px;
+  background: #fff;
+  color: rgb(2, 126, 196);
+  font-size: 24px;
   text-align: center;
+  margin-top: -10px;
 }
 .community .inner .pagination .next {
   float: right;
   display: block;
   width: 30px;
   height: 30px;
-  background: rgb(2, 126, 196);
-  color: #eee;
-  font-size: 20px;
+  background: #fff;
+  color: rgb(2, 126, 196);
+  font-size: 24px;
   text-align: center;
+  margin-top: -10px;
 }
 .community .inner .pagination .numbers {
   display: inline-block;
@@ -512,7 +514,6 @@ table {
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 1px solid rgb(2, 126, 196);
   font: bold 12px/30px "arial";
   color: rgb(2, 126, 196);
   margin: 0 5px;
@@ -783,7 +784,7 @@ table {
   letter-spacing: 1px;
 }
 #header .inner > h1 > a {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   color: #fff;
 }
@@ -798,7 +799,7 @@ table {
 #header .inner .menuWeb #gnb li a {
   display: block;
   padding: 12px 18px;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
