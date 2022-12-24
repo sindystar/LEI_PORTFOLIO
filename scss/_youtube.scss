@@ -18,8 +18,8 @@ $mobile: 539px;
 			article {
 				width: 32.3%;
 				height: 340px;
-				border: 1px solid #ddd;
-				box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+				border: 1px solid $keycolor;
+				box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 				border-radius: 5px;
 				margin-bottom: 40px;
 				// padding: 5px 5px 5px;
