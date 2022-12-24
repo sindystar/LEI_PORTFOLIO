@@ -642,9 +642,6 @@ table {
   .youtube .inner .vidList article:nth-of-type(2n) {
     margin-right: 0px;
   }
-  .youtube .inner .vidList article .pic {
-    height: 20vmax;
-  }
 }
 @media screen and (max-width: 539px) {
   .youtube .inner {

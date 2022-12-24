@@ -70,6 +70,33 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		level: 3, // 지도의 확대 레벨
 	};
 
+/* 지도타입 전환 */
+var mapTypeControl = new kakao.maps.MapTypeControl();
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+/* 확대축소이동 막기 */
+let drag = true;
+let zoom = true;
+
+setDraggable(drag);
+setZoomable(zoom);
+
+function setDraggable(draggable) {
+	map.setDraggable(draggable);
+}
+function setZoomable(zoomable) {
+	map.setZoomable(zoomable);
+}
+
+/* 지도 출력시 좌표값을 중간으로 고정시키는 함수 */
+function moveTo(target) {
+	var moveLatlng = target;
+	map.setCenter(moveLatlng);
+}
+
 /*
 카카오맵 / location 
 
