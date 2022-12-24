@@ -56,3 +56,39 @@ $mobile: 539px;
 		}
 	}
 }
+//tablet
+@media screen and (max-width: $tablet) {
+	.gallery {
+		.inner {
+			width: 100%;
+			padding: 0px;
+			#wrap {
+				width: 100%;
+				#list {
+					.item {
+						width: 49%;
+						&:nth-of-type(2n) {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	.gallery {
+		.inner {
+			width: 100%;
+			#wrap {
+				// width: 100%;
+				#list {
+					.item {
+						width: 100%;
+						// margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

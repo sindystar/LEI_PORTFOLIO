@@ -1,14 +1,13 @@
 // design Guide
-$keycolor :rgb(2, 126, 196);
-$tablet : 1179px;
-$mobile : 539px;
-
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
 
 .location {
 	width: 100%; //전체너비를 뜻하는 100%
 	.sub_visual {
-        background: skyblue;
-    }
+		background: skyblue;
+	}
 	.inner {
 		#map {
 			width: 100%; //여기map의 100% 1180
@@ -16,6 +15,21 @@ $mobile : 539px;
 			border: 3px solid $keycolor;
 			border-radius: 5px;
 			margin-top: 60px;
-		}   margin-bottom: 100px ;
+		}
+		margin-bottom: 100px;
+	}
+}
+//tablet
+@media screen and (max-width: $tablet) {
+	// location
+	.location {
+		.inner {
+			width: 100%;
+			padding: 0px 30px;
+			margin: 0 auto;
+		}
+		#map {
+			width: 100%;
+		}
 	}
 }

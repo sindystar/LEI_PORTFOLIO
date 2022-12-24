@@ -137,12 +137,12 @@ table {
   opacity: 0;
 }
 #header_sub .inner .menuMo {
-  width: 220px;
+  width: 270px;
   height: 100vh;
   background: rgb(134, 195, 241);
   position: fixed;
   top: 0;
-  left: -220px;
+  left: -270px;
   padding: 20px 30px;
   z-index: 10;
   transition: 0.5s;
@@ -396,32 +396,24 @@ table {
 }
 
 @media screen and (max-width: 1179px) {
-  .department .division {
-    height: 60vw;
-  }
-  .department .division .inner {
+  .department .inner {
     width: 100%;
+    padding: 0px 30px;
   }
-  .department .division .inner .wrap article {
+  .department .inner .wrap article {
     width: 49%;
     margin-right: 2%;
   }
-  .department .division .inner .wrap article:nth-of-type(2n) {
+  .department .inner .wrap article:nth-of-type(2n) {
     margin-right: 0;
   }
-  .department .division .inner .wrap article .pic {
-    height: 20vmax;
+  .department .inner .wrap article .pic {
+    height: 25vmax;
   }
 }
 @media screen and (max-width: 539px) {
-  .department .division {
-    background: none;
-    height: auto;
-  }
-  .department .division .div_tree {
-    position: relative;
-    top: 0;
-    opacity: 1;
+  .department .inner .wrap article {
+    width: 100%;
   }
 }
 .community .sub_visual {
@@ -433,12 +425,12 @@ table {
 .community .inner #visual {
   width: 100%;
   height: 500px;
-  border: 3px solid #777;
+  border: 2px solid #777;
   border-radius: 5px;
   background: no-repeat center/cover;
   background: #777;
   margin-top: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 .community .inner #visual video {
   width: 100%;
@@ -474,14 +466,14 @@ table {
 }
 .community .inner table tr td {
   padding: 13px;
-  border-bottom: 1px solid rgb(2, 126, 196);
+  border-bottom: 1px solid #ddd;
   text-align: center;
+  font-size: 14px;
+  font-family: "";
+  color: #555;
 }
 .community .inner table tr td:nth-of-type(2) {
   text-align: left;
-}
-.community .inner table tr td:nth-of-type(3) {
-  font-weight: 500;
 }
 .community .inner table tr td a {
   color: #555;
@@ -490,6 +482,8 @@ table {
 .community .inner .pagination {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .community .inner .pagination::after {
   content: "";
@@ -503,9 +497,8 @@ table {
   height: 30px;
   background: #fff;
   color: rgb(2, 126, 196);
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  margin-top: -10px;
 }
 .community .inner .pagination .next {
   float: right;
@@ -514,9 +507,8 @@ table {
   height: 30px;
   background: #fff;
   color: rgb(2, 126, 196);
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  margin-top: -10px;
 }
 .community .inner .pagination .numbers {
   display: inline-block;
@@ -527,7 +519,8 @@ table {
   display: inline-block;
   width: 30px;
   height: 30px;
-  font: bold 12px/30px "arial";
+  border-radius: 50%;
+  font: bold 11px/30px "arial";
   color: rgb(2, 126, 196);
   margin: 0 5px;
   transition: 0.5s;
@@ -536,7 +529,35 @@ table {
   background: rgb(2, 126, 196);
   color: #fff;
 }
+.community .inner .pagination .numbers a:hover.on {
+  color: rgb(2, 126, 196);
+}
 
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .community .inner #visual {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .community .inner table tr th:nth-of-type(1) {
+    width: 13%;
+  }
+  .community .inner table tr th:nth-of-type(3) {
+    width: 20%;
+  }
+  .community .inner table tr th:nth-of-type(4) {
+    width: 0%;
+    display: none;
+  }
+  .community .inner table tr td:nth-of-type(4) {
+    display: none;
+  }
+}
 .youtube .sub_visual {
   background: skyblue;
 }
@@ -546,20 +567,20 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 .youtube .inner .vidList article {
-  width: 48%;
-  height: 350px;
-  border: 2px solid rgb(2, 126, 196);
-  border-radius: 3px;
+  width: 32.3%;
+  height: 340px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   margin-bottom: 40px;
-  padding: 5px 5px 5px;
 }
 .youtube .inner .vidList article .pic {
   display: block;
   width: 100%;
-  height: 80%;
+  height: 75%;
 }
 .youtube .inner .vidList article .pic img {
   width: 100%;
@@ -569,17 +590,17 @@ table {
 .youtube .inner .vidList article .con {
   width: 100%;
   height: 20%;
-  padding: 10px;
+  padding: 10px 20px 0px;
 }
 .youtube .inner .vidList article .con h2 {
   font-size: 14px;
   font-weight: 800;
-  color: #444;
+  color: rgb(2, 126, 196);
   margin-bottom: 0px;
 }
 .youtube .inner .vidList article .con p {
   font-size: 12px;
-  color: #666;
+  color: #888;
   font-weight: 600;
   margin-bottom: 0px;
 }
@@ -609,6 +630,30 @@ table {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1179px) {
+  .youtube .inner {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .youtube .inner .vidList article {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .youtube .inner .vidList article:nth-of-type(2n) {
+    margin-right: 0px;
+  }
+  .youtube .inner .vidList article .pic {
+    height: 20vmax;
+  }
+}
+@media screen and (max-width: 539px) {
+  .youtube .inner {
+    width: 100%;
+  }
+  .youtube .inner .vidList article {
+    width: 100%;
+  }
+}
 .gallery {
   background: #eee;
 }
@@ -658,6 +703,29 @@ table {
   transform: translateY(0px);
 }
 
+@media screen and (max-width: 1179px) {
+  .gallery .inner {
+    width: 100%;
+    padding: 0px;
+  }
+  .gallery .inner #wrap {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list .item {
+    width: 49%;
+  }
+  .gallery .inner #wrap #list .item:nth-of-type(2n) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  .gallery .inner {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list .item {
+    width: 100%;
+  }
+}
 .location {
   width: 100%;
 }
@@ -675,21 +743,21 @@ table {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1179px) {
+  .location .inner {
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0 auto;
+  }
+  .location #map {
+    width: 100%;
+  }
+}
 .join .sub_visual {
   background: skyblue;
 }
 .join .inner h1 {
   margin-bottom: 70px;
-}
-.join .inner #terms {
-  width: 100%;
-  height: 100px;
-  padding: 20px;
-  font: 12px/1.3;
-  color: #888;
-  background: #eee;
-  margin-bottom: 20px;
-  resize: none;
 }
 .join .inner .agreement {
   margin-bottom: 70px;
@@ -734,7 +802,7 @@ table {
 }
 .join .inner table td input[type=text],
 .join .inner table td input[type=password] {
-  width: 30%;
+  width: 60%;
   height: 30px;
   border: 1px solid #eee;
   background: rgb(242, 246, 249);
@@ -774,6 +842,12 @@ table {
   resize: none;
 }
 
+@media screen and (max-width: 1179px) {
+  .join .inner {
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
 #header {
   width: 100%;
   position: absolute;
@@ -809,7 +883,7 @@ table {
 #header .inner .menuWeb #gnb li a {
   display: block;
   padding: 12px 18px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1106,7 +1180,6 @@ table {
 #brand .inner .wrap article:nth-of-type(4) img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
   object-fit: cover;
 }
 #brand .inner .wrap article:nth-of-type(4)::after {

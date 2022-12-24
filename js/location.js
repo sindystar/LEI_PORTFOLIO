@@ -1,44 +1,43 @@
 //38f993fec453c589a1a04dc16e1f4318
 
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-  mapOption = {
-    center: new kakao.maps.LatLng(37.5704837,126.9705674), // 지도의 중심좌표
-    level: 3 // 지도의 확대 레벨
-  };
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+	mapOption = {
+		center: new kakao.maps.LatLng(37.5704837, 126.9705674), // 지도의 중심좌표
+		level: 3, // 지도의 확대 레벨
+	};
 
 // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-var map = new kakao.maps.Map(mapContainer, mapOption); 
+var map = new kakao.maps.Map(mapContainer, mapOption);
 
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapOption = { 
-        center: new kakao.maps.LatLng(37.5704837,126.9705674), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+	mapOption = {
+		center: new kakao.maps.LatLng(37.5704837, 126.9705674), // 지도의 중심좌표
+		level: 3, // 지도의 확대 레벨
+	};
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-function setCenter() {            
-    // 이동할 위도 경도 위치를 생성합니다 
-    var moveLatLon = new kakao.maps.LatLng(37.5704837,126.9705674);
-    //다른 지역을 지도에 표시 하려면 latlng의 위도 경도의 값을 변경하면 됩니다.
-    // 위도, 경도는 구글맵을 이용해서 알아볼수 있습니다.
-    
-    // 지도 중심을 이동 시킵니다
-    map.setCenter(moveLatLon);
+function setCenter() {
+	// 이동할 위도 경도 위치를 생성합니다
+	var moveLatLon = new kakao.maps.LatLng(37.5704837, 126.9705674);
+	//다른 지역을 지도에 표시 하려면 latlng의 위도 경도의 값을 변경하면 됩니다.
+	// 위도, 경도는 구글맵을 이용해서 알아볼수 있습니다.
+
+	// 지도 중심을 이동 시킵니다
+	map.setCenter(moveLatLon);
 }
 
-
 function panTo() {
-    // 이동할 위도 경도 위치를 생성합니다 
-    var moveLatLon = new kakao.maps.LatLng(37.5704837,126.9705674);
-    
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
-    map.panTo(moveLatLon);            
-}        
+	// 이동할 위도 경도 위치를 생성합니다
+	var moveLatLon = new kakao.maps.LatLng(37.5704837, 126.9705674);
 
-// // 마커가 표시될 위치입니다 
-// var markerPosition  = new kakao.maps.LatLng(37.459244, 126.7522197); 
+	// 지도 중심을 부드럽게 이동시킵니다
+	// 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+	map.panTo(moveLatLon);
+}
+
+// // 마커가 표시될 위치입니다
+// var markerPosition  = new kakao.maps.LatLng(37.459244, 126.7522197);
 
 // // 마커를 생성합니다
 // var marker = new kakao.maps.Marker({
@@ -46,27 +45,30 @@ function panTo() {
 // });
 
 // // 마커가 지도 위에 표시되도록 설정합니다
-// marker.setMap(map);  
+// marker.setMap(map);
 
+var imageSrc = 'img/marker1.png', // 마커이미지의 주소입니다
+	imageSize = new kakao.maps.Size(200, 85), // 마커이미지의 크기입니다
+	imageOption = { offset: new kakao.maps.Point(100, 99) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
-var imageSrc = 'img/marker1.png', // 마커이미지의 주소입니다    
-    imageSize = new kakao.maps.Size(200, 85), // 마커이미지의 크기입니다
-    imageOption = {offset: new kakao.maps.Point(100, 99)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-    
 // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
 var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-    markerPosition = new kakao.maps.LatLng(37.5704837,126.9705674); // 마커가 표시될 위치입니다
+	markerPosition = new kakao.maps.LatLng(37.5704837, 126.9705674); // 마커가 표시될 위치입니다
 
 // 마커를 생성
 var marker = new kakao.maps.Marker({
-    position: markerPosition, 
-    image: markerImage // 마커이미지 설정 
+	position: markerPosition,
+	image: markerImage, // 마커이미지 설정
 });
 
 // 마커가 지도 위에 표시되도록 설정
-marker.setMap(map); 
+marker.setMap(map);
 
-
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+	mapOption = {
+		center: new kakao.maps.LatLng(37.5704837, 126.9705674), // 지도의 중심좌표
+		level: 3, // 지도의 확대 레벨
+	};
 
 /*
 카카오맵 / location 
@@ -87,4 +89,3 @@ marker.setMap(map);
 9. sample / 오버레이 / 마커생성하기 or 다른 이미지로 마커 생성하기 
 
 */
-

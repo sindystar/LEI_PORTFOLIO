@@ -57,20 +57,18 @@ $mobile: 539px;
 @media screen and (max-width: $tablet) {
 	// 미디어쿼리 확인 필!
 	.department {
-		.division {
-			height: 60vw;
-			.inner {
-				width: 100%;
-				.wrap {
-					article {
-						width: 49%;
-						margin-right: 2%;
-						&:nth-of-type(2n) {
-							margin-right: 0;
-						}
-						.pic {
-							height: 20vmax;
-						}
+		.inner {
+			width: 100%;
+			padding: 0px 30px;
+			.wrap {
+				article {
+					width: 49%;
+					margin-right: 2%;
+					&:nth-of-type(2n) {
+						margin-right: 0;
+					}
+					.pic {
+						height: 25vmax;
 					}
 				}
 			}
@@ -80,13 +78,12 @@ $mobile: 539px;
 
 @media screen and (max-width: $mobile) {
 	.department {
-		.division {
-			background: none;
-			height: auto;
-			.div_tree {
-				position: relative;
-				top: 0;
-				opacity: 1;
+		.inner {
+			// width: 100%;
+			.wrap {
+				article {
+					width: 100%;
+				}
 			}
 		}
 	}
