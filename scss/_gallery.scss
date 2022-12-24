@@ -1,58 +1,58 @@
 // design Guide
-$keycolor :rgb(2, 126, 196);
-$tablet : 1179px;
-$mobile : 539px;
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
 
 .gallery {
-    background: #eee;
-    .sub_visual{
-        background: skyblue;
-    }
-    .inner{
-        #wrap{
-            width: 100%;
-            padding: 40px;
-            overflow: hidden;
-            #list {
-                opacity: 0;  // 전환효과  부드럽게 
-                transform: translateY(100px);
-                transition: 1s;
-                &::after{
-                    content: "";
-                    display: block;
-                    clear: both;
-                }
-                .item {
-                    width: calc(100% / 4);
-                    float: left;
-                    padding: 10px;
-                    div{
-                        width: 100%;
-                        background: #fff;
-                        padding: 10px;
-                        border-radius: 5px;
-                        box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-                        a{
-                            img{
-                                width: 100%;
-                            }
-                        }
-                        p{
-                            font-size: 13px;
-                            font-weight: 600;
-                            color: #777;
-                            margin-top: 10px;
-                            margin-bottom: 12px;
-                            // padding-left: 15px;
-                            text-align: center;
-                        }
-                    }
-                }
-                &.on {
-                    opacity: 1;
-                    transform: translateY(0px);
-                }
-            }
-        }
-    }
+	background: #eee;
+	.sub_visual {
+		background: skyblue;
+	}
+	.inner {
+		#wrap {
+			width: 100%;
+			padding: 40px;
+			overflow: hidden;
+			#list {
+				opacity: 0; // 전환효과  부드럽게
+				transform: translateY(100px);
+				transition: 1s;
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				.item {
+					width: calc(100% / 4);
+					float: left;
+					padding: 10px;
+					div {
+						width: 100%;
+						background: #fff;
+						padding: 10px;
+						border-radius: 5px;
+						box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+						a {
+							img {
+								width: 100%;
+							}
+						}
+						p {
+							font-size: 13px;
+							font-weight: 600;
+							color: #777;
+							margin-top: 10px;
+							margin-bottom: 12px;
+							// padding-left: 15px;
+							text-align: center;
+						}
+					}
+				}
+				&.on {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+			}
+		}
+	}
 }

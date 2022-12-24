@@ -432,13 +432,13 @@ table {
 }
 .community .inner #visual {
   width: 100%;
-  height: 550px;
+  height: 500px;
   border: 3px solid #777;
   border-radius: 5px;
   background: no-repeat center/cover;
   background: #777;
-  margin-top: 60px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 .community .inner #visual video {
   width: 100%;
@@ -546,7 +546,7 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .youtube .inner .vidList article {
   width: 48%;
@@ -678,11 +678,8 @@ table {
 .join .sub_visual {
   background: skyblue;
 }
-.join .inner h2 {
-  font-size: 22px;
-  color: rgb(2, 126, 196);
-  margin-bottom: 20px;
-  margin-top: 20px;
+.join .inner h1 {
+  margin-bottom: 70px;
 }
 .join .inner #terms {
   width: 100%;
