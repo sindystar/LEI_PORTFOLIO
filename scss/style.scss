@@ -21,12 +21,10 @@ $mobile: 539px;
 	top: 0;
 	left: 0;
 	z-index: 9;
-	// background: #999;
 	.inner {
 		width: 1180px;
 		height: 100px;
 		margin: 0 auto;
-		// position: fixed; //풀화면
 		position: relative;
 		> h1 {
 			position: absolute;
@@ -36,7 +34,7 @@ $mobile: 539px;
 			> a {
 				font-size: 30px;
 				font-weight: 600;
-				color: #fff; //풀화면
+				color: #fff; 
 			}
 		}
 		.menuWeb {
@@ -159,7 +157,7 @@ $mobile: 539px;
 					a {
 						display: block;
 						width: 100%;
-						padding: 10px 0;
+						padding: 15px 0;
 						border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
 						font: bold 14px/1;
 						color: #fff;

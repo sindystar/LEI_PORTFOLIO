@@ -174,7 +174,7 @@ table {
 #header_sub .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   font: bold 14px/1;
   color: #fff;
@@ -984,7 +984,7 @@ table {
 #header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   font: bold 14px/1;
   color: #fff;
