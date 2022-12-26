@@ -697,10 +697,10 @@ table {
   width: 100%;
 }
 .gallery .inner #wrap #list .item div p {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: #777;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 12px;
   text-align: center;
 }
