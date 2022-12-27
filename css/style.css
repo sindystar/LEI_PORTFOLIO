@@ -398,6 +398,7 @@ table {
 @media screen and (max-width: 1179px) {
   .department .inner {
     width: 100%;
+    margin-right: 0%;
     padding: 0px 30px;
   }
   .department .inner .wrap article {
