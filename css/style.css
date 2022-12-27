@@ -353,18 +353,11 @@ table {
 }
 .department .wrap {
   width: 100%;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 1s;
 }
 .department .wrap::after {
   content: "";
   display: block;
   clear: both;
-}
-.department .wrap.on {
-  opacity: 1;
-  transform: translateY(0px);
 }
 .department .wrap article {
   width: 380px;
@@ -646,7 +639,7 @@ table {
   }
   .youtube .inner .vidList article {
     width: 49%;
-    margin-right: 2%;
+    margin-right: 0%;
   }
   .youtube .inner .vidList article:nth-of-type(2n) {
     margin-right: 0px;
@@ -745,13 +738,6 @@ table {
   border-radius: 5px;
   margin-top: 60px;
   margin-bottom: 100px;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 1s;
-}
-.location .inner #map.on {
-  opacity: 1;
-  transform: translateY(0px);
 }
 
 @media screen and (max-width: 1179px) {

@@ -15,13 +15,6 @@ $mobile: 539px;
 			display: block;
 			clear: both;
 		}
-		opacity: 0;
-		transform: translateY(100px);
-		transition: 1s;
-		&.on {
-			opacity: 1;
-			transform: translateY(0px);  //전환효과 어디서 줘야 보일까요?
-		}
 		article {
 			width: 380px;
 			float: left;

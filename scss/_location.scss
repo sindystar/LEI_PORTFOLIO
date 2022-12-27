@@ -16,15 +16,7 @@ $mobile: 539px;
 			border-radius: 5px;
 			margin-top: 60px;
 			margin-bottom: 100px;
-			opacity: 0;
-			transform:translateY(100px) ;
-			transition: 1s;
-			&.on {
-				opacity: 1;
-				transform: translateY(0px);
-			}
-		}
-		
+		}		
 	}
 }
 //tablet
