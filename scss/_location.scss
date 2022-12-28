@@ -9,14 +9,20 @@ $mobile: 539px;
 		background: skyblue;
 	}
 	.inner {
-		#map {
+		
+		.mapinfo{
+			background: rgb(124, 175, 251);
+			#map {
 			width: 100%; //여기map의 100% 1180
-			height: 550px;
+			height: 550px;			
 			border: 2px solid $keycolor;
 			border-radius: 5px;
 			margin-top: 60px;
 			margin-bottom: 100px;
-		}		
+			filter:  invert(1) grayscale(0.9) brightness(0.8);
+			opacity: 0.6;
+			}
+		}				
 	}
 }
 //tablet
@@ -28,8 +34,10 @@ $mobile: 539px;
 			padding: 0px 30px;
 			margin: 0 auto;
 		}
-		#map {
+		.mapinfo {
+			#map {
 			width: 100%;
-		}
+			}
+		}		
 	}
 }

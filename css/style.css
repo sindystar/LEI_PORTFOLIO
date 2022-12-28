@@ -732,13 +732,18 @@ table {
 .location .sub_visual {
   background: skyblue;
 }
-.location .inner #map {
+.location .inner .mapinfo {
+  background: rgb(124, 175, 251);
+}
+.location .inner .mapinfo #map {
   width: 100%;
   height: 550px;
   border: 2px solid rgb(2, 126, 196);
   border-radius: 5px;
   margin-top: 60px;
   margin-bottom: 100px;
+  filter: invert(1) grayscale(0.9) brightness(0.8);
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1179px) {
@@ -747,7 +752,7 @@ table {
     padding: 0px 30px;
     margin: 0 auto;
   }
-  .location #map {
+  .location .mapinfo #map {
     width: 100%;
   }
 }
