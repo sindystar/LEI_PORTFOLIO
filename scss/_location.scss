@@ -22,6 +22,35 @@ $mobile: 539px;
 			filter:  invert(1) grayscale(0.9) brightness(0.8);
 			opacity: 0.6;
 			}
+			.info{
+				width: 200px;
+				height:200px;
+				background: $keycolor;
+				border-radius: 50%;
+				position: absolute;
+				top: calc(50% - 100px);
+				left: calc(50% - 100px);
+				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+				cursor: pointer;
+		transition: 0.5s;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: $keycolor;
+			transform: skewX(-20deg);
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+
+		&.off {
+			opacity: 0;
+			margin-top: -500px;
+		}
+			}
 		}				
 	}
 }

@@ -745,6 +745,33 @@ table {
   filter: invert(1) grayscale(0.9) brightness(0.8);
   opacity: 0.6;
 }
+.location .inner .mapinfo .info {
+  width: 200px;
+  height: 200px;
+  background: rgb(2, 126, 196);
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.location .inner .mapinfo .info::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgb(2, 126, 196);
+  transform: skewX(-20deg);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.location .inner .mapinfo .info.off {
+  opacity: 0;
+  margin-top: -500px;
+}
 
 @media screen and (max-width: 1179px) {
   .location .inner {

@@ -1,4 +1,6 @@
 //38f993fec453c589a1a04dc16e1f4318
+// const mapFrame = document.querySelector('#location');
+// const info = mapFrame.querySelector('.info');
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	mapOption = {
@@ -36,24 +38,24 @@ function panTo() {
 	map.panTo(moveLatLon);
 }
 
-// // 마커가 표시될 위치입니다
-// var markerPosition  = new kakao.maps.LatLng(37.459244, 126.7522197);
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.459244, 126.7522197);
 
-// // 마커를 생성합니다
-// var marker = new kakao.maps.Marker({
-//     position: markerPosition
-// });
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
 
-// // 마커가 지도 위에 표시되도록 설정합니다
-// marker.setMap(map);
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
 
-var imageSrc = 'img/marker1.png', // 마커이미지의 주소입니다
-	imageSize = new kakao.maps.Size(200, 85), // 마커이미지의 크기입니다
-	imageOption = { offset: new kakao.maps.Point(100, 99) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+// var imageSrc = 'img/marker1.png', // 마커이미지의 주소입니다
+// 	imageSize = new kakao.maps.Size(200, 85), // 마커이미지의 크기입니다
+// 	imageOption = { offset: new kakao.maps.Point(100, 99) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
-// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-	markerPosition = new kakao.maps.LatLng(37.5704837, 126.9705674); // 마커가 표시될 위치입니다
+// // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+// var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+// 	markerPosition = new kakao.maps.LatLng(37.5704837, 126.9705674); // 마커가 표시될 위치입니다
 
 // 마커를 생성
 var marker = new kakao.maps.Marker({
@@ -77,6 +79,22 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
+//지도 줌기능 비활성화 (휠이벤트)
+map.setZoomable(false);
+
+//mapInfo패널 이벤트 연결
+// info.addEventListener('click', () => {
+// 	info.classList.add('off');
+// 	map.setCenter(mapOption.center);
+// });
+// mapFrame.addEventListener('mouseleave', () => {
+// 	info.classList.remove('off');
+// });
+
+//브라우저 리사이즈시 지도 항상 가운데 유지
+window.addEventListener('resize', () => {
+	map.setCenter(mapOption.center);
+});
 
 
 /*
