@@ -122,6 +122,7 @@ $mobile: 539px;
 			}
 			> h1 {
 				padding-top: 20px;
+				font-family: 'Open Sans', sans-serif;
 				border-bottom: 1px solid #fff;
 				text-align: center;
 				a {
@@ -145,12 +146,17 @@ $mobile: 539px;
 					a {
 						display: block;
 						width: 100%;
-						padding: 15px 0;
+						padding: 20px 0;
 						border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 						font-family:'Open Sans', sans-serif;
 						font: 14px/1;
 						color: #fff;
 						text-align: center;
+						transition: 0.5s;
+						&:hover {
+							color: rgb(25, 2, 154);
+							// transform: scale(1.1);
+						}
 					}
 				}
 			}

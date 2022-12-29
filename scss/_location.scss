@@ -34,7 +34,7 @@ $mobile: 539px;
 				background: skyblue;
 				border-radius: 50%;
 				position: absolute;
-				top: calc(50% - 80px);
+				top: calc(50% - 80px);    //모니터 사양에 따라 기준점이 달라짐;; 
 				left: calc(50% - 80px);
 				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 				cursor: pointer;

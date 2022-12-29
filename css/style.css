@@ -152,6 +152,7 @@ table {
 }
 #header_sub .inner .menuMo > h1 {
   padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #fff;
   text-align: center;
 }
@@ -175,12 +176,16 @@ table {
 #header_sub .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-family: "Open Sans", sans-serif;
   font: 14px/1;
   color: #fff;
   text-align: center;
+  transition: 0.5s;
+}
+#header_sub .inner .menuMo #gnbMo li a:hover {
+  color: rgb(25, 2, 154);
 }
 
 .content {
@@ -594,7 +599,7 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 49%;
-  height: 40vh;
+  height: 30vh;
 }
 .youtube .inner .vidList article:nth-of-type(2n) {
   margin-right: 0px;
@@ -1033,6 +1038,7 @@ table {
 #header .inner .menuMo > h1 {
   padding-top: 20px;
   border-bottom: 1px solid #fff;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 #header .inner .menuMo > h1 a {
@@ -1053,11 +1059,16 @@ table {
 #header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
-  padding: 15px 0;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Open Sans", sans-serif;
   font: bold 14px/1;
   color: #fff;
   text-align: center;
+  transition: 0.5s;
+}
+#header .inner .menuMo #gnbMo li a:hover {
+  color: rgb(2, 126, 196);
 }
 
 #visual {
