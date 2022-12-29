@@ -35,6 +35,12 @@ $mobile: 539px;
 						a {
 							img {
 								width: 100%;
+								filter: grayscale(1);
+								transition: 0.5s;
+								&:hover {
+									overflow: hidden;
+									filter: grayscale(0);
+								}
 							}
 						}
 						p {

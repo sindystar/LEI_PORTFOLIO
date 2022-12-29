@@ -24,6 +24,11 @@ $mobile: 539px;
 				font-family:'Open Sans', sans-serif;
 				font-size: 24px;
 				color: #fff;
+				transition: 0.3s;
+						&:hover {
+							color: $keycolor;
+							transform: scale(1.2);
+						}
 			}
 		}
 		.menuWeb {
@@ -39,6 +44,7 @@ $mobile: 539px;
 						font-family:'Open Sans', sans-serif;
 						font-size: 12px;
 						color: rgba(255, 255, 255, 0.9);
+						transition: 0.5s;
 						&:hover {
 							color: $keycolor;
 							transform: scale(1.2);
