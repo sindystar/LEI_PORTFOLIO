@@ -771,6 +771,7 @@ table {
 }
 .location .inner .mapinfo .info > h2 span {
   font-size: 25px;
+  border-top: 2px solid aliceblue;
 }
 .location .inner .mapinfo .info::before {
   content: "";
@@ -787,13 +788,6 @@ table {
 .location .inner .mapinfo .info.off {
   opacity: 0;
   margin-top: -500px;
-}
-.location .inner .mapinfo .info::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 1px;
-  color: aliceblue;
 }
 
 @media screen and (max-width: 1179px) {

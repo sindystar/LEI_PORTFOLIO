@@ -28,6 +28,7 @@ $mobile: 539px;
 			opacity: 0.6;
 			}
 			.info{
+				// border-bottom: 1px solid aliceblue;
 				width: 200px;
 				height:200px;
 				background: skyblue;
@@ -48,6 +49,7 @@ $mobile: 539px;
 					z-index: 5;
 					span {
 						font-size: 25px;
+						border-top:2px solid aliceblue ;
 
 					}
 				}
@@ -69,14 +71,7 @@ $mobile: 539px;
 			opacity: 0;
 			margin-top: -500px;
 		}
-		&::after {
-			content: '';
-			display: block;
-			width: 20px;
-			height: 1px;
-			color: aliceblue;
-
-		}
+		
 			}
 		}				
 	}
