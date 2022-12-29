@@ -734,6 +734,9 @@ table {
 }
 .location .inner .mapinfo {
   background: rgb(124, 175, 251);
+  width: 100%;
+  top: calc(75% - 100px);
+  left: calc(50% - 100px);
 }
 .location .inner .mapinfo #map {
   width: 100%;
@@ -748,29 +751,49 @@ table {
 .location .inner .mapinfo .info {
   width: 200px;
   height: 200px;
-  background: rgb(2, 126, 196);
+  background: skyblue;
   border-radius: 50%;
   position: absolute;
-  top: calc(50% - 100px);
+  top: calc(55% - 100px);
   left: calc(50% - 100px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: 0.5s;
+}
+.location .inner .mapinfo .info > h2 {
+  position: absolute;
+  width: 100%;
+  font-size: 20PX;
+  color: aliceblue;
+  padding: 3vw;
+  text-align: center;
+  z-index: 5;
+}
+.location .inner .mapinfo .info > h2 span {
+  font-size: 25px;
 }
 .location .inner .mapinfo .info::before {
   content: "";
   display: block;
   width: 50px;
   height: 50px;
-  background: rgb(2, 126, 196);
+  background: skyblue;
   transform: skewX(-20deg);
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 20px;
+  z-index: 3;
 }
 .location .inner .mapinfo .info.off {
   opacity: 0;
   margin-top: -500px;
+}
+.location .inner .mapinfo .info::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  color: aliceblue;
 }
 
 @media screen and (max-width: 1179px) {

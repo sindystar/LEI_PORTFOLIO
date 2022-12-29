@@ -12,6 +12,9 @@ $mobile: 539px;
 		
 		.mapinfo{
 			background: rgb(124, 175, 251);
+			width: 100%;
+			top: calc(75% - 100px);
+				left: calc(50% - 100px);
 			#map {
 			width: 100%; //여기map의 100% 1180
 			height: 550px;			
@@ -19,36 +22,60 @@ $mobile: 539px;
 			border-radius: 5px;
 			margin-top: 60px;
 			margin-bottom: 100px;
+			// top: calc(75% - 100px);
+			// left: calc(50% - 100px);
 			filter:  invert(1) grayscale(0.9) brightness(0.8);
 			opacity: 0.6;
 			}
 			.info{
 				width: 200px;
 				height:200px;
-				background: $keycolor;
+				background: skyblue;
 				border-radius: 50%;
 				position: absolute;
-				top: calc(50% - 100px);
+				top: calc(55% - 100px);
 				left: calc(50% - 100px);
 				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 				cursor: pointer;
-		transition: 0.5s;
+				transition: 0.5s;
+				>h2 {
+					position: absolute;
+					width: 100%;
+					font-size: 20PX;
+					color: aliceblue;
+					padding: 3vw;
+					text-align: center;
+					z-index: 5;
+					span {
+						font-size: 25px;
+
+					}
+				}
 
 		&::before {
 			content: '';
 			display: block;
 			width: 50px;
 			height: 50px;
-			background: $keycolor;
+			background: skyblue;
 			transform: skewX(-20deg);
 			position: absolute;
-			top: 20px;
+			top: 16px;
 			right: 20px;
+			z-index: 3;
 		}
 
 		&.off {
 			opacity: 0;
 			margin-top: -500px;
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 1px;
+			color: aliceblue;
+
 		}
 			}
 		}				
