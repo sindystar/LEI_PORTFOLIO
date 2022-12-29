@@ -16,13 +16,13 @@ fetch(url)
 		items.map((el) => {
 			let title = el.snippet.title;
 
-			if (title.length > 30) {
-				title = title.substr(0, 20) + '...';
+			if (title.length > 60) {
+				title = title.substr(0, 60) + '...';
 			}
 
 			let con = el.snippet.description;
-			if (con.length > 60) {
-				con = con.substr(0, 30) + '...';
+			if (con.length > 100) {
+				con = con.substr(0, 100) + '...';
 			}
 			let date = el.snippet.publishedAt;
 

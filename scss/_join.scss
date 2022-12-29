@@ -48,7 +48,8 @@ $mobile: 539px;
 			th {
 				width: 20%;
 				text-align: left;
-				font: bold 14px/1 'arial';
+				font: bold 12px;
+				font-family:'Open Sans', sans-serif;
 				color: $keycolor;
 				padding: 20px 30px; //높이를 주는대신 패딩값으로 높이값
 				border-right: 1px solid #fff;
@@ -66,7 +67,8 @@ $mobile: 539px;
 					border: none;
 					border-radius: 3px;
 					background: $keycolor;
-					font: bold 14px/1 'arial';
+					font-size: 14px;
+					font-family:'Open Sans', sans-serif;
 					color: #fff;
 					margin-right: 10px;
 				}

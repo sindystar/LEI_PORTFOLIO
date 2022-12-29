@@ -15,25 +15,24 @@ $mobile: 539px;
 			justify-content: space-between;
 			align-content: flex-start;
 			margin-top: 80px;
-			// opacity: 0;
-			// transform: translateY(100px);
-			// transition: 1s;
-			// &.on {
-			// 	opacity: 1;
-			// 	transform: translateY(0px);   //넣는 순간 안보임;;;
-			// }
+
 			article {
-				width: calc(100% / 3)-1%;
+				border-top: 1px solid #999;
+				padding: 10px 0px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				width: calc(100% / 2)-1%;
 				// padding: 10px;
 				// margin-left: 2%;
-				&:nth-of-type(3n){
+				&:nth-of-type(2n){
 					margin-right: 0px;
 				}
-				height: 340px;
-				border: 1px solid $keycolor;
-				box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-				// border-radius: 5px;
-				margin-bottom: 40px;
+				height: 40vh;
+				
+				// box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+				// // border-radius: 5px;
+				// margin-bottom: 40px;
 				// padding: 5px 5px 5px;
 				// padding-left: 10px;
 				.pic {
@@ -48,25 +47,26 @@ $mobile: 539px;
 				}
 				.con {
 					width: 100%;
-					height: 20%;
-					padding: 10px 20px 0px;
+					height: 100%;
+					padding: 10px 10px 0px;
 					// padding-left: 20px;
 					h2 {
-						font-size: 14px;
-						font-weight: 800;
-						color: $keycolor;
-						margin-bottom: 0px;
+						font-size: 16px;
+						font-family:'Open Sans', sans-serif;
+						color: #333;
+						margin-bottom: 3px;
 					}
 					p {
-						font-size: 12px;
-						color: #888;
-						font-weight: 600;
-						margin-bottom: 0px;
+						font-size: 14px;
+						color: #333;
+						font-family:'Work Sans', sans-serif;
+
+
 					}
 					span {
+						font-family:'Open Sans', sans-serif;
 						font-size: 11px;
-						font-weight: 500;
-						color: #777;
+						color: $keycolor;
 					}
 				}
 			}
@@ -80,7 +80,7 @@ $mobile: 539px;
 			left: 0;
 			background: rgba(0, 0, 0, 0.8);
 			overflow: hidden;
-			padding: 5vw;
+			padding: 3vw;
 			display: flex;
 			justify-content: center;
 			align-items: center;

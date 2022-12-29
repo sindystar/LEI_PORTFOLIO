@@ -21,8 +21,8 @@ $mobile: 539px;
 			bottom: -4px;
 			letter-spacing: 1px;
 			> a {
-				font-size: 26px;
-				font-weight: 600;
+				font-family:'Open Sans', sans-serif;
+				font-size: 24px;
 				color: #fff;
 			}
 		}
@@ -36,13 +36,12 @@ $mobile: 539px;
 					a {
 						display: block;
 						padding: 12px 18px;
-						font-size: 13px;
-						font-weight: 600;
-						color: rgba(255, 255, 255, 0.8);
+						font-family:'Open Sans', sans-serif;
+						font-size: 12px;
+						color: rgba(255, 255, 255, 0.9);
 						&:hover {
 							color: $keycolor;
-							font-weight: 700;
-							transform: scale(1.1);
+							transform: scale(1.2);
 						}
 					}
 				}
@@ -110,7 +109,7 @@ $mobile: 539px;
 		.menuMo {
 			width: 270px;
 			height: 100vh;
-			background: rgb(134, 195, 241);
+			background: $keycolor;
 			position: fixed; // fixed로!!
 			top: 0;
 			left: -270px;
@@ -127,12 +126,14 @@ $mobile: 539px;
 				text-align: center;
 				a {
 					display: block;
+					font-family:'Open Sans', sans-serif;
 					font-size: 20px;
 					color: #fff;
 				}
 				span {
 					display: block;
 					padding-bottom: 20px;
+					font-family:'Open Sans', sans-serif;
 					font-size: 12px;
 					letter-spacing: 1px;
 					color: #fff;
@@ -145,8 +146,9 @@ $mobile: 539px;
 						display: block;
 						width: 100%;
 						padding: 15px 0;
-						border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
-						font: bold 14px/1;
+						border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+						font-family:'Open Sans', sans-serif;
+						font: 14px/1;
 						color: #fff;
 						text-align: center;
 					}
@@ -177,6 +179,7 @@ $mobile: 539px;
 			text-align: center;
 			color: $keycolor;
 			margin-bottom: 20px;
+			font-family:'Open Sans', sans-serif;
 			span {
 				font: nomal 20px/1;
 				color: #aaa;

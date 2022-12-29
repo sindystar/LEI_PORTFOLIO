@@ -29,26 +29,27 @@ $mobile: 539px;
 			}
 			.info{
 				// border-bottom: 1px solid aliceblue;
-				width: 200px;
-				height:200px;
+				width: 160px;
+				height:160px;
 				background: skyblue;
 				border-radius: 50%;
 				position: absolute;
-				top: calc(55% - 100px);
-				left: calc(50% - 100px);
+				top: calc(50% - 80px);
+				left: calc(50% - 80px);
 				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 				cursor: pointer;
 				transition: 0.5s;
 				>h2 {
 					position: absolute;
 					width: 100%;
-					font-size: 20PX;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 18PX;
 					color: aliceblue;
-					padding: 3vw;
+					padding: 2vw;
 					text-align: center;
 					z-index: 5;
 					span {
-						font-size: 25px;
+						font-size: 24px;
 						border-top:2px solid aliceblue ;
 
 					}

@@ -7,7 +7,7 @@
 @import 'gallery.scss';
 @import 'location.scss';
 @import 'join.scss';
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300&display=swap');
 
 // design Guide
 $keycolor: rgb(2, 126, 196);
@@ -32,8 +32,8 @@ $mobile: 539px;
 			bottom: -4px;
 			letter-spacing: 1px;
 			> a {
-				font-size: 30px;
-				font-weight: 600;
+				font-size: 24px;
+				font-family:'Open Sans', sans-serif;
 				color: #fff; 
 			}
 		}
@@ -47,13 +47,12 @@ $mobile: 539px;
 					a {
 						display: block;
 						padding: 12px 18px;
-						font-size: 13px;
-						font-weight: 600;
+						font-size: 12px;
+						font-family:'Open Sans', sans-serif;
 						color: rgba(255, 255, 255, 0.8);
 						&:hover {
 							color: rgb(25, 2, 154);
-							font-weight: 700;
-							transform: scale(1.1);
+							transform: scale(1.2);
 						}
 					}
 				}
@@ -193,6 +192,7 @@ $mobile: 539px;
 		h1 {
 			// margin-top: 120px;    // 높이 출력 화면에서 확인해보기!
 			font-style: italic;
+			font-family:'Open Sans', sans-serif;
 			font-size: 100px;
 			letter-spacing: 1px;
 			color: rgba(255, 255, 255, 0.9);
@@ -205,6 +205,7 @@ $mobile: 539px;
 		//     // text-align: left;
 		// }
 		p {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 20px;
 			color: rgba(255, 255, 255, 0.9);
 			margin-bottom: 80px;
@@ -215,13 +216,14 @@ $mobile: 539px;
 			height: 28px;
 			margin: 0 auto;
 			border: 1px solid rgba(255, 255, 255, 0.5);
-			font: bold 10px/40px;
+			font-family:'Open Sans', sans-serif;
+			font:  10px/40px;
 			color: #fff;
 			text-align: center;
 			&:hover {
 				background: rgba(255, 255, 255, 0.5);
 				color: $keycolor;
-				font-weight: 600;
+
 			}
 		}
 	}
@@ -237,6 +239,7 @@ $mobile: 539px;
 		position: relative;
 		h1 {
 			font-size: 30px;
+			font-family:'Open Sans', sans-serif;
 			color: $keycolor;
 			text-align: center;
 			margin-bottom: 50px;
@@ -271,13 +274,15 @@ $mobile: 539px;
 				h2 {
 					margin-bottom: 0px;
 					a {
+						font-family:'Open Sans', sans-serif;
 						font-size: 18px;
 						color: $keycolor;
 					}
 				}
 				p {
+					font-family: 'Work Sans', sans-serif;
 					font-size: 14px;
-					color: #777;
+					color: #555;
 					margin-bottom: 20px;
 				}
 			}
@@ -295,6 +300,7 @@ $mobile: 539px;
 		margin: 0 auto;
 		position: relative;
 		h1 {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 30px;
 			color: $keycolor;
 			text-align: center;
@@ -318,16 +324,19 @@ $mobile: 539px;
 						margin-bottom: 20px;
 					}
 					h2 {
+						font-family: 'Open Sans', sans-serif;
 						font-size: 20px;
 						color: #fff;
 						margin-bottom: 5px;
 					}
 					p {
+						font-family: 'Open Sans', sans-serif;
 						font-size: 14px;
 						color: #fff;
 						margin-bottom: 30px;
 					}
 					a {
+						font-family: 'Open Sans', sans-serif;
 						display: block;
 						width: 150px;
 						height: 24px;
@@ -405,6 +414,7 @@ $mobile: 539px;
 		margin: 0 auto;
 		// position: relative;
 		> h1 {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 50px;
 			font-style: italic;
 			color: #fff;
@@ -412,11 +422,13 @@ $mobile: 539px;
 			margin-bottom: 10px;
 		}
 		p {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 16px;
 			color: #fff;
 			text-align: center;
 		}
 		a {
+			font-family: 'Open Sans', sans-serif;
 			display: block;
 			margin: 0 auto;
 			width: 310px;
@@ -445,8 +457,8 @@ $mobile: 539px;
 		width: 1180px;
 		margin: 0 auto;
 		h1 {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 30px;
-			font-weight: 550;
 			color: $keycolor;
 			text-align: center;
 			margin-bottom: 50px;
@@ -469,22 +481,22 @@ $mobile: 539px;
 					background: $keycolor;
 					a {
 						color: #fff;
-						font-weight: 700;
 						transform: scale(1.05);
 					}
 					span {
 						color: #fff;
-						font-weight: 700;
 						transform: scale(1.05);
 					}
 				}
 				a {
+					font-family: 'Open Sans', sans-serif;
 					font-size: 14px;
 					color: #777;
 					color: $keycolor;
 					float: left;
 				}
 				span {
+					font-family: 'Open Sans', sans-serif;
 					font-size: 12px;
 					color: #888;
 					color: $keycolor;
@@ -509,6 +521,7 @@ $mobile: 539px;
 			clear: both;
 		}
 		h1 {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 30px;
 			color: #888;
 			float: left;
@@ -521,8 +534,8 @@ $mobile: 539px;
 				margin-left: 20px;
 				margin-top: 15px;
 				a {
+					font-family: 'Open Sans', sans-serif;
 					font-size: 13px;
-					font-weight: 600;
 					color: #777;
 				}
 			}
@@ -530,9 +543,8 @@ $mobile: 539px;
 		address {
 			float: left;
 			width: 100%;
+			font-family: 'Work Sans', sans-serif;
 			font-size: 14px;
-			font-style: normal;
-			// font-weight: 500;
 			color: #888;
 			margin-bottom: 15px;
 			margin-top: 15px;
@@ -543,6 +555,7 @@ $mobile: 539px;
 			//copyright
 			float: left;
 			width: 100%;
+			font-family: 'Work Sans', sans-serif;
 			font-size: 12px;
 			color: #777;
 		}

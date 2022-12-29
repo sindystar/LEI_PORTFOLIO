@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -55,8 +55,8 @@ table {
   letter-spacing: 1px;
 }
 #header_sub .inner > h1 > a {
-  font-size: 26px;
-  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
   color: #fff;
 }
 #header_sub .inner .menuWeb #gnb {
@@ -70,14 +70,13 @@ table {
 #header_sub .inner .menuWeb #gnb li a {
   display: block;
   padding: 12px 18px;
-  font-size: 13px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
 }
 #header_sub .inner .menuWeb #gnb li a:hover {
   color: rgb(2, 126, 196);
-  font-weight: 700;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 #header_sub .inner .btnCall {
   position: absolute;
@@ -139,7 +138,7 @@ table {
 #header_sub .inner .menuMo {
   width: 270px;
   height: 100vh;
-  background: rgb(134, 195, 241);
+  background: rgb(2, 126, 196);
   position: fixed;
   top: 0;
   left: -270px;
@@ -158,12 +157,14 @@ table {
 }
 #header_sub .inner .menuMo > h1 a {
   display: block;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
 }
 #header_sub .inner .menuMo > h1 span {
   display: block;
   padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: #fff;
@@ -175,8 +176,9 @@ table {
   display: block;
   width: 100%;
   padding: 15px 0;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
-  font: bold 14px/1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Open Sans", sans-serif;
+  font: 14px/1;
   color: #fff;
   text-align: center;
 }
@@ -203,6 +205,7 @@ table {
   text-align: center;
   color: rgb(2, 126, 196);
   margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 .content .inner h1 span {
   font: nomal 20px/1;
@@ -387,20 +390,22 @@ table {
   text-align: center;
 }
 .department .wrap article h2 a {
+  font-family: "Open Sans", sans-serif;
   font: 22px/1;
-  color: #444;
+  color: #333;
 }
 .department .wrap article P {
   margin-right: 10px;
   margin-top: 8px;
   margin-bottom: 100px;
   font: 10px/1.2;
-  color: #777;
+  color: #555;
 }
 .department .wrap article span {
   width: 100%;
+  font-family: "Work Sans", sans-serif;
   font-size: 13px;
-  color: #999;
+  color: #777;
   margin-left: 10px;
   margin-top: -70px;
 }
@@ -436,10 +441,10 @@ table {
 .community .inner #visual {
   width: 100%;
   height: 500px;
-  border: 2px solid #777;
+  border: 1px solid #777;
   border-radius: 5px;
   background: no-repeat center/cover;
-  background: #777;
+  background: rgba(0, 0, 0, 0.8);
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -454,6 +459,7 @@ table {
   border-bottom: 2px solid rgb(2, 126, 196);
   border-collapse: collapse;
   margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
 }
 .community .inner table tr:nth-of-type(even) {
   background: #fff;
@@ -480,7 +486,7 @@ table {
   border-bottom: 1px solid #ddd;
   text-align: center;
   font-size: 14px;
-  font-family: "";
+  font-family: "Open Sans", sans-serif;
   color: #555;
 }
 .community .inner table tr td:nth-of-type(2) {
@@ -488,6 +494,7 @@ table {
 }
 .community .inner table tr td a {
   color: #555;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.4;
 }
 .community .inner .pagination {
@@ -581,13 +588,15 @@ table {
   margin-top: 80px;
 }
 .youtube .inner .vidList article {
-  width: 32.3333333333%;
-  height: 340px;
-  border: 1px solid rgb(2, 126, 196);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  border-top: 1px solid #999;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 49%;
+  height: 40vh;
 }
-.youtube .inner .vidList article:nth-of-type(3n) {
+.youtube .inner .vidList article:nth-of-type(2n) {
   margin-right: 0px;
 }
 .youtube .inner .vidList article .pic {
@@ -602,25 +611,24 @@ table {
 }
 .youtube .inner .vidList article .con {
   width: 100%;
-  height: 20%;
-  padding: 10px 20px 0px;
+  height: 100%;
+  padding: 10px 10px 0px;
 }
 .youtube .inner .vidList article .con h2 {
-  font-size: 14px;
-  font-weight: 800;
-  color: rgb(2, 126, 196);
-  margin-bottom: 0px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  margin-bottom: 3px;
 }
 .youtube .inner .vidList article .con p {
-  font-size: 12px;
-  color: #888;
-  font-weight: 600;
-  margin-bottom: 0px;
+  font-size: 14px;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
 }
 .youtube .inner .vidList article .con span {
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
-  font-weight: 500;
-  color: #777;
+  color: rgb(2, 126, 196);
 }
 .youtube .inner figure.pop {
   width: 100%;
@@ -630,7 +638,7 @@ table {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  padding: 5vw;
+  padding: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -694,19 +702,18 @@ table {
   width: 100%;
   background: #fff;
   padding: 10px;
-  border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 .gallery .inner #wrap #list .item div a img {
   width: 100%;
 }
 .gallery .inner #wrap #list .item div p {
-  font-size: 12px;
-  font-weight: 600;
-  color: #777;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #555;
   margin-top: 5px;
   margin-bottom: 12px;
-  text-align: center;
+  padding-left: 5px;
 }
 .gallery .inner #wrap #list.on {
   opacity: 1;
@@ -759,13 +766,13 @@ table {
   opacity: 0.6;
 }
 .location .inner .mapinfo .info {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   background: skyblue;
   border-radius: 50%;
   position: absolute;
-  top: calc(55% - 100px);
-  left: calc(50% - 100px);
+  top: calc(50% - 80px);
+  left: calc(50% - 80px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: 0.5s;
@@ -773,14 +780,15 @@ table {
 .location .inner .mapinfo .info > h2 {
   position: absolute;
   width: 100%;
-  font-size: 20PX;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18PX;
   color: aliceblue;
-  padding: 3vw;
+  padding: 2vw;
   text-align: center;
   z-index: 5;
 }
 .location .inner .mapinfo .info > h2 span {
-  font-size: 25px;
+  font-size: 24px;
   border-top: 2px solid aliceblue;
 }
 .location .inner .mapinfo .info::before {
@@ -830,7 +838,8 @@ table {
 .join .inner table th {
   width: 20%;
   text-align: left;
-  font: bold 14px/1 "arial";
+  font: bold 12px;
+  font-family: "Open Sans", sans-serif;
   color: rgb(2, 126, 196);
   padding: 20px 30px;
   border-right: 1px solid #fff;
@@ -849,7 +858,8 @@ table {
   border: none;
   border-radius: 3px;
   background: rgb(2, 126, 196);
-  font: bold 14px/1 "arial";
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   margin-right: 10px;
 }
@@ -925,8 +935,8 @@ table {
   letter-spacing: 1px;
 }
 #header .inner > h1 > a {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
 }
 #header .inner .menuWeb #gnb {
@@ -940,14 +950,13 @@ table {
 #header .inner .menuWeb #gnb li a {
   display: block;
   padding: 12px 18px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
   color: rgba(255, 255, 255, 0.8);
 }
 #header .inner .menuWeb #gnb li a:hover {
   color: rgb(25, 2, 154);
-  font-weight: 700;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 #header .inner .btnCall {
   position: absolute;
@@ -1073,11 +1082,13 @@ table {
 }
 #visual .inner h1 {
   font-style: italic;
+  font-family: "Open Sans", sans-serif;
   font-size: 100px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.9);
 }
 #visual .inner p {
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 80px;
@@ -1088,14 +1099,14 @@ table {
   height: 28px;
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font: bold 10px/40px;
+  font-family: "Open Sans", sans-serif;
+  font: 10px/40px;
   color: #fff;
   text-align: center;
 }
 #visual .inner a:hover {
   background: rgba(255, 255, 255, 0.5);
   color: rgb(2, 126, 196);
-  font-weight: 600;
 }
 
 #news {
@@ -1109,6 +1120,7 @@ table {
 }
 #news .inner h1 {
   font-size: 30px;
+  font-family: "Open Sans", sans-serif;
   color: rgb(2, 126, 196);
   text-align: center;
   margin-bottom: 50px;
@@ -1145,12 +1157,14 @@ table {
   margin-bottom: 0px;
 }
 #news .inner .wrap article h2 a {
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: rgb(2, 126, 196);
 }
 #news .inner .wrap article p {
+  font-family: "Work Sans", sans-serif;
   font-size: 14px;
-  color: #777;
+  color: #555;
   margin-bottom: 20px;
 }
 
@@ -1165,6 +1179,7 @@ table {
   position: relative;
 }
 #brand .inner h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
   color: rgb(2, 126, 196);
   text-align: center;
@@ -1188,16 +1203,19 @@ table {
   margin-bottom: 20px;
 }
 #brand .inner .wrap article:nth-of-type(1) h2 {
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
   margin-bottom: 5px;
 }
 #brand .inner .wrap article:nth-of-type(1) p {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #fff;
   margin-bottom: 30px;
 }
 #brand .inner .wrap article:nth-of-type(1) a {
+  font-family: "Open Sans", sans-serif;
   display: block;
   width: 150px;
   height: 24px;
@@ -1268,6 +1286,7 @@ table {
   margin: 0 auto;
 }
 #banner .inner > h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   font-style: italic;
   color: #fff;
@@ -1275,11 +1294,13 @@ table {
   margin-bottom: 10px;
 }
 #banner .inner p {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #fff;
   text-align: center;
 }
 #banner .inner a {
+  font-family: "Open Sans", sans-serif;
   display: block;
   margin: 0 auto;
   width: 310px;
@@ -1306,8 +1327,8 @@ table {
   margin: 0 auto;
 }
 #comments .inner h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
-  font-weight: 550;
   color: rgb(2, 126, 196);
   text-align: center;
   margin-bottom: 50px;
@@ -1333,21 +1354,21 @@ table {
 }
 #comments .inner ul li:hover a {
   color: #fff;
-  font-weight: 700;
   transform: scale(1.05);
 }
 #comments .inner ul li:hover span {
   color: #fff;
-  font-weight: 700;
   transform: scale(1.05);
 }
 #comments .inner ul li a {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #777;
   color: rgb(2, 126, 196);
   float: left;
 }
 #comments .inner ul li span {
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: #888;
   color: rgb(2, 126, 196);
@@ -1369,6 +1390,7 @@ table {
   clear: both;
 }
 #footer .inner h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
   color: #888;
   float: left;
@@ -1382,15 +1404,15 @@ table {
   margin-top: 15px;
 }
 #footer .inner ul li a {
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: 600;
   color: #777;
 }
 #footer .inner address {
   float: left;
   width: 100%;
+  font-family: "Work Sans", sans-serif;
   font-size: 14px;
-  font-style: normal;
   color: #888;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -1400,6 +1422,7 @@ table {
 #footer .inner p {
   float: left;
   width: 100%;
+  font-family: "Work Sans", sans-serif;
   font-size: 12px;
   color: #777;
 }

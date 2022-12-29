@@ -47,8 +47,9 @@ $mobile: 539px;
 				text-align: center;
 				// margin-bottom: 5px;
 				a {
+					font-family: 'Open Sans', sans-serif;
 					font: 22px/1;
-					color: #444;
+					color: #333;
 				}
 			}
 			P {
@@ -57,15 +58,22 @@ $mobile: 539px;
 				margin-top: 8px;
 				margin-bottom: 100px;
 				font: 10px/1.2;
-				color: #777;
+				color: #555;
 			}
 			span {
 				width: 100%;
+				font-family: 'Work Sans', sans-serif;
 				font-size: 13px;
-				color: #999;
+				color: #777;
 				margin-left: 10px;
 				margin-top: -70px;
 			}
+			// .icon {
+			// 	margin-left: 2vw;
+			// 	font-size: 13px;
+			// 	color: #999;
+			// 	margin-top: -40px;
+			// }
 		}
 	}
 }
