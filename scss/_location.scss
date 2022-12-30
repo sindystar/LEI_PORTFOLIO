@@ -34,7 +34,8 @@ $mobile: 539px;
 				background: skyblue;
 				border-radius: 50%;
 				position: absolute;
-				top: calc(50% - 80px);    //모니터 사양에 따라 기준점이 달라짐;; 
+				// top: calc(60% - 80px);    //모니터 사양에 따라 기준점이 달라짐;; 
+				top: 650px;  //기준점 고정 시킴 
 				left: calc(50% - 80px);
 				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 				cursor: pointer;
@@ -42,15 +43,18 @@ $mobile: 539px;
 				>h2 {
 					position: absolute;
 					width: 100%;
-					font-family: 'Open Sans', sans-serif;
-					font-size: 18PX;
+					font-family: 'Work Sans', sans-serif;
+					font-size: 16PX;
 					color: aliceblue;
-					padding: 2vw;
+					// padding: 5vw ;
+					padding-top: 40px;
 					text-align: center;
 					z-index: 5;
+					
 					span {
+						font-family: 'Open Sans', sans-serif;
 						font-size: 24px;
-						border-top:2px solid aliceblue ;
+						border-top:1px solid aliceblue ;
 
 					}
 				}
@@ -81,6 +85,7 @@ $mobile: 539px;
 				width:30%;
 				h2 {
 					// font-family: 'Open Sans', sans-serif;
+					float: right;
 					font-size: 80px;
 					font-style: italic;
 					margin-top: -80px;
@@ -89,7 +94,9 @@ $mobile: 539px;
 				}
 				ul {
 					li{
-						position: relative;
+						// position: relative;
+						// display: block;
+						// float: right;
 						margin-bottom: 20px;
 						font-size: 20px;
 						font-weight: bold;
