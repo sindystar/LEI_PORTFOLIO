@@ -282,6 +282,7 @@ table {
   clear: both;
 }
 #footer_sub .inner h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
   color: #888;
   float: left;
@@ -295,15 +296,15 @@ table {
   margin-top: 15px;
 }
 #footer_sub .inner ul li a {
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: 600;
   color: #777;
 }
 #footer_sub .inner address {
   float: left;
   width: 100%;
+  font-family: "Work Sans", sans-serif;
   font-size: 14px;
-  font-style: normal;
   color: #888;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -313,6 +314,7 @@ table {
 #footer_sub .inner p {
   float: left;
   width: 100%;
+  font-family: "Work Sans", sans-serif;
   font-size: 12px;
   color: #777;
 }
@@ -750,6 +752,10 @@ table {
   margin-top: 5px;
   margin-bottom: 12px;
   padding-left: 5px;
+  transition: 0.5s;
+}
+.gallery .inner #wrap #list .item div p:hover {
+  color: rgb(2, 126, 196);
 }
 .gallery .inner #wrap #list.on {
   opacity: 1;
@@ -1599,16 +1605,16 @@ table {
   #banner .inner {
     width: 100%;
   }
-  #comments {
+  #banner #comments {
     padding: 100px 30px;
   }
-  #comments .inner {
+  #banner #comments .inner {
     width: 100%;
   }
-  #footer {
+  #banner #footer {
     padding: 50px 30px;
   }
-  #footer .inner {
+  #banner #footer .inner {
     width: 100%;
   }
 }

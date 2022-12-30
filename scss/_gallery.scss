@@ -50,7 +50,10 @@ $mobile: 539px;
 							margin-top: 5px;
 							margin-bottom: 12px;
 							padding-left: 5px;
-							// text-align: center;
+							transition: 0.5s;
+							&:hover {
+								color: $keycolor;
+							}
 						}
 					}
 				}
