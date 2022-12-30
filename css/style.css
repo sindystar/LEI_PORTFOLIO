@@ -239,6 +239,7 @@ table {
   margin: 0 auto;
 }
 #banner_sub .inner > h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   font-style: italic;
   color: #fff;
@@ -246,11 +247,13 @@ table {
   margin-bottom: 10px;
 }
 #banner_sub .inner p {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #fff;
   text-align: center;
 }
 #banner_sub .inner a {
+  font-family: "Open Sans", sans-serif;
   display: block;
   margin: 0 auto;
   width: 310px;
@@ -260,11 +263,12 @@ table {
   border: 1px solid #fff;
   font-size: 14px;
   color: #fff;
+  transition: 0.5s;
 }
 #banner_sub .inner a:hover {
   background: #fff;
   color: #444;
-  font-weight: 500;
+  transform: scale(1.2);
 }
 
 #footer_sub {
@@ -291,8 +295,8 @@ table {
   float: right;
 }
 #footer_sub .inner ul li {
-  float: left;
-  margin-left: 20px;
+  float: right;
+  margin-right: 20px;
   margin-top: 15px;
 }
 #footer_sub .inner ul li a {

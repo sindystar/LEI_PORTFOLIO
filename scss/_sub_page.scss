@@ -216,6 +216,7 @@ $mobile: 539px;
 		margin: 0 auto;
 		// position: relative;
 		> h1 {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 50px;
 			font-style: italic;
 			color: #fff;
@@ -223,11 +224,13 @@ $mobile: 539px;
 			margin-bottom: 10px;
 		}
 		p {
+			font-family: 'Open Sans', sans-serif;
 			font-size: 16px;
 			color: #fff;
 			text-align: center;
 		}
 		a {
+			font-family: 'Open Sans', sans-serif;
 			display: block;
 			margin: 0 auto;
 			width: 310px;
@@ -238,10 +241,11 @@ $mobile: 539px;
 			border: 1px solid #fff;
 			font-size: 14px;
 			color: #fff;
+			transition: 0.5s;
 			&:hover {
 				background: #fff;
 				color: #444;
-				font-weight: 500;
+				transform: scale(1.2);
 			}
 		}
 	}
@@ -267,11 +271,11 @@ $mobile: 539px;
 			float: left;
 		}
 		ul {
-			float: right;
+			float: right;  //폰트 변경후에 위치 변경 되어 수정;; style.scss 동일한데 동일한 폰트인데 다르게 출력 되어 일단 수정;;
 			li {
 				// policy
-				float: left;
-				margin-left: 20px;
+				float: right;
+				margin-right: 20px;
 				margin-top: 15px;
 				a {
 					font-family: 'Open Sans', sans-serif;
