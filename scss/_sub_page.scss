@@ -136,6 +136,10 @@ $mobile: 539px;
 					font-family:'Open Sans', sans-serif;
 					font-size: 20px;
 					color: #fff;
+					transition: 0.5s;
+					&:hover {
+						color: skyblue;
+					}
 				}
 				span {
 					display: block;
@@ -160,8 +164,9 @@ $mobile: 539px;
 						text-align: center;
 						transition: 0.5s;
 						&:hover {
-							color: rgb(25, 2, 154);
+							color: skyblue;
 							// transform: scale(1.1);
+							// overflow: hidden;
 						}
 					}
 				}
@@ -244,8 +249,8 @@ $mobile: 539px;
 			transition: 0.5s;
 			&:hover {
 				background: #fff;
-				color: #444;
-				transform: scale(1.2);
+				color: #555;
+				transform: scale(1.1);
 			}
 		}
 	}
@@ -269,10 +274,9 @@ $mobile: 539px;
 			font-size: 30px;
 			color: #888;
 			float: left;
-			// padding-top : 100px;
 		}
 		ul {
-			float: right;  //폰트 변경후에 위치 변경 되어 수정;; style.scss 동일한데 동일한 폰트인데 다르게 출력 되어 일단 수정;;
+			float: right;
 			li {
 				// policy
 				float: left;
@@ -352,7 +356,7 @@ $mobile: 539px;
 }
 .inner {
 	h1 {
-		font-size: 80px; //vimin으로 변화 없어 px로;;
+		font-size: 80px; 
 	}
 }
 

@@ -167,6 +167,10 @@ table {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
+  transition: 0.5s;
+}
+#header_sub .inner .menuMo > h1 a:hover {
+  color: skyblue;
 }
 #header_sub .inner .menuMo > h1 span {
   display: block;
@@ -191,7 +195,7 @@ table {
   transition: 0.5s;
 }
 #header_sub .inner .menuMo #gnbMo li a:hover {
-  color: rgb(25, 2, 154);
+  color: skyblue;
 }
 
 .content {
@@ -267,8 +271,8 @@ table {
 }
 #banner_sub .inner a:hover {
   background: #fff;
-  color: #444;
-  transform: scale(1.2);
+  color: #555;
+  transform: scale(1.1);
 }
 
 #footer_sub {
@@ -1011,11 +1015,11 @@ table {
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 #header .inner > h1 > a:hover {
-  color: orange;
-  transform: scale(1.2);
+  cursor: pointer;
+  color: skyblue;
 }
 #header .inner .menuWeb #gnb {
   position: absolute;
@@ -1034,7 +1038,7 @@ table {
   transition: 0.5s;
 }
 #header .inner .menuWeb #gnb li a:hover {
-  color: orange;
+  color: skyblue;
   transform: scale(1.2);
 }
 #header .inner .btnCall {
@@ -1112,13 +1116,17 @@ table {
 #header .inner .menuMo > h1 {
   padding-top: 20px;
   border-bottom: 1px solid #fff;
-  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 #header .inner .menuMo > h1 a {
   display: block;
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
+  transition: 0.5s;
+}
+#header .inner .menuMo > h1 a:hover {
+  color: rgb(2, 126, 196);
 }
 #header .inner .menuMo > h1 span {
   display: block;
@@ -1188,6 +1196,7 @@ table {
   font: 10px/40px;
   color: #fff;
   text-align: center;
+  transition: 0.5s;
 }
 #visual .inner a:hover {
   background: rgba(255, 255, 255, 0.5);
@@ -1303,17 +1312,17 @@ table {
   font-family: "Open Sans", sans-serif;
   display: block;
   width: 150px;
-  height: 24px;
-  font-size: 12px/24px;
+  height: 24px/30px;
+  font-size: 12px;
   color: #fff;
   border: 1px solid #fff;
   margin: 0 auto;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 #brand .inner .wrap article:nth-of-type(1) a:hover {
-  color: rgb(2, 126, 196);
+  transform: scale(1.1);
   background: #fff;
-  transform: scale(1.2);
+  color: rgb(199, 209, 216);
 }
 #brand .inner .wrap article:nth-of-type(2) {
   width: 380px;
@@ -1406,7 +1415,7 @@ table {
 #banner .inner a:hover {
   background: #fff;
   color: rgb(2, 126, 196);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #comments {
@@ -1435,6 +1444,7 @@ table {
   border-radius: 3px;
   padding: 10px 30px;
   margin-bottom: 14px;
+  transition: 0.5s;
 }
 #comments .inner ul li::after {
   content: "";
@@ -1609,16 +1619,16 @@ table {
   #banner .inner {
     width: 100%;
   }
-  #banner #comments {
+  #comments {
     padding: 100px 30px;
   }
-  #banner #comments .inner {
+  #comments .inner {
     width: 100%;
   }
-  #banner #footer {
+  #footer {
     padding: 50px 30px;
   }
-  #banner #footer .inner {
+  #footer .inner {
     width: 100%;
   }
 }
