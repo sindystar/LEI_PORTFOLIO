@@ -295,8 +295,8 @@ table {
   float: right;
 }
 #footer_sub .inner ul li {
-  float: right;
-  margin-right: 20px;
+  float: left;
+  margin-left: 20px;
   margin-top: 15px;
 }
 #footer_sub .inner ul li a {

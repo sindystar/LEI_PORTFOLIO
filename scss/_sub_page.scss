@@ -269,13 +269,14 @@ $mobile: 539px;
 			font-size: 30px;
 			color: #888;
 			float: left;
+			// padding-top : 100px;
 		}
 		ul {
 			float: right;  //폰트 변경후에 위치 변경 되어 수정;; style.scss 동일한데 동일한 폰트인데 다르게 출력 되어 일단 수정;;
 			li {
 				// policy
-				float: right;
-				margin-right: 20px;
+				float: left;
+				margin-left: 20px;
 				margin-top: 15px;
 				a {
 					font-family: 'Open Sans', sans-serif;
