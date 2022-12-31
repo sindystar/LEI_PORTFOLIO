@@ -404,7 +404,6 @@ table {
   margin-right: 20px;
   border-top: none;
   border-bottom: 1px solid rgb(2, 126, 196);
-  margin-bottom: 100px;
 }
 .about .wrap article:nth-of-type(7n) {
   width: 23%;
@@ -492,20 +491,25 @@ table {
 }
 
 @media screen and (max-width: 1179px) {
-  .department .inner {
+  .about .inner {
     width: 100%;
     padding: 0px 30px;
   }
-  .department .inner .wrap article {
-    width: 49%;
+  .about .inner .wrap article {
+    border-top: 1px solid rgb(2, 126, 196);
+    border-bottom: none;
+    width: 48%;
     margin-right: 2%;
   }
-  .department .inner .wrap:nth-of-type(2n) {
+  .about .inner .wrap:nth-of-type(2n) {
     margin-right: 0;
+  }
+  .about .inner .wrap .pic {
+    height: 20vmax;
   }
 }
 @media screen and (max-width: 539px) {
-  .department .inner .wrap article {
+  .about .inner .wrap article {
     width: 100%;
   }
 }
