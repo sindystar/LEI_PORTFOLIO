@@ -5,11 +5,13 @@ $mobile: 539px;
 
 .location {
 	width: 100%; //전체너비를 뜻하는 100%
+	margin-bottom: 100px;
 	.sub_visual {
-		background: skyblue;
+		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
 	.inner {
-		
+		// width: 100%;
+
 		.mapinfo{
 			background: rgb(124, 175, 251);
 			width: 100%;
@@ -21,7 +23,7 @@ $mobile: 539px;
 			border: 2px solid $keycolor;
 			border-radius: 5px;
 			margin-top: 60px;
-			margin-bottom: 100px;
+			margin-bottom: 30px;
 			// top: calc(75% - 100px);
 			// left: calc(50% - 100px);
 			filter:  invert(1) grayscale(0.9) brightness(0.8);
@@ -79,40 +81,87 @@ $mobile: 539px;
 		
 			}
 		}
-		.wrap {
-			display:flex;
-			.text{
-				width:30%;
-				h2 {
-					// font-family: 'Open Sans', sans-serif;
-					float: right;
-					font-size: 80px;
-					font-style: italic;
-					margin-top: -80px;
-					margin-left: 20px;
-					color: skyblue;
-				}
-				ul {
-					li{
-						// position: relative;
-						// display: block;
-						// float: right;
-						margin-bottom: 20px;
-						font-size: 20px;
-						font-weight: bold;
-						letter-spacing: 1px;
-						i {
-							width: 50px;
-							height: 50px;
-							border: 1px solid skyblue;
-							color: aqua;
-							text-align: center;
+		// .wrap {
+		// 	display:flex;
+		// 	.text{
+		// 		width:30%;
+		// 		h2 {
+		// 			// font-family: 'Open Sans', sans-serif;
+		// 			float: right;
+		// 			font-size: 80px;
+		// 			font-style: italic;
+		// 			margin-top: -80px;
+		// 			margin-left: 20px;
+		// 			color: skyblue;
+		// 		}
+		// 		ul {
+		// 			li{
+		// 				// position: relative;
+		// 				// display: block;
+		// 				// float: right;
+		// 				margin-bottom: 20px;
+		// 				font-size: 20px;
+		// 				font-weight: bold;
+		// 				letter-spacing: 1px;
+		// 				i {
+		// 					width: 50px;
+		// 					height: 50px;
+		// 					border: 1px solid skyblue;
+		// 					color: aqua;
+		// 					text-align: center;
 
-						}
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// } 
+		> p{
+			padding-left: 20px;
+			font:  15px/20px 'Work Sans', sans-serif;
+			color: skyblue;
+			margin-bottom: 50px;
+			span {
+				font-family:'Open Sans', sans-serif;
+				font-size: 40px;
+				letter-spacing: 1px;
+				font-style: oblique;
+			}
+
+		}
+		.txt {
+			width: 100%;
+			float: left;
+			padding-bottom: 100px;
+			> div {
+				width: calc(100% / 4) ;
+				height: 200px;
+				float: left;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				li{
+					i {
+						color: $keycolor;
+						font-size: 15px;
+						margin-bottom: 5px;
 					}
+					
+				}
+				>p {
+					border-bottom: 1px solid $keycolor;
+					font-family: 'Open Sans', sans-serif;
+					font-style: oblique;
+					font-size: 14px;
+					color: $keycolor;
+					margin-bottom: 10px;
+				}
+				>span {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 13px;
+					color:#777;
 				}
 			}
-		} 				
+		}				
 	}
 }
 //tablet

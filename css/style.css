@@ -373,7 +373,7 @@ table {
 }
 
 .about .sub_visual {
-  background: skyblue;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .about .wrap {
   width: 100%;
@@ -511,10 +511,11 @@ table {
 @media screen and (max-width: 539px) {
   .about .inner .wrap article {
     width: 100%;
+    border-top: none;
   }
 }
 .community .sub_visual {
-  background: skyblue;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .community .inner {
   overflow: hidden;
@@ -658,7 +659,7 @@ table {
   }
 }
 .youtube .sub_visual {
-  background: skyblue;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .youtube .inner .vidList {
   width: 100%;
@@ -763,7 +764,7 @@ table {
   background: #eee;
 }
 .gallery .sub_visual {
-  background: skyblue;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .gallery .inner #wrap {
   width: 100%;
@@ -842,9 +843,10 @@ table {
 }
 .location {
   width: 100%;
+  margin-bottom: 100px;
 }
 .location .sub_visual {
-  background: skyblue;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .location .inner .mapinfo {
   background: rgb(124, 175, 251);
@@ -858,7 +860,7 @@ table {
   border: 2px solid rgb(2, 126, 196);
   border-radius: 5px;
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   filter: invert(1) grayscale(0.9) brightness(0.8);
   opacity: 0.6;
 }
@@ -905,32 +907,48 @@ table {
   opacity: 0;
   margin-top: -500px;
 }
-.location .inner .wrap {
-  display: flex;
-}
-.location .inner .wrap .text {
-  width: 30%;
-}
-.location .inner .wrap .text h2 {
-  float: right;
-  font-size: 80px;
-  font-style: italic;
-  margin-top: -80px;
-  margin-left: 20px;
+.location .inner > p {
+  padding-left: 20px;
+  font: 15px/20px "Work Sans", sans-serif;
   color: skyblue;
+  margin-bottom: 50px;
 }
-.location .inner .wrap .text ul li {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: bold;
+.location .inner > p span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
   letter-spacing: 1px;
+  font-style: oblique;
 }
-.location .inner .wrap .text ul li i {
-  width: 50px;
-  height: 50px;
-  border: 1px solid skyblue;
-  color: aqua;
-  text-align: center;
+.location .inner .txt {
+  width: 100%;
+  float: left;
+  padding-bottom: 100px;
+}
+.location .inner .txt > div {
+  width: 25%;
+  height: 200px;
+  float: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.location .inner .txt > div li i {
+  color: rgb(2, 126, 196);
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.location .inner .txt > div > p {
+  border-bottom: 1px solid rgb(2, 126, 196);
+  font-family: "Open Sans", sans-serif;
+  font-style: oblique;
+  font-size: 14px;
+  color: rgb(2, 126, 196);
+  margin-bottom: 10px;
+}
+.location .inner .txt > div > span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #777;
 }
 
 @media screen and (max-width: 1179px) {
@@ -944,7 +962,7 @@ table {
   }
 }
 .join .sub_visual {
-  background: skyblue;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .join .inner h1 {
   margin-bottom: 70px;

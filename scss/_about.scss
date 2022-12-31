@@ -5,7 +5,7 @@ $mobile: 539px;
 
 .about {
 	.sub_visual {
-		background: skyblue;
+		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
 	.wrap {		
 		width: 100%;
@@ -140,6 +140,9 @@ $mobile: 539px;
 					width: 48%;
 					margin-right: 2%;					
 					}
+					// &:nth-of-type(1n) {
+					// 	border-top: none;
+					// }
 					&:nth-of-type(2n) {
 						margin-right: 0;
 					}
@@ -158,6 +161,7 @@ $mobile: 539px;
 			.wrap {
 				article {
 					width: 100%;
+					border-top: none;
 				}
 			}
 		}
