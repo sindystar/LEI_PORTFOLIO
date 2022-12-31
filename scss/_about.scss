@@ -7,18 +7,14 @@ $mobile: 539px;
 	.sub_visual {
 		background: skyblue;
 	}
-	.wrap {
-		
+	.wrap {		
 		width: 100%;
-		// padding: 200px 0;
 		&::after {
 			content: '';
 			display: block;
 			clear: both;
 		}
 		article {
-
-			// padding: 10px 0px;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
