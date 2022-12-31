@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -372,35 +373,89 @@ table {
   margin: 5px;
 }
 
-.department .sub_visual {
+.about .sub_visual {
   background: skyblue;
 }
-.department .wrap {
+.about .wrap {
   width: 100%;
 }
-.department .wrap::after {
+.about .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-.department .wrap article {
-  border-top: 1px solid #999;
-  padding: 10px 0px;
+.about .wrap article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 23%;
+  width: 31.3333333333%;
   float: left;
   margin-right: 20px;
   margin-top: 50px;
 }
-.department .wrap article .pic {
-  width: 100%;
-  height: 38vh;
-  overflow: hidden;
-  margin-bottom: 20px;
+.about .wrap article:nth-of-type(2n) {
+  border: 1px solid #999;
 }
-.department .wrap article .pic img {
+.about .wrap article:nth-of-type(3n) {
+  margin-right: 0;
+  border: 1px solid #999;
+}
+.about .wrap article:nth-of-type(4n) {
+  width: 23%;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  border: 1px solid #999;
+}
+.about .wrap article:nth-of-type(5n) {
+  width: 23%;
+  margin-right: 20px;
+  border: 1px solid #999;
+}
+.about .wrap article:nth-of-type(6n) {
+  width: 23%;
+  margin-right: 20px;
+}
+.about .wrap article:nth-of-type(7n) {
+  width: 23%;
+  margin-right: 0;
+  border: 1px solid #999;
+}
+.about .wrap article .box {
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+}
+.about .wrap article .box .txt {
+  margin-top: 50px;
+}
+.about .wrap article .box .txt > li {
+  width: 100%;
+  margin-top: 0px;
+}
+.about .wrap article .box .txt > li > i {
+  font-size: 20px;
+  color: #777;
+}
+.about .wrap article .box .txt > p {
+  padding-right: 90px;
+  font-style: oblique;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  color: #888;
+}
+.about .wrap article .box .txt > p > span {
+  float: left;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  color: #777;
+}
+.about .wrap article .pic {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.about .wrap article .pic img {
   filter: grayscale(1);
   width: 100%;
   height: 100%;
@@ -408,40 +463,42 @@ table {
   transition: 0.5s;
   cursor: pointer;
 }
-.department .wrap article .pic img:hover {
+.about .wrap article .pic img:hover {
   filter: grayscale(0);
 }
-.department .wrap article h2 {
+.about .wrap article h2 {
+  padding-top: 10px;
   padding-left: 10px;
   text-align: center;
 }
-.department .wrap article h2 a {
+.about .wrap article h2 a {
   font-family: "Open Sans", sans-serif;
   font: 22px/1;
   color: #333;
 }
-.department .wrap article P {
+.about .wrap article P {
+  padding-top: 10px;
   margin-right: 10px;
   margin-top: 8px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   font: 10px/1.2;
   color: #555;
 }
-.department .wrap article span {
+.about .wrap article span {
   width: 100%;
   font-family: "Work Sans", sans-serif;
   font-size: 13px;
   color: #777;
   margin-left: 10px;
-  margin-top: -70px;
+  margin-bottom: 20px;
 }
-.department .wrap article .icon {
+.about .wrap article .icon {
   position: relative;
   font-size: 13px;
   color: #aaa;
   padding: 2px;
   margin-left: 10px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -458,7 +515,8 @@ table {
     margin-right: 0;
   }
   .department .inner .wrap article .pic {
-    height: 25vmax;
+    height: 30vmax;
+    padding-top: 100px;
   }
 }
 @media screen and (max-width: 539px) {
