@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Work+Sans:wght@300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -394,31 +393,23 @@ table {
   margin-top: 50px;
 }
 .about .wrap article:nth-of-type(2n) {
-  border: 1px solid #999;
+  border-top: 1px solid rgb(2, 126, 196);
 }
 .about .wrap article:nth-of-type(3n) {
   margin-right: 0;
-  border: 1px solid #999;
+  border-top: 1px solid rgb(2, 126, 196);
 }
-.about .wrap article:nth-of-type(4n) {
+.about .wrap article:nth-of-type(4n), .about .wrap article:nth-of-type(5n), .about .wrap article:nth-of-type(6n) {
   width: 23%;
   margin-right: 20px;
-  margin-bottom: 50px;
-  border: 1px solid #999;
-}
-.about .wrap article:nth-of-type(5n) {
-  width: 23%;
-  margin-right: 20px;
-  border: 1px solid #999;
-}
-.about .wrap article:nth-of-type(6n) {
-  width: 23%;
-  margin-right: 20px;
+  border-top: none;
+  border-bottom: 1px solid rgb(2, 126, 196);
+  margin-bottom: 100px;
 }
 .about .wrap article:nth-of-type(7n) {
   width: 23%;
   margin-right: 0;
-  border: 1px solid #999;
+  border-bottom: 1px solid rgb(2, 126, 196);
 }
 .about .wrap article .box {
   width: 100%;
@@ -437,7 +428,6 @@ table {
   color: #777;
 }
 .about .wrap article .box .txt > p {
-  padding-right: 90px;
   font-style: oblique;
   font-size: 18px;
   font-family: "Work Sans", sans-serif;
@@ -504,19 +494,14 @@ table {
 @media screen and (max-width: 1179px) {
   .department .inner {
     width: 100%;
-    margin-right: 0%;
     padding: 0px 30px;
   }
   .department .inner .wrap article {
     width: 49%;
     margin-right: 2%;
   }
-  .department .inner .wrap article:nth-of-type(2n) {
+  .department .inner .wrap:nth-of-type(2n) {
     margin-right: 0;
-  }
-  .department .inner .wrap article .pic {
-    height: 30vmax;
-    padding-top: 100px;
   }
 }
 @media screen and (max-width: 539px) {

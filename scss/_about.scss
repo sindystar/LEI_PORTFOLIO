@@ -23,42 +23,35 @@ $mobile: 539px;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			width: calc(100% / 3 ) - 2% ;
-			// height: 30vw;
 			float: left;
 			margin-right: 20px;
 			margin-top: 50px;
 			&:nth-of-type(2n) {
-				border: 1px solid #999;
+				border-top: 1px solid $keycolor;
+				// border-bottom: 1px solid $keycolor;
 			}
 			&:nth-of-type(3n) {
 				margin-right: 0;
-				border: 1px solid #999;
+				border-top: 1px solid $keycolor;
+				// border-bottom: 1px solid $keycolor;
 			}
-			&:nth-of-type(4n) {
+			&:nth-of-type(4n),&:nth-of-type(5n),&:nth-of-type(6n) {
 				width: calc(100% / 4 ) - 2% ;
 				margin-right: 20px;
-				margin-bottom: 50px;
-				border: 1px solid #999;
-			}
-			&:nth-of-type(5n) {
-				width: calc(100% / 4 ) - 2% ;
-				margin-right: 20px;
-				border: 1px solid #999;
-			}
-			&:nth-of-type(6n) {
-				width: calc(100% / 4 ) - 2% ;
-				margin-right: 20px;
+				// border-top: 1px solid $keycolor;
+				border-top: none;
+				border-bottom: 1px solid $keycolor;
+				margin-bottom: 100px;
 			}
 			&:nth-of-type(7n) {
 				width: calc(100% / 4 ) - 2% ;
 				margin-right: 0;
-				border: 1px solid #999;
+				// border-top: 1px solid $keycolor;
+				border-bottom: 1px solid $keycolor;
 			}
 			.box {
 				width: 100%;
 				float: left;
-				// height: 20vw;
-				// margin-top: 10px;
 				padding-left: 10px;
 				.txt {
 					margin-top: 50px;
@@ -71,14 +64,12 @@ $mobile: 539px;
 						}					
 					}
 					>p { 
-						// padding-top: 10px;
-						padding-right: 90px;
+						// padding-right: 100px;
 						font-style: oblique;
 						font-size: 18px;
 						font-family: 'Work Sans', sans-serif;
 						color: #888;
 						>span {
-							// margin-bottom: 10px;
 							float: left;
 							font-size: 30px;
 							font-family: 'Merriweather', serif;
@@ -151,28 +142,27 @@ $mobile: 539px;
 }
 
 @media screen and (max-width: $tablet) {
-	// 미디어쿼리 확인 필!
 	.department {
 		.inner {
 			width: 100%;
-			margin-right: 0%;
 			padding: 0px 30px;
 			.wrap {
 				article {
 					width: 49%;
 					margin-right: 2%;
+					}
 					&:nth-of-type(2n) {
 						margin-right: 0;
 					}
-					.pic {
-						height: 30vmax;
-						padding-top: 100px;
-					}
+					// .pic {
+					// 	height: 30vmax;
+					// 	padding-top: 100px;
+					// }
 				}
 			}
 		}
 	}
-}
+
 
 @media screen and (max-width: $mobile) {
 	.department {
