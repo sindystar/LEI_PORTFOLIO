@@ -405,42 +405,42 @@ table {
   top: -5px;
   left: 25px;
 }
-.about .inner .content > .wrap {
+.about .inner .content .wrap {
   width: 780px;
   height: 300px;
   float: right;
   margin-bottom: 30px;
   position: relative;
 }
-.about .inner .content > .wrap .slider {
+.about .inner .content .wrap .slider {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-.about .inner .content > .wrap .slider ul {
+.about .inner .content .wrap .slider ul {
   width: 500%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.about .inner .content > .wrap .slider ul li {
+.about .inner .content .wrap .slider ul > li {
   width: 20%;
   height: 100%;
   float: left;
 }
-.about .inner .content > .wrap .slider ul li img {
+.about .inner .content .wrap .slider ul > li > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
 }
-.about .inner .content > .wrap .slider ul li img:hover {
+.about .inner .content .wrap .slider ul > li > img:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
-.about .inner .content > .wrap .prev {
+.about .inner .content .wrap .prev {
   display: block;
   width: 105px;
   height: 30px;
@@ -449,12 +449,12 @@ table {
   left: 20px;
   margin-top: -20px;
 }
-.about .inner .content > .wrap .prev img {
+.about .inner .content .wrap .prev img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.about .inner .content > .wrap .next {
+.about .inner .content .wrap .next {
   display: block;
   width: 105px;
   height: 30px;
@@ -463,7 +463,7 @@ table {
   right: 20px;
   margin-top: -20px;
 }
-.about .inner .content > .wrap .next img {
+.about .inner .content .wrap .next > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -483,7 +483,7 @@ table {
   opacity: 0;
   transition: 0.5s;
 }
-.about .inner .content .txt p span {
+.about .inner .content .txt p > span {
   display: block;
   font-size: 40px;
   font-family: "Merriweather", serif;
@@ -495,6 +495,7 @@ table {
 }
 .about .inner .members {
   width: 100%;
+  margin-bottom: 50px;
   position: relative;
 }
 .about .inner .members::after {
@@ -592,17 +593,17 @@ table {
 .about .inner .members .wrap > article .pic img:hover {
   filter: grayscale(0);
 }
-.about .inner .members .wrap > article h2 {
+.about .inner .members .wrap > article > h2 {
   padding-top: 10px;
   padding-left: 10px;
   text-align: center;
 }
-.about .inner .members .wrap > article h2 > a {
+.about .inner .members .wrap > article > h2 > a {
   font-family: "Open Sans", sans-serif;
   font: 22px/1;
   color: #333;
 }
-.about .inner .members .wrap > article > P {
+.about .inner .members .wrap > article P {
   padding-top: 10px;
   margin-right: 10px;
   margin-top: 8px;
@@ -642,16 +643,16 @@ table {
   .about .inner > .content > .txt {
     width: 100%;
   }
-  .about .inner .members > .wrap article {
+  .about .inner .members .wrap article {
     border-top: 1px solid rgb(2, 126, 196);
     border-bottom: none;
     width: 48%;
     margin-right: 2%;
   }
-  .about .inner .members > .wrap:nth-of-type(2n), .about .inner .members > .wrap:nth-of-type(4n), .about .inner .members > .wrap:nth-of-type(7n) {
+  .about .inner .members .wrap:nth-of-type(2n), .about .inner .members .wrap:nth-of-type(4n), .about .inner .members .wrap:nth-of-type(7n) {
     margin-right: 0;
   }
-  .about .inner .members > .wrap .pic {
+  .about .inner .members .wrap .pic {
     height: 20vmax;
   }
 }
@@ -1056,6 +1057,7 @@ table {
 }
 .location .inner > p {
   padding-left: 20px;
+  padding-bottom: 30px;
   font: 15px/20px "Work Sans", sans-serif;
   color: skyblue;
   margin-bottom: 50px;

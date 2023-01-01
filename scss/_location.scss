@@ -30,7 +30,6 @@ $mobile: 539px;
 			opacity: 0.6;
 			}
 			.info{
-				// border-bottom: 1px solid aliceblue;
 				width: 160px;
 				height:160px;
 				background: skyblue;
@@ -81,42 +80,9 @@ $mobile: 539px;
 		
 			}
 		}
-		// .wrap {
-		// 	display:flex;
-		// 	.text{
-		// 		width:30%;
-		// 		h2 {
-		// 			// font-family: 'Open Sans', sans-serif;
-		// 			float: right;
-		// 			font-size: 80px;
-		// 			font-style: italic;
-		// 			margin-top: -80px;
-		// 			margin-left: 20px;
-		// 			color: skyblue;
-		// 		}
-		// 		ul {
-		// 			li{
-		// 				// position: relative;
-		// 				// display: block;
-		// 				// float: right;
-		// 				margin-bottom: 20px;
-		// 				font-size: 20px;
-		// 				font-weight: bold;
-		// 				letter-spacing: 1px;
-		// 				i {
-		// 					width: 50px;
-		// 					height: 50px;
-		// 					border: 1px solid skyblue;
-		// 					color: aqua;
-		// 					text-align: center;
-
-		// 				}
-		// 			}
-		// 		}
-		// 	}
-		// } 
 		> p{
 			padding-left: 20px;
+			padding-bottom: 30px;
 			font:  15px/20px 'Work Sans', sans-serif;
 			color: skyblue;
 			margin-bottom: 50px;

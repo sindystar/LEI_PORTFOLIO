@@ -37,7 +37,7 @@ $mobile: 539px;
 					left: 25px;
 				}
 			}
-			>.wrap {
+			.wrap {
 				width: 780px;
 				height: 300px;
 				float: right;
@@ -54,11 +54,11 @@ $mobile: 539px;
 						position: absolute;
 						top: 0;
 						left: 0;
-						li {
+						>li {
 							width: calc(100% / 5);
 							height: 100%;
 							float: left;
-							img {
+							>img {
 								width: 100%;
 								height: 100%;
 								object-fit: cover;
@@ -93,7 +93,7 @@ $mobile: 539px;
 					top: 50%;
 					right: 20px;
 					margin-top: -20px;
-					img {
+					>img {
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
@@ -113,7 +113,7 @@ $mobile: 539px;
 					left: 0;
 					opacity: 0;
 					transition: 0.5s;
-					span {
+					>span {
 						display: block;
 						font-size: 40px;
 						font-family: 'Merriweather', serif;
@@ -128,6 +128,7 @@ $mobile: 539px;
 		}
 		.members {
 			width: 100%;
+			margin-bottom: 50px;
 			position: relative;
 			&::after {
 				content: '';
@@ -224,7 +225,7 @@ $mobile: 539px;
 							}
 						}
 					}
-					h2 {
+					>h2 {
 						padding-top: 10px;
 						padding-left: 10px ;
 						text-align: center;
@@ -234,7 +235,7 @@ $mobile: 539px;
 							color: #333;
 						}
 					}
-					>P {
+					P {
 						padding-top: 10px;
 						margin-right: 10px;
 						margin-top: 8px;
@@ -283,7 +284,10 @@ $mobile: 539px;
 
 			}
 			.members {
-				>.wrap {
+				.wrap {
+					// h2{
+					// 	margin-top: -50px;
+					// }
 					article {
 						border-top: 1px solid $keycolor;
 						border-bottom: none;
