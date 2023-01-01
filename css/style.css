@@ -495,7 +495,6 @@ table {
 }
 .about .inner .members {
   width: 100%;
-  margin-bottom: 50px;
   position: relative;
 }
 .about .inner .members::after {
@@ -529,6 +528,7 @@ table {
   float: left;
   margin-right: 20px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .about .inner .members .wrap > article:nth-of-type(2n) {
   border-top: 1px solid rgb(2, 126, 196);
@@ -657,6 +657,9 @@ table {
   }
 }
 @media screen and (max-width: 539px) {
+  .about .inner .members h2 {
+    margin-bottom: 0;
+  }
   .about .inner .members .wrap article {
     width: 100%;
     border-top: none;
@@ -1085,6 +1088,12 @@ table {
   color: rgb(2, 126, 196);
   font-size: 15px;
   margin-bottom: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.location .inner .txt > div li i:hover {
+  color: skyblue;
+  transform: scale(1.3);
 }
 .location .inner .txt > div > p {
   border-bottom: 1px solid rgb(2, 126, 196);
@@ -1923,7 +1932,7 @@ table {
     margin-right: 0%;
   }
   #news .inner .wrap article .pic {
-    height: 30vmax;
+    height: 25vmax;
   }
   #brand .inner .wrap article:nth-of-type(1) {
     width: 100%;

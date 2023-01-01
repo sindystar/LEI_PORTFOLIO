@@ -128,7 +128,6 @@ $mobile: 539px;
 		}
 		.members {
 			width: 100%;
-			margin-bottom: 50px;
 			position: relative;
 			&::after {
 				content: '';
@@ -162,6 +161,7 @@ $mobile: 539px;
 					float: left;
 					margin-right: 20px;
 					margin-top: 50px;
+					margin-bottom: 50px;
 					&:nth-of-type(2n) {
 						border-top: 1px solid $keycolor;
 					}
@@ -315,6 +315,9 @@ $mobile: 539px;
 	.about {
 		.inner {
 			.members {
+				h2 {
+					margin-bottom: 0;
+				}
 				.wrap {
 					article {
 						width: 100%;
