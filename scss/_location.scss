@@ -134,15 +134,41 @@ $mobile: 539px;
 @media screen and (max-width: $tablet) {
 	// location
 	.location {
+		margin-bottom: 250px;
 		.inner {
 			width: 100%;
 			padding: 0px 30px;
 			margin: 0 auto;
-		}
-		.mapinfo {
+			.mapinfo {
 			#map {
 			width: 100%;
 			}
-		}		
+		}
+			.txt {
+				padding-bottom: 0px;
+				div {
+					width: 50%;
+				}
+			}
+		}				
+	}
+}
+@media screen and (max-width: $mobile) {
+	.location {
+		margin-bottom: 350px;
+		.inner {
+			.mapinfo {
+				#map {
+					width: 100%;
+				}
+			}
+			.txt {
+				// margin-top: -50px;
+				div {
+					width: 100%;
+					margin-top: -80px;
+				}
+			}			
+		}
 	}
 }

@@ -1101,13 +1101,34 @@ table {
 }
 
 @media screen and (max-width: 1179px) {
+  .location {
+    margin-bottom: 250px;
+  }
   .location .inner {
     width: 100%;
     padding: 0px 30px;
     margin: 0 auto;
   }
-  .location .mapinfo #map {
+  .location .inner .mapinfo #map {
     width: 100%;
+  }
+  .location .inner .txt {
+    padding-bottom: 0px;
+  }
+  .location .inner .txt div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .location {
+    margin-bottom: 350px;
+  }
+  .location .inner .mapinfo #map {
+    width: 100%;
+  }
+  .location .inner .txt div {
+    width: 100%;
+    margin-top: -80px;
   }
 }
 .join .sub_visual {
