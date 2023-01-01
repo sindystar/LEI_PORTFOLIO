@@ -1053,7 +1053,7 @@ table {
 }
 .location .inner .mapinfo .info.off {
   opacity: 0;
-  margin-top: -500px;
+  margin-top: -550px;
 }
 .location .inner > p {
   padding-left: 20px;
@@ -1228,6 +1228,47 @@ table {
     padding: 0px 20px;
   }
 }
+.scroll {
+  position: fixed;
+  right: 2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.scroll li {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+.scroll li p {
+  font-size: 10px;
+  color: #444;
+  cursor: pointer;
+  opacity: 0;
+  transition: 1;
+}
+.scroll li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin-left: 1vw;
+  background: #aaa;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.scroll li.on a {
+  height: 100px;
+  background: #444;
+}
+.scroll li:hover a {
+  background-color: #444;
+}
+.scroll li:hover p {
+  opacity: 1;
+}
+
 #header {
   width: 100%;
   position: absolute;
