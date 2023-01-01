@@ -1241,7 +1241,8 @@ table {
   align-content: center;
 }
 .scroll li p {
-  font-size: 10px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
   color: #444;
   cursor: pointer;
   opacity: 0;
@@ -1251,7 +1252,7 @@ table {
   display: block;
   width: 10px;
   height: 10px;
-  border-radius: 50px;
+  border-radius: 5px;
   margin-left: 1vw;
   background: #aaa;
   margin-bottom: 20px;
