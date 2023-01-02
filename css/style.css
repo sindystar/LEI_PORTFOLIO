@@ -1491,7 +1491,7 @@ table {
   text-align: center;
   z-index: 2;
 }
-#visual .panel .inner h1 {
+#visual .panel .inner > h1 {
   font-style: italic;
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
@@ -1919,13 +1919,13 @@ table {
     color: #444;
   }
   #visual .panel .inner p {
-    font-size: 28px;
+    font-size: 30px;
     color: #444;
   }
   #visual .panel .inner a {
     color: #444;
     font-weight: 600;
-    width: 50%;
+    width: 40%;
     border: 1px solid #444;
   }
   #visual .panel .inner a:hover {
@@ -1993,12 +1993,17 @@ table {
   }
 }
 @media screen and (max-width: 539px) {
-  #visual img {
+  #visual .panel .inner {
     width: 100%;
-    height: 500px;
   }
-  #visual .inner h1 {
-    font-size: 80px;
+  #visual .panel .inner h1 {
+    font-size: 70px;
+  }
+  #visual .panel .inner p {
+    font-size: 26px;
+  }
+  #visual .panel .inner a {
+    width: 65%;
   }
   #news .inner .wrap article {
     width: 100%;
