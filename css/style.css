@@ -1447,42 +1447,41 @@ table {
   overflow: hidden;
   background: #ddd;
 }
-#visual .pannel {
+#visual .panel {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-#visual .pannel > li {
+#visual .panel > li {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: opactity 1s;
+  transition: opacity 1s;
   z-index: 1;
   opacity: 0;
 }
-#visual .pannel > li:nth-of-type(1) {
+#visual .panel > li:nth-of-type(1) {
   background-image: url(../img/visual/pic1.jpg);
 }
-#visual .pannel > li:nth-of-type(2) {
-  background-image: url(../img/visual/pic2.jpg);
+#visual .panel > li:nth-of-type(2) {
+  background-image: url(../img/visual/pic11.jpg);
 }
-#visual .pannel > li:nth-of-type(3) {
+#visual .panel > li:nth-of-type(3) {
   background-image: url(../img/visual/pic3.jpg);
 }
-#visual .pannel > li:nth-of-type(4) {
-  background-image: url(../img/visual/pic4.jpg);
+#visual .panel > li:nth-of-type(4) {
+  background-image: url(../img/visual/pic5.jpg);
 }
-#visual .pannel > li.on {
+#visual .panel > li.on {
   opacity: 1;
   z-index: 2;
 }
-#visual .pannel .inner {
+#visual .panel .inner {
   width: 1180px;
   margin: 0 auto;
   position: absolute;
@@ -1492,20 +1491,20 @@ table {
   text-align: center;
   z-index: 2;
 }
-#visual .pannel .inner h1 {
+#visual .panel .inner h1 {
   font-style: italic;
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.9);
 }
-#visual .pannel .inner p {
+#visual .panel .inner p {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 80px;
 }
-#visual .pannel .inner a {
+#visual .panel .inner a {
   display: block;
   width: 310px;
   height: 28px;
@@ -1517,7 +1516,7 @@ table {
   text-align: center;
   transition: 0.5s;
 }
-#visual .pannel .inner a:hover {
+#visual .panel .inner a:hover {
   background: rgba(255, 255, 255, 0.5);
   color: rgb(2, 126, 196);
 }

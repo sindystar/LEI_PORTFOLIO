@@ -92,8 +92,7 @@ function activation(index) {
 	for (const el of btns) el.classList.remove('on');
 	panels[index].classList.add('on');
 	btns[index].classList.add('on');
-	//클릭한 버튼의 순번으로 전역변수 num값 갱신
-	//롤링함수에서 현재 클릭된 버튼의 순번값으로 롤링 순서를 갱신가능
+
 	num = index;
 }
 
