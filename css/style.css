@@ -1529,15 +1529,16 @@ table {
   z-index: 3;
 }
 #visual .btns li {
-  width: 70px;
+  width: 50px;
   height: 5px;
-  background: #fff;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transition: 0.5s;
 }
 #visual .btns li.on {
   width: 150px;
-  background: #222;
+  background: #555;
 }
 #visual nav {
   position: absolute;
@@ -1555,8 +1556,8 @@ table {
   transition: 0.5s;
 }
 #visual nav i:hover, #visual nav i.on {
-  transform: scale(2);
-  color: #222;
+  transform: scale(1.5);
+  color: #555;
 }
 
 #news {
@@ -1903,34 +1904,37 @@ table {
     display: block;
   }
   #visual {
-    height: 100vh;
+    height: 75vh;
     background: url(../img/visual/pic7.jpg) no-repeat center/cover;
   }
-  #visual img {
+  #visual .panel li {
     display: none;
   }
-  #visual .inner {
+  #visual .panel .inner {
     width: 100%;
     padding: 0px 30px;
   }
-  #visual .inner h1 {
+  #visual .panel .inner h1 {
     font-size: 90px;
     color: #444;
   }
-  #visual .inner p {
+  #visual .panel .inner p {
     font-size: 28px;
     color: #444;
   }
-  #visual .inner a {
+  #visual .panel .inner a {
     color: #444;
     font-weight: 600;
     width: 50%;
     border: 1px solid #444;
   }
-  #visual .inner a:hover {
+  #visual .panel .inner a:hover {
     border: 1px solid #444;
     background: #444;
     color: #fff;
+  }
+  #visual .btns, #visual nav {
+    display: none;
   }
   #news {
     padding: 100px 30px;
