@@ -1452,7 +1452,7 @@ table {
   width: 100%;
   height: 100%;
 }
-#visual .pannel li {
+#visual .pannel > li {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1466,19 +1466,19 @@ table {
   z-index: 1;
   opacity: 0;
 }
-#visual .pannel li:nth-of-type(1) {
+#visual .pannel > li:nth-of-type(1) {
   background-image: url(../img/visual/pic1.jpg);
 }
-#visual .pannel li:nth-of-type(2) {
+#visual .pannel > li:nth-of-type(2) {
   background-image: url(../img/visual/pic2.jpg);
 }
-#visual .pannel li:nth-of-type(3) {
+#visual .pannel > li:nth-of-type(3) {
   background-image: url(../img/visual/pic3.jpg);
 }
-#visual .pannel li:nth-of-type(4) {
+#visual .pannel > li:nth-of-type(4) {
   background-image: url(../img/visual/pic4.jpg);
 }
-#visual .pannel li.on {
+#visual .pannel > li.on {
   opacity: 1;
   z-index: 2;
 }
@@ -1490,7 +1490,7 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 5;
+  z-index: 2;
 }
 #visual .pannel .inner h1 {
   font-style: italic;

@@ -14,7 +14,7 @@ btnCall.onclick = function(e){
 // scroll 
 const scrollWrap = document.querySelectorAll('.scrollWrap');
 const scrollBtn = document.querySelectorAll('.scroll li');
-const btnScroll_arr = Array.from(scrollBtn);
+const scrollBtn_arr = Array.from(scrollBtn);
 const base = -window.innerHeight / 3;
 const scrollSpeed = 500;
 let posArr = [];
@@ -41,7 +41,7 @@ function getPos() {
 function Pos() {
 	getPos();
 	const scrollActive = document.querySelector('li.on');
-	const active_index = btnScroll_arr.indexOf(scrollActive);
+	const active_index = scrollBtn_arr.indexOf(scrollActive);
 	window.scroll(0, posArr[active_index]);
 }
 
