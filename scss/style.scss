@@ -237,62 +237,144 @@ $mobile: 539px;
 	width: 100%;
 	// height: calc(100vh - 101px); //
 	height: 100vh;
+	position: relative;
 	overflow: hidden;
 	background: #ddd;
 
-	img {
+	.pannel {
+		position: absolute;
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
-	}
-	.inner {
-		width: 1180px;
-		// height: 600px;
-		margin: 0 auto;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		h1 {
-			// margin-top: 120px;    // 높이 출력 화면에서 확인해보기!
-			font-style: italic;
-			font-family:'Open Sans', sans-serif;
-			font-size: 100px;
-			letter-spacing: 1px;
-			color: rgba(255, 255, 255, 0.9);
-			// margin-bottom: 5px;
-		}
-		// span {
-		//     font-size: 24px;
-		//     color: #fff;
-		//     // color:rgba(255,255,255,0.8) ;
-		//     // text-align: left;
-		// }
-		p {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 20px;
-			color: rgba(255, 255, 255, 0.9);
-			margin-bottom: 80px;
-		}
-		a {
-			display: block;
-			width: 310px;
-			height: 28px;
-			margin: 0 auto;
-			border: 1px solid rgba(255, 255, 255, 0.5);
-			font-family:'Open Sans', sans-serif;
-			font:  10px/40px;
-			color: #fff;
-			text-align: center;
-			transition: 0.5s;
-			&:hover {
-				background: rgba(255, 255, 255, 0.5);
-				color: $keycolor;
 
+		li {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			position: relative;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			transition: opactity 1s;
+			z-index: 1;
+			opacity: 0;
+			
+
+			&:nth-of-type(1){
+				background-image: url(../img/visual/pic1.jpg);
+			}
+			&:nth-of-type(2){
+				background-image: url(../img/visual/pic2.jpg);
+			}
+			&:nth-of-type(3){
+				background-image: url(../img/visual/pic3.jpg);
+			}
+			&:nth-of-type(4){
+				background-image: url(../img/visual/pic4.jpg);
+			}
+			&.on {
+				opacity: 1;
+				z-index: 2;
+			}
+		}
+		.inner {
+			width: 1180px;
+			// height: 600px;
+			margin: 0 auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			z-index: 5;
+			h1 {
+				// margin-top: 120px;    // 높이 출력 화면에서 확인해보기!
+				font-style: italic;
+				font-family:'Open Sans', sans-serif;
+				font-size: 100px;
+				letter-spacing: 1px;
+				color: rgba(255, 255, 255, 0.9);
+				// margin-bottom: 5px;
+			}
+			p {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 20px;
+				color: rgba(255, 255, 255, 0.9);
+				margin-bottom: 80px;
+			}
+			a {
+				display: block;
+				width: 310px;
+				height: 28px;
+				margin: 0 auto;
+				border: 1px solid rgba(255, 255, 255, 0.5);
+				font-family:'Open Sans', sans-serif;
+				font:  10px/40px;
+				color: #fff;
+				text-align: center;
+				transition: 0.5s;
+				&:hover {
+					background: rgba(255, 255, 255, 0.5);
+					color: $keycolor;
+
+				}
 			}
 		}
 	}
+	.btns {
+		position: absolute;
+		left: 10vw;
+		bottom: 10vh;
+		display: flex;
+		gap: 10px;
+		z-index: 3;
+
+		li {
+			width: 70px;
+			height: 5px;
+			background: #fff;
+			cursor: pointer;
+			transition: 0.5s;
+
+			&.on {
+				width: 150px;
+				background: #222;
+			}
+
+		}
+		
+	}
+
+	nav {
+		position: absolute;
+		z-index: 3;
+		bottom: 9vh;
+		right: 10vw;
+		display: flex;
+		gap: 40px;
+		font-size: 20px;
+		color: #fff;
+		cursor: pointer;
+
+		i {
+			display: inline-block;
+			transition: 0.5s;
+
+			&:hover,
+			&.on {
+				transform: scale(2);
+				color: #222;
+			}
+		}
+	}
+
+	// img {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	object-fit: cover;
+	// }
+	
 }
 
 //news

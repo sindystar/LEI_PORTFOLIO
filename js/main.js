@@ -12,9 +12,9 @@ btnCall.onclick = function(e){
 
 
 // scroll 
-const scrollView = document.querySelectorAll('.scrollView');
-const btnScroll = document.querySelectorAll('.scroll li');
-const btnScroll_arr = Array.from(btnScroll);
+const scrollWrap = document.querySelectorAll('.scrollWrap');
+const scrollBtn = document.querySelectorAll('.scroll li');
+const btnScroll_arr = Array.from(scrollBtn);
 const base = -window.innerHeight / 3;
 const scrollSpeed = 500;
 let posArr = [];
@@ -22,10 +22,9 @@ let posArr = [];
 getPos();
 
 window.addEventListener('resize', Pos);
-
 window.addEventListener('scroll', scrollActivation);
 
-btnScroll.forEach((btn, idx) => {
+scrollBtn.forEach((btn, idx) => {
 	btn.addEventListener('click', (e) => {
 		const scroll = window.scrollY;
 		const isOn = e.currentTarget.classList.contains('on');
@@ -36,7 +35,7 @@ btnScroll.forEach((btn, idx) => {
 
 function getPos() {
 	posArr = [];
-	for (const el of scrollView) posArr.push(el.offsetTop);
+	for (const el of scrollWrap) posArr.push(el.offsetTop);
 }
 
 function Pos() {
@@ -49,11 +48,11 @@ function Pos() {
 function scrollActivation() {
 	const scroll = window.scrollY || window.pageYOffset;
 
-	scrollView.forEach((_, idx) => {
+	scrollWrap.forEach((_, idx) => {
 		if (scroll >= posArr[idx] + base) {
-			for (const el of btnScroll) el.classList.remove('on');
-			btnScroll[idx].classList.add('on');
-			scrollView[idx].classList.add('on');
+			for (const el of scrollBtn) el.classList.remove('on');
+			scrollBtn[idx].classList.add('on');
+			scrollWrap[idx].classList.add('on');
 		}
 	});
 }
@@ -64,6 +63,55 @@ function moveScroll(index) {
 		value: posArr[index],
 		duration: scrollSpeed,
 	});
+}
+
+//rolling
+const frame = document.querySelector('#visual');
+const panels = frame.querySelectorAll('.panel li');
+const btns = frame.querySelectorAll('.btns li');
+const btnPlay = frame.querySelector('.fa-play');
+const btnPause = frame.querySelector('.fa-pause');
+const len = panels.length - 1;
+let num = 0;
+let timer = null;
+
+startRolling();
+
+btns.forEach((btn, idx) => {
+	btn.addEventListener('click', () => {
+		activation(idx);
+		stopRolling();
+	});
+});
+
+btnPlay.addEventListener('click', startRolling);
+btnPause.addEventListener('click', stopRolling);
+
+function activation(index) {
+	for (const el of panels) el.classList.remove('on');
+	for (const el of btns) el.classList.remove('on');
+	panels[index].classList.add('on');
+	btns[index].classList.add('on');
+	//클릭한 버튼의 순번으로 전역변수 num값 갱신
+	//롤링함수에서 현재 클릭된 버튼의 순번값으로 롤링 순서를 갱신가능
+	num = index;
+}
+
+function rolling() {
+	num < len ? num++ : (num = 0);
+	activation(num);
+}
+
+function startRolling() {
+	timer = setInterval(rolling, 4000);
+	btnPlay.classList.add('on');
+	btnPause.classList.remove('on');
+}
+
+function stopRolling() {
+	clearInterval(timer);
+	btnPause.classList.add('on');
+	btnPlay.classList.remove('on');
 }
 
 

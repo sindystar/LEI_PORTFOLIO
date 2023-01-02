@@ -1443,15 +1443,46 @@ table {
 #visual {
   width: 100%;
   height: 100vh;
+  position: relative;
   overflow: hidden;
   background: #ddd;
 }
-#visual img {
+#visual .pannel {
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
-#visual .inner {
+#visual .pannel li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opactity 1s;
+  z-index: 1;
+  opacity: 0;
+}
+#visual .pannel li:nth-of-type(1) {
+  background-image: url(../img/visual/pic1.jpg);
+}
+#visual .pannel li:nth-of-type(2) {
+  background-image: url(../img/visual/pic2.jpg);
+}
+#visual .pannel li:nth-of-type(3) {
+  background-image: url(../img/visual/pic3.jpg);
+}
+#visual .pannel li:nth-of-type(4) {
+  background-image: url(../img/visual/pic4.jpg);
+}
+#visual .pannel li.on {
+  opacity: 1;
+  z-index: 2;
+}
+#visual .pannel .inner {
   width: 1180px;
   margin: 0 auto;
   position: absolute;
@@ -1459,21 +1490,22 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 5;
 }
-#visual .inner h1 {
+#visual .pannel .inner h1 {
   font-style: italic;
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.9);
 }
-#visual .inner p {
+#visual .pannel .inner p {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 80px;
 }
-#visual .inner a {
+#visual .pannel .inner a {
   display: block;
   width: 310px;
   height: 28px;
@@ -1485,9 +1517,47 @@ table {
   text-align: center;
   transition: 0.5s;
 }
-#visual .inner a:hover {
+#visual .pannel .inner a:hover {
   background: rgba(255, 255, 255, 0.5);
   color: rgb(2, 126, 196);
+}
+#visual .btns {
+  position: absolute;
+  left: 10vw;
+  bottom: 10vh;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+#visual .btns li {
+  width: 70px;
+  height: 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#visual .btns li.on {
+  width: 150px;
+  background: #222;
+}
+#visual nav {
+  position: absolute;
+  z-index: 3;
+  bottom: 9vh;
+  right: 10vw;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+#visual nav i {
+  display: inline-block;
+  transition: 0.5s;
+}
+#visual nav i:hover, #visual nav i.on {
+  transform: scale(2);
+  color: #222;
 }
 
 #news {
