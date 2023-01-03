@@ -31,8 +31,20 @@ fieldset {
   border: none;
 }
 
-table {
+table,
+th,
+td {
   border-collapse: collapse;
+}
+
+.h {
+  position: absolute;
+  top: -99999px;
+  opacity: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 #header_sub {
