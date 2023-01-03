@@ -593,12 +593,12 @@ table {
 .about .inner .members .wrap > article .pic img:hover {
   filter: grayscale(0);
 }
-.about .inner .members .wrap > article > h2 {
+.about .inner .members .wrap > article h2 {
   padding-top: 10px;
   padding-left: 10px;
   text-align: center;
 }
-.about .inner .members .wrap > article > h2 > a {
+.about .inner .members .wrap > article h2 > a {
   font-family: "Open Sans", sans-serif;
   font: 22px/1;
   color: #333;
@@ -635,7 +635,7 @@ table {
     width: 100%;
     padding: 0px 30px;
   }
-  .about .inner > .content > .wrap {
+  .about .inner > .content .wrap {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -643,22 +643,33 @@ table {
   .about .inner > .content > .txt {
     width: 100%;
   }
-  .about .inner .members .wrap article {
-    border-top: 1px solid rgb(2, 126, 196);
-    border-bottom: none;
-    width: 48%;
-    margin-right: 2%;
+  .about .inner .members {
+    margin-top: 50px;
   }
-  .about .inner .members .wrap:nth-of-type(2n), .about .inner .members .wrap:nth-of-type(4n), .about .inner .members .wrap:nth-of-type(7n) {
+  .about .inner .members .wrap > article {
+    margin-top: 0;
+    width: 49%;
+    margin-right: 0%;
+  }
+  .about .inner .members .wrap:nth-of-type(2n) {
     margin-right: 0;
+  }
+  .about .inner .members .wrap:nth-of-type(4n) {
+    width: 48%;
+    margin-right: 20px;
+  }
+  .about .inner .members .wrap .box {
+    width: 100%;
+    margin-top: 0px;
+    border-top: none;
   }
   .about .inner .members .wrap .pic {
     height: 20vmax;
   }
 }
 @media screen and (max-width: 539px) {
-  .about .inner .members h2 {
-    margin-bottom: 0;
+  .about .inner .members > h2 {
+    margin-top: 50px;
   }
   .about .inner .members .wrap article {
     width: 100%;
@@ -1904,7 +1915,7 @@ table {
     display: block;
   }
   #visual {
-    height: 75vh;
+    height: 70vh;
     background: url(../img/visual/pic7.jpg) no-repeat center/cover;
   }
   #visual .panel li {
@@ -1997,13 +2008,13 @@ table {
     width: 100%;
   }
   #visual .panel .inner h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   #visual .panel .inner p {
-    font-size: 26px;
+    font-size: 22px;
   }
   #visual .panel .inner a {
-    width: 65%;
+    width: 70%;
   }
   #news .inner .wrap article {
     width: 100%;

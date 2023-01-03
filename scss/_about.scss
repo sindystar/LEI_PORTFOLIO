@@ -152,7 +152,7 @@ $mobile: 539px;
 					left: 25px;
 				}
 			}
-			.wrap {		
+			.wrap {	
 				>article {
 					display: flex;
 					flex-wrap: wrap;
@@ -225,7 +225,7 @@ $mobile: 539px;
 							}
 						}
 					}
-					>h2 {
+					h2 {
 						padding-top: 10px;
 						padding-left: 10px ;
 						text-align: center;
@@ -268,60 +268,70 @@ $mobile: 539px;
 }
 
 @media screen and (max-width: $tablet) {
-	.about {
-		.inner {
-			width: 100%;
-			padding: 0px 30px;
-			>.content {
-				>.wrap {
-					width: 100%;
-					display: flex;
-					justify-content: center;
-				}
-				>.txt {
-					width: 100%;
-				}
+.about {
+	.inner {
+		width: 100%;
+		padding: 0px 30px;
+		>.content {
+			.wrap {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+			>.txt {
+				width: 100%;
+				// padding-bottom: 100px;
+			}
 
-			}
-			.members {
-				.wrap {
-					// h2{
-					// 	margin-top: -50px;
+		}
+		.members {
+			margin-top: 50px;
+			// h2 {
+			// 	margin-bottom: 50px;
+			// }
+			.wrap {
+				>article {
+					margin-top: 0;
+					// border-bottom: none;
+					width: 49%;
+					margin-right: 0%;				
+					}
+					// &:nth-of-type(1n) {
+					// 	border-top: none;
 					// }
-					article {
-						border-top: 1px solid $keycolor;
-						border-bottom: none;
-						width: 48%;
-						margin-right: 2%;					
-						}
-						// &:nth-of-type(1n) {
-						// 	border-top: none;
-						// }
-						&:nth-of-type(2n),&:nth-of-type(4n), &:nth-of-type(7n)  {
-							margin-right: 0;
-						}
-						.pic {
-							height: 20vmax;
-						}
-				}
-			}
-			
-			}
+					&:nth-of-type(2n)  {
+						margin-right: 0;
+					}
+					&:nth-of-type(4n)  {
+						width: calc(100% / 2 ) - 2% ;
+						margin-right: 20px;	
+					}
+					.box {
+						width: 100%;
+						margin-top: 0px;
+						border-top: none;
+					}
+					.pic {
+						height: 20vmax;
+					}
+				}	
+			}		
 		}
 	}
+}
 
 
 @media screen and (max-width: $mobile) {
-	.about {
-		.inner {
-			.members {
-				h2 {
-					margin-bottom: 0;
-				}
-				.wrap {
-					article {
-						width: 100%;
-						border-top: none;
+.about {
+	.inner {
+		.members {
+			>h2 {
+				margin-top: 50px;
+			}
+			.wrap {
+				article {
+					width: 100%;
+					border-top: none;
 					}
 				}
 			}			

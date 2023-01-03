@@ -21,13 +21,13 @@ marker.setMap(map);
 map.setZoomable(false);
 
 // //Info패널 이벤트 연결 하면 지도 가운데 유지 안됨 ,이벤트 발생 안함 
-// info.addEventListener('click', () => {
-// 	info.classList.add('off');
-// 	map.setCenter(mapOption.center);
-// });
-// mapFrame.addEventListener('mouseleave', () => {
-// 	info.classList.remove('off');
-// });
+info.addEventListener('click', () => {
+	info.classList.add('off');
+	map.setCenter(mapOption.center);
+});
+mapFrame.addEventListener('mouseleave', () => {
+	info.classList.remove('off');
+});
 
 //브라우저 리사이즈시 지도 항상 가운데 유지
 window.addEventListener('resize', () => {
