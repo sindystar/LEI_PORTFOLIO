@@ -1799,161 +1799,136 @@ textarea {
   color: #555;
 }
 
-#news {
+#metro nav {
   width: 100%;
-  padding: 200px 0;
+  padding: 20px 10vw;
+  display: flex;
+  gap: 50px;
 }
-#news .inner {
-  width: 1180px;
-  margin: 0 auto;
-  position: relative;
-}
-#news .inner h1 {
-  font-size: 30px;
+#metro nav a {
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
-  color: rgb(2, 126, 196);
-  text-align: center;
-  margin-bottom: 50px;
-}
-#news .inner .wrap {
-  width: 100%;
-}
-#news .inner .wrap article {
-  float: left;
-  width: 280px;
-  margin-right: 20px;
-}
-#news .inner .wrap article:last-of-type {
-  margin-right: 0;
-}
-#news .inner .wrap article .pic {
-  width: 100%;
-  height: 120px;
-  overflow: hidden;
-}
-#news .inner .wrap article .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: #999;
   transition: 0.5s;
-}
-#news .inner .wrap article .pic:hover {
   cursor: pointer;
 }
-#news .inner .wrap article .pic:hover img {
+#metro nav a.on {
+  color: rgb(2, 126, 196);
   transform: scale(1.2);
 }
-#news .inner .wrap article h2 {
-  margin-bottom: 0px;
+#metro section {
+  display: none;
+  padding: 5px;
 }
-#news .inner .wrap article h2 a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  color: rgb(2, 126, 196);
-}
-#news .inner .wrap article p {
-  font-family: "Work Sans", sans-serif;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-#brand {
-  width: 100%;
-  padding: 200px 0;
-  background: #eee;
-}
-#brand .inner {
-  width: 1180px;
-  margin: 0 auto;
-  position: relative;
-}
-#brand .inner h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  color: rgb(2, 126, 196);
-  text-align: center;
-  margin-bottom: 50px;
-}
-#brand .inner .wrap {
-  width: 100%;
-}
-#brand .inner .wrap article:nth-of-type(1) {
-  width: 380px;
-  height: 620px;
-  background: rgb(199, 209, 216);
-  float: left;
-  margin-right: 20px;
-  padding: 170px 50px 0;
-  text-align: center;
-}
-#brand .inner .wrap article:nth-of-type(1) i {
-  font-size: 100px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-#brand .inner .wrap article:nth-of-type(1) h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 5px;
-}
-#brand .inner .wrap article:nth-of-type(1) p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 30px;
-}
-#brand .inner .wrap article:nth-of-type(1) a {
-  font-family: "Open Sans", sans-serif;
+#metro section::after {
+  content: "";
   display: block;
-  width: 150px;
-  height: 24px/30px;
-  font-size: 12px;
-  color: #fff;
-  border: 1px solid #fff;
-  margin: 0 auto;
+  clear: both;
+}
+#metro section article {
+  width: 25%;
+  height: 25vw;
+  padding: 5px;
+  float: left;
+}
+#metro section article .inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0);
   transition: 0.5s;
 }
-#brand .inner .wrap article:nth-of-type(1) a:hover {
-  transform: scale(1.1);
-  background: #fff;
-  color: rgb(199, 209, 216);
+#metro section.on {
+  display: block;
 }
-#brand .inner .wrap article:nth-of-type(2) {
-  width: 380px;
-  height: 300px;
-  float: left;
-  margin-right: 20px;
+#metro section.active article .inner {
+  opacity: 1;
+  transform: scale(1);
 }
-#brand .inner .wrap article:nth-of-type(2) img {
+#metro #news article:nth-of-type(1), #metro #news article:nth-of-type(4), #metro #news article:nth-of-type(9) {
+  width: 50%;
+}
+#metro #news article .inner {
+  background: lightblue;
+}
+#metro #flickr article:nth-of-type(3), #metro #flickr article:nth-of-type(9) {
+  width: 50%;
+}
+#metro #flickr article .inner {
+  background: lightgreen;
+}
+#metro #youtube article:nth-of-type(2), #metro #youtube article:nth-of-type(8) {
+  width: 50%;
+}
+#metro #youtube article .inner {
+  background: orange;
+}
+
+#location {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#brand .inner .wrap article:nth-of-type(3) {
-  width: 380px;
-  height: 300px;
-  float: left;
-}
-#brand .inner .wrap article:nth-of-type(3) img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#brand .inner .wrap article:nth-of-type(4) {
-  width: 780px;
-  height: 300px;
-  float: left;
-  margin-top: 20px;
+  height: 60vh;
+  background: #3a4258;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
-#brand .inner .wrap article:nth-of-type(4) img {
+#location #map {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: invert(1) grayscale(1) brightness(0.8);
+  opacity: 0.3;
 }
-#brand .inner .wrap article:nth-of-type(4)::after {
+#location .mapInfo {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+#location .mapInfo::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  transform: skewX(-20deg);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#location .mapInfo.off {
+  opacity: 0;
+  margin-top: -500px;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  background-image: url(../img/visual/pic8.jpg);
+  object-fit: cover;
+  filter: url("#effect");
+  z-index: 2;
+}
+footer .toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 50px);
+  transition: 1s;
+}
+footer .toggle::before {
   content: "";
   display: block;
   width: 100%;
@@ -1961,168 +1936,56 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(-45deg, rgba(192, 213, 255, 0.4), rgba(208, 173, 230, 0.4));
-  opacity: 0;
-  transition: 0.5s;
+  background: #f8bac7;
+  transform: scaleY(0.8) rotate(45deg);
+  border-radius: 20px;
+  transition: 1s;
 }
-#brand .inner .wrap article:nth-of-type(4):hover {
-  cursor: pointer;
+footer .toggle span {
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  color: #fff;
+  margin-top: -50px;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: 1s;
 }
-#brand .inner .wrap article:nth-of-type(4):hover::after {
-  opacity: 1;
+footer .upper {
+  height: 0vh;
+  overflow: hidden;
+  transition: 1s;
+}
+footer .lower {
+  border-top: 1px solid #ddd;
+}
+footer .lower p {
+  position: relative;
+  z-index: 2;
+  padding: 40px 10vw;
+  text-align: center;
+  font: 11px/1.2 "arial";
+  color: #aaa;
+  letter-spacing: 2px;
 }
 
-#banner {
-  width: 100%;
-  padding: 150px 0;
-  background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed;
+footer.on .toggle {
+  top: -70px;
+  width: 50px;
+  height: 50px;
+  left: calc(50% - 25px);
 }
-#banner .inner {
-  width: 1180px;
-  margin: 0 auto;
+footer.on .toggle::before {
+  border-radius: 50%;
+  transform: scaleY(1) rotate(45deg);
 }
-#banner .inner > h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 50px;
-  font-style: italic;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 10px;
+footer.on .toggle span {
+  transform: rotate(225deg);
+  margin-top: 5px;
+  margin-left: -4px;
 }
-#banner .inner p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
-}
-#banner .inner a {
-  font-family: "Open Sans", sans-serif;
-  display: block;
-  margin: 0 auto;
-  width: 310px;
-  height: 24px;
-  text-align: center;
-  margin-top: 50px;
-  border: 1px solid #eee;
-  font-size: 14px;
-  color: #fff;
-  transition: 0.5s;
-}
-#banner .inner a:hover {
-  background: #fff;
-  color: rgb(2, 126, 196);
-  transform: scale(1.1);
-}
-
-#comments {
-  width: 100%;
-  padding: 150px 0;
-  background: #ddd;
-}
-#comments .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-#comments .inner h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  color: rgb(2, 126, 196);
-  text-align: center;
-  margin-bottom: 50px;
-}
-#comments .inner ul {
-  width: 100%;
-}
-#comments .inner ul li {
-  width: 95%;
-  margin: 0 auto;
-  border: 1px solid rgb(2, 126, 196);
-  border-radius: 3px;
-  padding: 10px 30px;
-  margin-bottom: 14px;
-  transition: 0.5s;
-}
-#comments .inner ul li::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#comments .inner ul li:hover {
-  background: rgb(2, 126, 196);
-}
-#comments .inner ul li:hover a {
-  color: #fff;
-  transform: scale(1.05);
-}
-#comments .inner ul li:hover span {
-  color: #fff;
-  transform: scale(1.05);
-}
-#comments .inner ul li a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #777;
-  color: rgb(2, 126, 196);
-  float: left;
-}
-#comments .inner ul li span {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  color: #888;
-  color: rgb(2, 126, 196);
-  float: right;
-}
-
-#footer {
-  width: 100%;
-  padding: 100px 0;
-  background: #444;
-}
-#footer .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-#footer .inner::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#footer .inner h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  color: #888;
-  float: left;
-}
-#footer .inner ul {
-  float: right;
-}
-#footer .inner ul li {
-  float: left;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-#footer .inner ul li a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  color: #777;
-}
-#footer .inner address {
-  float: left;
-  width: 100%;
-  font-family: "Work Sans", sans-serif;
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  padding-top: 20px;
-  border-top: 1px solid #888;
-}
-#footer .inner p {
-  float: left;
-  width: 100%;
-  font-family: "Work Sans", sans-serif;
-  font-size: 12px;
-  color: #777;
+footer.on .upper {
+  height: 400px;
 }
 
 @media screen and (max-width: 1179px) {
