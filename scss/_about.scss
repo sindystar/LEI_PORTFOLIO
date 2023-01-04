@@ -184,6 +184,7 @@ $mobile: 539px;
 						width: 100%;
 						float: left;
 						padding-left: 10px;
+						
 						.txtBox {
 							margin-top: 50px;
 							li{						
@@ -213,6 +214,7 @@ $mobile: 539px;
 						height: 20vh;
 						overflow: hidden;
 						margin-bottom: 0px;
+						
 						img {
 							filter: grayscale(1);
 							width: 100%;
@@ -226,10 +228,12 @@ $mobile: 539px;
 						}
 					}
 					h2 {
+						
 						padding-top: 10px;
 						padding-left: 10px ;
 						text-align: center;
 						>a {
+							background-color: #fff;
 							font-family: 'Open Sans', sans-serif;
 							font: 22px/1;
 							color: #333;
