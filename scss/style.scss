@@ -28,7 +28,7 @@ $mobile: 539px;
 		p {
 			font-size: 12px;
 			font-family: 'Open Sans', sans-serif;
-			color: #444;
+			color: #fff;
 			cursor: pointer;
 			opacity: 0;
 			transition: 1;
@@ -580,8 +580,9 @@ $mobile: 539px;
 				z-index: 2;
 				padding: 40px 10vw;
 				text-align: center;
-				font: 11px/1.2 'arial';
-				color: #aaa;
+				font-size: 12px;
+				font-family:'Work Sans', sans-serif;
+				color: #fff;
 				letter-spacing: 2px;
 			}
 		}
