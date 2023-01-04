@@ -4,6 +4,7 @@ $tablet: 1179px;
 $mobile: 539px;
 
 .about {
+	background-color: #fff;
 	.sub_visual {
 		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));		
 	}
@@ -233,7 +234,7 @@ $mobile: 539px;
 						padding-left: 10px ;
 						text-align: center;
 						>a {
-							background-color: #fff;
+							// background-color: #fff;
 							font-family: 'Open Sans', sans-serif;
 							font: 22px/1;
 							color: #333;

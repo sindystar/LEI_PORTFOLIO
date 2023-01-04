@@ -388,6 +388,9 @@ textarea {
   margin: 5px;
 }
 
+.about {
+  background-color: #fff;
+}
 .about .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
@@ -615,7 +618,6 @@ textarea {
   text-align: center;
 }
 .about .inner .members .wrap > article h2 > a {
-  background-color: #fff;
   font-family: "Open Sans", sans-serif;
   font: 22px/1;
   color: #333;
@@ -1646,6 +1648,69 @@ textarea {
   font-size: 14px;
   color: #555;
   margin-bottom: 20px;
+}
+
+#vision .inner {
+  width: 100%;
+  background: linear-gradient(45deg, lightgreen, aqua);
+}
+#vision .inner h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -150px;
+  color: #222;
+  font-size: 60px;
+}
+#vision .inner .txt {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 100%;
+  white-space: nowrap;
+  font-size: 13vw;
+  -webkit-text-stroke: 2px #222;
+  color: transparent;
+  text-align: center;
+}
+#vision .inner section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(0px at center center);
+}
+#vision .inner section .innerText {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 13vw;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+#vision .inner .container {
+  position: relative;
+  margin-top: 200vh;
+  background: #222;
+  padding: 200px;
+  color: #fff;
+}
+#vision .inner .container h2 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+#vision .inner .container p {
+  font: 16px/1.4 "arial";
 }
 
 #brand {

@@ -438,6 +438,78 @@ $mobile: 539px;
 	}
 }
 
+//vision
+#vision {
+	
+	.inner {
+		width: 100%;
+		background: linear-gradient(45deg, lightgreen, aqua);
+		h3 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin-top: -150px;
+			color: #222;
+			font-size: 60px;
+		}
+		.txt {
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			left: 100%;
+			white-space: nowrap;
+			font-size: 13vw;
+			-webkit-text-stroke: 2px #222;
+			color: transparent;
+			text-align: center;
+		}
+
+		section {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: #222;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			clip-path: circle(0px at center center);
+
+			.innerText {
+				position: fixed;
+				top: 50%;
+				left: 100%;
+				transform: translateY(-50%);
+				white-space: nowrap;
+				font-size: 13vw;
+				text-align: center;
+				width: 100%;
+				color: #fff;
+			}
+		}
+
+		.container {
+			position: relative;
+			margin-top: 200vh;
+			background: #222;
+			padding: 200px;
+			color: #fff;
+
+			h2 {
+				font-size: 40px;
+				margin-top: 20px;
+			}
+			p {
+				font: 16px/1.4 'arial';
+			}
+		}
+	}
+}
+
+
 //brand
 #brand {
 	width: 100%;
