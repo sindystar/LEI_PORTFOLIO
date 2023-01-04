@@ -113,16 +113,3 @@ function stopRolling() {
 	btnPlay.classList.remove('on');
 }
 
-// clip path
-
-const section = document.querySelector('section');
-const txt = document.querySelector('.txt');
-const innerText = document.querySelector('.innerText');
-
-window.addEventListener('scrolll', () => {
-	const scrolll = window.scrollY;
-
-	section.style.clipPath = `circle(${scrolll}px at center center)`;
-	txt.style.left = 100 - scroll / 5 + '%';
-	innerText.style.left = 100 - scrolll / 5 + '%';
-});
