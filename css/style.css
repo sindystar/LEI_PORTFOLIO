@@ -810,21 +810,121 @@ textarea {
 .community .inner {
   overflow: hidden;
 }
-.community .inner #visual {
-  width: 100%;
-  height: 500px;
-  border: 1px solid #777;
-  border-radius: 5px;
-  background: no-repeat center/cover;
-  background: rgba(0, 0, 0, 0.8);
-  margin-top: 70px;
-  margin-bottom: 70px;
+.community .inner .content {
+  background: #fafafa;
 }
-.community .inner #visual video {
+.community .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .content h2 {
+  position: relative;
+  font-style: oblique;
+  font-size: 26px;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(2, 126, 196);
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.community .inner .content h2::after {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 1px;
+  background: rgb(2, 126, 196);
+  position: absolute;
+  top: -5px;
+  left: 5px;
+}
+.community .inner .content .wrap {
+  width: 780px;
+  height: 300px;
+  float: right;
+  margin-bottom: 30px;
+  position: relative;
+}
+.community .inner .content .wrap .slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.community .inner .content .wrap .slider ul {
+  width: 500%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.community .inner .content .wrap .slider ul > li {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.community .inner .content .wrap .slider ul > li > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  transition: 0.5s;
+}
+.community .inner .content .wrap .slider ul > li > img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.community .inner .content .wrap .prev {
+  display: block;
+  width: 105px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -20px;
+}
+.community .inner .content .wrap .prev img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.community .inner .content .wrap .next {
+  display: block;
+  width: 105px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -20px;
+}
+.community .inner .content .wrap .next > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.community .inner .content .txt {
+  width: 780px;
+  height: 150px;
+  float: right;
+  position: relative;
+}
+.community .inner .content .txt p {
+  font-size: 18px/40px;
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.community .inner .content .txt p > span {
+  display: block;
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+  color: rgb(2, 126, 196);
+  margin-bottom: 10px;
+}
+.community .inner .content .txt p.on {
+  opacity: 1;
 }
 .community .inner table {
   width: 100%;
@@ -834,14 +934,14 @@ textarea {
   font-family: "Open Sans", sans-serif;
 }
 .community .inner table tr:nth-of-type(even) {
-  background: #fff;
+  background: #fafafa;
 }
 .community .inner table tr:hover {
   background: rgb(235, 247, 254);
 }
 .community .inner table tr th {
   padding: 15px;
-  background: rgb(2, 126, 196);
+  background: skyblue;
   color: #fff;
 }
 .community .inner table tr th:nth-of-type(1) {
@@ -885,7 +985,7 @@ textarea {
   display: block;
   width: 30px;
   height: 30px;
-  background: #fff;
+  background: #fafafa;
   color: rgb(2, 126, 196);
   font-size: 20px;
   text-align: center;
@@ -895,7 +995,7 @@ textarea {
   display: block;
   width: 30px;
   height: 30px;
-  background: #fff;
+  background: #fafafa;
   color: rgb(2, 126, 196);
   font-size: 20px;
   text-align: center;
@@ -957,7 +1057,7 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 .youtube .inner .vidList article {
   margin-top: 80px;
@@ -990,7 +1090,7 @@ textarea {
 .youtube .inner .vidList article .con {
   background-color: #fff;
   width: 100%;
-  height: 60%;
+  height: 50%;
   padding: 10px 10px 0px;
 }
 .youtube .inner .vidList article .con h2 {
