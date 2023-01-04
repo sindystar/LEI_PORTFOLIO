@@ -807,9 +807,6 @@ textarea {
 .community .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
-.community .inner {
-  overflow: hidden;
-}
 .community .inner .content {
   background: #fafafa;
 }
@@ -1028,9 +1025,11 @@ textarea {
     width: 100%;
     padding: 0px 30px;
   }
-  .community .inner #visual {
+  .community .inner .content .wrap {
     width: 100%;
-    height: 150px;
+  }
+  .community .inner .content .txt {
+    width: 100%;
   }
 }
 @media screen and (max-width: 539px) {
