@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #efefef;
+}
+
 .hidden {
   position: absolute;
   top: -99999px;
@@ -844,7 +848,7 @@ textarea {
   margin-top: 80px;
 }
 .youtube .inner .vidList article {
-  margin-top: 50px;
+  margin-top: 80px;
   border-top: 1px solid #999;
   padding: 10px 0px;
   display: flex;
@@ -1214,7 +1218,7 @@ textarea {
 }
 .join .inner table td input[type=text],
 .join .inner table td input[type=password] {
-  width: 60%;
+  width: 95%;
   height: 30px;
   border: 1px solid #eee;
   background: rgb(242, 246, 249);

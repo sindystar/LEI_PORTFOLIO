@@ -112,3 +112,4 @@ function stopRolling() {
 	btnPause.classList.add('on');
 	btnPlay.classList.remove('on');
 }
+

@@ -83,7 +83,7 @@ $mobile: 539px;
 				font-size: 0; //textarea의 기본 마진값을 초기화 -> 폰트 싸이즈를 0으로 초기화 -> 문제점은 안에있는 모든 텍스트가 0 -> 지워질 라벨의 폰트만 다시 싸이즈를 재 코딩해서 텍스트를 복원
 				input[type='text'],
 				input[type='password'] {
-					width: 60%;
+					width: 95%;
 					height: 30px;
 					border: 1px solid #eee;
 					background: rgb(242, 246, 249);
