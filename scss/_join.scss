@@ -70,12 +70,14 @@ $mobile: 539px;
 					font-size: 14px;
 					font-family:'Open Sans', sans-serif;
 					color: #fff;
-					margin-right: 10px;
-					// &.hover {
-					// 	cursor: pointer;
-					// 	background: #fff;
-					// 	color: $keycolor;
-					// }
+					margin-right: 14px;
+					transition: 0.5s;
+					&:hover {
+						cursor: pointer;
+						transform: scale(1.1);
+						background: skyblue;
+						color: $keycolor;
+					}
 				}
 			}
 			td {
@@ -89,6 +91,11 @@ $mobile: 539px;
 					background: rgb(242, 246, 249);
 					padding-left: 20px;
 					margin-left: 20px;
+					transition: 0.5s;
+					&:hover {
+						cursor: pointer;
+						background:rgb(223, 241, 253) ;
+					}
 				}
 				input[type='checkbox'],
 				input[type='radio'] {
@@ -113,6 +120,11 @@ $mobile: 539px;
 					background: rgb(242, 246, 249);
 					padding-left: 20px;
 					margin-left: 10px;
+					transition: 0.5s;
+					&:hover {
+						cursor: pointer;
+						background:rgb(223, 241, 253) ;
+					}
 				}
 				textarea#comments {
 					width: 100%;
@@ -121,6 +133,11 @@ $mobile: 539px;
 					background: rgb(242, 246, 249);
 					padding: 20px;
 					resize: none;
+					transition: 0.5s;
+					&:hover {
+						cursor: pointer;
+						background:rgb(223, 241, 253) ;
+					}
 				}
 			}
 		}
@@ -156,8 +173,8 @@ $mobile: 539px;
 					}
 					input[type='reset'],
 					input[type='submit'] {
-						width: 48% !important;
-						margin: 0 !important;
+						width: 47% !important;
+						margin: 1% !important;
 					}
 				}
 				td {

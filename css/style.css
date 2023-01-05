@@ -1422,7 +1422,15 @@ textarea {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  margin-right: 10px;
+  margin-right: 14px;
+  transition: 0.5s;
+}
+.join .inner table th input[type=submit]:hover,
+.join .inner table th input[type=reset]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: skyblue;
+  color: rgb(2, 126, 196);
 }
 .join .inner table td {
   border-bottom: 1px solid rgb(2, 126, 196);
@@ -1436,6 +1444,12 @@ textarea {
   background: rgb(242, 246, 249);
   padding-left: 20px;
   margin-left: 20px;
+  transition: 0.5s;
+}
+.join .inner table td input[type=text]:hover,
+.join .inner table td input[type=password]:hover {
+  cursor: pointer;
+  background: rgb(223, 241, 253);
 }
 .join .inner table td input[type=checkbox],
 .join .inner table td input[type=radio] {
@@ -1460,6 +1474,11 @@ textarea {
   background: rgb(242, 246, 249);
   padding-left: 20px;
   margin-left: 10px;
+  transition: 0.5s;
+}
+.join .inner table td select#company:hover {
+  cursor: pointer;
+  background: rgb(223, 241, 253);
 }
 .join .inner table td textarea#comments {
   width: 100%;
@@ -1468,6 +1487,11 @@ textarea {
   background: rgb(242, 246, 249);
   padding: 20px;
   resize: none;
+  transition: 0.5s;
+}
+.join .inner table td textarea#comments:hover {
+  cursor: pointer;
+  background: rgb(223, 241, 253);
 }
 
 @media screen and (max-width: 1179px) {
@@ -1491,8 +1515,8 @@ textarea {
   }
   .join .inner table th input[type=reset],
   .join .inner table th input[type=submit] {
-    width: 48% !important;
-    margin: 0 !important;
+    width: 47% !important;
+    margin: 1% !important;
   }
   .join .inner table td {
     border-left: none;
