@@ -29,9 +29,9 @@ $mobile: 539px;
 			font-size: 10px;
 			font-family: 'Open Sans', sans-serif;
 			color: #fff;
-			cursor: pointer;
 			opacity: 0;
 			transition: 1;
+			cursor: pointer;
 		}
 		a {
 			display: block;
@@ -41,8 +41,8 @@ $mobile: 539px;
 			margin-left: 1vw;
 			background: rgba(255,255,255,0.6);
 			margin-bottom: 20px;
-			cursor: pointer;
 			transition: 0.5s;
+			cursor: pointer;
 		}
 		&.on a {
 			height: 100px;
@@ -51,9 +51,9 @@ $mobile: 539px;
 		&:hover a {
 			background-color: #444;
 		}
-		&:hover p {
-			opacity: 1;
-		}
+		// &:hover p {
+		// 	opacity: 1;
+		// }
 	}
 }
 
@@ -298,7 +298,7 @@ $mobile: 539px;
 			}
 			p {
 				font-family: 'Open Sans', sans-serif;
-				font-size: 20px;
+				font-size: 30px;
 				color: rgba(255, 255, 255, 0.9);
 				margin-bottom: 80px;
 			}
@@ -331,7 +331,7 @@ $mobile: 539px;
 		li {
 			width: 50px;
 			height: 5px;
-			border-radius: 2px;
+			// border-radius: 1px;
 			background: rgba(255,255,255,0.7);
 			cursor: pointer;
 			transition: 0.5s;
