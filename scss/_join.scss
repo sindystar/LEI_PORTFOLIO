@@ -142,15 +142,35 @@ $mobile: 539px;
 		}
 	}
 }
-//mobile
-// @media screen and (max-width: $mobile) {
-// 	.join {
-// 		.inner {
-// 			table {
-// 				th {
-// 					width: 50%; //re passworld 칸내려감 조정 위해 수정하였으나 진행 안됨;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+// mobile
+@media screen and (max-width: $mobile) {
+	.join {
+		.inner {
+			table {
+				th {
+					display: none;
+					padding: 15px 20px;
+					&:last-child {
+						display: block;
+						width: 100%;
+					}
+					input[type='reset'],
+					input[type='submit'] {
+						width: 48% !important;
+						margin: 0 !important;
+					}
+				}
+				td {
+					border-left: none;
+					padding: 10px 0;
+					input[type='text'],
+					input[type='password'],
+					select,
+					textarea {
+						width: 92%;
+					}
+				}
+			}
+		}
+	}
+} 

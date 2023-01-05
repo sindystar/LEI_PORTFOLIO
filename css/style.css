@@ -1480,6 +1480,31 @@ textarea {
     width: 100%;
   }
 }
+@media screen and (max-width: 539px) {
+  .join .inner table th {
+    display: none;
+    padding: 15px 20px;
+  }
+  .join .inner table th:last-child {
+    display: block;
+    width: 100%;
+  }
+  .join .inner table th input[type=reset],
+  .join .inner table th input[type=submit] {
+    width: 48% !important;
+    margin: 0 !important;
+  }
+  .join .inner table td {
+    border-left: none;
+    padding: 10px 0;
+  }
+  .join .inner table td input[type=text],
+  .join .inner table td input[type=password],
+  .join .inner table td select,
+  .join .inner table td textarea {
+    width: 92%;
+  }
+}
 .scroll {
   position: fixed;
   right: 2vw;
