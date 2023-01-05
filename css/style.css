@@ -1780,7 +1780,7 @@ textarea {
   text-align: center;
   z-index: 2;
 }
-#visual .panel .inner > h1 {
+#visual .panel .inner h1 {
   font-style: italic;
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
@@ -1855,7 +1855,7 @@ textarea {
   gap: 50px;
 }
 #metro nav a {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
   color: #999;
   transition: 0.5s;
@@ -1898,7 +1898,114 @@ textarea {
   width: 50%;
 }
 #metro #news article .inner {
-  background: lightblue;
+  background: #ddd;
+}
+#metro #news article .inner .txtBox {
+  width: 100%;
+  padding: 100px;
+}
+#metro #news article .inner .txtBox > h2 {
+  font-size: 30px;
+  font-family: "Open Sans";
+  color: #333;
+  margin-top: 5px;
+}
+#metro #news article .inner .txtBox > h1 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "Work Sans";
+  color: #666;
+  margin-bottom: 10px;
+}
+#metro #news article .inner .txtBox > span {
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #777;
+  margin-bottom: 10px;
+}
+#metro #news article .inner .txtBox > a {
+  display: block;
+  width: 130px;
+  height: 24px;
+  margin-top: 20px;
+  border: 1px solid rgb(2, 126, 196);
+  border-radius: 5px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: rgb(2, 126, 196);
+  text-align: center;
+  transition: 0.5s;
+}
+#metro #news article .inner .txtBox > a:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+#metro #news article .inner .txtBox .icon1 i {
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: -80px;
+  margin-right: -80px;
+  font-size: 30px;
+  color: #999;
+}
+#metro #news article .inner .txtBox .icon2 i {
+  position: relative;
+  display: block;
+  float: left;
+  margin-top: 0px;
+  margin-left: -40px;
+  font-size: 30px;
+  color: #999;
+}
+#metro #news article .inner .txtBox h3 {
+  font-size: 28px;
+  font-family: "Open Sans";
+  color: #555;
+  margin-top: 20px;
+}
+#metro #news article .inner .txtBox p {
+  font-family: "Open Sans";
+  font-size: 13px;
+  color: #777;
+  margin: top 10px;
+}
+#metro #news article .inner .txtBox h4 {
+  font-size: 17px;
+  font-family: "Work Sans";
+  color: #777;
+  margin-top: 20px;
+}
+#metro #news article .inner .bgBox {
+  position: relative;
+  display: block;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+#metro #news article .inner .bgBox p {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: #777;
+}
+#metro #news article .inner .bgBox p i {
+  display: block;
+  float: left;
+  margin-top: 0px;
+  font-size: 30px;
+  font-size: 13px;
+  color: #777;
+  margin: top 10px;
+}
+#metro #news article .inner .bgBox > a {
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+  font-size: 13px;
+  color: #777;
+}
+#metro #news article .inner .bgBox > a i {
+  font-size: 13px;
+  color: #777;
 }
 #metro #flickr article:nth-of-type(3), #metro #flickr article:nth-of-type(9) {
   width: 50%;
