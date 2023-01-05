@@ -26,7 +26,7 @@ $mobile: 539px;
 		justify-content: flex-end;
 		align-content: center;
 		p {
-			font-size: 12px;
+			font-size: 10px;
 			font-family: 'Open Sans', sans-serif;
 			color: #fff;
 			cursor: pointer;
@@ -582,7 +582,7 @@ $mobile: 539px;
 			transition: 1s;
 		}
 		.lower {
-			border-top: 1px solid #ddd;
+			border-top: 1px solid #fff;
 	
 			p {
 				position: relative;
@@ -683,7 +683,7 @@ $mobile: 539px;
 				}				
 	}
 	//news
-	#news {
+	#main {
 		padding: 100px 30px;
 		.inner {
 			width: 100%;
@@ -746,8 +746,8 @@ $mobile: 539px;
 	}
 
 	//footer
-	#footer {
-		padding: 50px 30px;
+	.footer {
+		padding: 100px 30px;
 		.inner {
 			width: 100%;
 		}

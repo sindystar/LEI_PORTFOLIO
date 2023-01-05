@@ -1475,6 +1475,10 @@ textarea {
     width: 100%;
     padding: 0px 20px;
   }
+  .join .inner table input[type=submit],
+  .join .inner table input[type=reset] {
+    width: 100%;
+  }
 }
 .scroll {
   position: fixed;
@@ -1489,7 +1493,7 @@ textarea {
   align-content: center;
 }
 .scroll li p {
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   cursor: pointer;
@@ -1957,7 +1961,7 @@ footer .upper {
   transition: 1s;
 }
 footer .lower {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #fff;
 }
 footer .lower p {
   position: relative;
@@ -2039,20 +2043,20 @@ footer.on .upper {
   #visual .btns, #visual nav {
     display: none;
   }
-  #news {
+  #main {
     padding: 100px 30px;
   }
-  #news .inner {
+  #main .inner {
     width: 100%;
   }
-  #news .inner .wrap article {
+  #main .inner .wrap article {
     width: 49%;
     margin-right: 2%;
   }
-  #news .inner .wrap article:nth-of-type(2n) {
+  #main .inner .wrap article:nth-of-type(2n) {
     margin-right: 0;
   }
-  #news .inner .wrap article .pic {
+  #main .inner .wrap article .pic {
     height: 20vmax;
   }
   #brand {
@@ -2088,10 +2092,10 @@ footer.on .upper {
   #comments .inner {
     width: 100%;
   }
-  #footer {
-    padding: 50px 30px;
+  .footer {
+    padding: 100px 30px;
   }
-  #footer .inner {
+  .footer .inner {
     width: 100%;
   }
 }

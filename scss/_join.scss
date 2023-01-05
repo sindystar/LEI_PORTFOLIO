@@ -133,6 +133,12 @@ $mobile: 539px;
 		.inner {
 			width: 100%;
 			padding: 0px 20px;
+			table {
+				input[type='submit'],
+				input[type='reset'] {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
