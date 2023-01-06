@@ -1565,7 +1565,7 @@ textarea {
   background: #444;
 }
 .scroll li:hover a {
-  background-color: #58FAAC;
+  background-color: #BCF5A9;
 }
 
 #header {
@@ -1843,12 +1843,9 @@ textarea {
   display: inline-block;
   transition: 0.5s;
 }
-#visual nav i.on {
+#visual nav i:hover, #visual nav i.on {
   transform: scale(1.8);
-  color: #444;
-}
-#visual nav i:hover {
-  color: #58FAAC;
+  color: #555;
 }
 
 #metro {
@@ -2127,13 +2124,13 @@ textarea {
   height: 100%;
   background-image: url(../img/mainNews/pic9.jpg);
 }
-#metro #flickr article:nth-of-type(3), #metro #flickr article:nth-of-type(7) {
+#metro #flickr article:nth-of-type(3), #metro #flickr article:nth-of-type(9) {
   width: 50%;
 }
 #metro #flickr article .inner {
   background: lightgreen;
 }
-#metro #youtube article:nth-of-type(2), #metro #youtube article:nth-of-type(8), #metro #youtube article:nth-of-type(9) {
+#metro #youtube article:nth-of-type(2), #metro #youtube article:nth-of-type(8) {
   width: 50%;
 }
 #metro #youtube article .inner {
