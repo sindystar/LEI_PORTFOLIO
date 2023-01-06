@@ -1848,6 +1848,9 @@ textarea {
   color: #555;
 }
 
+#metro {
+  background: #fafafa;
+}
 #metro nav {
   width: 100%;
   padding: 20px 10vw;
@@ -1898,32 +1901,44 @@ textarea {
   width: 50%;
 }
 #metro #news article .inner {
-  background: #ddd;
-}
-#metro #news article .inner .txtBox {
   width: 100%;
-  padding: 100px;
+  overflow: hidden;
 }
-#metro #news article .inner .txtBox > h2 {
+#metro #news article .inner .box {
+  background: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#metro #news article .inner .box:hover {
+  transform: scale(1.2);
+}
+#metro #news article .inner .box .txtBox {
+  width: 100%;
+  padding: 6vw 5vw 4vw 5vw;
+}
+#metro #news article .inner .box .txtBox > h2 {
   font-size: 30px;
   font-family: "Open Sans";
-  color: #333;
+  color: #fff;
   margin-top: 5px;
 }
-#metro #news article .inner .txtBox > h1 {
+#metro #news article .inner .box .txtBox > h1 {
   font-size: 50px;
   font-weight: 100;
   font-family: "Work Sans";
   color: #666;
   margin-bottom: 10px;
 }
-#metro #news article .inner .txtBox > span {
+#metro #news article .inner .box .txtBox span {
   font-size: 20px;
   font-family: "Open Sans";
-  color: #777;
+  color: #666;
   margin-bottom: 10px;
 }
-#metro #news article .inner .txtBox > a {
+#metro #news article .inner .box .txtBox a {
   display: block;
   width: 130px;
   height: 24px;
@@ -1936,76 +1951,178 @@ textarea {
   text-align: center;
   transition: 0.5s;
 }
-#metro #news article .inner .txtBox > a:hover {
+#metro #news article .inner .box .txtBox a:hover {
   background: #fff;
   transform: scale(1.1);
 }
-#metro #news article .inner .txtBox .icon1 i {
+#metro #news article .inner .box .txtBox .icon1 i {
   position: relative;
   display: block;
   float: right;
-  margin-top: -80px;
-  margin-right: -80px;
+  margin-right: -4vw;
+  margin-top: -5vw;
   font-size: 30px;
-  color: #999;
+  color: #fff;
 }
-#metro #news article .inner .txtBox .icon2 i {
+#metro #news article .inner .box .txtBox .icon2 i {
   position: relative;
   display: block;
   float: left;
-  margin-top: 0px;
-  margin-left: -40px;
-  font-size: 30px;
-  color: #999;
+  margin-top: 1.5vw;
+  margin-left: -2vw;
+  font-size: 25px;
+  color: #fff;
 }
-#metro #news article .inner .txtBox h3 {
-  font-size: 28px;
+#metro #news article .inner .box .txtBox h3 {
+  font-size: 27px;
+  color: #fff;
   font-family: "Open Sans";
-  color: #555;
-  margin-top: 20px;
 }
-#metro #news article .inner .txtBox p {
+#metro #news article .inner .box .txtBox p {
   font-family: "Open Sans";
-  font-size: 13px;
-  color: #777;
-  margin: top 10px;
+  font-size: 10px;
+  color: #fff;
 }
-#metro #news article .inner .txtBox h4 {
+#metro #news article .inner .box .txtBox h4 {
   font-size: 17px;
   font-family: "Work Sans";
-  color: #777;
+  font-weight: 300;
+  color: #fff;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
-#metro #news article .inner .bgBox {
-  position: relative;
-  display: block;
-  margin-left: 30px;
-  margin-top: 80px;
+#metro #news article .inner .box .bgBox {
+  width: 100%;
+  position: absolute;
+  margin-top: -3vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: left;
+  gap: 1vw;
+  padding-left: 3.5vw;
 }
-#metro #news article .inner .bgBox p {
-  font-size: 13px;
+#metro #news article .inner .box .bgBox > p, #metro #news article .inner .box .bgBox a {
+  margin-top: 15px;
+  font-size: 14px;
   font-family: "Open Sans";
-  color: #777;
+  color: #fff;
 }
-#metro #news article .inner .bgBox p i {
-  display: block;
-  float: left;
+#metro #news article .inner .box .bgBox > p > i, #metro #news article .inner .box .bgBox a > i {
   margin-top: 0px;
-  font-size: 30px;
-  font-size: 13px;
-  color: #777;
+  margin-right: 5px;
+  font-size: 16px;
+  color: #fff;
   margin: top 10px;
 }
-#metro #news article .inner .bgBox > a {
-  position: absolute;
-  bottom: 10px;
-  left: 150px;
-  font-size: 13px;
-  color: #777;
+#metro #news article:nth-of-type(1) .inner {
+  width: 100%;
 }
-#metro #news article .inner .bgBox > a i {
-  font-size: 13px;
-  color: #777;
+#metro #news article:nth-of-type(1) .inner .box {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+}
+#metro #news article:nth-of-type(1) .inner .box:hover {
+  transform: scale(1);
+}
+#metro #news article:nth-of-type(1) .inner .box .txtBox > h2 {
+  color: #444;
+}
+#metro #news article:nth-of-type(2) .inner, #metro #news article:nth-of-type(8) .inner {
+  width: 100%;
+}
+#metro #news article:nth-of-type(2) .inner .box, #metro #news article:nth-of-type(8) .inner .box {
+  width: 100%;
+  height: 100%;
+  background: skyblue;
+}
+#metro #news article:nth-of-type(2) .inner .box .txtBox > p, #metro #news article:nth-of-type(8) .inner .box .txtBox > p {
+  font-size: 14px;
+  margin-bottom: -1vh;
+}
+#metro #news article:nth-of-type(3) .inner {
+  width: 100%;
+}
+#metro #news article:nth-of-type(3) .inner .box {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mainNews/pic3.jpg);
+  filter: grayscale(0.9);
+  transition: 0.5s;
+}
+#metro #news article:nth-of-type(3) .inner .box:hover {
+  filter: grayscale(0);
+}
+#metro #news article:nth-of-type(3) .inner .box .txtBox > h4 {
+  margin-bottom: 4.5vh;
+}
+#metro #news article:nth-of-type(4) .inner, #metro #news article:nth-of-type(9) .inner {
+  width: 100%;
+}
+#metro #news article:nth-of-type(4) .inner .box, #metro #news article:nth-of-type(9) .inner .box {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mainNews/pic4.jpg);
+  filter: grayscale(0.9);
+  transition: 0.5s;
+}
+#metro #news article:nth-of-type(4) .inner .box:hover, #metro #news article:nth-of-type(9) .inner .box:hover {
+  filter: grayscale(0);
+}
+#metro #news article:nth-of-type(4) .inner .box .txtBox > h4, #metro #news article:nth-of-type(9) .inner .box .txtBox > h4 {
+  margin-bottom: 5.5vh;
+}
+#metro #news article:nth-of-type(5) .inner {
+  width: 100%;
+}
+#metro #news article:nth-of-type(5) .inner .box {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mainNews/pic2.jpg);
+  filter: grayscale(0.9);
+  transition: 0.5s;
+}
+#metro #news article:nth-of-type(5) .inner .box:hover {
+  filter: grayscale(0);
+}
+#metro #news article:nth-of-type(5) .inner .box .txtBox > h4 {
+  margin-bottom: 3.3vh;
+}
+#metro #news article:nth-of-type(6) .inner, #metro #news article:nth-of-type(7) .inner {
+  width: 100%;
+}
+#metro #news article:nth-of-type(6) .inner .box, #metro #news article:nth-of-type(7) .inner .box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+#metro #news article:nth-of-type(6) .inner .box .txtBox, #metro #news article:nth-of-type(7) .inner .box .txtBox {
+  padding: 6vw 4vw 4vw 5vw;
+}
+#metro #news article:nth-of-type(6) .inner .box .txtBox .icon2 i, #metro #news article:nth-of-type(7) .inner .box .txtBox .icon2 i {
+  color: #666;
+}
+#metro #news article:nth-of-type(6) .inner .box .txtBox p, #metro #news article:nth-of-type(6) .inner .box .txtBox h2, #metro #news article:nth-of-type(6) .inner .box .txtBox h4, #metro #news article:nth-of-type(7) .inner .box .txtBox p, #metro #news article:nth-of-type(7) .inner .box .txtBox h2, #metro #news article:nth-of-type(7) .inner .box .txtBox h4 {
+  color: #444;
+  margin-bottom: 2vh;
+}
+#metro #news article:nth-of-type(6) .inner .box .bgBox, #metro #news article:nth-of-type(7) .inner .box .bgBox {
+  border-top: 1px solid #ddd;
+}
+#metro #news article:nth-of-type(6) .inner .box .bgBox > p, #metro #news article:nth-of-type(6) .inner .box .bgBox a, #metro #news article:nth-of-type(7) .inner .box .bgBox > p, #metro #news article:nth-of-type(7) .inner .box .bgBox a {
+  color: #999;
+}
+#metro #news article:nth-of-type(6) .inner .box .bgBox > p > i, #metro #news article:nth-of-type(6) .inner .box .bgBox a > i, #metro #news article:nth-of-type(7) .inner .box .bgBox > p > i, #metro #news article:nth-of-type(7) .inner .box .bgBox a > i {
+  color: #999;
+}
+#metro #news article:nth-of-type(9) .inner {
+  width: 100%;
+}
+#metro #news article:nth-of-type(9) .inner .box {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mainNews/pic9.jpg);
 }
 #metro #flickr article:nth-of-type(3), #metro #flickr article:nth-of-type(9) {
   width: 50%;
@@ -2069,7 +2186,7 @@ footer {
   width: 100%;
   position: relative;
   background-image: url(../img/visual/pic8.jpg);
-  object-fit: cover;
+  background-repeat: no-repeat;
   filter: url("#effect");
   z-index: 2;
 }
