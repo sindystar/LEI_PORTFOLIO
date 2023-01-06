@@ -102,7 +102,7 @@ function rolling() {
 }
 
 function startRolling() {
-	timer = setInterval(rolling, 2000);
+	timer = setInterval(rolling, 4000);
 	btnPlay.classList.add('on');
 	btnPause.classList.remove('on');
 }
