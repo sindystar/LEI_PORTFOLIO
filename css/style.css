@@ -1980,7 +1980,7 @@ textarea {
 }
 #metro #news article .inner .box .txtBox p {
   font-family: "Open Sans";
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
 }
 #metro #news article .inner .box .txtBox h4 {
@@ -2028,17 +2028,10 @@ textarea {
 #metro #news article:nth-of-type(1) .inner .box .txtBox > h2 {
   color: #444;
 }
-#metro #news article:nth-of-type(2) .inner, #metro #news article:nth-of-type(8) .inner {
-  width: 100%;
-}
 #metro #news article:nth-of-type(2) .inner .box, #metro #news article:nth-of-type(8) .inner .box {
   width: 100%;
   height: 100%;
   background: skyblue;
-}
-#metro #news article:nth-of-type(2) .inner .box .txtBox > p, #metro #news article:nth-of-type(8) .inner .box .txtBox > p {
-  font-size: 14px;
-  margin-bottom: -1vh;
 }
 #metro #news article:nth-of-type(3) .inner {
   width: 100%;
@@ -2097,15 +2090,16 @@ textarea {
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
-#metro #news article:nth-of-type(6) .inner .box .txtBox, #metro #news article:nth-of-type(7) .inner .box .txtBox {
-  padding: 6vw 4vw 4vw 5vw;
-}
 #metro #news article:nth-of-type(6) .inner .box .txtBox .icon2 i, #metro #news article:nth-of-type(7) .inner .box .txtBox .icon2 i {
   color: #666;
 }
-#metro #news article:nth-of-type(6) .inner .box .txtBox p, #metro #news article:nth-of-type(6) .inner .box .txtBox h2, #metro #news article:nth-of-type(6) .inner .box .txtBox h4, #metro #news article:nth-of-type(7) .inner .box .txtBox p, #metro #news article:nth-of-type(7) .inner .box .txtBox h2, #metro #news article:nth-of-type(7) .inner .box .txtBox h4 {
+#metro #news article:nth-of-type(6) .inner .box .txtBox p, #metro #news article:nth-of-type(6) .inner .box .txtBox h2, #metro #news article:nth-of-type(7) .inner .box .txtBox p, #metro #news article:nth-of-type(7) .inner .box .txtBox h2 {
   color: #444;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
+}
+#metro #news article:nth-of-type(6) .inner .box .txtBox h4, #metro #news article:nth-of-type(7) .inner .box .txtBox h4 {
+  color: #444;
+  margin-bottom: 0;
 }
 #metro #news article:nth-of-type(6) .inner .box .bgBox, #metro #news article:nth-of-type(7) .inner .box .bgBox {
   border-top: 1px solid #ddd;
@@ -2315,19 +2309,61 @@ footer.on .upper {
   #metro .nav {
     width: 100%;
   }
-  #metro #news article:nth-of-type(1) > .inner > .box .txtBox, #metro #news article:nth-of-type(4) > .inner > .box .txtBox, #metro #news article:nth-of-type(9) > .inner > .box .txtBox {
-    padding: 3vw 2vw 2vw 3vw;
-  }
   #metro #news article > .inner > .box .txtBox {
-    padding: 3vw 2vw 2vw 3vw;
+    padding: 4vw;
   }
-  .footer {
-    padding: 100px 30px;
+  #metro #news article > .inner > .box .txtBox > h2 {
+    font-size: 24px;
+    font-family: "Open Sans";
+    color: #fff;
+    margin-top: 0;
   }
-  .footer .inner {
-    width: 100%;
+  #metro #news article > .inner > .box .txtBox > h1 {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+  #metro #news article > .inner > .box .txtBox span {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  #metro #news article > .inner > .box .txtBox a {
+    width: 90px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  #metro #news article > .inner > .box .txtBox .icon1 i {
+    margin-right: -2vw;
+    margin-top: -2vw;
+    font-size: 15px;
+  }
+  #metro #news article > .inner > .box .txtBox .icon2 i {
+    display: none;
+  }
+  #metro #news article > .inner > .box .txtBox h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  #metro #news article > .inner > .box .txtBox p {
+    font-size: 12px;
+  }
+  #metro #news article > .inner > .box .txtBox h4 {
+    font-size: 15px;
+    margin: 0;
+  }
+  #metro #news article > .inner > .box .bgBox {
+    display: none;
   }
 }
+.footer {
+  padding: 100px 30px;
+}
+.footer .inner {
+  width: 100%;
+}
+
 @media screen and (max-width: 539px) {
   #visual .panel .inner {
     width: 100%;
