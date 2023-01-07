@@ -1917,7 +1917,7 @@ textarea {
 }
 #metro #news article .inner .box .txtBox {
   width: 100%;
-  padding: 6vw 5vw 4vw 5vw;
+  padding: 5vw 4vw 3vw 5vw;
 }
 #metro #news article .inner .box .txtBox > h2 {
   font-size: 30px;
@@ -1955,46 +1955,44 @@ textarea {
   background: #fff;
   transform: scale(1.1);
 }
-#metro #news article .inner .box .txtBox .icon1 i {
+#metro #news article .inner .box .txtBox .icon1 > i {
   position: relative;
   display: block;
   float: right;
-  margin-right: -4vw;
-  margin-top: -5vw;
-  font-size: 30px;
+  margin-right: -3vw;
+  margin-top: -4vw;
+  font-size: 28px;
   color: #fff;
 }
-#metro #news article .inner .box .txtBox .icon2 i {
+#metro #news article .inner .box .txtBox .icon2 > i {
   position: relative;
   display: block;
   float: left;
   margin-top: 1.5vw;
   margin-left: -2vw;
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
 }
 #metro #news article .inner .box .txtBox h3 {
-  font-size: 27px;
+  font-size: 35px/40px;
   color: #fff;
   font-family: "Open Sans";
 }
 #metro #news article .inner .box .txtBox p {
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 14px/18px;
   color: #fff;
 }
 #metro #news article .inner .box .txtBox h4 {
-  font-size: 17px;
+  font-size: 15px/20px;
   font-family: "Work Sans";
   font-weight: 300;
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 #metro #news article .inner .box .bgBox {
   width: 100%;
+  height: 50px;
   position: absolute;
-  margin-top: -3vh;
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: left;
@@ -2046,9 +2044,6 @@ textarea {
 #metro #news article:nth-of-type(3) .inner .box:hover {
   filter: grayscale(0);
 }
-#metro #news article:nth-of-type(3) .inner .box .txtBox > h4 {
-  margin-bottom: 4.5vh;
-}
 #metro #news article:nth-of-type(4) .inner, #metro #news article:nth-of-type(9) .inner {
   width: 100%;
 }
@@ -2063,7 +2058,7 @@ textarea {
   filter: grayscale(0);
 }
 #metro #news article:nth-of-type(4) .inner .box .txtBox > h4, #metro #news article:nth-of-type(9) .inner .box .txtBox > h4 {
-  margin-bottom: 5.5vh;
+  margin-bottom: 1vh;
 }
 #metro #news article:nth-of-type(5) .inner {
   width: 100%;
@@ -2077,9 +2072,6 @@ textarea {
 }
 #metro #news article:nth-of-type(5) .inner .box:hover {
   filter: grayscale(0);
-}
-#metro #news article:nth-of-type(5) .inner .box .txtBox > h4 {
-  margin-bottom: 3.3vh;
 }
 #metro #news article:nth-of-type(6) .inner, #metro #news article:nth-of-type(7) .inner {
   width: 100%;
@@ -2095,11 +2087,9 @@ textarea {
 }
 #metro #news article:nth-of-type(6) .inner .box .txtBox p, #metro #news article:nth-of-type(6) .inner .box .txtBox h2, #metro #news article:nth-of-type(7) .inner .box .txtBox p, #metro #news article:nth-of-type(7) .inner .box .txtBox h2 {
   color: #444;
-  margin-bottom: 1vh;
 }
 #metro #news article:nth-of-type(6) .inner .box .txtBox h4, #metro #news article:nth-of-type(7) .inner .box .txtBox h4 {
   color: #444;
-  margin-bottom: 0;
 }
 #metro #news article:nth-of-type(6) .inner .box .bgBox, #metro #news article:nth-of-type(7) .inner .box .bgBox {
   border-top: 1px solid #ddd;
@@ -2310,13 +2300,12 @@ footer.on .upper {
     width: 100%;
   }
   #metro #news article > .inner > .box .txtBox {
-    padding: 4vw;
+    padding: 3vw 3vw 2vw 3vw;
   }
   #metro #news article > .inner > .box .txtBox > h2 {
     font-size: 24px;
     font-family: "Open Sans";
     color: #fff;
-    margin-top: 0;
   }
   #metro #news article > .inner > .box .txtBox > h1 {
     font-size: 35px;
@@ -2343,14 +2332,14 @@ footer.on .upper {
     display: none;
   }
   #metro #news article > .inner > .box .txtBox h3 {
-    font-size: 22px;
+    font-size: 28/38px;
     font-weight: 300;
   }
   #metro #news article > .inner > .box .txtBox p {
     font-size: 12px;
   }
   #metro #news article > .inner > .box .txtBox h4 {
-    font-size: 15px;
+    font-size: 13px/18px;
     margin: 0;
   }
   #metro #news article > .inner > .box .bgBox {
@@ -2364,6 +2353,22 @@ footer.on .upper {
   width: 100%;
 }
 
+@media screen and (max-width: 880px) {
+  #metro .nav {
+    width: 100%;
+  }
+  #metro #news > article:nth-of-type(1), #metro #news > article:nth-of-type(4), #metro #news > article:nth-of-type(9) {
+    width: 100%;
+    height: 28vh;
+  }
+  #metro #news > article:nth-of-type(2), #metro #news > article:nth-of-type(3), #metro #news > article:nth-of-type(5), #metro #news > article:nth-of-type(6), #metro #news > article:nth-of-type(7), #metro #news > article:nth-of-type(8) {
+    width: 50%;
+    height: 28vh;
+  }
+  #metro #news > article > .inner > .box .txtBox {
+    padding: 5vw;
+  }
+}
 @media screen and (max-width: 539px) {
   #visual .panel .inner {
     width: 100%;
@@ -2380,30 +2385,16 @@ footer.on .upper {
   #metro .nav {
     width: 100%;
   }
-  #metro #news > article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    float: left;
-  }
   #metro #news > article:nth-of-type(1), #metro #news > article:nth-of-type(4), #metro #news > article:nth-of-type(9) {
     width: 100%;
+    height: 30vh;
   }
   #metro #news > article:nth-of-type(2), #metro #news > article:nth-of-type(3), #metro #news > article:nth-of-type(5), #metro #news > article:nth-of-type(6), #metro #news > article:nth-of-type(7), #metro #news > article:nth-of-type(8) {
-    width: 50%;
-  }
-  #brand .inner .wrap article:nth-of-type(1) {
     width: 100%;
-    height: 400px;
-    padding: 50px;
-    margin-right: 0%;
-    margin-bottom: 20px;
+    height: 30vh;
   }
-  #brand .inner .wrap article:nth-of-type(2) {
-    width: 100%;
-  }
-  #brand .inner .wrap article:nth-of-type(3) {
-    width: 100%;
+  #metro #news > article > .inner > .box .txtBox {
+    padding: 8vw;
   }
   #footer .inner h1 {
     margin-bottom: 10px;
