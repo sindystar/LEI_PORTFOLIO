@@ -15,7 +15,7 @@ $mobile: 539px;
 		height: 100px;
 		margin: 0 auto;
 		position: relative;
-		> h1 {
+		h1 {
 			position: absolute;
 			left: 0;
 			bottom: -4px;
@@ -214,7 +214,7 @@ $mobile: 539px;
 #banner_sub {
 	width: 100%;
 	padding: 100px 0;
-	filter: grayscale(0.9);
+	filter: grayscale(0.3);
 	background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed;
 	.inner {
 		width: 1180px;
@@ -259,8 +259,8 @@ $mobile: 539px;
 //footer_sub
 #footer_sub  {
 	width: 100%;
-	padding: 100px 0;
-	background: #444;
+	padding: 70px 0;
+	background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	.inner {
 		width: 1180px;
 		margin: 0 auto;
@@ -269,23 +269,25 @@ $mobile: 539px;
 			display: block;
 			clear: both;
 		}
-		h1 {
+		> h1 {
 			font-family: 'Open Sans', sans-serif;
-			font-size: 30px;
-			color: #888;
+			font-size: 24px;
+			color: $keycolor;
 			float: left;
+			padding-bottom: -50px;
+
 		}
 		ul {
 			float: right;
+			margin: 0;
 			li {
 				// policy
-				float: left;
-				margin-left: 20px;
-				margin-top: 15px;
+				float: right;
+				margin: 0;
 				a {
 					font-family: 'Open Sans', sans-serif;
 					font-size: 13px;
-					color: #777;
+					color: rgba(255, 255, 255, 0.9);
 				}
 			}
 		}
@@ -293,12 +295,12 @@ $mobile: 539px;
 			float: left;
 			width: 100%;
 			font-family: 'Work Sans', sans-serif;
-			font-size: 14px;
-			color: #888;
+			font-size: 13px;
+			color: rgba(255, 255, 255, 0.9);
 			margin-bottom: 15px;
-			margin-top: 15px;
+			// margin-top: 15px;
 			padding-top: 20px;
-			border-top: 1px solid #888;
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
 		}
 		p {
 			//copyright
@@ -306,7 +308,7 @@ $mobile: 539px;
 			width: 100%;
 			font-family: 'Work Sans', sans-serif;
 			font-size: 12px;
-			color: #777;
+			color:rgba(255, 255, 255, 0.9);
 		}
 	}
 }
@@ -318,7 +320,7 @@ $mobile: 539px;
 		.inner {
 			width: 100%;
 			height: 100px;
-			h1 {
+			>h1 {
 				left: 20px;
 			}
 			.menuWeb {

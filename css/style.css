@@ -64,19 +64,19 @@ textarea {
   margin: 0 auto;
   position: relative;
 }
-#header_sub .inner > h1 {
+#header_sub .inner h1 {
   position: absolute;
   left: 0;
   bottom: -4px;
   letter-spacing: 1px;
 }
-#header_sub .inner > h1 > a {
+#header_sub .inner h1 > a {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   color: #fff;
   transition: 0.3s;
 }
-#header_sub .inner > h1 > a:hover {
+#header_sub .inner h1 > a:hover {
   color: rgb(2, 126, 196);
   transform: scale(1.2);
 }
@@ -251,7 +251,7 @@ textarea {
 #banner_sub {
   width: 100%;
   padding: 100px 0;
-  filter: grayscale(0.9);
+  filter: grayscale(0.3);
   background: url(../img/banner/pic3.jpg) no-repeat center/cover fixed;
 }
 #banner_sub .inner {
@@ -293,8 +293,8 @@ textarea {
 
 #footer_sub {
   width: 100%;
-  padding: 100px 0;
-  background: #444;
+  padding: 70px 0;
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 #footer_sub .inner {
   width: 1180px;
@@ -305,42 +305,42 @@ textarea {
   display: block;
   clear: both;
 }
-#footer_sub .inner h1 {
+#footer_sub .inner > h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  color: #888;
+  font-size: 24px;
+  color: rgb(2, 126, 196);
   float: left;
+  padding-bottom: -50px;
 }
 #footer_sub .inner ul {
   float: right;
+  margin: 0;
 }
 #footer_sub .inner ul li {
-  float: left;
-  margin-left: 20px;
-  margin-top: 15px;
+  float: right;
+  margin: 0;
 }
 #footer_sub .inner ul li a {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  color: #777;
+  color: rgba(255, 255, 255, 0.9);
 }
 #footer_sub .inner address {
   float: left;
   width: 100%;
   font-family: "Work Sans", sans-serif;
-  font-size: 14px;
-  color: #888;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 15px;
-  margin-top: 15px;
   padding-top: 20px;
-  border-top: 1px solid #888;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 #footer_sub .inner p {
   float: left;
   width: 100%;
   font-family: "Work Sans", sans-serif;
   font-size: 12px;
-  color: #777;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media screen and (max-width: 1179px) {
@@ -348,7 +348,7 @@ textarea {
     width: 100%;
     height: 100px;
   }
-  #header_sub .inner h1 {
+  #header_sub .inner > h1 {
     left: 20px;
   }
   #header_sub .inner .menuWeb {
