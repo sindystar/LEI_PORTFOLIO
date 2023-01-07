@@ -1974,17 +1974,20 @@ textarea {
   color: #fff;
 }
 #metro #news article .inner .box .txtBox h3 {
-  font-size: 35px/40px;
+  font-size: 28px;
+  line-height: 1.2;
   color: #fff;
   font-family: "Open Sans";
 }
 #metro #news article .inner .box .txtBox p {
   font-family: "Open Sans";
-  font-size: 14px/18px;
+  font-size: 14px;
+  line-height: 1.2;
   color: #fff;
 }
 #metro #news article .inner .box .txtBox h4 {
-  font-size: 15px/20px;
+  font-size: 15px;
+  line-height: 1.4;
   font-family: "Work Sans";
   font-weight: 300;
   color: #fff;
@@ -2076,28 +2079,28 @@ textarea {
 #metro #news article:nth-of-type(6) .inner, #metro #news article:nth-of-type(7) .inner {
   width: 100%;
 }
-#metro #news article:nth-of-type(6) .inner .box, #metro #news article:nth-of-type(7) .inner .box {
+#metro #news article:nth-of-type(6) .inner > .box, #metro #news article:nth-of-type(7) .inner > .box {
   width: 100%;
   height: 100%;
   background: #fff;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
-#metro #news article:nth-of-type(6) .inner .box .txtBox .icon2 i, #metro #news article:nth-of-type(7) .inner .box .txtBox .icon2 i {
+#metro #news article:nth-of-type(6) .inner > .box .txtBox .icon2 i, #metro #news article:nth-of-type(7) .inner > .box .txtBox .icon2 i {
   color: #666;
 }
-#metro #news article:nth-of-type(6) .inner .box .txtBox p, #metro #news article:nth-of-type(6) .inner .box .txtBox h2, #metro #news article:nth-of-type(7) .inner .box .txtBox p, #metro #news article:nth-of-type(7) .inner .box .txtBox h2 {
+#metro #news article:nth-of-type(6) .inner > .box .txtBox p, #metro #news article:nth-of-type(6) .inner > .box .txtBox h2, #metro #news article:nth-of-type(7) .inner > .box .txtBox p, #metro #news article:nth-of-type(7) .inner > .box .txtBox h2 {
   color: #444;
 }
-#metro #news article:nth-of-type(6) .inner .box .txtBox h4, #metro #news article:nth-of-type(7) .inner .box .txtBox h4 {
+#metro #news article:nth-of-type(6) .inner > .box .txtBox h4, #metro #news article:nth-of-type(7) .inner > .box .txtBox h4 {
   color: #444;
 }
-#metro #news article:nth-of-type(6) .inner .box .bgBox, #metro #news article:nth-of-type(7) .inner .box .bgBox {
+#metro #news article:nth-of-type(6) .inner > .box .bgBox, #metro #news article:nth-of-type(7) .inner > .box .bgBox {
   border-top: 1px solid #ddd;
 }
-#metro #news article:nth-of-type(6) .inner .box .bgBox > p, #metro #news article:nth-of-type(6) .inner .box .bgBox a, #metro #news article:nth-of-type(7) .inner .box .bgBox > p, #metro #news article:nth-of-type(7) .inner .box .bgBox a {
+#metro #news article:nth-of-type(6) .inner > .box .bgBox > p, #metro #news article:nth-of-type(6) .inner > .box .bgBox a, #metro #news article:nth-of-type(7) .inner > .box .bgBox > p, #metro #news article:nth-of-type(7) .inner > .box .bgBox a {
   color: #999;
 }
-#metro #news article:nth-of-type(6) .inner .box .bgBox > p > i, #metro #news article:nth-of-type(6) .inner .box .bgBox a > i, #metro #news article:nth-of-type(7) .inner .box .bgBox > p > i, #metro #news article:nth-of-type(7) .inner .box .bgBox a > i {
+#metro #news article:nth-of-type(6) .inner > .box .bgBox > p > i, #metro #news article:nth-of-type(6) .inner > .box .bgBox a > i, #metro #news article:nth-of-type(7) .inner > .box .bgBox > p > i, #metro #news article:nth-of-type(7) .inner > .box .bgBox a > i {
   color: #999;
 }
 #metro #news article:nth-of-type(9) .inner {
@@ -2332,7 +2335,8 @@ footer.on .upper {
     display: none;
   }
   #metro #news article > .inner > .box .txtBox h3 {
-    font-size: 28/38px;
+    font-size: 22px;
+    line-height: 1.2;
     font-weight: 300;
   }
   #metro #news article > .inner > .box .txtBox p {
@@ -2394,7 +2398,7 @@ footer.on .upper {
     height: 30vh;
   }
   #metro #news > article > .inner > .box .txtBox {
-    padding: 8vw;
+    padding: 10vw;
   }
   #footer .inner h1 {
     margin-bottom: 10px;
