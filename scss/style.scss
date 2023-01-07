@@ -445,6 +445,7 @@ $mobile: 539px;
 			}
 
 			.inner {
+
 				width: 100%;
 				overflow: hidden;
 				.box {
@@ -526,7 +527,7 @@ $mobile: 539px;
 						}
 						p {
 							font-family:'Open Sans';
-							font-size: 10px;
+							font-size: 12px;
 							color:#fff;
 							// margin: top 10px;
 						}
@@ -950,67 +951,48 @@ $mobile: 539px;
 				}				
 	}
 	//news
-	#main {
-		padding: 100px 30px;
-		.inner {
-			width: 100%;
-			.wrap {
-				article {
-					width: 49%;
-					margin-right: 2%;
-					&:nth-of-type(2n) {
-						margin-right: 0;
+	#metro {
+		.nav{
+			width:100%;			
+		}
+		#news {
+			article {
+				// width: 100%;
+
+				&:nth-of-type(1),
+				&:nth-of-type(4),
+				&:nth-of-type(9) {
+					>.inner {
+						>.box {
+							.txtBox {
+								// width: 100%;
+								padding: 3vw 2vw 2vw 3vw; 
+							}
+						}
 					}
-					.pic {
-						height: 20vmax;
+
+				}
+				// &:nth-of-type(2),
+				// &:nth-of-type(3),
+				// &:nth-of-type(5),
+				// &:nth-of-type(6),
+				// &:nth-of-type(7),
+				// &:nth-of-type(8){
+				// 	// width: 50%;
+
+				// }
+				>.inner {
+					>.box {
+						.txtBox {
+							// width: 100%;
+							padding: 3vw 2vw 2vw 3vw; 
+						}
 					}
 				}
 			}
 		}
 	}
-	//brand
-	#brand {
-		padding: 100px 30px;
-		.inner {
-			width: 100%;
-			.wrap {
-				article {
-					&:nth-of-type(1) {
-						width: 49%;
-						margin-right: 2%;
-					}
-					&:nth-of-type(2) {
-						width: 49%;
-						margin-right: 0px;
-						margin-bottom: 20px;
-					}
-					&:nth-of-type(3) {
-						width: 49%;
-					}
-					&:nth-of-type(4) {
-						width: 100%;
-					}
-					// p {
-					//     margin-bottom: 20px;
-					// } web에서 간격 조정함
-				}
-			}
-		}
-	}
-	//baner
-	#banner {
-		padding: 100px 30px;
-		.inner {
-			width: 100%;
-		}
-	}
-	//comments
-	#comments {
-		padding: 100px 30px;
-		.inner {
-			width: 100%;
-		}
-	}
+
 
 	//footer
 	.footer {
@@ -1044,19 +1026,34 @@ $mobile: 539px;
 	}
 
 	//news
-	#news {
-		.inner {
-			.wrap {
-				article {
-					width: 100%;
-					margin-right: 0%;
-					.pic {
-						height: 25vmax;
+	#metro {
+		.nav{
+			width:100%;			
+		}
+		#news {
+				> article {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					float: left;
+					// margin-bottom: 50px;	
+
+					&:nth-of-type(1),
+					&:nth-of-type(4),
+					&:nth-of-type(9) {
+						width: 100%;
 					}
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8){
+						width: 50%;
 				}
 			}
-		}
 	}
+}
 	//brand
 	#brand {
 		.inner {

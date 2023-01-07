@@ -1980,7 +1980,7 @@ textarea {
 }
 #metro #news article .inner .box .txtBox p {
   font-family: "Open Sans";
-  font-size: 10px;
+  font-size: 12px;
   color: #fff;
 }
 #metro #news article .inner .box .txtBox h4 {
@@ -2312,54 +2312,14 @@ footer.on .upper {
   #visual .btns, #visual nav {
     display: none;
   }
-  #main {
-    padding: 100px 30px;
-  }
-  #main .inner {
+  #metro .nav {
     width: 100%;
   }
-  #main .inner .wrap article {
-    width: 49%;
-    margin-right: 2%;
+  #metro #news article:nth-of-type(1) > .inner > .box .txtBox, #metro #news article:nth-of-type(4) > .inner > .box .txtBox, #metro #news article:nth-of-type(9) > .inner > .box .txtBox {
+    padding: 3vw 2vw 2vw 3vw;
   }
-  #main .inner .wrap article:nth-of-type(2n) {
-    margin-right: 0;
-  }
-  #main .inner .wrap article .pic {
-    height: 20vmax;
-  }
-  #brand {
-    padding: 100px 30px;
-  }
-  #brand .inner {
-    width: 100%;
-  }
-  #brand .inner .wrap article:nth-of-type(1) {
-    width: 49%;
-    margin-right: 2%;
-  }
-  #brand .inner .wrap article:nth-of-type(2) {
-    width: 49%;
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  #brand .inner .wrap article:nth-of-type(3) {
-    width: 49%;
-  }
-  #brand .inner .wrap article:nth-of-type(4) {
-    width: 100%;
-  }
-  #banner {
-    padding: 100px 30px;
-  }
-  #banner .inner {
-    width: 100%;
-  }
-  #comments {
-    padding: 100px 30px;
-  }
-  #comments .inner {
-    width: 100%;
+  #metro #news article > .inner > .box .txtBox {
+    padding: 3vw 2vw 2vw 3vw;
   }
   .footer {
     padding: 100px 30px;
@@ -2381,12 +2341,20 @@ footer.on .upper {
   #visual .panel .inner a {
     width: 70%;
   }
-  #news .inner .wrap article {
+  #metro .nav {
     width: 100%;
-    margin-right: 0%;
   }
-  #news .inner .wrap article .pic {
-    height: 25vmax;
+  #metro #news > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: left;
+  }
+  #metro #news > article:nth-of-type(1), #metro #news > article:nth-of-type(4), #metro #news > article:nth-of-type(9) {
+    width: 100%;
+  }
+  #metro #news > article:nth-of-type(2), #metro #news > article:nth-of-type(3), #metro #news > article:nth-of-type(5), #metro #news > article:nth-of-type(6), #metro #news > article:nth-of-type(7), #metro #news > article:nth-of-type(8) {
+    width: 50%;
   }
   #brand .inner .wrap article:nth-of-type(1) {
     width: 100%;
