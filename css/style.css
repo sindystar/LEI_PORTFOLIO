@@ -2117,11 +2117,80 @@ textarea {
 #metro #flickr article .inner {
   background: lightgreen;
 }
-#metro #youtube article:nth-of-type(2), #metro #youtube article:nth-of-type(8) {
+#metro #youtube > article:nth-of-type(3), #metro #youtube > article:nth-of-type(8) {
   width: 50%;
 }
-#metro #youtube article .inner {
-  background: orange;
+#metro #youtube > article > .inner {
+  background: #ddd;
+}
+#metro #youtube > article > .inner .vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+#metro #youtube > article > .inner .vidList > article {
+  margin-top: 80px;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20vh;
+  transition: 0.5s;
+}
+#metro #youtube > article > .inner .vidList > article:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#metro #youtube > article > .inner .vidList > .pic {
+  display: block;
+  width: 100%;
+  height: 75%;
+}
+#metro #youtube > article > .inner .vidList > .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#metro #youtube > article > .inner .vidList .con {
+  background-color: #fff;
+  width: 100%;
+  height: 10px 10px 0px;
+}
+#metro #youtube > article > .inner .vidList .con h2 {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  margin-bottom: 3px;
+}
+#metro #youtube > article > .inner .vidList .con p {
+  font-size: 14px;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+}
+#metro #youtube > article > .inner .vidList .con span {
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(2, 126, 196);
+}
+#metro #youtube > article > .inner figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+}
+#metro #youtube > article > .inner figure.pop > .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
 }
 
 #location {
