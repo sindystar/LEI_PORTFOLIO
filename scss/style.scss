@@ -727,8 +727,8 @@ $mobile: 539px;
 				.vidList {
 					width: 100%;
 					display: flex;
-					flex-wrap: wrap;   //확인해보기 
-					margin-top: 0px;
+					// flex-wrap: wrap;   //확인해보기 
+					margin: 0 auto;
 
 					> article {
 						margin-top: 80px;

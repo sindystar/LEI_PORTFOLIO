@@ -1059,6 +1059,7 @@ textarea {
   margin-top: 0px;
 }
 .youtube .inner .vidList article {
+  border: 1px solid red;
   margin-top: 80px;
   border-top: 1px solid #999;
   padding: 10px 0px;
@@ -2126,8 +2127,7 @@ textarea {
 #metro #youtube > article > .inner .vidList {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 0px;
+  margin: 0 auto;
 }
 #metro #youtube > article > .inner .vidList > article {
   margin-top: 80px;
