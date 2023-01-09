@@ -451,7 +451,7 @@ textarea {
 }
 .about .inner .content .wrap .slider ul > li > img:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .about .inner .content .wrap .prev {
   display: block;
@@ -867,7 +867,7 @@ textarea {
 }
 .community .inner .content .wrap .slider ul > li > img:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .community .inner .content .wrap .prev {
   display: block;
@@ -1913,7 +1913,7 @@ textarea {
   cursor: pointer;
 }
 #metro #news article .inner .box:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 #metro #news article .inner .box .txtBox {
   width: 100%;
@@ -1953,7 +1953,7 @@ textarea {
 }
 #metro #news article .inner .box .txtBox a:hover {
   background: #fff;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #metro #news article .inner .box .txtBox .icon1 > i {
   position: relative;

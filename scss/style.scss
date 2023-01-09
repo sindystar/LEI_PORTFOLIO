@@ -457,7 +457,7 @@ $mobile: 539px;
 					transition: 0.5s;
 					cursor: pointer;
 					&:hover {
-						transform: scale(1.2);
+						transform: scale(1.1);
 					}
 					.txtBox {
 						width: 100%;
@@ -495,7 +495,7 @@ $mobile: 539px;
 							transition: 0.5s;
 							&:hover {
 								background:#fff;
-								transform: scale(1.1);
+								transform: scale(1.05);
 							}
 						}
 						
@@ -628,6 +628,7 @@ $mobile: 539px;
 						transition: 0.5s;
 						&:hover {
 							filter: grayscale(0);
+							
 						}
 						.txtBox {
 							> h4 {
