@@ -967,13 +967,72 @@ $mobile: 539px;
 			}
 		}
 	
-		.upper {
-			height: 0vh;
-			overflow: hidden;
-			transition: 1s;
+	.upper {
+		height: 0px;
+		transition: height 0.5s;
+		background-image: url(../img/visual/pic8.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.inner {
+			width: 1180;
+			margin: 0 auto;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 240px;
+			> h1 {
+				// margin-bottom: -10px;
+				> a {
+					font-size: 24px;
+					color: #fff;
+					transition: 0.5s;
+					&:hover {
+						color: $keycolor;
+					}
+				}
+			}
+			> ul {
+				width: 100%;
+				text-align: center;
+				padding: 1vw 0;
+				> li {
+					position: relative;
+					display: inline-block;
+					> a {
+						font-family: 'Open Sans', sans-serif;
+						font-size: 12px;
+						color: #fff;
+						padding: 1vw;
+						transition: 0.5s;
+					}
+					&::after {
+						position: absolute;
+						top: 7px;
+						right: 0;
+
+						content: '';
+						display: block;
+						width: 1px;
+						height: 10px;
+						background: rgba(255, 255, 255, 0.7);
+					}
+					&:last-child {
+						&::after {
+							display: none;
+						}
+					}
+					&:hover a {
+						color: $keycolor;
+					}
+				}
+			}
 		}
-		.lower {
-			border-top: 1px solid #fff;
+	}
+	.lower {
+		border-top: 1px solid transparent;
 	
 			p {
 				position: relative;
@@ -1010,32 +1069,11 @@ $mobile: 539px;
 	
 		.upper {
 			height: 400px;
-			background-image: url(../img/visual/pic8.jpg) ;
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			.inner {
-				width: 1180;
-				margin: 0 auto;
-				position: relative;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				padding: 240px;
-				> h1 {
-					// margin-bottom: -10px;
-					>a {
-						font-size: 24px;
-						color: #fff;
-						transition: 0.5s;
-						&:hover {
-							color: $keycolor;
-						}
-
-					}
-					
-				}
+			}
+		.lower {
+			border: 1px solid #fff;
+		}			
+	}
 				> ul {
 					width: 100%;
 					text-align: center;
@@ -1072,9 +1110,6 @@ $mobile: 539px;
 					}
 				}
 				
-			}
-		}
-	}
 	
 
 //tablet
