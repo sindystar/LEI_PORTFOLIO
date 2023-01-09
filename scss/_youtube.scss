@@ -8,7 +8,7 @@ $mobile: 539px;
 		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
 	.inner {
-		.vidList {
+		>.vidList {
 			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
@@ -16,8 +16,7 @@ $mobile: 539px;
 			align-content: flex-start;
 			margin-top: 0px;
 
-			article {
-				border: 1px solid red;
+			> article {
 				margin-top: 80px;
 				border-top: 1px solid #999;
 				padding: 10px 0px;
@@ -36,11 +35,11 @@ $mobile: 539px;
 							cursor: pointer;
 							transform: scale(1.05);
 						}
-				.pic {
+				>.pic {
 					display: block;
 					width: 100%;
 					height: 75%;
-					img {
+					> img {
 						width: 100%;
 						height: 100%;
 						object-fit: cover;

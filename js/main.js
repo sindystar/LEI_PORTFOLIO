@@ -177,8 +177,6 @@ window.addEventListener('resize', () => {
 });
 
 // youtube
-
-
 const frame1 = document.querySelector('.vidListA');
 const playlistId1 = 'PLfYNuKPjo-c-_IvgCMUV4AhGDTrFFI8Qu';
 
