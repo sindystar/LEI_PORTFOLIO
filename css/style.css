@@ -2122,53 +2122,131 @@ textarea {
   width: 50%;
 }
 #metro #youtube > article > .inner {
+  width: 100%;
   background: #ddd;
 }
-#metro #youtube > article > .inner .vidList {
-  width: 100%;
+#metro #youtube > article > .inner .vidListA,
+#metro #youtube > article > .inner .vidListB,
+#metro #youtube > article > .inner .vidListC,
+#metro #youtube > article > .inner .vidListD,
+#metro #youtube > article > .inner .vidListE,
+#metro #youtube > article > .inner .vidListF,
+#metro #youtube > article > .inner .vidListG,
+#metro #youtube > article > .inner .vidListH,
+#metro #youtube > article > .inner .vidListI,
+#metro #youtube > article > .inner .vidListJ {
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
-#metro #youtube > article > .inner .vidList > article {
-  margin-top: 80px;
-  padding: 10px 0px;
-  display: flex;
-  flex-wrap: wrap;
+#metro #youtube > article > .inner .vidListA > article,
+#metro #youtube > article > .inner .vidListB > article,
+#metro #youtube > article > .inner .vidListC > article,
+#metro #youtube > article > .inner .vidListD > article,
+#metro #youtube > article > .inner .vidListE > article,
+#metro #youtube > article > .inner .vidListF > article,
+#metro #youtube > article > .inner .vidListG > article,
+#metro #youtube > article > .inner .vidListH > article,
+#metro #youtube > article > .inner .vidListI > article,
+#metro #youtube > article > .inner .vidListJ > article {
   width: 100%;
-  height: 20vh;
+  height: 100%;
   transition: 0.5s;
-}
-#metro #youtube > article > .inner .vidList > article:hover {
   cursor: pointer;
+}
+#metro #youtube > article > .inner .vidListA > article:hover,
+#metro #youtube > article > .inner .vidListB > article:hover,
+#metro #youtube > article > .inner .vidListC > article:hover,
+#metro #youtube > article > .inner .vidListD > article:hover,
+#metro #youtube > article > .inner .vidListE > article:hover,
+#metro #youtube > article > .inner .vidListF > article:hover,
+#metro #youtube > article > .inner .vidListG > article:hover,
+#metro #youtube > article > .inner .vidListH > article:hover,
+#metro #youtube > article > .inner .vidListI > article:hover,
+#metro #youtube > article > .inner .vidListJ > article:hover {
   transform: scale(1.1);
 }
-#metro #youtube > article > .inner .vidList > .pic {
+#metro #youtube > article > .inner .vidListA > .pic,
+#metro #youtube > article > .inner .vidListB > .pic,
+#metro #youtube > article > .inner .vidListC > .pic,
+#metro #youtube > article > .inner .vidListD > .pic,
+#metro #youtube > article > .inner .vidListE > .pic,
+#metro #youtube > article > .inner .vidListF > .pic,
+#metro #youtube > article > .inner .vidListG > .pic,
+#metro #youtube > article > .inner .vidListH > .pic,
+#metro #youtube > article > .inner .vidListI > .pic,
+#metro #youtube > article > .inner .vidListJ > .pic {
   display: block;
-  width: 100%;
-  height: 75%;
+  width: 300px;
+  height: 100%;
 }
-#metro #youtube > article > .inner .vidList > .pic > img {
+#metro #youtube > article > .inner .vidListA > .pic > img,
+#metro #youtube > article > .inner .vidListB > .pic > img,
+#metro #youtube > article > .inner .vidListC > .pic > img,
+#metro #youtube > article > .inner .vidListD > .pic > img,
+#metro #youtube > article > .inner .vidListE > .pic > img,
+#metro #youtube > article > .inner .vidListF > .pic > img,
+#metro #youtube > article > .inner .vidListG > .pic > img,
+#metro #youtube > article > .inner .vidListH > .pic > img,
+#metro #youtube > article > .inner .vidListI > .pic > img,
+#metro #youtube > article > .inner .vidListJ > .pic > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#metro #youtube > article > .inner .vidList .con {
+#metro #youtube > article > .inner .vidListA .con,
+#metro #youtube > article > .inner .vidListB .con,
+#metro #youtube > article > .inner .vidListC .con,
+#metro #youtube > article > .inner .vidListD .con,
+#metro #youtube > article > .inner .vidListE .con,
+#metro #youtube > article > .inner .vidListF .con,
+#metro #youtube > article > .inner .vidListG .con,
+#metro #youtube > article > .inner .vidListH .con,
+#metro #youtube > article > .inner .vidListI .con,
+#metro #youtube > article > .inner .vidListJ .con {
   background-color: #fff;
   width: 100%;
   height: 10px 10px 0px;
 }
-#metro #youtube > article > .inner .vidList .con h2 {
+#metro #youtube > article > .inner .vidListA .con h2,
+#metro #youtube > article > .inner .vidListB .con h2,
+#metro #youtube > article > .inner .vidListC .con h2,
+#metro #youtube > article > .inner .vidListD .con h2,
+#metro #youtube > article > .inner .vidListE .con h2,
+#metro #youtube > article > .inner .vidListF .con h2,
+#metro #youtube > article > .inner .vidListG .con h2,
+#metro #youtube > article > .inner .vidListH .con h2,
+#metro #youtube > article > .inner .vidListI .con h2,
+#metro #youtube > article > .inner .vidListJ .con h2 {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: #333;
   margin-bottom: 3px;
 }
-#metro #youtube > article > .inner .vidList .con p {
+#metro #youtube > article > .inner .vidListA .con p,
+#metro #youtube > article > .inner .vidListB .con p,
+#metro #youtube > article > .inner .vidListC .con p,
+#metro #youtube > article > .inner .vidListD .con p,
+#metro #youtube > article > .inner .vidListE .con p,
+#metro #youtube > article > .inner .vidListF .con p,
+#metro #youtube > article > .inner .vidListG .con p,
+#metro #youtube > article > .inner .vidListH .con p,
+#metro #youtube > article > .inner .vidListI .con p,
+#metro #youtube > article > .inner .vidListJ .con p {
   font-size: 14px;
   color: #333;
   font-family: "Work Sans", sans-serif;
 }
-#metro #youtube > article > .inner .vidList .con span {
+#metro #youtube > article > .inner .vidListA .con span,
+#metro #youtube > article > .inner .vidListB .con span,
+#metro #youtube > article > .inner .vidListC .con span,
+#metro #youtube > article > .inner .vidListD .con span,
+#metro #youtube > article > .inner .vidListE .con span,
+#metro #youtube > article > .inner .vidListF .con span,
+#metro #youtube > article > .inner .vidListG .con span,
+#metro #youtube > article > .inner .vidListH .con span,
+#metro #youtube > article > .inner .vidListI .con span,
+#metro #youtube > article > .inner .vidListJ .con span {
   font-size: 11px;
   font-family: "Open Sans", sans-serif;
   color: rgb(2, 126, 196);

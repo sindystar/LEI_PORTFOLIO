@@ -179,14 +179,48 @@ window.addEventListener('resize', () => {
 // youtube
 
 
-const frame1 = document.querySelector('.vidList');
+const frame1 = document.querySelector('.vidListA');
 const playlistId1 = 'PLfYNuKPjo-c-_IvgCMUV4AhGDTrFFI8Qu';
 
-const frame2 = document.querySelector('.vidList0');
-const playlistId2 = 'PLGOVj4gmzJyDDR7lMdcNbMivqI1oqvaDz';
+const frame2 = document.querySelector('.vidListB');
+const playlistId2 = 'PLfYNuKPjo-c_K9Q0SehDk8RynA_45fzgU';
 
-getYoutube(frame2, playlistId2, 1);
+const frame3 = document.querySelector('.vidListC');
+const playlistId3 = 'PLfYNuKPjo-c84_pudwu-9LP-DLMkZFdox';
+
+const frame4 = document.querySelector('.vidListD');
+const playlistId4 = 'PLfYNuKPjo-c87JK46KkDFUDZDvKg9-qVF';
+
+const frame5 = document.querySelector('.vidListE');
+const playlistId5 = 'PLfYNuKPjo-c9S5jEKcXWdP5O-e4yDFTml';
+
+const frame6 = document.querySelector('.vidListF');
+const playlistId6 = 'PLfYNuKPjo-c-nR8wqehdxZsV6voiF44jp';
+
+const frame7 = document.querySelector('.vidListG');
+const playlistId7 = 'PLfYNuKPjo-c8XcLm1nTWBOxL7CnCu9Feh';
+
+const frame8 = document.querySelector('.vidListH');
+const playlistId8 = 'PLfYNuKPjo-c8j-VsnKEktFPVasBwXq-uS';
+
+const frame9 = document.querySelector('.vidListI');
+const playlistId9 = 'PLfYNuKPjo-c9PJ9KdmpaCOaRtJfMN5WYf';
+
+const frame10 = document.querySelector('.vidListJ');
+const playlistId10 = 'PLfYNuKPjo-c_0tllSpqdEXZYVt0lJ-_be';
+
+
 getYoutube(frame1, playlistId1, 1);
+getYoutube(frame2, playlistId2, 1);
+getYoutube(frame3, playlistId3, 1);
+getYoutube(frame4, playlistId4, 1);
+getYoutube(frame5, playlistId5, 1);
+getYoutube(frame6, playlistId6, 1);
+getYoutube(frame7, playlistId7, 1);
+getYoutube(frame8, playlistId8, 1);
+getYoutube(frame9, playlistId9, 1);
+getYoutube(frame10, playlistId10, 1);
+
 
 async function getYoutube(frame, playlist, count) {
 	const key = 'AIzaSyB-6xV4QXok9PwwPhxxeP3c4JzN_KmmKKY';
@@ -201,15 +235,18 @@ async function getYoutube(frame, playlist, count) {
 
 	items.map((el) => {
 		let title = el.snippet.title;
-		if (title.length > 30) {
-			title = title.substr(0, 20) + '...';
+		if (title.length > 60) {
+			title = title.substr(0, 60) + '...';
 		}
 
 		let con = el.snippet.description;
 		if (con.length > 100) {
-			con = con.substr(0, 40) + '...';
+			con = con.substr(0, 100) + '...';
 		}
 		let date = el.snippet.publishedAt;
+
+		date = date.split('T')[0];
+
 		result += `
         <article>
           <a href="${el.snippet.resourceId.videoId}" class="pic">
