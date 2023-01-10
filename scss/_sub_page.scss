@@ -191,6 +191,7 @@ $mobile: 539px;
 		min-height: 500px;
 		border: 1px solid green;
 		h1 {
+			border: 1px solid green;
 			padding-left: 30px;
 			font-size: 100px;
 			font-weight: 100;
@@ -199,7 +200,8 @@ $mobile: 539px;
 			color: #333;
 			margin-bottom: 20px;
 			font-family: 'Bebas Neue', cursive;
-			span {
+			p {
+
 				font: nomal 20px/1;
 				color: #aaa;
 				&::before {

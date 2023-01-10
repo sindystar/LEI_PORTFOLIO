@@ -9,79 +9,56 @@ $mobile: 539px;
 		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
 	.inner {
+		width: 100%;
 		.content {
 			&::after {
 				content: '';
 				display: block;
 				clear: both;
 			}
-			h2 {
-				position: relative;
-				font-style: oblique;
-				font-size: 26px;
-				font-family: 'Bebas Neue', cursive;
-				color: $keycolor;
-				margin-top: 100px;
-				margin-bottom: 50px;
-				&::after {
-					content: '';
-					display: block;
-					width: 140px;
-					height: 1px;
-					background: $keycolor;
-					position: absolute;
-					top: -5px;
-					left: 5px;
-				}
-			}
+			border-top: 1px solid #ddd;
+			padding: 20px 0px ;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 
 			.txt {
+				position: absolute;
 				border: 1px solid red;
-				padding-left: 30px;
-				width: 100%;
-				top: 100px0;
+				width: 400px;
 				float: right;
-				position: relative;
 				p {
 					font-size: 18px/40px;
 					font-family: 'Open Sans', sans-serif;
 					color: #555;
-					position: absolute;
-					top: 0;
-					left: 0;
 				}
 			}
 			.wrap {
-				width: 780px;
-				height: 00px;
-				float: right;
-				margin-top: 300px;
-				position: relative;
-				.about {
+				width: 35%;
+				height: 200px;
+				cursor: pointer;
+				.aboutVisual {
 					width: 100%;
 					height: 100%;
 					position: relative;
 					overflow: hidden;
 					ul {
-						width: 720px;
+						width: 38%;
 						height: 100%;
 						position: absolute;
 						top: 0;
 						left: 0;
-						> li {
-							width: calc(100% / 5);
+						> img{
+							width: 100%;
 							height: 100%;
+							object-fit: cover;
+							transition: 0.5s;
 							float: left;
-							> img {
-								width: 100%;
-								height: 100%;
-								object-fit: cover;
-								transition: 0.5s;
+							transition: 0.5s;
 								&:hover {
 									cursor: pointer;
 									transform: scale(1.1);
 								}
-							}
 						}
 					}
 				}
@@ -160,7 +137,7 @@ $mobile: 539px;
 						float: left;
 						padding-left: 10px;
 
-						.txtBox {
+						.txtBox {							
 							margin-top: 50px;
 							li {
 								width: 100%;
@@ -214,6 +191,7 @@ $mobile: 539px;
 						}
 					}
 					P {
+
 						padding-top: 10px;
 						margin-right: 10px;
 						margin-top: 8px;

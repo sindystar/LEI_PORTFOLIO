@@ -232,6 +232,7 @@ textarea {
   border: 1px solid green;
 }
 .content .inner h1 {
+  border: 1px solid green;
   padding-left: 30px;
   font-size: 100px;
   font-weight: 100;
@@ -241,11 +242,11 @@ textarea {
   margin-bottom: 20px;
   font-family: "Bebas Neue", cursive;
 }
-.content .inner h1 span {
+.content .inner h1 p {
   font: nomal 20px/1;
   color: #aaa;
 }
-.content .inner h1 span::before {
+.content .inner h1 p::before {
   content: "/";
   margin-left: 10px;
   margin-right: 20px;
@@ -397,78 +398,59 @@ textarea {
 .about .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
+.about .inner {
+  width: 100%;
+}
+.about .inner .content {
+  border-top: 1px solid #ddd;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .about .inner .content::after {
   content: "";
   display: block;
   clear: both;
 }
-.about .inner .content h2 {
-  position: relative;
-  font-style: oblique;
-  font-size: 26px;
-  font-family: "Bebas Neue", cursive;
-  color: rgb(2, 126, 196);
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.about .inner .content h2::after {
-  content: "";
-  display: block;
-  width: 140px;
-  height: 1px;
-  background: rgb(2, 126, 196);
-  position: absolute;
-  top: -5px;
-  left: 5px;
-}
 .about .inner .content .txt {
+  position: absolute;
   border: 1px solid red;
-  padding-left: 30px;
-  width: 100%;
-  top: 100px0;
+  width: 400px;
   float: right;
-  position: relative;
 }
 .about .inner .content .txt p {
   font-size: 18px/40px;
   font-family: "Open Sans", sans-serif;
   color: #555;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .about .inner .content .wrap {
-  width: 780px;
-  height: 0px;
-  float: right;
-  margin-top: 300px;
-  position: relative;
+  width: 35%;
+  height: 200px;
+  cursor: pointer;
 }
-.about .inner .content .wrap .about {
+.about .inner .content .wrap .aboutVisual {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-.about .inner .content .wrap .about ul {
-  width: 720px;
+.about .inner .content .wrap .aboutVisual ul {
+  width: 38%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.about .inner .content .wrap .about ul > li {
-  width: 20%;
-  height: 100%;
-  float: left;
-}
-.about .inner .content .wrap .about ul > li > img {
+.about .inner .content .wrap .aboutVisual ul > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+  float: left;
+  transition: 0.5s;
 }
-.about .inner .content .wrap .about ul > li > img:hover {
+.about .inner .content .wrap .aboutVisual ul > img:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -1531,7 +1513,7 @@ textarea {
   background: #444;
 }
 .scroll li:hover a {
-  background-color: #BCF5A9;
+  background-color: #bcf5a9;
 }
 
 #header {
@@ -1968,13 +1950,15 @@ textarea {
   gap: 1vw;
   padding-left: 3.5vw;
 }
-#metro #news article .inner .box .bgBox > p, #metro #news article .inner .box .bgBox a {
+#metro #news article .inner .box .bgBox > p,
+#metro #news article .inner .box .bgBox a {
   margin-top: 15px;
   font-size: 14px;
   font-family: "Open Sans";
   color: #fff;
 }
-#metro #news article .inner .box .bgBox > p > i, #metro #news article .inner .box .bgBox a > i {
+#metro #news article .inner .box .bgBox > p > i,
+#metro #news article .inner .box .bgBox a > i {
   margin-top: 0px;
   margin-right: 5px;
   font-size: 16px;
@@ -2054,7 +2038,9 @@ textarea {
 #metro #news article:nth-of-type(6) .inner > .box .txtBox .icon2 i, #metro #news article:nth-of-type(7) .inner > .box .txtBox .icon2 i {
   color: #666;
 }
-#metro #news article:nth-of-type(6) .inner > .box .txtBox p, #metro #news article:nth-of-type(6) .inner > .box .txtBox h2, #metro #news article:nth-of-type(7) .inner > .box .txtBox p, #metro #news article:nth-of-type(7) .inner > .box .txtBox h2 {
+#metro #news article:nth-of-type(6) .inner > .box .txtBox p,
+#metro #news article:nth-of-type(6) .inner > .box .txtBox h2, #metro #news article:nth-of-type(7) .inner > .box .txtBox p,
+#metro #news article:nth-of-type(7) .inner > .box .txtBox h2 {
   color: #444;
 }
 #metro #news article:nth-of-type(6) .inner > .box .txtBox h4, #metro #news article:nth-of-type(7) .inner > .box .txtBox h4 {
@@ -2063,10 +2049,14 @@ textarea {
 #metro #news article:nth-of-type(6) .inner > .box .bgBox, #metro #news article:nth-of-type(7) .inner > .box .bgBox {
   border-top: 1px solid #ddd;
 }
-#metro #news article:nth-of-type(6) .inner > .box .bgBox > p, #metro #news article:nth-of-type(6) .inner > .box .bgBox a, #metro #news article:nth-of-type(7) .inner > .box .bgBox > p, #metro #news article:nth-of-type(7) .inner > .box .bgBox a {
+#metro #news article:nth-of-type(6) .inner > .box .bgBox > p,
+#metro #news article:nth-of-type(6) .inner > .box .bgBox a, #metro #news article:nth-of-type(7) .inner > .box .bgBox > p,
+#metro #news article:nth-of-type(7) .inner > .box .bgBox a {
   color: #999;
 }
-#metro #news article:nth-of-type(6) .inner > .box .bgBox > p > i, #metro #news article:nth-of-type(6) .inner > .box .bgBox a > i, #metro #news article:nth-of-type(7) .inner > .box .bgBox > p > i, #metro #news article:nth-of-type(7) .inner > .box .bgBox a > i {
+#metro #news article:nth-of-type(6) .inner > .box .bgBox > p > i,
+#metro #news article:nth-of-type(6) .inner > .box .bgBox a > i, #metro #news article:nth-of-type(7) .inner > .box .bgBox > p > i,
+#metro #news article:nth-of-type(7) .inner > .box .bgBox a > i {
   color: #999;
 }
 #metro #news article:nth-of-type(9) .inner {
@@ -2363,7 +2353,7 @@ textarea {
 footer {
   width: 100%;
   position: relative;
-  background: #fafafa;
+  background: #f3f3f3;
   filter: url("#effect");
   z-index: 2;
 }
@@ -2386,7 +2376,7 @@ footer .toggle::before {
   position: absolute;
   top: 0;
   left: 0;
-  background: #fafafa;
+  background: #f3f3f3;
   transform: scaleY(0.8) rotate(45deg);
   border-radius: 20px;
   transition: 1s;
@@ -2419,8 +2409,8 @@ footer .upper .inner {
   justify-content: center;
   align-items: center;
   padding: 80px;
-  padding-top: 250px;
   overflow: hidden;
+  padding-top: 240px;
 }
 footer .upper .inner > h1 > a {
   font-size: 24px;
@@ -2448,7 +2438,7 @@ footer .upper .inner > ul > li > a {
 }
 footer .upper .inner > ul > li::after {
   position: absolute;
-  top: 7px;
+  top: 9px;
   right: 0;
   content: "";
   display: block;
@@ -2496,11 +2486,11 @@ footer.on .upper {
   height: 400px;
 }
 footer.on .lower {
-  border: 1px solid #3a4258;
+  border-top: 1px solid #3a4258;
   opacity: 0.5;
 }
 
-.svgEffsct {
+.svgEffect {
   position: absolute;
   top: -999999px;
   left: 0;
@@ -2553,7 +2543,8 @@ footer.on .lower {
     background: #444;
     color: #fff;
   }
-  #visual .btns, #visual nav {
+  #visual .btns,
+  #visual nav {
     display: none;
   }
   #metro .nav {
