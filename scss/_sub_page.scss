@@ -189,14 +189,16 @@ $mobile: 539px;
 		width: 1180px;
 		margin: 0 auto;
 		min-height: 500px;
+		border: 1px solid green;
 		h1 {
-			font-size: 30px;
-			letter-spacing: 1px;
-			margin: 0 auto;
-			text-align: center;
-			color: $keycolor;
+			padding-left: 30px;
+			font-size: 100px;
+			font-weight: 100;
+			margin-left: 0;
+			text-align: left;
+			color: #333;
 			margin-bottom: 20px;
-			font-family:'Open Sans', sans-serif;
+			font-family: 'Bebas Neue', cursive;
 			span {
 				font: nomal 20px/1;
 				color: #aaa;
