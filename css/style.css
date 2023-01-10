@@ -398,15 +398,9 @@ textarea {
 .about .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
-.about .inner {
-  width: 100%;
-}
 .about .inner .content {
-  border-top: 1px solid #ddd;
-  padding: 20px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+  height: 60vh;
 }
 .about .inner .content::after {
   content: "";
@@ -415,47 +409,47 @@ textarea {
 }
 .about .inner .content .txt {
   position: absolute;
-  border: 1px solid red;
-  width: 400px;
-  float: right;
+  width: 780px;
+  height: 50px;
+  float: left;
+  margin-left: 30px;
+  position: relative;
 }
 .about .inner .content .txt p {
-  font-size: 18px/40px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
   color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
 }
 .about .inner .content .wrap {
-  width: 35%;
-  height: 200px;
-  cursor: pointer;
-}
-.about .inner .content .wrap .aboutVisual {
-  width: 100%;
-  height: 100%;
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  height: 20vh;
+  float: right;
+  margin-bottom: 30px;
 }
-.about .inner .content .wrap .aboutVisual ul {
-  width: 38%;
+.about .inner .content .wrap ul {
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.about .inner .content .wrap .aboutVisual ul > img {
+.about .inner .content .wrap ul > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
-  float: left;
+  filter: grayscale(1);
   transition: 0.5s;
 }
-.about .inner .content .wrap .aboutVisual ul > img:hover {
+.about .inner .content .wrap ul > img:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  filter: grayscale(0);
 }
 .about .inner .members {
-  margin-top: 100px;
   width: 100%;
   position: relative;
 }
@@ -469,7 +463,7 @@ textarea {
   font-size: 26px;
   font-family: "Work Sans", sans-serif;
   color: rgb(2, 126, 196);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .about .inner .members > h2::after {
   content: "";
