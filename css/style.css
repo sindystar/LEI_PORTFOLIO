@@ -2121,6 +2121,8 @@ textarea {
   width: 50%;
 }
 #metro #youtube > article > .inner {
+  position: relative;
+  padding: 0;
   width: 100%;
   height: 100%;
   background: #ddd;
@@ -2148,6 +2150,7 @@ textarea {
 #metro #youtube > article > .inner .vidListH > article,
 #metro #youtube > article > .inner .vidListI > article,
 #metro #youtube > article > .inner .vidListJ > article {
+  border: 1px solid red;
   width: 100%;
   height: 100%;
   transition: 0.5s;
@@ -2254,9 +2257,9 @@ textarea {
   font-family: "Open Sans";
   color: rgb(2, 126, 196);
 }
-#metro #youtube > article > .inner figure.pop {
+#metro #youtube > article figure.pop {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -2266,7 +2269,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
-#metro #youtube > article > .inner figure.pop > .btnClose {
+#metro #youtube > article figure.pop > .btnClose {
   position: absolute;
   top: 20px;
   right: 20px;

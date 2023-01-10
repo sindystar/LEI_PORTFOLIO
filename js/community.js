@@ -6,10 +6,10 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 let len = lis.length;
 
-const txt_p = document.querySelectorAll('.txt p');
-const span = document.querySelector('.txt p span');
+// const txt_p = document.querySelectorAll('.txt p');
+// const span = document.querySelector('.txt p span');
 
-span.innerText = '01';
+// span.innerText = '01';
 
 let active = 0;
 
