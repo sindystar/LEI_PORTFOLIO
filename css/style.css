@@ -1239,6 +1239,55 @@ textarea {
   letter-spacing: 1px;
   font-style: oblique;
 }
+.location .inner .contact {
+  position: relative;
+  width: 100%;
+  padding-bottom: 200px;
+  background: #ddd;
+}
+.location .inner .contact .inner {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location .inner .contact .inner fieldset {
+  width: 760px;
+}
+.location .inner .contact .inner fieldset table {
+  text-align: left;
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  font: 16px;
+  font-family: "Open Sans";
+  color: #333;
+}
+.location .inner .contact .inner fieldset table tr:nth-of-type(2) td:first-child, .location .inner .contact .inner fieldset table tr:nth-of-type(4) td:first-child {
+  padding-right: 20px;
+}
+.location .inner .contact .inner fieldset table tr:nth-of-type(6) td {
+  padding-bottom: 20px;
+}
+.location .inner .contact .inner fieldset table tr input [type=submit] {
+  display: block;
+  border: none;
+  float: left;
+  width: 180px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: aqua;
+  background-color: rgb(2, 126, 196);
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.location .inner .contact .inner fieldset table tr input [type=submit]:hover {
+  background-color: skyblue;
+}
 .location .inner .txt {
   width: 100%;
   float: left;
