@@ -1053,6 +1053,31 @@ textarea {
 .gallery .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
+.gallery .inner .content {
+  width: 100%;
+}
+.gallery .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .inner .content .txt {
+  width: 28%;
+  height: 280px;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+.gallery .inner .content .txt p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
 .gallery .inner #wrap {
   width: 100%;
   padding: 40px;
@@ -1287,6 +1312,27 @@ textarea {
 }
 .location .inner .contact .inner fieldset table tr input [type=submit]:hover {
   background-color: skyblue;
+}
+.location .inner .contact .inner fieldset table input,
+.location .inner .contact .inner fieldset table select,
+.location .inner .contact .inner fieldset table textarea {
+  border: none;
+  border-bottom: 1px solid #333;
+}
+.location .inner .contact .inner fieldset table input [type=text] {
+  width: 100%;
+  height: 50px;
+  font-family: "Open Sans";
+  color: rgb(2, 126, 196);
+  padding-left: 10px;
+}
+.location .inner .contact .inner fieldset table input [type=text]::placeholder {
+  color: aqua;
+}
+.location .inner .contact .inner fieldset table #purpose {
+  width: 100%;
+  height: 50px;
+  font-family: "Open Sans";
 }
 .location .inner .txt {
   width: 100%;

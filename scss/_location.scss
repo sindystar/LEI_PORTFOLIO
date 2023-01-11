@@ -219,6 +219,27 @@ $mobile: 539px;
 								}
 							}
 						}
+						input,
+						select,
+						textarea {
+							border: none;
+							border-bottom: 1px solid #333 ;
+						}
+						input [type ='text'] {
+							width: 100%;
+							height: 50px;
+							font-family: 'Open Sans';
+							color: $keycolor;
+							padding-left: 10px;
+							&::placeholder {
+								color: aqua;
+							}
+						}
+						#purpose {
+							width: 100%;
+							height: 50px;
+							font-family: 'Open Sans';
+						}
 					}
 				}
 
