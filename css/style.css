@@ -1164,8 +1164,9 @@ textarea {
   width: 1180px;
 }
 .location .inner .content {
+  padding-bottom: 50px;
+  border: 1px solid green;
   width: 100%;
-  height: 35vh;
 }
 .location .inner .content::after {
   content: "";
@@ -1194,12 +1195,12 @@ textarea {
   position: relative;
   background: rgb(124, 175, 251);
   width: 100%;
-  height: 60vh;
+  height: 40vh;
 }
 .location .inner .mapinfo #map {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 100%;
   filter: invert(1) grayscale(0.9) brightness(0.8);
   opacity: 0.6;
 }
@@ -1252,8 +1253,8 @@ textarea {
 .location .inner > p {
   border: 1px solid red;
   position: relative;
-  padding-left: 20px;
-  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
   font: 14px "Work Sans", sans-serif;
   color: #444;
   margin-bottom: 80px;
