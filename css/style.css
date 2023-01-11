@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Work+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Work+Sans:wght@300;400&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -229,11 +228,11 @@ textarea {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
-  border: 1px solid green;
+  margin-bottom: 100px;
 }
 .content .inner h1 {
-  border: 1px solid green;
-  padding-left: 30px;
+  float: left;
+  padding-left: 10px;
   font-size: 100px;
   font-weight: 100;
   margin-left: 0;
@@ -241,6 +240,7 @@ textarea {
   color: #333;
   margin-bottom: 20px;
   font-family: "Bebas Neue", cursive;
+  border-top: 1px solid #333;
 }
 .content .inner h1 p {
   font: nomal 20px/1;
@@ -400,7 +400,7 @@ textarea {
 }
 .about .inner .content {
   width: 100%;
-  height: 60vh;
+  height: 40vh;
 }
 .about .inner .content::after {
   content: "";
@@ -409,27 +409,28 @@ textarea {
 }
 .about .inner .content .txt {
   position: absolute;
-  width: 780px;
-  height: 50px;
-  float: left;
-  margin-left: 30px;
+  width: 28%;
+  height: 150px;
+  float: right;
+  margin-top: 100px;
   position: relative;
 }
 .about .inner .content .txt p {
-  font-size: 20px;
-  font-family: "Merriweather", serif;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
   color: #555;
   position: absolute;
   top: 0;
   left: 0;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .about .inner .content .wrap {
   position: relative;
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   float: right;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
 }
 .about .inner .content .wrap ul {
   width: 100%;
@@ -459,20 +460,20 @@ textarea {
   clear: both;
 }
 .about .inner .members > h2 {
-  font-style: oblique;
-  font-size: 26px;
-  font-family: "Work Sans", sans-serif;
-  color: rgb(2, 126, 196);
-  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: "open Sans";
+  color: #333;
+  margin-bottom: 80px;
+  margin-left: 10px;
 }
 .about .inner .members > h2::after {
   content: "";
   display: block;
-  width: 110px;
+  width: 185px;
   height: 1px;
   background: rgb(2, 126, 196);
   position: absolute;
-  top: -5px;
+  top: 305px;
 }
 .about .inner .members .wrap > article {
   display: flex;
