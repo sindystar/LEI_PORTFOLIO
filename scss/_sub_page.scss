@@ -112,7 +112,7 @@ $mobile: 539px;
 				}
 			}
 		}
-		.menuMo {
+		>.menuMo {
 			width: 270px;
 			height: 100vh;
 			background: $keycolor;
@@ -127,8 +127,8 @@ $mobile: 539px;
 				left: 0;
 			}
 			> h1 {
+				position: relative; // 서브 타이클 로 인해 main과 설정 다름 유의 
 				padding-top: 20px;
-				font-family: 'Open Sans', sans-serif;
 				border-bottom: 1px solid #fff;
 				text-align: center;
 				a {
@@ -138,13 +138,12 @@ $mobile: 539px;
 					color: #fff;
 					transition: 0.5s;
 					&:hover {
-						color: skyblue;
+						color: #bcf5a9;
 					}
 				}
 				span {
 					display: block;
 					padding-bottom: 20px;
-					font-family:'Open Sans', sans-serif;
 					font-size: 12px;
 					letter-spacing: 1px;
 					color: #fff;
@@ -164,7 +163,7 @@ $mobile: 539px;
 						text-align: center;
 						transition: 0.5s;
 						&:hover {
-							color: skyblue;
+							color: #bcf5a9;
 							// transform: scale(1.1);
 							// overflow: hidden;
 						}

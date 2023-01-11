@@ -157,7 +157,7 @@ textarea {
   transform: translateX(100%);
   opacity: 0;
 }
-#header_sub .inner .menuMo {
+#header_sub .inner > .menuMo {
   width: 270px;
   height: 100vh;
   background: rgb(2, 126, 196);
@@ -169,37 +169,36 @@ textarea {
   transition: 0.5s;
   display: none;
 }
-#header_sub .inner .menuMo.on {
+#header_sub .inner > .menuMo.on {
   left: 0;
 }
-#header_sub .inner .menuMo > h1 {
+#header_sub .inner > .menuMo > h1 {
+  position: relative;
   padding-top: 20px;
-  font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #fff;
   text-align: center;
 }
-#header_sub .inner .menuMo > h1 a {
+#header_sub .inner > .menuMo > h1 a {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
   transition: 0.5s;
 }
-#header_sub .inner .menuMo > h1 a:hover {
-  color: skyblue;
+#header_sub .inner > .menuMo > h1 a:hover {
+  color: #bcf5a9;
 }
-#header_sub .inner .menuMo > h1 span {
+#header_sub .inner > .menuMo > h1 span {
   display: block;
   padding-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: #fff;
 }
-#header_sub .inner .menuMo #gnbMo li {
+#header_sub .inner > .menuMo #gnbMo li {
   padding: 0px;
 }
-#header_sub .inner .menuMo #gnbMo li a {
+#header_sub .inner > .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -210,8 +209,8 @@ textarea {
   text-align: center;
   transition: 0.5s;
 }
-#header_sub .inner .menuMo #gnbMo li a:hover {
-  color: skyblue;
+#header_sub .inner > .menuMo #gnbMo li a:hover {
+  color: #bcf5a9;
 }
 
 .content {
@@ -962,6 +961,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
   width: 49%;
   height: 30vh;
   transition: 0.5s;
@@ -1135,31 +1135,57 @@ textarea {
 .location .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
+.location .inner {
+  width: 1180px;
+}
+.location .inner .content {
+  width: 100%;
+  height: 35vh;
+}
+.location .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .inner .content .txt {
+  position: absolute;
+  width: 28%;
+  height: 150px;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+.location .inner .content .txt p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
 .location .inner .mapinfo {
-  border: 1px solid green;
+  position: relative;
   background: rgb(124, 175, 251);
   width: 100%;
-  top: calc(75% - 100px);
-  left: calc(50% - 100px);
+  height: 60vh;
 }
 .location .inner .mapinfo #map {
+  position: relative;
   width: 100%;
-  height: 450px;
-  border: 2px solid rgb(2, 126, 196);
-  border-radius: 5px;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  height: 60vh;
   filter: invert(1) grayscale(0.9) brightness(0.8);
   opacity: 0.6;
 }
 .location .inner .mapinfo .info {
-  width: 160px;
-  height: 160px;
-  background: skyblue;
+  width: 120px;
+  height: 120px;
+  background: #efefef;
   border-radius: 50%;
   position: absolute;
-  top: 650px;
-  left: calc(50% - 80px);
+  top: 120px;
+  left: calc(50% + 5px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: 0.5s;
@@ -1168,24 +1194,27 @@ textarea {
   position: absolute;
   width: 100%;
   font-family: "Work Sans", sans-serif;
-  font-size: 16PX;
-  color: aliceblue;
+  font-weight: 400;
+  font-size: 14PX;
+  color: #333;
   padding-top: 40px;
   text-align: center;
   z-index: 5;
 }
 .location .inner .mapinfo .info > h2 span {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  border-top: 1px solid aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 10px;
+  border-top: 1px solid rgb(2, 126, 196);
 }
 .location .inner .mapinfo .info::before {
   content: "";
   display: block;
   width: 50px;
   height: 50px;
-  background: skyblue;
-  transform: skewX(-20deg);
+  background: #efefef;
+  transform: skewX(-25deg);
   position: absolute;
   top: 16px;
   right: 20px;
@@ -1196,15 +1225,17 @@ textarea {
   margin-top: -550px;
 }
 .location .inner > p {
+  border: 1px solid red;
+  position: relative;
   padding-left: 20px;
-  padding-bottom: 30px;
-  font: 15px/20px "Work Sans", sans-serif;
-  color: skyblue;
-  margin-bottom: 50px;
+  padding-bottom: 40px;
+  font: 14px "Work Sans", sans-serif;
+  color: #444;
+  margin-bottom: 80px;
 }
 .location .inner > p span {
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 24px;
   letter-spacing: 1px;
   font-style: oblique;
 }

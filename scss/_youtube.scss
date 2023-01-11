@@ -47,6 +47,10 @@ $mobile: 539px;
 			justify-content: space-between;
 			align-content: flex-start;
 			margin-top: 0px;
+			// transform: translateY(100px);
+			// opacity: 0;
+			// transition: 1s;
+			
 
 			> article {
 				margin-top: 80px;
@@ -55,6 +59,7 @@ $mobile: 539px;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
+				cursor: pointer;								
 				width: calc(100% / 2)-1%;
 				// padding: 10px;
 				// margin-left: 2%;
@@ -105,7 +110,16 @@ $mobile: 539px;
 				}
 			}
 		}
-
+		// &.on {
+		// 	.inner {
+		// 		.vidList{
+		// 			transform: translateY(0px);
+		// 			opacity: 1;
+	
+		// 		}
+		// 	}
+		// }
+		
 		figure.pop {
 			width: 100%;
 			height: 100vh;
@@ -118,6 +132,7 @@ $mobile: 539px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			
 			.btnClose {
 				position: absolute;
 				top: 50px;
@@ -127,7 +142,10 @@ $mobile: 539px;
 			}
 		}
 	}
+	
 }
+
+
 @media screen and (max-width: $tablet) {
 	.youtube {
 		.inner {
