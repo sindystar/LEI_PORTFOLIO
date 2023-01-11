@@ -1,17 +1,16 @@
 // 버튼콜
-const btnCall = document.querySelector(".btnCall");
-const menuMo = document.querySelector(".menuMo");
+const btnCall = document.querySelector('.btnCall');
+const menuMo = document.querySelector('.menuMo');
 
-btnCall.onclick = function(e){
-    e.preventDefault();
+btnCall.onclick = function (e) {
+	e.preventDefault();
 
-    btnCall.classList.toggle("on");
+	btnCall.classList.toggle('on');
 
-    menuMo.classList.toggle("on");
-}
+	menuMo.classList.toggle('on');
+};
 
-
-// scroll 
+// scroll
 const scrollWrap = document.querySelectorAll('.scrollWrap');
 const scrollBtn = document.querySelectorAll('.scroll li');
 const scrollBtn_arr = Array.from(scrollBtn);
@@ -143,6 +142,13 @@ btnMetro.forEach((btn, idx) => {
 btnFooter.addEventListener('click', (e) => {
 	e.preventDefault();
 	e.currentTarget.parentElement.classList.toggle('on');
+
+	const scroll = window.scrollY;
+	//const upperHT = getComputedStyle(document.querySelector('.upper'))['height'];
+	const targetScroll = scroll + 400;
+	setTimeout(() => {
+		window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+	}, 500);
 });
 
 //지도 연결 코드
@@ -175,5 +181,3 @@ mapFrame.addEventListener('mouseleave', () => {
 window.addEventListener('resize', () => {
 	map.setCenter(mapOption.center);
 });
-
-

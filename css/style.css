@@ -993,6 +993,33 @@ textarea {
 .youtube .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
+.youtube .inner .content {
+  width: 100%;
+  height: 20vh;
+}
+.youtube .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.youtube .inner .content .txt {
+  position: absolute;
+  width: 28%;
+  height: 150px;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+.youtube .inner .content .txt p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
 .youtube .inner > .vidList {
   width: 100%;
   display: flex;
