@@ -5,7 +5,7 @@ $mobile: 539px;
 
 .location {
 	width: 100%; //전체너비를 뜻하는 100%
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	.sub_visual {
 		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
@@ -13,13 +13,14 @@ $mobile: 539px;
 		// width: 100%;
 
 		.mapinfo{
+			border: 1px solid green;
 			background: rgb(124, 175, 251);
 			width: 100%;
 			top: calc(75% - 100px);
 				left: calc(50% - 100px);
 			#map {
 			width: 100%; //여기map의 100% 1180
-			height: 550px;			
+			height: 450px;			
 			border: 2px solid $keycolor;
 			border-radius: 5px;
 			margin-top: 60px;

@@ -428,25 +428,25 @@ textarea {
 .about .inner .content .wrap {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   float: right;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
-.about .inner .content .wrap ul {
+.about .inner .content .wrap .aboutVisual ul {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.about .inner .content .wrap ul > img {
+.about .inner .content .wrap .aboutVisual ul > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(1);
   transition: 0.5s;
 }
-.about .inner .content .wrap ul > img:hover {
+.about .inner .content .wrap .aboutVisual ul > img:hover {
   cursor: pointer;
   filter: grayscale(0);
 }
@@ -466,91 +466,82 @@ textarea {
   margin-bottom: 80px;
   margin-left: 10px;
 }
-.about .inner .members > h2::after {
-  content: "";
-  display: block;
-  width: 185px;
-  height: 1px;
-  background: rgb(2, 126, 196);
-  position: absolute;
-  top: 270px;
-}
-.about .inner .members .wrap > article {
+.about .inner .members > .wrap > article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   float: left;
 }
-.about .inner .members .wrap > article:nth-of-type(1) {
+.about .inner .members > .wrap > article:nth-of-type(1) {
   width: 32%;
   margin-right: 2%;
 }
-.about .inner .members .wrap > article:nth-of-type(2) {
+.about .inner .members > .wrap > article:nth-of-type(2) {
   width: 32%;
   margin-right: 2%;
   border-top: 1px solid rgb(2, 126, 196);
   margin-bottom: 50px;
 }
-.about .inner .members .wrap > article:nth-of-type(3) {
+.about .inner .members > .wrap > article:nth-of-type(3) {
   width: 32%;
   border-top: 1px solid rgb(2, 126, 196);
   margin-bottom: 50px;
 }
-.about .inner .members .wrap > article:nth-of-type(4) {
+.about .inner .members > .wrap > article:nth-of-type(4) {
   width: 24%;
   margin-right: 1.3333333333%;
   border-bottom: 1px solid rgb(2, 126, 196);
 }
-.about .inner .members .wrap > article:nth-of-type(5) {
+.about .inner .members > .wrap > article:nth-of-type(5) {
   width: 24%;
   margin-right: 1.3333333333%;
   border-bottom: 1px solid rgb(2, 126, 196);
 }
-.about .inner .members .wrap > article:nth-of-type(6) {
+.about .inner .members > .wrap > article:nth-of-type(6) {
   width: 24%;
   margin-right: 1.3333333333%;
   border-top: none;
   border-bottom: 1px solid rgb(2, 126, 196);
 }
-.about .inner .members .wrap > article:nth-of-type(7) {
+.about .inner .members > .wrap > article:nth-of-type(7) {
   width: 24%;
   border-bottom: 1px solid rgb(2, 126, 196);
 }
-.about .inner .members .wrap > article .box {
+.about .inner .members > .wrap > article .box {
   width: 100%;
   float: left;
   padding-left: 10px;
 }
-.about .inner .members .wrap > article .box .txtBox {
+.about .inner .members > .wrap > article .box .txtBox {
   margin-top: 50px;
 }
-.about .inner .members .wrap > article .box .txtBox li {
+.about .inner .members > .wrap > article .box .txtBox li {
   width: 100%;
   margin-top: 0px;
 }
-.about .inner .members .wrap > article .box .txtBox li i {
+.about .inner .members > .wrap > article .box .txtBox li i {
   font-size: 20px;
   color: #777;
 }
-.about .inner .members .wrap > article .box .txtBox > p {
+.about .inner .members > .wrap > article .box .txtBox > p {
   font-style: oblique;
   font-size: 18px;
   font-family: "Work Sans", sans-serif;
   color: #888;
 }
-.about .inner .members .wrap > article .box .txtBox > p > span {
+.about .inner .members > .wrap > article .box .txtBox > p > span {
   float: left;
   font-size: 30px;
   font-family: "Merriweather", serif;
   color: #777;
 }
-.about .inner .members .wrap > article .pic {
+.about .inner .members > .wrap > article .pic {
   width: 100%;
   height: 20vh;
   overflow: hidden;
   margin-bottom: 0px;
 }
-.about .inner .members .wrap > article .pic img {
+.about .inner .members > .wrap > article .pic img {
   filter: grayscale(1);
   width: 100%;
   height: 100%;
@@ -558,20 +549,20 @@ textarea {
   transition: 0.5s;
   cursor: pointer;
 }
-.about .inner .members .wrap > article .pic img:hover {
+.about .inner .members > .wrap > article .pic img:hover {
   filter: grayscale(0);
 }
-.about .inner .members .wrap > article h2 {
+.about .inner .members > .wrap > article h2 {
   padding-top: 10px;
   padding-left: 10px;
   text-align: center;
 }
-.about .inner .members .wrap > article h2 > a {
+.about .inner .members > .wrap > article h2 > a {
   font-family: "Open Sans", sans-serif;
   font: 22px/1;
   color: #333;
 }
-.about .inner .members .wrap > article P {
+.about .inner .members > .wrap > article P {
   padding-top: 10px;
   margin-right: 10px;
   margin-top: 8px;
@@ -579,7 +570,7 @@ textarea {
   font: 10px/1.2;
   color: #555;
 }
-.about .inner .members .wrap > article span {
+.about .inner .members > .wrap > article span {
   width: 100%;
   font-family: "Work Sans", sans-serif;
   font-size: 13px;
@@ -587,13 +578,13 @@ textarea {
   margin-left: 10px;
   margin-bottom: 20px;
 }
-.about .inner .members .wrap > article .icon {
+.about .inner .members > .wrap > article .icon {
   position: relative;
   padding: 2px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.about .inner .members .wrap > article .icon i {
+.about .inner .members > .wrap > article .icon i {
   font-size: 13px;
   color: #aaa;
 }
@@ -751,120 +742,56 @@ textarea {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .community .inner .content {
-  background: #fafafa;
+  width: 100%;
+  height: 40vh;
 }
 .community .inner .content::after {
   content: "";
   display: block;
   clear: both;
 }
-.community .inner .content h2 {
-  position: relative;
-  font-style: oblique;
-  font-size: 26px;
-  font-family: "Work Sans", sans-serif;
-  color: rgb(2, 126, 196);
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.community .inner .content h2::after {
-  content: "";
-  display: block;
-  width: 220px;
-  height: 1px;
-  background: rgb(2, 126, 196);
-  position: absolute;
-  top: -5px;
-  left: 5px;
-}
-.community .inner .content .wrap {
-  width: 780px;
-  height: 300px;
-  float: right;
-  margin-bottom: 30px;
-  position: relative;
-}
-.community .inner .content .wrap .slider {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.community .inner .content .wrap .slider ul {
-  width: 500%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.community .inner .content .wrap .slider ul > li {
-  width: 20%;
-  height: 100%;
-  float: left;
-}
-.community .inner .content .wrap .slider ul > li > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
-.community .inner .content .wrap .slider ul > li > img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.community .inner .content .wrap .prev {
-  display: block;
-  width: 105px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  margin-top: -20px;
-}
-.community .inner .content .wrap .prev img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.community .inner .content .wrap .next {
-  display: block;
-  width: 105px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  margin-top: -20px;
-}
-.community .inner .content .wrap .next > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .community .inner .content .txt {
-  width: 780px;
+  position: absolute;
+  width: 28%;
   height: 150px;
   float: right;
+  margin-top: 100px;
   position: relative;
 }
 .community .inner .content .txt p {
-  font-size: 18px/40px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
   color: #555;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  margin-top: 10px;
+}
+.community .inner .content .wrap {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  float: right;
+  margin-bottom: 100px;
+}
+.community .inner .content .wrap .aboutVisual ul {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.community .inner .content .wrap .aboutVisual ul > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
   transition: 0.5s;
 }
-.community .inner .content .txt p > span {
-  display: block;
-  font-size: 40px;
-  font-family: "Merriweather", serif;
-  color: rgb(2, 126, 196);
-  margin-bottom: 10px;
-}
-.community .inner .content .txt p.on {
-  opacity: 1;
+.community .inner .content .wrap .aboutVisual ul > img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
 }
 .community .inner table {
   width: 100%;
@@ -1203,12 +1130,13 @@ textarea {
 }
 .location {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .location .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .location .inner .mapinfo {
+  border: 1px solid green;
   background: rgb(124, 175, 251);
   width: 100%;
   top: calc(75% - 100px);
@@ -1216,7 +1144,7 @@ textarea {
 }
 .location .inner .mapinfo #map {
   width: 100%;
-  height: 550px;
+  height: 450px;
   border: 2px solid rgb(2, 126, 196);
   border-radius: 5px;
   margin-top: 60px;
@@ -1352,11 +1280,60 @@ textarea {
 .join .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
-.join .inner h1 {
-  margin-bottom: 70px;
+.join .inner .content {
+  width: 100%;
+  height: 40vh;
+}
+.join .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.join .inner .content .txt {
+  position: absolute;
+  width: 28%;
+  height: 150px;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+.join .inner .content .txt p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
+.join .inner .content .wrap {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  float: right;
+  margin-bottom: 100px;
+}
+.join .inner .content .wrap .aboutVisual ul {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.join .inner .content .wrap .aboutVisual ul > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.join .inner .content .wrap .aboutVisual ul > img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
 }
 .join .inner .agreement {
-  margin-bottom: 70px;
+  margin-bottom: 270px;
 }
 .join .inner .agreement label[for=agree] {
   font-size: 12px;
