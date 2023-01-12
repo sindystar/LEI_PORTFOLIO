@@ -1413,6 +1413,21 @@ textarea {
     padding: 0px 30px;
     margin: 0 auto;
   }
+  .location .inner .content {
+    width: 100%;
+  }
+  .location .inner .content .txt p {
+    width: 100%;
+  }
+  .location .inner #contact {
+    width: 100%;
+  }
+  .location .inner #contact .inner fieldset {
+    width: 80vw;
+  }
+  .location .inner #contact .inner fieldset table {
+    width: 100%;
+  }
   .location .inner .mapinfo #map {
     width: 100%;
   }

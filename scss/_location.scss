@@ -316,6 +316,26 @@ $mobile: 539px;
 			width: 100%;
 			padding: 0px 30px;
 			margin: 0 auto;
+			.content {
+				width: 100%;
+				.txt {
+					p {
+						width: 100%;
+					}
+				}
+			}
+			#contact{
+				width: 100%;
+				.inner {
+					fieldset {
+						width: 80vw;
+						table {
+							width: 100%;
+						}
+					}
+				}
+
+			}
 			.mapinfo {
 			#map {
 			width: 100%;
