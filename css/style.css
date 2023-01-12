@@ -1162,10 +1162,10 @@ textarea {
 }
 .location .inner {
   width: 1180px;
+  margin: 0 auto;
 }
 .location .inner .content {
-  padding-bottom: 50px;
-  border: 1px solid green;
+  padding-bottom: 0px;
   width: 100%;
 }
 .location .inner .content::after {
@@ -1174,6 +1174,7 @@ textarea {
   clear: both;
 }
 .location .inner .content .txt {
+  position: relative;
   position: absolute;
   width: 28%;
   height: 150px;
@@ -1191,11 +1192,112 @@ textarea {
   left: 0;
   margin-top: 10px;
 }
+.location .inner #contact {
+  position: relative;
+  width: 100%;
+}
+.location .inner #contact .inner {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location .inner #contact .inner fieldset {
+  width: 1140px;
+  padding-left: 20px;
+}
+.location .inner #contact .inner fieldset table {
+  width: 100%;
+  margin-top: -50px;
+}
+.location .inner #contact .inner fieldset table th {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Open Sans";
+  color: #333;
+}
+.location .inner #contact .inner fieldset table tr {
+  width: 100%;
+}
+.location .inner #contact .inner fieldset table tr:nth-of-type(2) td:first-child, .location .inner #contact .inner fieldset table tr:nth-of-type(4) td:first-child {
+  padding-right: 30px;
+}
+.location .inner #contact .inner fieldset table tr:nth-of-type(6) td {
+  padding-bottom: 20px;
+}
+.location .inner #contact .inner fieldset table tr input[type=submit] {
+  display: block;
+  border: none;
+  float: right;
+  width: 26%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #efefef;
+  background-color: #aaa;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.location .inner #contact .inner fieldset table tr input[type=submit]:hover {
+  background-color: rgb(2, 126, 196);
+}
+.location .inner #contact .inner fieldset table input,
+.location .inner #contact .inner fieldset table select,
+.location .inner #contact .inner fieldset table textarea {
+  width: 100%;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: italic;
+  color: #efefef;
+  border-bottom: 1px solid rgb(2, 126, 196);
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+.location .inner #contact .inner fieldset table input [type=text] {
+  width: 100%;
+  height: 30px;
+  font-family: "Open Sans";
+  color: rgb(2, 126, 196);
+  padding-left: 10px;
+}
+.location .inner #contact .inner fieldset table input [type=text]::placeholder {
+  color: aqua;
+}
+.location .inner #contact .inner fieldset table #purpose {
+  width: 100%;
+  height: 50px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: rgb(2, 126, 196);
+  padding-left: 10px;
+}
+.location .inner #contact .inner fieldset table #message {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-family: "Open Sans";
+  background: transparent;
+  font-size: 14px;
+  color: rgb(2, 126, 196);
+  margin-bottom: -15px;
+  padding: 10px;
+}
+.location .inner #contact .inner fieldset table #message::placeholder {
+  color: rgb(2, 126, 196);
+}
 .location .inner .mapinfo {
   position: relative;
   background: rgb(124, 175, 251);
   width: 100%;
-  height: 40vh;
+  height: 45vh;
 }
 .location .inner .mapinfo #map {
   position: relative;
@@ -1210,7 +1312,7 @@ textarea {
   background: #efefef;
   border-radius: 50%;
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: calc(50% + 5px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -1246,18 +1348,14 @@ textarea {
   right: 20px;
   z-index: 3;
 }
-.location .inner .mapinfo .info.off {
-  opacity: 0;
-  margin-top: -550px;
-}
 .location .inner > p {
-  border: 1px solid red;
   position: relative;
   padding-left: 10px;
   padding-top: 10px;
+  padding-bottom: 30px;
   font: 14px "Work Sans", sans-serif;
   color: #444;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 .location .inner > p span {
   font-family: "Open Sans", sans-serif;
@@ -1265,82 +1363,14 @@ textarea {
   letter-spacing: 1px;
   font-style: oblique;
 }
-.location .inner .contact {
+.location .inner .infoDesk {
   position: relative;
   width: 100%;
+  float: left;
+  padding-top: 50px;
   padding-bottom: 200px;
-  background: #ddd;
 }
-.location .inner .contact .inner {
-  position: relative;
-  width: 1180px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.location .inner .contact .inner fieldset {
-  width: 760px;
-}
-.location .inner .contact .inner fieldset table {
-  text-align: left;
-  width: 100%;
-  margin-top: 40px;
-  padding-bottom: 10px;
-  font: 16px;
-  font-family: "Open Sans";
-  color: #333;
-}
-.location .inner .contact .inner fieldset table tr:nth-of-type(2) td:first-child, .location .inner .contact .inner fieldset table tr:nth-of-type(4) td:first-child {
-  padding-right: 20px;
-}
-.location .inner .contact .inner fieldset table tr:nth-of-type(6) td {
-  padding-bottom: 20px;
-}
-.location .inner .contact .inner fieldset table tr input [type=submit] {
-  display: block;
-  border: none;
-  float: left;
-  width: 180px;
-  padding: 20px;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: aqua;
-  background-color: rgb(2, 126, 196);
-  text-align: center;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.location .inner .contact .inner fieldset table tr input [type=submit]:hover {
-  background-color: skyblue;
-}
-.location .inner .contact .inner fieldset table input,
-.location .inner .contact .inner fieldset table select,
-.location .inner .contact .inner fieldset table textarea {
-  border: none;
-  border-bottom: 1px solid #333;
-}
-.location .inner .contact .inner fieldset table input [type=text] {
-  width: 100%;
-  height: 50px;
-  font-family: "Open Sans";
-  color: rgb(2, 126, 196);
-  padding-left: 10px;
-}
-.location .inner .contact .inner fieldset table input [type=text]::placeholder {
-  color: aqua;
-}
-.location .inner .contact .inner fieldset table #purpose {
-  width: 100%;
-  height: 50px;
-  font-family: "Open Sans";
-}
-.location .inner .txt {
-  width: 100%;
-  float: left;
-  padding-bottom: 100px;
-}
-.location .inner .txt > div {
+.location .inner .infoDesk > div {
   width: 25%;
   height: 200px;
   float: left;
@@ -1348,18 +1378,19 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.location .inner .txt > div li i {
+.location .inner .infoDesk > div li i {
   color: rgb(2, 126, 196);
   font-size: 15px;
   margin-bottom: 5px;
   transition: 0.5s;
   cursor: pointer;
 }
-.location .inner .txt > div li i:hover {
+.location .inner .infoDesk > div li i:hover {
   color: skyblue;
   transform: scale(1.3);
 }
-.location .inner .txt > div > p {
+.location .inner .infoDesk > div > p {
+  position: relative;
   border-bottom: 1px solid rgb(2, 126, 196);
   font-family: "Open Sans", sans-serif;
   font-style: oblique;
@@ -1367,7 +1398,7 @@ textarea {
   color: rgb(2, 126, 196);
   margin-bottom: 10px;
 }
-.location .inner .txt > div > span {
+.location .inner .infoDesk > div > span {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   color: #777;

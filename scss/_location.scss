@@ -10,13 +10,11 @@ $mobile: 539px;
 		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
 	.inner {
-		// border: 1px solid green;
 		width: 1180px;
-		// margin: 0 auto;
+		margin: 0 auto;
 		// position: relative;
 		.content {
-			padding-bottom: 50px;
-			border: 1px solid green;
+			padding-bottom: 0px;
 			&::after {
 				content: '';
 				display: block;
@@ -25,7 +23,9 @@ $mobile: 539px;
 			width: 100%;
 			// height:40vh;
 
-			.txt {				
+			.txt {		
+				position: relative;
+				// border: 1px solid green;		
 				position: absolute;
 				width: 28%;
 				height: 150px;
@@ -34,7 +34,6 @@ $mobile: 539px;
 				position: relative;
 				
 				p {
-					// font-style: oblique;
 					font-size: 14px;
 					font-family: 'Work Sans', sans-serif;
 					line-height: 1.2;
@@ -45,42 +44,135 @@ $mobile: 539px;
 					margin-top: 10px;
 				}
 			}
+		}
 
-		// 	.wrap {
-		// 		position: relative;
-		// 		width: 100%;
-		// 		height: 25vh;
-		// 		float: right;
-		// 		margin-bottom: 250px;				
-		// 		.aboutVisual {
-		// 			ul {
-		// 				width: 100%;
-		// 			height: 100%;
-		// 			position: absolute;
-		// 			top: 0;
-		// 			left: 0;
-		// 			> img {
-		// 				width: 100%;
-		// 				height: 100%;
-		// 				object-fit: cover;
-		// 				filter: grayscale(1);						
-		// 				transition: 0.5s;
-		// 				&:hover {		
-		// 					cursor: pointer;					
-		// 					filter: grayscale(0);
-		// 				}
-		// 			}
-		// 		}					
-		// 	}
-		// }			
+		#contact {		
+			position: relative;
+			width: 100%;
+			.inner {
+				position: relative;
+				width: 1180px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				fieldset {
+					width: 1140px;
+					padding-left: 20px;
+					table {
+						// border: 1px solid green;	
+						width: 100%;
+						margin-top: -50px;
+						th {
+							// border: 1px solid green;
+							padding-top: 10px;
+							padding-bottom: 0px;
+							text-align: left;
+							font-size: 14px;
+							line-height: 1.2;
+							font-family: 'Open Sans';
+							color: #333;
+						}
+						tr {
+							// border: 1px solid green;
+							width: 100%;
+							&:nth-of-type(2),
+							&:nth-of-type(4) {
+								td {
+									&:first-child {
+										padding-right: 30px;
+									}
+								}
+							}
+							&:nth-of-type(6) {
+								td {
+									padding-bottom: 20px;
+								}
+							}
+							input[type='submit'] {
+								display: block;
+								border: none;
+								float: right;
+								width: 26%;
+								padding: 10px;
+								font-size: 14px;
+								font-family: 'Open Sans';
+								font-style: normal;
+								color:#efefef;
+								background-color: #aaa;
+								text-align: center;
+								transition: 0.5s;
+								cursor: pointer;
+								&:hover {
+									background-color: $keycolor;
+								}
+							}
+						}
+						input,
+						select,
+						textarea {
+							width: 100%;
+							border: none;
+							font-family: 'Open Sans';
+							font-size: 14px;
+							font-style: italic;
+							color: #efefef;
+							border-bottom: 1px solid $keycolor;
+							padding-left: 10px;
+							padding-bottom: 30px;
+						}
+						input [type ='text'] {
+							width: 100%;
+							height: 30px;
+							font-family: 'Open Sans';
+							color: $keycolor;
+							padding-left: 10px;
+							&::placeholder {
+								color: aqua;
+							}
+						}
+						#purpose {
+							width: 100%;
+							height: 50px;
+							font-family: 'Open Sans';
+							font-size: 14px;
+							color:$keycolor;
+							padding-left: 10px;
+						}
+						#message {
+							width: 100%;
+							height: 100px;
+							resize: none;
+							font-family: 'Open Sans';
+							background: transparent;
+							font-size: 14px;
+							color: $keycolor;
+							margin-bottom: -15px;
+							padding: 10px;
+							&::placeholder {
+								color: $keycolor;
+							}
+						}
+					}
+				}
+			// 	.infoBox {
+			// position: relative;
+			// float: left;
+			// width: 40%;
+			// height: 400px;
+			// border: 5px solid $keycolor;
+			// }
+		}
 	}
+
+		
 		.mapinfo{
 			position: relative;
 			// border: 1px solid red;
 			background: rgb(124, 175, 251);
 			width: 100%;
-			height: 40vh;
-			// margin-top: 200px;
+			height: 45vh;
+			// margin-top: 100px;
 
 			#map {
 			// border: 1px solid red;
@@ -104,7 +196,7 @@ $mobile: 539px;
 				border-radius: 50%;
 				position: absolute;
 				// top: calc(60% - 80px);    //모니터 사양에 따라 기준점이 달라짐;; 
-				top: 120px;  //기준점 고정 시킴 
+				top: 100px;  //기준점 고정 시킴 
 				left: calc(50% + 5px);
 				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
 				cursor: pointer;
@@ -144,21 +236,22 @@ $mobile: 539px;
 			z-index: 3;
 		}
 
-		&.off {
-			opacity: 0;
-			margin-top: -550px;
-		}
+		// &.off {
+		// 	opacity: 0;
+		// 	margin-top: -550px;
+		// }
 		
 			}
 		}
-		> p{
-			border: 1px solid red;
+		> p{  // 환영 인사
+			// border: 1px solid red;
 			position: relative;
 			padding-left: 10px;
 			padding-top: 10px;
+			padding-bottom: 30px;
 			font: 14px 'Work Sans', sans-serif;
 			color: #444;
-			margin-bottom: 80px;
+			margin-bottom: 0px;
 			span {
 				font-family:'Open Sans', sans-serif;
 				font-size: 24px;
@@ -167,91 +260,13 @@ $mobile: 539px;
 			}
 
 		}
-		.contact{
+		
+		.infoDesk {
 			position: relative;
 			width: 100%;
-			padding-bottom: 200px;
-			background: #ddd;
-			.inner {
-				position: relative;
-				width: 1180px;
-				margin: 0 auto;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				fieldset {
-					width: 760px;
-					table {
-						text-align: left;
-						width: 100%;
-						margin-top: 40px;
-						padding-bottom: 10px;
-						font: 16px ;
-						font-family: 'Open Sans';
-						color: #333;
-						tr {
-							&:nth-of-type(2),
-							&:nth-of-type(4) {
-								td {
-									&:first-child {
-										padding-right: 20px;
-									}
-								}
-							}
-							&:nth-of-type(6) {
-								td {
-									padding-bottom: 20px;
-								}
-							}
-							input [type='submit'] {
-								display: block;
-								border: none;
-								float: left;
-								width: 180px;
-								padding: 20px;
-								font-size: 14px;
-								font-family: 'Open Sans';
-								color: aqua;
-								background-color: $keycolor;
-								text-align: center;
-								transition: 0.5s;
-								cursor: pointer;
-								&:hover {
-									background-color: skyblue;
-								}
-							}
-						}
-						input,
-						select,
-						textarea {
-							border: none;
-							border-bottom: 1px solid #333 ;
-						}
-						input [type ='text'] {
-							width: 100%;
-							height: 50px;
-							font-family: 'Open Sans';
-							color: $keycolor;
-							padding-left: 10px;
-							&::placeholder {
-								color: aqua;
-							}
-						}
-						#purpose {
-							width: 100%;
-							height: 50px;
-							font-family: 'Open Sans';
-						}
-					}
-				}
-
-			}
-
-		}
-		.txt {
-			width: 100%;
 			float: left;
-			padding-bottom: 100px;
+			padding-top: 50px;
+			padding-bottom: 200px;
 			> div {
 				width: calc(100% / 4) ;
 				height: 200px;
@@ -273,18 +288,15 @@ $mobile: 539px;
 					}
 					
 				}
-				>p {
+				>p {  // 운영시간
+					
+					position: relative;					
 					border-bottom: 1px solid $keycolor;
-					// opacity: 0;
 					font-family: 'Open Sans', sans-serif;
 					font-style: oblique;
 					font-size: 14px;
 					color: $keycolor;
 					margin-bottom: 10px;
-					// transition: 0.5s;
-					// &:hover {
-					// 	opacity: 1;
-					// }
 				}
 				>span {
 					font-family: 'Open Sans', sans-serif;
