@@ -1161,7 +1161,6 @@ textarea {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
 .location .inner {
-  width: 1180px;
   margin: 0 auto;
 }
 .location .inner .content {
@@ -1174,7 +1173,6 @@ textarea {
   clear: both;
 }
 .location .inner .content .txt {
-  position: relative;
   position: absolute;
   width: 28%;
   height: 150px;
@@ -1239,7 +1237,7 @@ textarea {
   font-size: 14px;
   font-family: "Open Sans";
   font-style: normal;
-  color: #efefef;
+  color: #fff;
   background-color: #aaa;
   text-align: center;
   transition: 0.5s;
@@ -1251,6 +1249,7 @@ textarea {
 .location .inner #contact .inner fieldset table input,
 .location .inner #contact .inner fieldset table select,
 .location .inner #contact .inner fieldset table textarea {
+  background: #fafafa;
   width: 100%;
   border: none;
   font-family: "Open Sans";
@@ -1416,14 +1415,12 @@ textarea {
   .location .inner .content {
     width: 100%;
   }
-  .location .inner .content .txt p {
-    width: 100%;
-  }
-  .location .inner #contact {
+  .location .inner .content .txt {
     width: 100%;
   }
   .location .inner #contact .inner fieldset {
-    width: 80vw;
+    width: 88vw;
+    padding-left: 0px;
   }
   .location .inner #contact .inner fieldset table {
     width: 100%;
@@ -1431,10 +1428,10 @@ textarea {
   .location .inner .mapinfo #map {
     width: 100%;
   }
-  .location .inner .txt {
+  .location .inner .infoBox {
     padding-bottom: 0px;
   }
-  .location .inner .txt div {
+  .location .inner .infoBox div {
     width: 50%;
   }
 }
@@ -1445,7 +1442,7 @@ textarea {
   .location .inner .mapinfo #map {
     width: 100%;
   }
-  .location .inner .txt div {
+  .location .inner .infoBox div {
     width: 100%;
     margin-top: -80px;
   }
