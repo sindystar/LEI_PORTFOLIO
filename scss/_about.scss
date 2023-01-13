@@ -230,17 +230,24 @@ $mobile: 539px;
 	.about {
 		.inner {
 			width: 100%;
-			padding: 30px;
+			padding: 0px 30px;
 			.content {
-				.wrap {
-					width: 100%;
-				}
 				.txt {
 					width: 100%;
 				}
+				>.wrap {
+					width: 100%;
+					margin-top: 0px;
+					margin-bottom: 100px;	
+
+				}
 			}
 			.members {
-				.wrap {
+				>h2{
+					// border: 1px solid red;
+					margin: 0;
+				}
+				>.wrap {
 					> article {
 						display: flex;
 						flex-wrap: wrap;
@@ -387,11 +394,17 @@ $mobile: 539px;
 @media screen and (max-width: $mobile) {
 	.about {
 		.inner {
-			.content .txt {
-				height: 250px;
+			.content {
+				.txt {
+					height: 250px;
+				}
+				>.wrap {
+					margin-top: -100px;
+					// margin-bottom: 80px;	
+				}
 			}
 			.members {
-				.wrap {
+				>.wrap {					
 					> article {
 						width: 100% !important;
 						margin-right: 0% !important;

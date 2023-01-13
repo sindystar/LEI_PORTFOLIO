@@ -363,6 +363,12 @@ textarea {
   #header_sub .inner .menuMo {
     display: block;
   }
+  .content .sub_visual .inner {
+    margin-top: -50px;
+  }
+  .content .sub_visual .inner h1 {
+    margin-bottom: 0px;
+  }
   #banner_sub {
     padding: 100px 30px;
   }
@@ -591,95 +597,100 @@ textarea {
 @media screen and (max-width: 1179px) {
   .about .inner {
     width: 100%;
-    padding: 30px;
-  }
-  .about .inner .content .wrap {
-    width: 100%;
+    padding: 0px 30px;
   }
   .about .inner .content .txt {
     width: 100%;
   }
-  .about .inner .members .wrap > article {
+  .about .inner .content > .wrap {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .about .inner .members > h2 {
+    margin: 0;
+  }
+  .about .inner .members > .wrap > article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     float: left;
     margin-bottom: 50px;
   }
-  .about .inner .members .wrap > article:nth-of-type(1) {
+  .about .inner .members > .wrap > article:nth-of-type(1) {
     width: 100%;
     margin-right: 0%;
     border-bottom: none;
   }
-  .about .inner .members .wrap > article:nth-of-type(2) {
+  .about .inner .members > .wrap > article:nth-of-type(2) {
     width: 48%;
     margin-right: 4%;
     border-bottom: none;
   }
-  .about .inner .members .wrap > article:nth-of-type(3) {
+  .about .inner .members > .wrap > article:nth-of-type(3) {
     width: 48%;
     margin-right: 0%;
     border-top: 1px solid rgb(2, 126, 196);
     border-bottom: none;
   }
-  .about .inner .members .wrap > article:nth-of-type(4) {
+  .about .inner .members > .wrap > article:nth-of-type(4) {
     width: 48%;
     margin-right: 4%;
     border-top: 1px solid rgb(2, 126, 196);
     border-bottom: none;
   }
-  .about .inner .members .wrap > article:nth-of-type(5) {
+  .about .inner .members > .wrap > article:nth-of-type(5) {
     width: 48%;
     margin-right: 0%;
     border-top: 1px solid rgb(2, 126, 196);
     border-bottom: none;
   }
-  .about .inner .members .wrap > article:nth-of-type(6) {
+  .about .inner .members > .wrap > article:nth-of-type(6) {
     width: 48%;
     margin-right: 4%;
     border-top: 1px solid rgb(2, 126, 196);
     border-bottom: none;
   }
-  .about .inner .members .wrap > article:nth-of-type(7) {
+  .about .inner .members > .wrap > article:nth-of-type(7) {
     width: 48%;
     border-top: 1px solid rgb(2, 126, 196);
     border-bottom: none;
   }
-  .about .inner .members .wrap > article .box {
+  .about .inner .members > .wrap > article .box {
     width: 100%;
     float: left;
     padding-left: 10px;
   }
-  .about .inner .members .wrap > article .box .txtBox {
+  .about .inner .members > .wrap > article .box .txtBox {
     margin-top: 50px;
   }
-  .about .inner .members .wrap > article .box .txtBox li {
+  .about .inner .members > .wrap > article .box .txtBox li {
     width: 100%;
     margin-top: 0px;
   }
-  .about .inner .members .wrap > article .box .txtBox li i {
+  .about .inner .members > .wrap > article .box .txtBox li i {
     font-size: 20px;
     color: #777;
   }
-  .about .inner .members .wrap > article .box .txtBox > p {
+  .about .inner .members > .wrap > article .box .txtBox > p {
     font-style: oblique;
     font-size: 18px;
     font-family: "Work Sans", sans-serif;
     color: #888;
   }
-  .about .inner .members .wrap > article .box .txtBox > p > span {
+  .about .inner .members > .wrap > article .box .txtBox > p > span {
     float: left;
     font-size: 30px;
     font-family: "Merriweather", serif;
     color: #777;
   }
-  .about .inner .members .wrap > article .pic {
+  .about .inner .members > .wrap > article .pic {
     width: 100%;
     height: 20vh;
     overflow: hidden;
     margin-bottom: 0px;
   }
-  .about .inner .members .wrap > article .pic img {
+  .about .inner .members > .wrap > article .pic img {
     filter: grayscale(1);
     width: 100%;
     height: 100%;
@@ -687,20 +698,20 @@ textarea {
     transition: 0.5s;
     cursor: pointer;
   }
-  .about .inner .members .wrap > article .pic img:hover {
+  .about .inner .members > .wrap > article .pic img:hover {
     filter: grayscale(0);
   }
-  .about .inner .members .wrap > article h2 {
+  .about .inner .members > .wrap > article h2 {
     padding-top: 10px;
     padding-left: 10px;
     text-align: center;
   }
-  .about .inner .members .wrap > article h2 > a {
+  .about .inner .members > .wrap > article h2 > a {
     font-family: "Open Sans", sans-serif;
     font: 22px/1;
     color: #333;
   }
-  .about .inner .members .wrap > article P {
+  .about .inner .members > .wrap > article P {
     padding-top: 10px;
     margin-right: 10px;
     margin-top: 8px;
@@ -708,7 +719,7 @@ textarea {
     font: 10px/1.2;
     color: #555;
   }
-  .about .inner .members .wrap > article span {
+  .about .inner .members > .wrap > article span {
     width: 100%;
     font-family: "Work Sans", sans-serif;
     font-size: 13px;
@@ -716,13 +727,13 @@ textarea {
     margin-left: 10px;
     margin-bottom: 20px;
   }
-  .about .inner .members .wrap > article .icon {
+  .about .inner .members > .wrap > article .icon {
     position: relative;
     padding: 2px;
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .about .inner .members .wrap > article .icon i {
+  .about .inner .members > .wrap > article .icon i {
     font-size: 13px;
     color: #aaa;
   }
@@ -731,7 +742,10 @@ textarea {
   .about .inner .content .txt {
     height: 250px;
   }
-  .about .inner .members .wrap > article {
+  .about .inner .content > .wrap {
+    margin-top: -100px;
+  }
+  .about .inner .members > .wrap > article {
     width: 100% !important;
     margin-right: 0% !important;
     border-bottom: 1px solid rgb(2, 126, 196);
@@ -1133,7 +1147,11 @@ textarea {
 @media screen and (max-width: 1179px) {
   .gallery .inner {
     width: 100%;
-    padding: 0px;
+    padding: 0px 30px;
+  }
+  .gallery .inner .content .txt {
+    width: 100%;
+    margin-bottom: -100px;
   }
   .gallery .inner #wrap {
     width: 100%;
@@ -1160,19 +1178,20 @@ textarea {
 .location .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
-.location .inner {
+.location > .inner {
+  width: 1180px;
   margin: 0 auto;
 }
-.location .inner .content {
+.location > .inner .content {
   padding-bottom: 0px;
   width: 100%;
 }
-.location .inner .content::after {
+.location > .inner .content::after {
   content: "";
   display: block;
   clear: both;
 }
-.location .inner .content .txt {
+.location > .inner .content .txt {
   position: absolute;
   width: 28%;
   height: 150px;
@@ -1180,7 +1199,7 @@ textarea {
   margin-top: 100px;
   position: relative;
 }
-.location .inner .content .txt p {
+.location > .inner .content .txt p {
   font-size: 14px;
   font-family: "Work Sans", sans-serif;
   line-height: 1.2;
@@ -1190,27 +1209,33 @@ textarea {
   left: 0;
   margin-top: 10px;
 }
-.location .inner #contact {
+.location > .inner #contact {
   position: relative;
   width: 100%;
 }
-.location .inner #contact .inner {
+.location > .inner #contact > .inner {
+  border: 1px solid green;
   position: relative;
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px;
 }
-.location .inner #contact .inner fieldset {
-  width: 1140px;
-  padding-left: 20px;
+.location > .inner #contact > .inner #mailform {
+  width: 100%;
 }
-.location .inner #contact .inner fieldset table {
+.location > .inner #contact > .inner #mailform fieldset {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+.location > .inner #contact > .inner #mailform fieldset table {
   width: 100%;
   margin-top: -50px;
 }
-.location .inner #contact .inner fieldset table th {
+.location > .inner #contact > .inner #mailform fieldset table th {
   padding-top: 10px;
   padding-bottom: 0px;
   text-align: left;
@@ -1219,16 +1244,16 @@ textarea {
   font-family: "Open Sans";
   color: #333;
 }
-.location .inner #contact .inner fieldset table tr {
+.location > .inner #contact > .inner #mailform fieldset table tr {
   width: 100%;
 }
-.location .inner #contact .inner fieldset table tr:nth-of-type(2) td:first-child, .location .inner #contact .inner fieldset table tr:nth-of-type(4) td:first-child {
-  padding-right: 30px;
+.location > .inner #contact > .inner #mailform fieldset table tr:nth-of-type(2) td:first-child, .location > .inner #contact > .inner #mailform fieldset table tr:nth-of-type(4) td:first-child {
+  padding-right: 20px;
 }
-.location .inner #contact .inner fieldset table tr:nth-of-type(6) td {
+.location > .inner #contact > .inner #mailform fieldset table tr:nth-of-type(6) td {
   padding-bottom: 20px;
 }
-.location .inner #contact .inner fieldset table tr input[type=submit] {
+.location > .inner #contact > .inner #mailform fieldset table tr input[type=submit] {
   display: block;
   border: none;
   float: right;
@@ -1243,34 +1268,34 @@ textarea {
   transition: 0.5s;
   cursor: pointer;
 }
-.location .inner #contact .inner fieldset table tr input[type=submit]:hover {
+.location > .inner #contact > .inner #mailform fieldset table tr input[type=submit]:hover {
   background-color: rgb(2, 126, 196);
 }
-.location .inner #contact .inner fieldset table input,
-.location .inner #contact .inner fieldset table select,
-.location .inner #contact .inner fieldset table textarea {
+.location > .inner #contact > .inner #mailform fieldset table input,
+.location > .inner #contact > .inner #mailform fieldset table select,
+.location > .inner #contact > .inner #mailform fieldset table textarea {
   background: #fafafa;
   width: 100%;
   border: none;
   font-family: "Open Sans";
   font-size: 14px;
   font-style: italic;
-  color: #efefef;
+  color: rgb(2, 126, 196);
   border-bottom: 1px solid rgb(2, 126, 196);
   padding-left: 10px;
   padding-bottom: 30px;
 }
-.location .inner #contact .inner fieldset table input [type=text] {
+.location > .inner #contact > .inner #mailform fieldset table input [type=text] {
   width: 100%;
   height: 30px;
   font-family: "Open Sans";
   color: rgb(2, 126, 196);
   padding-left: 10px;
 }
-.location .inner #contact .inner fieldset table input [type=text]::placeholder {
+.location > .inner #contact > .inner #mailform fieldset table input [type=text]::placeholder {
   color: aqua;
 }
-.location .inner #contact .inner fieldset table #purpose {
+.location > .inner #contact > .inner #mailform fieldset table #purpose {
   width: 100%;
   height: 50px;
   font-family: "Open Sans";
@@ -1278,7 +1303,7 @@ textarea {
   color: rgb(2, 126, 196);
   padding-left: 10px;
 }
-.location .inner #contact .inner fieldset table #message {
+.location > .inner #contact > .inner #mailform fieldset table #message {
   width: 100%;
   height: 100px;
   resize: none;
@@ -1289,23 +1314,24 @@ textarea {
   margin-bottom: -15px;
   padding: 10px;
 }
-.location .inner #contact .inner fieldset table #message::placeholder {
+.location > .inner #contact > .inner #mailform fieldset table #message::placeholder {
   color: rgb(2, 126, 196);
 }
-.location .inner .mapinfo {
+.location > .inner .mapinfo {
   position: relative;
   background: rgb(124, 175, 251);
   width: 100%;
   height: 45vh;
 }
-.location .inner .mapinfo #map {
+.location > .inner .mapinfo #map {
+  border: 1px solid red;
   position: relative;
   width: 100%;
   height: 100%;
   filter: invert(1) grayscale(0.9) brightness(0.8);
   opacity: 0.6;
 }
-.location .inner .mapinfo .info {
+.location > .inner .mapinfo .info {
   width: 120px;
   height: 120px;
   background: #efefef;
@@ -1317,7 +1343,7 @@ textarea {
   cursor: pointer;
   transition: 0.5s;
 }
-.location .inner .mapinfo .info > h2 {
+.location > .inner .mapinfo .info > h2 {
   position: absolute;
   width: 100%;
   font-family: "Work Sans", sans-serif;
@@ -1328,14 +1354,14 @@ textarea {
   text-align: center;
   z-index: 5;
 }
-.location .inner .mapinfo .info > h2 span {
+.location > .inner .mapinfo .info > h2 span {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 10px;
   border-top: 1px solid rgb(2, 126, 196);
 }
-.location .inner .mapinfo .info::before {
+.location > .inner .mapinfo .info::before {
   content: "";
   display: block;
   width: 50px;
@@ -1347,7 +1373,8 @@ textarea {
   right: 20px;
   z-index: 3;
 }
-.location .inner > p {
+.location > .inner > p {
+  border: 1px solid red;
   position: relative;
   padding-left: 10px;
   padding-top: 10px;
@@ -1356,20 +1383,20 @@ textarea {
   color: #444;
   margin-bottom: 0px;
 }
-.location .inner > p span {
+.location > .inner > p span {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
   font-style: oblique;
 }
-.location .inner .infoDesk {
+.location > .inner .infoDesk {
   position: relative;
   width: 100%;
   float: left;
   padding-top: 50px;
   padding-bottom: 200px;
 }
-.location .inner .infoDesk > div {
+.location > .inner .infoDesk > div {
   width: 25%;
   height: 200px;
   float: left;
@@ -1377,18 +1404,18 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.location .inner .infoDesk > div li i {
+.location > .inner .infoDesk > div li i {
   color: rgb(2, 126, 196);
   font-size: 15px;
   margin-bottom: 5px;
   transition: 0.5s;
   cursor: pointer;
 }
-.location .inner .infoDesk > div li i:hover {
+.location > .inner .infoDesk > div li i:hover {
   color: skyblue;
   transform: scale(1.3);
 }
-.location .inner .infoDesk > div > p {
+.location > .inner .infoDesk > div > p {
   position: relative;
   border-bottom: 1px solid rgb(2, 126, 196);
   font-family: "Open Sans", sans-serif;
@@ -1397,7 +1424,7 @@ textarea {
   color: rgb(2, 126, 196);
   margin-bottom: 10px;
 }
-.location .inner .infoDesk > div > span {
+.location > .inner .infoDesk > div > span {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   color: #777;
@@ -1418,11 +1445,14 @@ textarea {
   .location .inner .content .txt {
     width: 100%;
   }
-  .location .inner #contact .inner fieldset {
-    width: 88vw;
-    padding-left: 0px;
+  .location .inner #contact .inner #mailform fieldset {
+    width: 100%;
+    padding: 0px;
   }
-  .location .inner #contact .inner fieldset table {
+  .location .inner #contact .inner #mailform fieldset table {
+    width: 90vw;
+  }
+  .location .inner #contact .inner #mailform fieldset table tr {
     width: 100%;
   }
   .location .inner .mapinfo #map {
@@ -1436,8 +1466,14 @@ textarea {
   }
 }
 @media screen and (max-width: 539px) {
-  .location {
-    margin-bottom: 350px;
+  .location .inner {
+    width: 100%;
+  }
+  .location .inner #contact > .inner {
+    width: 100%;
+  }
+  .location .inner #contact > .inner #mailform fieldset {
+    width: 50%;
   }
   .location .inner .mapinfo #map {
     width: 100%;

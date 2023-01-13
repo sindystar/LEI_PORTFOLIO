@@ -11,6 +11,7 @@ $mobile: 539px;
 	left: 0;
 	z-index: 9;
 	.inner {
+		
 		width: 1180px;
 		height: 100px;
 		margin: 0 auto;
@@ -185,6 +186,7 @@ $mobile: 539px;
 		margin-bottom: 100px;
 	}
 	.inner {
+		
 		width: 1180px;
 		margin: 0 auto;
 		min-height: 500px;
@@ -341,6 +343,19 @@ $mobile: 539px;
 			}
 		}
 	}
+	//content
+
+	.content {
+		.sub_visual{
+			.inner {
+				margin-top: -50px;
+				h1 {
+					
+					margin-bottom: 0px;
+				}
+			}
+		}
+	} 
 
 	//baner
 	#banner_sub {

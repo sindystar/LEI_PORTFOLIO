@@ -101,7 +101,13 @@ $mobile: 539px;
 	.gallery {
 		.inner {
 			width: 100%;
-			padding: 0px;
+			padding: 0px 30px;
+			.content {
+				.txt {
+					width: 100%;
+					margin-bottom: -100px;
+				}
+			}
 			#wrap {
 				width: 100%;
 				#list {
