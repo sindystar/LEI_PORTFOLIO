@@ -100,20 +100,21 @@ $mobile: 539px;
 		table {
 			// border-collapse: collapse;
 			// table의 고유 꾸미기 옵션을 없애는 것(보통은 리셋에)
-
-			width: 100%;
-			border-top: 2px solid $keycolor;
-			border-bottom: 2px solid $keycolor;
+			// border: 1px solid green;
+			margin: 0 auto;
+			width: 90%;
+			border-top: 2px solid #444;
+			border-bottom: 2px solid #444;
 			th {
 				width: 20%;
 				text-align: left;
 				font: bold 12px;
 				font-family:'Open Sans', sans-serif;
-				color: $keycolor;
+				color: #444;
 				padding: 20px 30px; //높이를 주는대신 패딩값으로 높이값
 				border-right: 1px solid #fff;
-				border-bottom: 1px solid $keycolor;
-				background: rgb(230, 242, 250);
+				border-bottom: 1px solid #444;
+				// background: rgb(230, 242, 250);
 				&:last-child {
 					background: #fff;
 					text-align: center;
@@ -125,7 +126,7 @@ $mobile: 539px;
 					height: 34px;
 					border: none;
 					border-radius: 3px;
-					background: $keycolor;
+					background: #aaa;
 					font-size: 14px;
 					font-family:'Open Sans', sans-serif;
 					color: #fff;
@@ -140,7 +141,7 @@ $mobile: 539px;
 				}
 			}
 			td {
-				border-bottom: 1px solid $keycolor;
+				border-bottom: 1px solid #444;
 				font-size: 0; //textarea의 기본 마진값을 초기화 -> 폰트 싸이즈를 0으로 초기화 -> 문제점은 안에있는 모든 텍스트가 0 -> 지워질 라벨의 폰트만 다시 싸이즈를 재 코딩해서 텍스트를 복원
 				input[type='text'],
 				input[type='password'] {
@@ -208,7 +209,21 @@ $mobile: 539px;
 	.join {
 		.inner {
 			width: 100%;
-			padding: 0px 20px;
+			padding: 0px 30px;
+			margin-top: -50px;
+			h1 {
+				margin-bottom: -50px;
+			}
+			.content{
+				.txt {
+					width: 100%;
+				}
+				>.wrap {
+					width: 100%;
+					margin-top: 0px;
+					margin-bottom: 50px;	
+				}
+			}
 			table {
 				input[type='submit'],
 				input[type='reset'] {

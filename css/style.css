@@ -58,37 +58,37 @@ textarea {
   left: 0;
   z-index: 9;
 }
-#header_sub .inner {
+#header_sub > .inner {
   width: 1180px;
   height: 100px;
   margin: 0 auto;
   position: relative;
 }
-#header_sub .inner h1 {
+#header_sub > .inner > h1 {
   position: absolute;
   left: 0;
   bottom: -4px;
   letter-spacing: 1px;
 }
-#header_sub .inner h1 > a {
+#header_sub > .inner > h1 > a {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   color: #fff;
   transition: 0.3s;
 }
-#header_sub .inner h1 > a:hover {
+#header_sub > .inner > h1 > a:hover {
   color: rgb(2, 126, 196);
   transform: scale(1.2);
 }
-#header_sub .inner .menuWeb #gnb {
+#header_sub > .inner .menuWeb #gnb {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-#header_sub .inner .menuWeb #gnb li {
+#header_sub > .inner .menuWeb #gnb li {
   float: left;
 }
-#header_sub .inner .menuWeb #gnb li a {
+#header_sub > .inner .menuWeb #gnb li a {
   display: block;
   padding: 12px 18px;
   font-family: "Open Sans", sans-serif;
@@ -96,11 +96,11 @@ textarea {
   color: rgba(255, 255, 255, 0.9);
   transition: 0.5s;
 }
-#header_sub .inner .menuWeb #gnb li a:hover {
+#header_sub > .inner .menuWeb #gnb li a:hover {
   color: rgb(2, 126, 196);
   transform: scale(1.2);
 }
-#header_sub .inner .btnCall {
+#header_sub > .inner .btnCall {
   position: absolute;
   right: 30px;
   top: 72px;
@@ -109,7 +109,7 @@ textarea {
   width: 20px;
   height: 20px;
 }
-#header_sub .inner .btnCall::before {
+#header_sub > .inner .btnCall::before {
   content: "";
   display: block;
   width: 100%;
@@ -120,7 +120,7 @@ textarea {
   left: 0;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
-#header_sub .inner .btnCall::after {
+#header_sub > .inner .btnCall::after {
   content: "";
   display: block;
   width: 100%;
@@ -131,7 +131,7 @@ textarea {
   left: 0;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
-#header_sub .inner .btnCall span {
+#header_sub > .inner .btnCall span {
   display: block;
   width: 100%;
   height: 2px;
@@ -143,21 +143,21 @@ textarea {
   transition: 1s;
   text-indent: -9999px;
 }
-#header_sub .inner .btnCall.on::before {
+#header_sub > .inner .btnCall.on::before {
   top: 50%;
   margin-top: -1px;
   transform: rotate(45deg);
 }
-#header_sub .inner .btnCall.on::after {
+#header_sub > .inner .btnCall.on::after {
   bottom: 50%;
   margin-bottom: -1px;
   transform: rotate(-45deg);
 }
-#header_sub .inner .btnCall.on span {
+#header_sub > .inner .btnCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
-#header_sub .inner > .menuMo {
+#header_sub > .inner > .menuMo {
   width: 270px;
   height: 100vh;
   background: rgb(2, 126, 196);
@@ -169,36 +169,36 @@ textarea {
   transition: 0.5s;
   display: none;
 }
-#header_sub .inner > .menuMo.on {
+#header_sub > .inner > .menuMo.on {
   left: 0;
 }
-#header_sub .inner > .menuMo > h1 {
+#header_sub > .inner > .menuMo > h1 {
   position: relative;
   padding-top: 20px;
   border-bottom: 1px solid #fff;
   text-align: center;
 }
-#header_sub .inner > .menuMo > h1 a {
+#header_sub > .inner > .menuMo > h1 a {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
   transition: 0.5s;
 }
-#header_sub .inner > .menuMo > h1 a:hover {
+#header_sub > .inner > .menuMo > h1 a:hover {
   color: #bcf5a9;
 }
-#header_sub .inner > .menuMo > h1 span {
+#header_sub > .inner > .menuMo > h1 span {
   display: block;
   padding-bottom: 20px;
   font-size: 12px;
   letter-spacing: 1px;
   color: #fff;
 }
-#header_sub .inner > .menuMo #gnbMo li {
+#header_sub > .inner > .menuMo #gnbMo li {
   padding: 0px;
 }
-#header_sub .inner > .menuMo #gnbMo li a {
+#header_sub > .inner > .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -209,7 +209,7 @@ textarea {
   text-align: center;
   transition: 0.5s;
 }
-#header_sub .inner > .menuMo #gnbMo li a:hover {
+#header_sub > .inner > .menuMo #gnbMo li a:hover {
   color: #bcf5a9;
 }
 
@@ -223,13 +223,13 @@ textarea {
   background: #bbb;
   margin-bottom: 100px;
 }
-.content .inner {
+.content > .inner {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
   margin-bottom: 100px;
 }
-.content .inner h1 {
+.content > .inner > h1 {
   float: left;
   padding-left: 10px;
   font-size: 100px;
@@ -241,17 +241,18 @@ textarea {
   font-family: "Bebas Neue", cursive;
   border-top: 1px solid #333;
 }
-.content .inner h1 p {
+.content > .inner > h1 p {
   font: nomal 20px/1;
   color: #aaa;
 }
-.content .inner h1 p::before {
+.content > .inner > h1 p::before {
   content: "/";
   margin-left: 10px;
   margin-right: 20px;
 }
 
 #banner_sub {
+  position: relative;
   width: 100%;
   padding: 100px 0;
   filter: grayscale(0.3);
@@ -366,14 +367,22 @@ textarea {
   .content .sub_visual .inner {
     margin-top: -50px;
   }
-  .content .sub_visual .inner h1 {
+  .content .sub_visual .inner > h1 {
     margin-bottom: 0px;
   }
   #banner_sub {
-    padding: 100px 30px;
+    padding: 70px;
   }
   #banner_sub .inner {
     width: 100%;
+    margin: 0 auto;
+  }
+  #banner_sub .inner > h1 {
+    width: 100%;
+    font-family: "open Sans";
+    font-size: 40px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
   #footer_sub {
     padding: 50px 30px;
@@ -382,21 +391,35 @@ textarea {
     width: 100%;
   }
 }
-.inner h1 {
-  font-size: 80px;
+@media screen and (max-width: 539px) {
+  #banner_sub {
+    padding: 50px;
+  }
+  #banner_sub .inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #banner_sub .inner > h1 {
+    width: 100%;
+    font-family: "open Sans";
+    font-size: 30px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  #banner_sub .inner p {
+    font-size: 14px;
+  }
+  #footer_sub .inner h1 {
+    margin-bottom: 10px;
+  }
+  #footer_sub .inner ul {
+    width: 100%;
+  }
+  #footer_sub .inner ul li {
+    margin-left: 0px;
+    margin: 5px;
+  }
 }
-
-#footer_sub .inner h1 {
-  margin-bottom: 10px;
-}
-#footer_sub .inner ul {
-  width: 100%;
-}
-#footer_sub .inner ul li {
-  margin-left: 0px;
-  margin: 5px;
-}
-
 .about {
   background-color: #fff;
 }
@@ -435,7 +458,7 @@ textarea {
   width: 100%;
   height: 25vh;
   float: right;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
 }
 .about .inner .content .wrap .aboutVisual ul {
   width: 100%;
@@ -598,6 +621,10 @@ textarea {
   .about .inner {
     width: 100%;
     padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .about .inner h1 {
+    margin-bottom: -50px;
   }
   .about .inner .content .txt {
     width: 100%;
@@ -701,12 +728,12 @@ textarea {
   .about .inner .members > .wrap > article .pic img:hover {
     filter: grayscale(0);
   }
-  .about .inner .members > .wrap > article h2 {
+  .about .inner .members > .wrap > article > h2 {
     padding-top: 10px;
     padding-left: 10px;
     text-align: center;
   }
-  .about .inner .members > .wrap > article h2 > a {
+  .about .inner .members > .wrap > article > h2 > a {
     font-family: "Open Sans", sans-serif;
     font: 22px/1;
     color: #333;
@@ -907,6 +934,10 @@ textarea {
   .community .inner {
     width: 100%;
     padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .community .inner h1 {
+    margin-bottom: -50px;
   }
   .community .inner .content .wrap {
     width: 100%;
@@ -1044,6 +1075,14 @@ textarea {
   .youtube .inner {
     width: 100%;
     padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .youtube .inner h1 {
+    margin-bottom: -50px;
+  }
+  .youtube .inner .content .txt {
+    width: 100%;
+    margin-bottom: -100px;
   }
   .youtube .inner .vidList article {
     width: 49%;
@@ -1054,9 +1093,6 @@ textarea {
   }
 }
 @media screen and (max-width: 539px) {
-  .youtube .inner {
-    width: 100%;
-  }
   .youtube .inner .vidList article {
     width: 100%;
   }
@@ -1148,10 +1184,14 @@ textarea {
   .gallery .inner {
     width: 100%;
     padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .gallery .inner h1 {
+    margin-bottom: -50px;
   }
   .gallery .inner .content .txt {
     width: 100%;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
   }
   .gallery .inner #wrap {
     width: 100%;
@@ -1166,6 +1206,10 @@ textarea {
 @media screen and (max-width: 539px) {
   .gallery .inner {
     width: 100%;
+  }
+  .gallery .inner .content .txt {
+    width: 100%;
+    margin-bottom: -50px;
   }
   .gallery .inner #wrap #list .item {
     width: 100%;
@@ -1214,7 +1258,6 @@ textarea {
   width: 100%;
 }
 .location > .inner #contact > .inner {
-  border: 1px solid green;
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -1233,7 +1276,7 @@ textarea {
 }
 .location > .inner #contact > .inner #mailform fieldset table {
   width: 100%;
-  margin-top: -50px;
+  margin-top: 10px;
 }
 .location > .inner #contact > .inner #mailform fieldset table th {
   padding-top: 10px;
@@ -1317,6 +1360,21 @@ textarea {
 .location > .inner #contact > .inner #mailform fieldset table #message::placeholder {
   color: rgb(2, 126, 196);
 }
+.location > .inner > p {
+  position: relative;
+  padding-left: 10px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font: 14px "Work Sans", sans-serif;
+  color: #444;
+  margin-bottom: 0px;
+}
+.location > .inner > p span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-style: oblique;
+}
 .location > .inner .mapinfo {
   position: relative;
   background: rgb(124, 175, 251);
@@ -1324,7 +1382,6 @@ textarea {
   height: 45vh;
 }
 .location > .inner .mapinfo #map {
-  border: 1px solid red;
   position: relative;
   width: 100%;
   height: 100%;
@@ -1373,32 +1430,24 @@ textarea {
   right: 20px;
   z-index: 3;
 }
-.location > .inner > p {
-  border: 1px solid red;
-  position: relative;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  font: 14px "Work Sans", sans-serif;
-  color: #444;
-  margin-bottom: 0px;
-}
-.location > .inner > p span {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  letter-spacing: 1px;
-  font-style: oblique;
-}
 .location > .inner .infoDesk {
   position: relative;
   width: 100%;
+  height: 350px;
   float: left;
-  padding-top: 50px;
-  padding-bottom: 200px;
+  padding-top: 80px;
+  margin-bottom: 100px;
+  z-index: 5;
+}
+.location > .inner .infoDesk::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .location > .inner .infoDesk > div {
+  position: relative;
   width: 25%;
-  height: 200px;
+  height: 150px;
   float: left;
   padding: 20px;
   display: flex;
@@ -1432,14 +1481,24 @@ textarea {
 
 @media screen and (max-width: 1179px) {
   .location {
-    margin-bottom: 250px;
+    margin-bottom: -100px;
+  }
+  .location::after {
+    content: "";
+    display: block;
+    clear: both;
   }
   .location .inner {
     width: 100%;
     padding: 0px 30px;
     margin: 0 auto;
+    margin-top: -50px;
+  }
+  .location .inner > h1 {
+    margin-bottom: -50px;
   }
   .location .inner .content {
+    margin-bottom: 50px;
     width: 100%;
   }
   .location .inner .content .txt {
@@ -1455,13 +1514,18 @@ textarea {
   .location .inner #contact .inner #mailform fieldset table tr {
     width: 100%;
   }
+  .location .inner > p {
+    margin-top: 100px;
+  }
   .location .inner .mapinfo #map {
     width: 100%;
+    margin-bottom: 100px;
   }
-  .location .inner .infoBox {
-    padding-bottom: 0px;
+  .location .inner .infoDesk {
+    position: relative;
+    padding-bottom: 100px;
   }
-  .location .inner .infoBox div {
+  .location .inner .infoDesk > div {
     width: 50%;
   }
 }
@@ -1477,10 +1541,14 @@ textarea {
   }
   .location .inner .mapinfo #map {
     width: 100%;
+    margin-bottom: 150px;
   }
-  .location .inner .infoBox div {
+  .location .inner .infoDesk {
+    margin-bottom: 100px;
+  }
+  .location .inner .infoDesk > div {
     width: 100%;
-    margin-top: -80px;
+    margin-top: -60px;
   }
 }
 .join .sub_visual {
@@ -1545,20 +1613,20 @@ textarea {
   font-size: 12px;
 }
 .join .inner table {
-  width: 100%;
-  border-top: 2px solid rgb(2, 126, 196);
-  border-bottom: 2px solid rgb(2, 126, 196);
+  margin: 0 auto;
+  width: 90%;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
 }
 .join .inner table th {
   width: 20%;
   text-align: left;
   font: bold 12px;
   font-family: "Open Sans", sans-serif;
-  color: rgb(2, 126, 196);
+  color: #444;
   padding: 20px 30px;
   border-right: 1px solid #fff;
-  border-bottom: 1px solid rgb(2, 126, 196);
-  background: rgb(230, 242, 250);
+  border-bottom: 1px solid #444;
 }
 .join .inner table th:last-child {
   background: #fff;
@@ -1571,7 +1639,7 @@ textarea {
   height: 34px;
   border: none;
   border-radius: 3px;
-  background: rgb(2, 126, 196);
+  background: #aaa;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -1586,7 +1654,7 @@ textarea {
   color: rgb(2, 126, 196);
 }
 .join .inner table td {
-  border-bottom: 1px solid rgb(2, 126, 196);
+  border-bottom: 1px solid #444;
   font-size: 0;
 }
 .join .inner table td input[type=text],
@@ -1650,7 +1718,19 @@ textarea {
 @media screen and (max-width: 1179px) {
   .join .inner {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .join .inner h1 {
+    margin-bottom: -50px;
+  }
+  .join .inner .content .txt {
+    width: 100%;
+  }
+  .join .inner .content > .wrap {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
   }
   .join .inner table input[type=submit],
   .join .inner table input[type=reset] {

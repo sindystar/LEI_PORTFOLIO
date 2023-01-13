@@ -10,9 +10,11 @@ $mobile: 539px;
 		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 	}
 	>.inner {
+		// border: 1px solid red;
 		width: 1180px;
 		margin: 0 auto;
 		.content {
+			// border: 1px solid red;
 			padding-bottom: 0px;
 			&::after {
 				content: '';
@@ -22,6 +24,7 @@ $mobile: 539px;
 			width: 100%;
 
 			.txt {		
+				// border: 1px solid red;
 				position: absolute;
 				width: 28%;
 				height: 150px;
@@ -46,8 +49,13 @@ $mobile: 539px;
 			// border: 1px solid blue;
 			position: relative;
 			width: 100%;
+			// &::after {
+			// 	content: '';
+			// 	display: block;
+			// 	clear: both;
+			// }
 			>.inner {				
-				border: 1px solid green;
+				// border: 1px solid green;
 				position: relative;
 				width: 100%;
 				margin: 0 auto;
@@ -64,7 +72,7 @@ $mobile: 539px;
 						table {
 							// border: 1px solid green;	
 							width: 100%;
-							margin-top: -50px;
+							margin-top: 10px;
 							th {
 								// border: 1px solid green;
 								// width: 100%;
@@ -173,7 +181,23 @@ $mobile: 539px;
 			}
 		}
 
-		
+		> p{  // 환영 인사
+			// border: 1px solid red;
+			position: relative;
+			padding-left: 10px;
+			padding-top: 100px;
+			padding-bottom: 30px;
+			font: 14px 'Work Sans', sans-serif;
+			color: #444;
+			margin-bottom: 0px;
+			span {
+				font-family:'Open Sans', sans-serif;
+				font-size: 24px;
+				letter-spacing: 1px;
+				font-style: oblique;
+			}
+
+		}
 		.mapinfo{
 			position: relative;
 			// border: 1px solid red;
@@ -183,7 +207,7 @@ $mobile: 539px;
 			// margin-top: 100px;
 
 			#map {
-			border: 1px solid red;
+			// border: 1px solid red;
 			position: relative;
 			width: 100%; //여기map의 100% 1180
 			height: 100%;
@@ -251,33 +275,26 @@ $mobile: 539px;
 		
 			}
 		}
-		> p{  // 환영 인사
-			border: 1px solid red;
-			position: relative;
-			padding-left: 10px;
-			padding-top: 10px;
-			padding-bottom: 30px;
-			font: 14px 'Work Sans', sans-serif;
-			color: #444;
-			margin-bottom: 0px;
-			span {
-				font-family:'Open Sans', sans-serif;
-				font-size: 24px;
-				letter-spacing: 1px;
-				font-style: oblique;
-			}
-
-		}
+		
 		
 		.infoDesk {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			// border: 1px solid red ;
 			position: relative;
 			width: 100%;
+			height: 350px;
 			float: left;
-			padding-top: 50px;
-			padding-bottom: 200px;
+			padding-top: 80px;
+			margin-bottom: 100px;
+			z-index: 5;
 			> div {
+				position: relative;
 				width: calc(100% / 4) ;
-				height: 200px;
+				height: 150px;
 				float: left;
 				padding: 20px;
 				display: flex;
@@ -319,12 +336,23 @@ $mobile: 539px;
 @media screen and (max-width: $tablet) {
 	// location
 	.location {
-		margin-bottom: 250px;
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		margin-bottom: -100px;
 		.inner {
 			width: 100%;
 			padding: 0px 30px;
 			margin: 0 auto;
+			margin-top: -50px;
+			>h1 {
+				margin-bottom: -50px;
+				// font-size: 0;
+			}
 			.content {
+				margin-bottom: 50px;
 				width: 100%;
 				.txt {
 					width: 100%;
@@ -346,14 +374,20 @@ $mobile: 539px;
 					}					
 				}
 			}
+			> p {
+				margin-top: 100px;
+			}
 			.mapinfo {
 			#map {
 			width: 100%;
+			margin-bottom: 100px;
 			}
 		}
-			.infoBox {
-				padding-bottom: 0px;
-				div {
+			.infoDesk {
+				position: relative;
+				padding-bottom: 100px;
+				// margin-bottom: 100px;
+				> div {
 					width: 50%;
 				}
 			}
@@ -378,15 +412,17 @@ $mobile: 539px;
 			.mapinfo {
 				#map {
 					width: 100%;
+					margin-bottom: 150px;
 				}
 			}
-			.infoBox {
-				// margin-top: -50px;
-				div {
+			.infoDesk {
+				margin-bottom: 100px;
+				> div {
 					width: 100%;
-					margin-top: -80px;
+					margin-top: -60px;
 				}
 			}			
 		}
 	}
 }
+

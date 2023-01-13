@@ -10,13 +10,13 @@ $mobile: 539px;
 	top: 0;
 	left: 0;
 	z-index: 9;
-	.inner {
+	>.inner {
 		
 		width: 1180px;
 		height: 100px;
 		margin: 0 auto;
 		position: relative;
-		h1 {
+		>h1 {
 			position: absolute;
 			left: 0;
 			bottom: -4px;
@@ -185,14 +185,14 @@ $mobile: 539px;
 		background: #bbb;
 		margin-bottom: 100px;
 	}
-	.inner {
+	>.inner {
 		
 		width: 1180px;
 		margin: 0 auto;
 		min-height: 500px;
 		// border: 1px solid green;
 		margin-bottom: 100px;
-		h1 {
+		>h1 {
 			float: left;
 			// border: 1px solid green;
 			padding-left: 10px;
@@ -221,6 +221,7 @@ $mobile: 539px;
 
 // banner
 #banner_sub {
+	position: relative;
 	width: 100%;
 	padding: 100px 0;
 	filter: grayscale(0.3);
@@ -349,8 +350,7 @@ $mobile: 539px;
 		.sub_visual{
 			.inner {
 				margin-top: -50px;
-				h1 {
-					
+				>h1 {
 					margin-bottom: 0px;
 				}
 			}
@@ -359,9 +359,17 @@ $mobile: 539px;
 
 	//baner
 	#banner_sub {
-		padding: 100px 30px;
+		padding: 70px;
 		.inner {
 			width: 100%;
+			margin: 0 auto;
+			> h1 {
+				width: 100%;
+				font-family: 'open Sans';
+				font-size: 40px;
+				padding-top: 0;
+				padding-bottom: 30px;
+			}
 		}
 	}
 
@@ -377,27 +385,42 @@ $mobile: 539px;
 //mobile
 @media screen and (max-width: $mobile) {
 	//header_sub
-}
-.inner {
-	h1 {
-		font-size: 80px; 
-	}
-}
 
-//banner
+	//baner
+	#banner_sub {
+		padding: 50px;
+		.inner {
+			width: 100%;
+			margin: 0 auto;
+			> h1 {
+				width: 100%;
+				font-family: 'open Sans';
+				font-size: 30px;
+				padding-top: 0;
+				padding-bottom: 20px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
 
 //footer_sub
-#footer_sub {
-	.inner {
-		h1 {
-			margin-bottom: 10px;
-		}
-		ul {
-			width: 100%;
-			li {
-				margin-left: 0px;
-				margin: 5px;
+	#footer_sub {
+		.inner {
+			h1 {
+				margin-bottom: 10px;
+			}
+			ul {
+				width: 100%;
+				li {
+					margin-left: 0px;
+					margin: 5px;
+				}
 			}
 		}
 	}
 }
+
+
+

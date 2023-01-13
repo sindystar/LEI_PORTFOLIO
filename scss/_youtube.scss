@@ -151,6 +151,16 @@ $mobile: 539px;
 		.inner {
 			width: 100%;
 			padding: 0px 30px;
+			margin-top: -50px;
+			h1 {
+				margin-bottom: -50px;
+			}
+			.content {
+				.txt {
+					width: 100%;
+					margin-bottom: -100px;
+				}
+			}
 			.vidList {
 				article {
 					width: 49%;
@@ -169,7 +179,7 @@ $mobile: 539px;
 @media screen and (max-width: $mobile) {
 	.youtube {
 		.inner {
-			width: 100%;
+
 			.vidList {
 				article {
 					width: 100%; //짝수 번째 그림이 아래로 이동시 넓이값이 더 커보임;;
