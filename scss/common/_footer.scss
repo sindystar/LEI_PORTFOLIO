@@ -1,4 +1,12 @@
-footer {
+// design Guide
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$tablet_S: 880px;
+$mobile: 539px;
+
+
+
+.footer {
 	width: 100%;
 	position: relative;
 	background: #f3f3f3;
@@ -162,31 +170,39 @@ footer.on {
 	left: 0;
 }
 
-
 @media screen and (max-width: $tablet) {
-	//footer
-	.footer {
-		padding: 100px 30px;
-		.inner {
-			width: 100%;
-		}
+  //footer
+.footer {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  position: relative;
+	.toggle {
+		width: 100%;
 	}
-}
-
-@media screen and (max-width: $mobile) {
-		//footer
-	#footer {
-		.inner {
-			h1 {
-				margin-bottom: 10px;
-			}
-			ul {
-				width: 100%;
-				li {
-					margin-left: 0px;
-					margin: 5px;
-				}
-			}
-		}
-	}
+  .upper {
+    position: relative;
+    width: 100%;
+    .inner {   
+      width: 100%;
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }   
+        h1, ul {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        }
+      }     
+    }
+  }
+  .lower{
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }    
+  }
 }
