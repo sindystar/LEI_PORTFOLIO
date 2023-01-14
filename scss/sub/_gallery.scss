@@ -1,0 +1,150 @@
+// design Guide
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
+
+.gallery {
+	background: #eee;
+	.sub_visual {
+		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
+	}
+	.inner {
+		.content {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			width: 100%;
+			// height: 100vh;
+
+			.txt {
+				// border: 1px solid green;
+				// position: absolute;
+				width: 28%;
+				height: 280px;
+				float: right;
+				margin-top: 100px;
+				position: relative;
+				
+				p {
+					// font-style: oblique;
+					font-size: 14px;
+					font-family: 'Work Sans', sans-serif;
+					line-height: 1.2;
+					color: #555;
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin-top: 10px;
+				}
+			}			
+	}
+		#wrap {
+			width: 100%;
+			padding: 40px;
+			overflow: hidden;
+			#list {
+				opacity: 0; // 전환효과  부드럽게
+				transform: translateY(100px);
+				transition: 1s;
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				
+				.item {
+					width: calc(100% / 4);
+					float: left;
+					padding: 10px;
+					div {
+						width: 100%;
+						background: #fff;
+						padding: 10px;
+						box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+						a {
+							img {
+								width: 100%;
+								filter: grayscale(1);
+								transition: 0.5s;
+								&:hover {
+									overflow: hidden;
+									filter: grayscale(0);
+								}
+							}
+						}
+						p {
+							font-family: 'Open Sans', sans-serif;
+							font-size: 14px;
+							color: #555;
+							margin-top: 5px;
+							margin-bottom: 12px;
+							padding-left: 5px;
+							transition: 0.5s;
+							&:hover {
+								color: $keycolor;
+							}
+						}
+					}
+				}
+				&.on {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+			}
+		}
+	}
+}
+//tablet
+@media screen and (max-width: $tablet) {
+	.gallery {
+		.inner {
+			width: 100%;
+			padding: 0px 30px;
+			margin-top: -50px;
+			h1 {
+				margin-bottom: -50px;
+			}
+			.content {
+				.txt {
+					width: 100%;
+					margin-bottom: -150px;
+				}
+			}
+			#wrap {
+				width: 100%;
+				#list {
+					.item {
+						width: 49%;
+						&:nth-of-type(2n) {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	.gallery {
+		.inner {
+			width: 100%;
+			.content {
+				.txt {
+					width: 100%;
+					margin-bottom: -50px;
+				}
+			}
+			#wrap {
+				// width: 100%;
+				#list {
+					.item {
+						width: 100%;
+						// margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

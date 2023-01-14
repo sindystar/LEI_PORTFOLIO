@@ -1,0 +1,428 @@
+// design Guide
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
+
+.location {
+	width: 100%; //전체너비를 뜻하는 100%
+	margin-bottom: 150px;
+	.sub_visual {
+		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
+	}
+	>.inner {
+		// border: 1px solid red;
+		width: 1180px;
+		margin: 0 auto;
+		.content {
+			// border: 1px solid red;
+			padding-bottom: 0px;
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			width: 100%;
+
+			.txt {		
+				// border: 1px solid red;
+				position: absolute;
+				width: 28%;
+				height: 150px;
+				float: right;
+				margin-top: 100px;
+				position: relative;
+				
+				p {
+					font-size: 14px;
+					font-family: 'Work Sans', sans-serif;
+					line-height: 1.2;
+					color: #555;
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		#contact {		
+			// border: 1px solid blue;
+			position: relative;
+			width: 100%;
+			// &::after {
+			// 	content: '';
+			// 	display: block;
+			// 	clear: both;
+			// }
+			>.inner {				
+				// border: 1px solid green;
+				position: relative;
+				width: 100%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0px ;
+				#mailform {
+					width: 100%;
+					fieldset {
+						margin: 0 auto;
+						width:100%;
+						padding : 0;
+						table {
+							// border: 1px solid green;	
+							width: 100%;
+							margin-top: 10px;
+							th {
+								// border: 1px solid green;
+								// width: 100%;
+								padding-top: 10px;
+								padding-bottom: 0px;
+								text-align: left;
+								font-size: 14px;
+								line-height: 1.2;
+								font-family: 'Open Sans';
+								color: #333;
+							}
+							tr {
+								// border: 1px solid green;
+								width: 100%;
+								&:nth-of-type(2),
+								&:nth-of-type(4) {
+									td {
+										&:first-child {
+											padding-right: 20px;
+										}
+									}
+								}
+								&:nth-of-type(6) {
+									td {
+										padding-bottom: 20px;
+									}
+								}
+								input[type='submit'] {
+									display: block;
+									border: none;
+									float: right;
+									width: 26%;
+									padding: 10px;
+									font-size: 14px;
+									font-family: 'Open Sans';
+									font-style: normal;
+									color:#fff;
+									background-color: #aaa;
+									text-align: center;
+									transition: 0.5s;
+									cursor: pointer;
+									&:hover {
+										background-color: $keycolor;
+									}
+								}
+							}
+							input,
+							select,
+							textarea {
+								background: #fafafa;
+								width: 100%;
+								border: none;
+								font-family: 'Open Sans';
+								font-size: 14px;
+								font-style: italic;
+								color: $keycolor;
+								border-bottom: 1px solid $keycolor;
+								padding-left: 10px;
+								padding-bottom: 30px;
+							}
+							input [type ='text'] {
+								width: 100%;
+								height: 30px;
+								font-family: 'Open Sans';
+								color: $keycolor;
+								padding-left: 10px;
+								&::placeholder {
+									color: aqua;
+								}
+							}
+							#purpose {
+								width: 100%;
+								height: 50px;
+								font-family: 'Open Sans';
+								font-size: 14px;
+								color:$keycolor;
+								padding-left: 10px;
+							}
+							#message {
+								width: 100%;
+								height: 100px;
+								resize: none;
+								font-family: 'Open Sans';
+								background: transparent;
+								font-size: 14px;
+								color: $keycolor;
+								margin-bottom: -15px;
+								padding: 10px;
+								&::placeholder {
+									color: $keycolor;
+								}
+							}
+						}
+					}
+
+
+					}
+					
+				// 	.infoBox {
+				// position: relative;
+				// float: left;
+				// width: 40%;
+				// height: 400px;
+				// border: 5px solid $keycolor;
+				// }
+			}
+		}
+
+		> p{  // 환영 인사
+			// border: 1px solid red;
+			position: relative;
+			padding-left: 10px;
+			padding-top: 100px;
+			padding-bottom: 30px;
+			font: 14px 'Work Sans', sans-serif;
+			color: #444;
+			margin-bottom: 0px;
+			span {
+				font-family:'Open Sans', sans-serif;
+				font-size: 24px;
+				letter-spacing: 1px;
+				font-style: oblique;
+			}
+
+		}
+		.mapinfo{
+			position: relative;
+			// border: 1px solid red;
+			background: rgb(124, 175, 251);
+			width: 100%;
+			height: 45vh;
+			// margin-top: 100px;
+
+			#map {
+			// border: 1px solid red;
+			position: relative;
+			width: 100%; //여기map의 100% 1180
+			height: 100%;
+			// margin-bottom: -200px;			
+			// border: 2px solid $keycolor;
+			// border-radius: 5px;
+			// margin-top: 60px;
+			// margin-bottom: 30px;
+			// top: calc(75% - 100px);
+			// left: calc(50% - 100px);
+			filter:  invert(1) grayscale(0.9) brightness(0.8);
+			opacity: 0.6;
+			}
+			.info{
+				width: 120px;
+				height:120px;
+				background: #efefef;
+				border-radius: 50%;
+				position: absolute;
+				// top: calc(60% - 80px);    //모니터 사양에 따라 기준점이 달라짐;; 
+				top: 100px;  //기준점 고정 시킴 
+				left: calc(50% + 5px);
+				box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+				cursor: pointer;
+				transition: 0.5s;
+				>h2 {
+					position: absolute;
+					width: 100%;
+					font-family: 'Work Sans', sans-serif;
+					font-weight: 400;
+					font-size: 14PX;
+					color: #333;
+					// padding: 5vw ;
+					padding-top: 40px;
+					text-align: center;
+					z-index: 5;
+					
+					span {
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 600;
+						font-size: 20px;
+						letter-spacing: 10px;
+						border-top:1px solid $keycolor;
+
+					}
+				}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: #efefef;
+			transform: skewX(-25deg);
+			position: absolute;
+			top: 16px;
+			right: 20px;
+			z-index: 3;
+		}
+
+		// &.off {
+		// 	opacity: 0;
+		// 	margin-top: -550px;
+		// }
+		
+			}
+		}
+		
+		
+		.infoDesk {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			// border: 1px solid red ;
+			position: relative;
+			width: 100%;
+			height: 350px;
+			float: left;
+			padding-top: 80px;
+			margin-bottom: 100px;
+			z-index: 5;
+			> div {
+				position: relative;
+				width: calc(100% / 4) ;
+				height: 150px;
+				float: left;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				li{
+					i {
+						color: $keycolor;
+						font-size: 15px;
+						margin-bottom: 5px;
+						transition: 0.5s;
+						cursor: pointer;
+						&:hover {
+							color:skyblue;
+							transform: scale(1.3);
+						}
+					}
+					
+				}
+				>p {  // 운영시간
+					
+					position: relative;					
+					border-bottom: 1px solid $keycolor;
+					font-family: 'Open Sans', sans-serif;
+					font-style: oblique;
+					font-size: 14px;
+					color: $keycolor;
+					margin-bottom: 10px;
+				}
+				>span {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 13px;
+					color:#777;
+				}
+			}
+		}				
+	}
+}
+//tablet
+@media screen and (max-width: $tablet) {
+	// location
+	.location {
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		margin-bottom: -100px;
+		.inner {
+			width: 100%;
+			padding: 0px 30px;
+			margin: 0 auto;
+			margin-top: -50px;
+			>h1 {
+				margin-bottom: -50px;
+				// font-size: 0;
+			}
+			.content {
+				margin-bottom: 50px;
+				width: 100%;
+				.txt {
+					width: 100%;
+				}
+			}
+			#contact{
+				.inner {
+					#mailform{
+						fieldset {
+							width: 100%;
+							padding: 0px;
+							table {
+								width: 90vw;
+								tr {
+									width:100%;
+								}							
+							}
+						}
+					}					
+				}
+			}
+			> p {
+				margin-top: 100px;
+			}
+			.mapinfo {
+			#map {
+			width: 100%;
+			margin-bottom: 100px;
+			}
+		}
+			.infoDesk {
+				position: relative;
+				padding-bottom: 100px;
+				// margin-bottom: 100px;
+				> div {
+					width: 50%;
+				}
+			}
+		}				
+	}
+}
+@media screen and (max-width: $mobile) {
+	.location {
+		// margin-bottom: 350px;
+		.inner {
+			width: 100%;
+			#contact {
+				>.inner {
+					width: 100%;
+					#mailform {
+						fieldset {
+							width: 50%;
+						}
+					}					
+				}				
+			}
+			.mapinfo {
+				#map {
+					width: 100%;
+					margin-bottom: 150px;
+				}
+			}
+			.infoDesk {
+				margin-bottom: 100px;
+				> div {
+					width: 100%;
+					margin-top: -60px;
+				}
+			}			
+		}
+	}
+}
+

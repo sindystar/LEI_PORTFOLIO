@@ -1,0 +1,225 @@
+// Design Guide
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
+
+.community {
+	.sub_visual {
+		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
+	}
+	.inner {
+		.content {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			width: 100%;
+			height: 40vh;
+
+			.txt {
+				// border: 1px solid green;
+				position: absolute;
+				width: 28%;
+				height: 150px;
+				float: right;
+				margin-top: 100px;
+				position: relative;
+				
+				p {
+					// font-style: oblique;
+					font-size: 14px;
+					font-family: 'Work Sans', sans-serif;
+					line-height: 1.2;
+					color: #555;
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin-top: 10px;
+				}
+			}
+
+			.wrap {
+				position: relative;
+				width: 100%;
+				height: 25vh;
+				float: right;
+				margin-bottom: 100px;				
+				.aboutVisual {
+					ul {
+						width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					> img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						filter: grayscale(1);						
+						transition: 0.5s;
+						&:hover {		
+							cursor: pointer;					
+							filter: grayscale(0);
+						}
+					}
+				}					
+			}
+		}			
+		}
+
+		table {
+			width: 100%;
+			border-bottom: 2px solid $keycolor;
+			border-collapse: collapse;
+			margin-bottom: 50px;
+			font-family:'Open Sans', sans-serif;
+			tr {
+				&:nth-of-type(even) {
+					background: #fafafa;
+				}
+				&:hover {
+					background: rgb(235, 247, 254);
+				}
+				th {
+					padding: 15px;
+					background: skyblue;
+					color: #fff;
+					&:nth-of-type(1) {
+						width: 10%;
+					}
+					&:nth-of-type(3) {
+						width: 15%;
+					}
+					&:nth-of-type(4) {
+						width: 15%;
+					}
+				}
+				td {
+					padding: 13px;
+					border-bottom: 1px solid #ddd;
+					text-align: center;
+					font-size: 14px;
+					font-family: 'Open Sans', sans-serif;
+					color: #555;
+					&:nth-of-type(2) {
+						text-align: left;
+					}
+					// &:nth-of-type(3) {
+					// 	font-weight: 500;
+					// }
+					a {
+						color: #555;
+						font-family:'Open Sans', sans-serif;
+						line-height: 1.4;
+					}
+				}
+			}
+		}
+		.pagination {
+			width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.prev {
+				float: left;
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: #fafafa;
+				color: $keycolor;
+				font-size: 20px;
+				// line-height: 30px;
+				text-align: center;
+				// margin-top: -10px;
+			}
+			.next {
+				float: right;
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: #fafafa;
+				color: $keycolor;
+				font-size: 20px;
+				text-align: center;
+				// margin-top: -10px;
+			}
+			.numbers {
+				display: inline-block;
+				text-align: center;
+				font-size: 0;
+				a {
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					// border: 1px solid $keycolor;
+					border-radius: 50%;
+					font: bold 11px/30px 'arial';
+					color: $keycolor;
+					margin: 0 5px;
+					transition: 0.5s;
+					&:hover {
+						background: $keycolor;
+						color: #fff;
+						&.on {
+							color: $keycolor;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $tablet) {
+	.community {
+		.inner {
+			width: 100%;
+			padding: 0px 30px;
+			margin-top: -50px;
+			h1 {
+				margin-bottom: -50px;
+			}
+			.content {
+				.wrap{
+					width: 100%;
+				}
+				.txt {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.community {
+		.inner {
+			table {
+				tr {
+					th {
+						&:nth-of-type(1) {
+							width: 13%;
+						}
+						&:nth-of-type(3) {
+							width: 20%;
+						}
+						&:nth-of-type(4) {
+							width: 0%;
+							display: none;
+						}
+					}
+					td {
+						&:nth-of-type(4) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

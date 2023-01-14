@@ -1,0 +1,42 @@
+// scroll
+.scroll {
+	position: fixed;
+	right: 2vw;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	li {
+		display: flex;
+		justify-content: flex-end;
+		align-content: center;
+		p {
+			font-size: 10px;
+			font-family: 'Open Sans', sans-serif;
+			color: #fff;
+			opacity: 0;
+			transition: 1;
+			cursor: pointer;
+		}
+		a {
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			margin-left: 1vw;
+			background: rgba(255, 255, 255, 0.6);
+			margin-bottom: 20px;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+		&.on a {
+			height: 100px;
+			background: #444;
+		}
+		&:hover a {
+			background-color: #bcf5a9;
+		}
+		// &:hover p {
+		// 	opacity: 1;
+		// }
+	}
+}

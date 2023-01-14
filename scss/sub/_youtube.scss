@@ -1,0 +1,196 @@
+// design Guide
+$keycolor: rgb(2, 126, 196);
+$tablet: 1179px;
+$mobile: 539px;
+
+.youtube {
+	.sub_visual {
+		background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
+	}
+	.inner {
+		.content {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			width: 100%;
+			height: 20vh;
+
+			.txt {
+				// border: 1px solid green;
+				position: absolute;
+				width: 28%;
+				height: 150px;
+				float: right;
+				margin-top: 100px;
+				position: relative;
+				
+				p {
+					// font-style: oblique;
+					font-size: 14px;
+					font-family: 'Work Sans', sans-serif;
+					line-height: 1.2;
+					color: #555;
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin-top: 10px;
+				}
+			}
+		
+		}
+		>.vidList {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: flex-start;
+			margin-top: 0px;
+			// transform: translateY(100px);
+			// opacity: 0;
+			// transition: 1s;
+			
+
+			> article {
+				margin-top: 80px;
+				border-top: 1px solid #999;
+				padding: 10px 0px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				cursor: pointer;								
+				width: calc(100% / 2)-1%;
+				// padding: 10px;
+				// margin-left: 2%;
+				&:nth-of-type(2n){
+					margin-right: 0px;
+				}
+				height: 30vh;
+				transition: 0.5s;						
+						&:hover {
+							cursor: pointer;
+							transform: scale(1.05);
+						}
+				>.pic {
+					display: block;
+					width: 100%;
+					height: 75%;
+					> img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						
+					}
+				}
+				.con {
+					background-color: #fff;
+					width: 100%;
+					height: 50%;
+					padding: 10px 10px 0px;
+					// padding-left: 20px;
+					h2 {
+						font-size: 16px;
+						font-family:'Open Sans', sans-serif;
+						color: #333;
+						margin-bottom: 3px;
+					}
+					p {
+						font-size: 14px;
+						color: #333;
+						font-family:'Work Sans', sans-serif;
+
+
+					}
+					span {
+						font-family:'Open Sans', sans-serif;
+						font-size: 11px;
+						color: $keycolor;
+					}
+				}
+			}
+		}
+		// &.on {
+		// 	.inner {
+		// 		.vidList{
+		// 			transform: translateY(0px);
+		// 			opacity: 1;
+	
+		// 		}
+		// 	}
+		// }
+		
+		figure.pop {
+			width: 100%;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.8);
+			overflow: hidden;
+			padding: 3vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			.btnClose {
+				position: absolute;
+				top: 50px;
+				right: 50px;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+	
+}
+
+
+@media screen and (max-width: $tablet) {
+	.youtube {
+		.inner {
+			width: 100%;
+			padding: 0px 30px;
+			margin-top: -50px;
+			h1 {
+				margin-bottom: -50px;
+			}
+			.content {
+				.txt {
+					width: 100%;
+					margin-bottom: -100px;
+				}
+			}
+			.vidList {
+				article {
+					width: 49%;
+					margin-right: 0%;
+					&:nth-of-type(2n) {
+						margin-right: 0px;
+					}
+					// .pic {
+					// 	height: 20vmax;
+					// }
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	.youtube {
+		.inner {
+
+			.vidList {
+				article {
+					width: 100%; //짝수 번째 그림이 아래로 이동시 넓이값이 더 커보임;;
+					// .pic {
+					// 	height: 30vmax;
+					// }
+					// .con {
+					// 	height: 25%;
+					// }
+				}
+			}
+		}
+	}
+}
