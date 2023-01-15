@@ -1,24 +1,28 @@
 @charset "utf-8";
 
+
 /* common */
 @import 'common/reset';
 @import 'common/footer';
 @import 'common/sub_page';
 
 /* main */
-@import 'main/scroll';
+
 @import 'main/header';
 @import 'main/visual';
 @import 'main/metro';
 @import 'main/location';
+@import 'main/scroll';
+
 
 /* sub */
 @import 'sub/about';
 @import 'sub/community';
-@import 'sub/youtube';
 @import 'sub/gallery';
-@import 'sub/location';
 @import 'sub/join';
+@import 'sub/youtube';
+@import 'sub/location';
+
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Work+Sans:wght@300;400&display=swap');
 
@@ -37,3 +41,33 @@ $mobile: 539px;
 
 
 
+
+
+//tablet
+@media screen and (max-width: $tablet) {
+
+
+	
+}
+
+
+
+@media screen and (max-width: $tablet_S) {
+	// headeer
+
+	//visual
+
+
+}
+
+//mobile
+@media screen and (max-width: $mobile) {
+	//header
+
+
+
+
+	//banner
+
+	//comments
+}

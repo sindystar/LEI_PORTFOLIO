@@ -52,14 +52,14 @@ textarea {
   resize: none;
 }
 
-.footer {
+footer {
   width: 100%;
   position: relative;
   background: #f3f3f3;
   filter: url("#effect");
   z-index: 2;
 }
-.footer .toggle {
+footer .toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ textarea {
   left: calc(50% - 50px);
   transition: 1s;
 }
-.footer .toggle::before {
+footer .toggle::before {
   content: "";
   display: block;
   width: 100%;
@@ -83,7 +83,7 @@ textarea {
   border-radius: 20px;
   transition: 1s;
 }
-.footer .toggle span {
+footer .toggle span {
   position: relative;
   z-index: 2;
   font-size: 24px;
@@ -93,7 +93,7 @@ textarea {
   transform: rotate(0deg);
   transition: 1s;
 }
-.footer .upper {
+footer .upper {
   height: 0px;
   transition: height 0.5s;
   background-image: url(../img/visual/pic14.jpg);
@@ -102,7 +102,7 @@ textarea {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.footer .upper .inner {
+footer .upper .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
@@ -114,31 +114,31 @@ textarea {
   overflow: hidden;
   padding-top: 240px;
 }
-.footer .upper .inner > h1 > a {
+footer .upper .inner > h1 > a {
   font-size: 24px;
   color: #3a4258;
   transition: 0.5s;
 }
-.footer .upper .inner > h1 > a:hover {
+footer .upper .inner > h1 > a:hover {
   color: #BCF5A9;
 }
-.footer .upper .inner > ul {
+footer .upper .inner > ul {
   width: 100%;
   text-align: center;
   padding: 0;
 }
-.footer .upper .inner > ul > li {
+footer .upper .inner > ul > li {
   position: relative;
   display: inline-block;
 }
-.footer .upper .inner > ul > li > a {
+footer .upper .inner > ul > li > a {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: #3a4258;
   padding: 1vw;
   transition: 0.5s;
 }
-.footer .upper .inner > ul > li::after {
+footer .upper .inner > ul > li::after {
   position: absolute;
   top: 9px;
   right: 0;
@@ -149,16 +149,16 @@ textarea {
   background: #3a4258;
   opacity: 0.5;
 }
-.footer .upper .inner > ul > li:last-child::after {
+footer .upper .inner > ul > li:last-child::after {
   display: none;
 }
-.footer .upper .inner > ul > li:hover a {
+footer .upper .inner > ul > li:hover a {
   color: rgb(2, 126, 196);
 }
-.footer .lower {
+footer .lower {
   border-top: 1px solid transparent;
 }
-.footer .lower p {
+footer .lower p {
   position: relative;
   z-index: 2;
   padding: 40px 10vw;
@@ -200,37 +200,22 @@ footer.on .lower {
 
 @media screen and (max-width: 1179px) {
   .footer {
-    position: relative;
+    padding: 100px 30px;
   }
-  .footer::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .footer .toggle {
+  .footer .inner {
     width: 100%;
-  }
-  .footer .upper {
-    position: relative;
-    width: 100%;
-  }
-  .footer .upper .inner {
-    width: 100%;
-  }
-  .footer .upper .inner::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .footer .upper .inner h1, .footer .upper .inner ul {
-    width: 100%;
-    position: relative;
-    text-align: center;
   }
 }
-@media screen and (max-width: 1179px) and (max-width: 1179px) {
-  .lower {
+@media screen and (max-width: 539px) {
+  #footer .inner h1 {
+    margin-bottom: 10px;
+  }
+  #footer .inner ul {
     width: 100%;
+  }
+  #footer .inner ul li {
+    margin-left: 0px;
+    margin: 5px;
   }
 }
 #header_sub {
@@ -603,45 +588,6 @@ footer.on .lower {
   }
 }
 /* main */
-.scroll {
-  position: fixed;
-  right: 2vw;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-.scroll li {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-}
-.scroll li p {
-  font-size: 10px;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  opacity: 0;
-  transition: 1;
-  cursor: pointer;
-}
-.scroll li a {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  margin-left: 1vw;
-  background: rgba(255, 255, 255, 0.6);
-  margin-bottom: 20px;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.scroll li.on a {
-  height: 100px;
-  background: #444;
-}
-.scroll li:hover a {
-  background-color: #bcf5a9;
-}
-
 #header {
   width: 100%;
   position: absolute;
@@ -1270,8 +1216,161 @@ footer.on .lower {
 #metro #youtube > article:nth-of-type(3), #metro #youtube > article:nth-of-type(8) {
   width: 50%;
 }
-#metro #youtube > article .inner {
+#metro #youtube > article > .inner {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background: #ddd;
+}
+#metro #youtube > article > .inner .vidListA,
+#metro #youtube > article > .inner .vidListB,
+#metro #youtube > article > .inner .vidListC,
+#metro #youtube > article > .inner .vidListD,
+#metro #youtube > article > .inner .vidListE,
+#metro #youtube > article > .inner .vidListF,
+#metro #youtube > article > .inner .vidListG,
+#metro #youtube > article > .inner .vidListH,
+#metro #youtube > article > .inner .vidListI,
+#metro #youtube > article > .inner .vidListJ {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#metro #youtube > article > .inner .vidListA > article,
+#metro #youtube > article > .inner .vidListB > article,
+#metro #youtube > article > .inner .vidListC > article,
+#metro #youtube > article > .inner .vidListD > article,
+#metro #youtube > article > .inner .vidListE > article,
+#metro #youtube > article > .inner .vidListF > article,
+#metro #youtube > article > .inner .vidListG > article,
+#metro #youtube > article > .inner .vidListH > article,
+#metro #youtube > article > .inner .vidListI > article,
+#metro #youtube > article > .inner .vidListJ > article {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#metro #youtube > article > .inner .vidListA > article:hover,
+#metro #youtube > article > .inner .vidListB > article:hover,
+#metro #youtube > article > .inner .vidListC > article:hover,
+#metro #youtube > article > .inner .vidListD > article:hover,
+#metro #youtube > article > .inner .vidListE > article:hover,
+#metro #youtube > article > .inner .vidListF > article:hover,
+#metro #youtube > article > .inner .vidListG > article:hover,
+#metro #youtube > article > .inner .vidListH > article:hover,
+#metro #youtube > article > .inner .vidListI > article:hover,
+#metro #youtube > article > .inner .vidListJ > article:hover {
+  transform: scale(1.1);
+}
+#metro #youtube > article > .inner .vidListA > article > .pic,
+#metro #youtube > article > .inner .vidListB > article > .pic,
+#metro #youtube > article > .inner .vidListC > article > .pic,
+#metro #youtube > article > .inner .vidListD > article > .pic,
+#metro #youtube > article > .inner .vidListE > article > .pic,
+#metro #youtube > article > .inner .vidListF > article > .pic,
+#metro #youtube > article > .inner .vidListG > article > .pic,
+#metro #youtube > article > .inner .vidListH > article > .pic,
+#metro #youtube > article > .inner .vidListI > article > .pic,
+#metro #youtube > article > .inner .vidListJ > article > .pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#metro #youtube > article > .inner .vidListA > article > .pic > img,
+#metro #youtube > article > .inner .vidListB > article > .pic > img,
+#metro #youtube > article > .inner .vidListC > article > .pic > img,
+#metro #youtube > article > .inner .vidListD > article > .pic > img,
+#metro #youtube > article > .inner .vidListE > article > .pic > img,
+#metro #youtube > article > .inner .vidListF > article > .pic > img,
+#metro #youtube > article > .inner .vidListG > article > .pic > img,
+#metro #youtube > article > .inner .vidListH > article > .pic > img,
+#metro #youtube > article > .inner .vidListI > article > .pic > img,
+#metro #youtube > article > .inner .vidListJ > article > .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#metro #youtube > article > .inner .vidListA > article .con,
+#metro #youtube > article > .inner .vidListB > article .con,
+#metro #youtube > article > .inner .vidListC > article .con,
+#metro #youtube > article > .inner .vidListD > article .con,
+#metro #youtube > article > .inner .vidListE > article .con,
+#metro #youtube > article > .inner .vidListF > article .con,
+#metro #youtube > article > .inner .vidListG > article .con,
+#metro #youtube > article > .inner .vidListH > article .con,
+#metro #youtube > article > .inner .vidListI > article .con,
+#metro #youtube > article > .inner .vidListJ > article .con {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 20px 80px;
+}
+#metro #youtube > article > .inner .vidListA > article .con h2,
+#metro #youtube > article > .inner .vidListB > article .con h2,
+#metro #youtube > article > .inner .vidListC > article .con h2,
+#metro #youtube > article > .inner .vidListD > article .con h2,
+#metro #youtube > article > .inner .vidListE > article .con h2,
+#metro #youtube > article > .inner .vidListF > article .con h2,
+#metro #youtube > article > .inner .vidListG > article .con h2,
+#metro #youtube > article > .inner .vidListH > article .con h2,
+#metro #youtube > article > .inner .vidListI > article .con h2,
+#metro #youtube > article > .inner .vidListJ > article .con h2 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: "Open Sans";
+  color: #333;
+  margin-bottom: 3px;
+}
+#metro #youtube > article > .inner .vidListA > article .con p,
+#metro #youtube > article > .inner .vidListB > article .con p,
+#metro #youtube > article > .inner .vidListC > article .con p,
+#metro #youtube > article > .inner .vidListD > article .con p,
+#metro #youtube > article > .inner .vidListE > article .con p,
+#metro #youtube > article > .inner .vidListF > article .con p,
+#metro #youtube > article > .inner .vidListG > article .con p,
+#metro #youtube > article > .inner .vidListH > article .con p,
+#metro #youtube > article > .inner .vidListI > article .con p,
+#metro #youtube > article > .inner .vidListJ > article .con p {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+  font-family: "Work Sans";
+  font-weight: 300;
+}
+#metro #youtube > article > .inner .vidListA > article .con span,
+#metro #youtube > article > .inner .vidListB > article .con span,
+#metro #youtube > article > .inner .vidListC > article .con span,
+#metro #youtube > article > .inner .vidListD > article .con span,
+#metro #youtube > article > .inner .vidListE > article .con span,
+#metro #youtube > article > .inner .vidListF > article .con span,
+#metro #youtube > article > .inner .vidListG > article .con span,
+#metro #youtube > article > .inner .vidListH > article .con span,
+#metro #youtube > article > .inner .vidListI > article .con span,
+#metro #youtube > article > .inner .vidListJ > article .con span {
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Open Sans";
+  color: rgb(2, 126, 196);
+}
+#metro #youtube > article figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+}
+#metro #youtube > article figure.pop > .btnClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1473,6 +1572,45 @@ footer.on .lower {
 #location .mapInfo.off {
   opacity: 0;
   margin-top: -500px;
+}
+
+.scroll {
+  position: fixed;
+  right: 2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.scroll li {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+.scroll li p {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  opacity: 0;
+  transition: 1;
+  cursor: pointer;
+}
+.scroll li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 1vw;
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.scroll li.on a {
+  height: 100px;
+  background: #444;
+}
+.scroll li:hover a {
+  background-color: #bcf5a9;
 }
 
 /* sub */
@@ -2017,6 +2155,335 @@ footer.on .lower {
     display: none;
   }
 }
+.gallery {
+  background: #eee;
+}
+.gallery .sub_visual {
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
+}
+.gallery .inner .content {
+  width: 100%;
+}
+.gallery .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .inner .content .txt {
+  width: 28%;
+  height: 280px;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+.gallery .inner .content .txt p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
+.gallery .inner #wrap {
+  width: 100%;
+  padding: 40px;
+  overflow: hidden;
+}
+.gallery .inner #wrap #list {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery .inner #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .inner #wrap #list .item {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+.gallery .inner #wrap #list .item div {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.gallery .inner #wrap #list .item div a img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.gallery .inner #wrap #list .item div a img:hover {
+  overflow: hidden;
+  filter: grayscale(0);
+}
+.gallery .inner #wrap #list .item div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  transition: 0.5s;
+}
+.gallery .inner #wrap #list .item div p:hover {
+  color: rgb(2, 126, 196);
+}
+.gallery .inner #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media screen and (max-width: 1179px) {
+  .gallery .inner {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .gallery .inner h1 {
+    margin-bottom: -50px;
+  }
+  .gallery .inner .content .txt {
+    width: 100%;
+    margin-bottom: -150px;
+  }
+  .gallery .inner #wrap {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list .item {
+    width: 49%;
+  }
+  .gallery .inner #wrap #list .item:nth-of-type(2n) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  .gallery .inner {
+    width: 100%;
+  }
+  .gallery .inner .content .txt {
+    width: 100%;
+    margin-bottom: -50px;
+  }
+  .gallery .inner #wrap #list .item {
+    width: 100%;
+  }
+}
+.join .sub_visual {
+  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
+}
+.join .inner .content {
+  width: 100%;
+  height: 40vh;
+}
+.join .inner .content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.join .inner .content .txt {
+  position: absolute;
+  width: 28%;
+  height: 150px;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+.join .inner .content .txt p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.2;
+  color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
+.join .inner .content .wrap {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  float: right;
+  margin-bottom: 100px;
+}
+.join .inner .content .wrap .aboutVisual ul {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.join .inner .content .wrap .aboutVisual ul > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.join .inner .content .wrap .aboutVisual ul > img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+.join .inner .agreement {
+  margin-bottom: 270px;
+}
+.join .inner .agreement label[for=agree] {
+  font-size: 12px;
+}
+.join .inner table {
+  margin: 0 auto;
+  width: 90%;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+.join .inner table th {
+  width: 20%;
+  text-align: left;
+  font: bold 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  padding: 20px 30px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #444;
+}
+.join .inner table th:last-child {
+  background: #fff;
+  text-align: center;
+  border-right: none;
+}
+.join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
+  width: 150px;
+  height: 34px;
+  border: none;
+  border-radius: 3px;
+  background: #aaa;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  margin-right: 14px;
+  transition: 0.5s;
+}
+.join .inner table th input[type=submit]:hover,
+.join .inner table th input[type=reset]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: skyblue;
+  color: rgb(2, 126, 196);
+}
+.join .inner table td {
+  border-bottom: 1px solid #444;
+  font-size: 0;
+}
+.join .inner table td input[type=text],
+.join .inner table td input[type=password] {
+  width: 95%;
+  height: 30px;
+  border: 1px solid #eee;
+  background: rgb(242, 246, 249);
+  padding-left: 20px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.join .inner table td input[type=text]:hover,
+.join .inner table td input[type=password]:hover {
+  cursor: pointer;
+  background: rgb(223, 241, 253);
+}
+.join .inner table td input[type=checkbox],
+.join .inner table td input[type=radio] {
+  margin-right: 5px;
+}
+.join .inner table td label {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.join .inner table td .hobbyTxt,
+.join .inner table td .genderTxt {
+  font: 12px/1 "arial";
+  color: rgb(2, 126, 196);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.join .inner table td select#company {
+  width: 20%;
+  height: 30px;
+  border: 1px solid #eee;
+  background: rgb(242, 246, 249);
+  padding-left: 20px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.join .inner table td select#company:hover {
+  cursor: pointer;
+  background: rgb(223, 241, 253);
+}
+.join .inner table td textarea#comments {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #eee;
+  background: rgb(242, 246, 249);
+  padding: 20px;
+  resize: none;
+  transition: 0.5s;
+}
+.join .inner table td textarea#comments:hover {
+  cursor: pointer;
+  background: rgb(223, 241, 253);
+}
+
+@media screen and (max-width: 1179px) {
+  .join .inner {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: -50px;
+  }
+  .join .inner h1 {
+    margin-bottom: -50px;
+  }
+  .join .inner .content .txt {
+    width: 100%;
+  }
+  .join .inner .content > .wrap {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .join .inner table input[type=submit],
+  .join .inner table input[type=reset] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .join .inner table th {
+    display: none;
+    padding: 15px 20px;
+  }
+  .join .inner table th:last-child {
+    display: block;
+    width: 100%;
+  }
+  .join .inner table th input[type=reset],
+  .join .inner table th input[type=submit] {
+    width: 47% !important;
+    margin: 1% !important;
+  }
+  .join .inner table td {
+    border-left: none;
+    padding: 10px 0;
+  }
+  .join .inner table td input[type=text],
+  .join .inner table td input[type=password],
+  .join .inner table td select,
+  .join .inner table td textarea {
+    width: 92%;
+  }
+}
 .youtube .sub_visual {
   background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
 }
@@ -2150,124 +2617,6 @@ footer.on .lower {
 }
 @media screen and (max-width: 539px) {
   .youtube .inner .vidList article {
-    width: 100%;
-  }
-}
-.gallery {
-  background: #eee;
-}
-.gallery .sub_visual {
-  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
-}
-.gallery .inner .content {
-  width: 100%;
-}
-.gallery .inner .content::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.gallery .inner .content .txt {
-  width: 28%;
-  height: 280px;
-  float: right;
-  margin-top: 100px;
-  position: relative;
-}
-.gallery .inner .content .txt p {
-  font-size: 14px;
-  font-family: "Work Sans", sans-serif;
-  line-height: 1.2;
-  color: #555;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 10px;
-}
-.gallery .inner #wrap {
-  width: 100%;
-  padding: 40px;
-  overflow: hidden;
-}
-.gallery .inner #wrap #list {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 1s;
-}
-.gallery .inner #wrap #list::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.gallery .inner #wrap #list .item {
-  width: 25%;
-  float: left;
-  padding: 10px;
-}
-.gallery .inner #wrap #list .item div {
-  width: 100%;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-}
-.gallery .inner #wrap #list .item div a img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: 0.5s;
-}
-.gallery .inner #wrap #list .item div a img:hover {
-  overflow: hidden;
-  filter: grayscale(0);
-}
-.gallery .inner #wrap #list .item div p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #555;
-  margin-top: 5px;
-  margin-bottom: 12px;
-  padding-left: 5px;
-  transition: 0.5s;
-}
-.gallery .inner #wrap #list .item div p:hover {
-  color: rgb(2, 126, 196);
-}
-.gallery .inner #wrap #list.on {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-@media screen and (max-width: 1179px) {
-  .gallery .inner {
-    width: 100%;
-    padding: 0px 30px;
-    margin-top: -50px;
-  }
-  .gallery .inner h1 {
-    margin-bottom: -50px;
-  }
-  .gallery .inner .content .txt {
-    width: 100%;
-    margin-bottom: -150px;
-  }
-  .gallery .inner #wrap {
-    width: 100%;
-  }
-  .gallery .inner #wrap #list .item {
-    width: 49%;
-  }
-  .gallery .inner #wrap #list .item:nth-of-type(2n) {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 539px) {
-  .gallery .inner {
-    width: 100%;
-  }
-  .gallery .inner .content .txt {
-    width: 100%;
-    margin-bottom: -50px;
-  }
-  .gallery .inner #wrap #list .item {
     width: 100%;
   }
 }
@@ -2605,217 +2954,6 @@ footer.on .lower {
   .location .inner .infoDesk > div {
     width: 100%;
     margin-top: -60px;
-  }
-}
-.join .sub_visual {
-  background: linear-gradient(-45deg, skyblue, rgb(192, 213, 255));
-}
-.join .inner .content {
-  width: 100%;
-  height: 40vh;
-}
-.join .inner .content::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.join .inner .content .txt {
-  position: absolute;
-  width: 28%;
-  height: 150px;
-  float: right;
-  margin-top: 100px;
-  position: relative;
-}
-.join .inner .content .txt p {
-  font-size: 14px;
-  font-family: "Work Sans", sans-serif;
-  line-height: 1.2;
-  color: #555;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 10px;
-}
-.join .inner .content .wrap {
-  position: relative;
-  width: 100%;
-  height: 25vh;
-  float: right;
-  margin-bottom: 100px;
-}
-.join .inner .content .wrap .aboutVisual ul {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.join .inner .content .wrap .aboutVisual ul > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(1);
-  transition: 0.5s;
-}
-.join .inner .content .wrap .aboutVisual ul > img:hover {
-  cursor: pointer;
-  filter: grayscale(0);
-}
-.join .inner .agreement {
-  margin-bottom: 270px;
-}
-.join .inner .agreement label[for=agree] {
-  font-size: 12px;
-}
-.join .inner table {
-  margin: 0 auto;
-  width: 90%;
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-}
-.join .inner table th {
-  width: 20%;
-  text-align: left;
-  font: bold 12px;
-  font-family: "Open Sans", sans-serif;
-  color: #444;
-  padding: 20px 30px;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #444;
-}
-.join .inner table th:last-child {
-  background: #fff;
-  text-align: center;
-  border-right: none;
-}
-.join .inner table th input[type=submit],
-.join .inner table th input[type=reset] {
-  width: 150px;
-  height: 34px;
-  border: none;
-  border-radius: 3px;
-  background: #aaa;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  margin-right: 14px;
-  transition: 0.5s;
-}
-.join .inner table th input[type=submit]:hover,
-.join .inner table th input[type=reset]:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  background: skyblue;
-  color: rgb(2, 126, 196);
-}
-.join .inner table td {
-  border-bottom: 1px solid #444;
-  font-size: 0;
-}
-.join .inner table td input[type=text],
-.join .inner table td input[type=password] {
-  width: 95%;
-  height: 30px;
-  border: 1px solid #eee;
-  background: rgb(242, 246, 249);
-  padding-left: 20px;
-  margin-left: 20px;
-  transition: 0.5s;
-}
-.join .inner table td input[type=text]:hover,
-.join .inner table td input[type=password]:hover {
-  cursor: pointer;
-  background: rgb(223, 241, 253);
-}
-.join .inner table td input[type=checkbox],
-.join .inner table td input[type=radio] {
-  margin-right: 5px;
-}
-.join .inner table td label {
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 14px;
-}
-.join .inner table td .hobbyTxt,
-.join .inner table td .genderTxt {
-  font: 12px/1 "arial";
-  color: rgb(2, 126, 196);
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.join .inner table td select#company {
-  width: 20%;
-  height: 30px;
-  border: 1px solid #eee;
-  background: rgb(242, 246, 249);
-  padding-left: 20px;
-  margin-left: 10px;
-  transition: 0.5s;
-}
-.join .inner table td select#company:hover {
-  cursor: pointer;
-  background: rgb(223, 241, 253);
-}
-.join .inner table td textarea#comments {
-  width: 100%;
-  height: 150px;
-  border: 1px solid #eee;
-  background: rgb(242, 246, 249);
-  padding: 20px;
-  resize: none;
-  transition: 0.5s;
-}
-.join .inner table td textarea#comments:hover {
-  cursor: pointer;
-  background: rgb(223, 241, 253);
-}
-
-@media screen and (max-width: 1179px) {
-  .join .inner {
-    width: 100%;
-    padding: 0px 30px;
-    margin-top: -50px;
-  }
-  .join .inner h1 {
-    margin-bottom: -50px;
-  }
-  .join .inner .content .txt {
-    width: 100%;
-  }
-  .join .inner .content > .wrap {
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 50px;
-  }
-  .join .inner table input[type=submit],
-  .join .inner table input[type=reset] {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 539px) {
-  .join .inner table th {
-    display: none;
-    padding: 15px 20px;
-  }
-  .join .inner table th:last-child {
-    display: block;
-    width: 100%;
-  }
-  .join .inner table th input[type=reset],
-  .join .inner table th input[type=submit] {
-    width: 47% !important;
-    margin: 1% !important;
-  }
-  .join .inner table td {
-    border-left: none;
-    padding: 10px 0;
-  }
-  .join .inner table td input[type=text],
-  .join .inner table td input[type=password],
-  .join .inner table td select,
-  .join .inner table td textarea {
-    width: 92%;
   }
 }
 
