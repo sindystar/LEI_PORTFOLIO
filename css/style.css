@@ -1204,153 +1204,153 @@ footer.on .lower {
   height: 100%;
   background-image: url(../img/mainNews/pic9.jpg);
 }
-#metro #flickr article:nth-of-type(3), #metro #flickr article:nth-of-type(9) {
+#metro #Portfolio_A article:nth-of-type(3), #metro #Portfolio_A article:nth-of-type(9) {
   width: 50%;
 }
-#metro #flickr article .inner {
+#metro #Portfolio_A article .inner {
   background: lightgreen;
 }
-#metro #youtube > article:nth-of-type(3), #metro #youtube > article:nth-of-type(8) {
+#metro #Portfolio_B > article:nth-of-type(3), #metro #Portfolio_B > article:nth-of-type(8) {
   width: 50%;
 }
-#metro #youtube > article > .inner {
+#metro #Portfolio_B > article > .inner {
   position: relative;
   padding: 0;
   width: 100%;
   height: 100%;
   background: #ddd;
 }
-#metro #youtube > article > .inner .vidListA,
-#metro #youtube > article > .inner .vidListB,
-#metro #youtube > article > .inner .vidListC,
-#metro #youtube > article > .inner .vidListD,
-#metro #youtube > article > .inner .vidListE,
-#metro #youtube > article > .inner .vidListF,
-#metro #youtube > article > .inner .vidListG,
-#metro #youtube > article > .inner .vidListH,
-#metro #youtube > article > .inner .vidListI,
-#metro #youtube > article > .inner .vidListJ {
+#metro #Portfolio_B > article > .inner .vidListA,
+#metro #Portfolio_B > article > .inner .vidListB,
+#metro #Portfolio_B > article > .inner .vidListC,
+#metro #Portfolio_B > article > .inner .vidListD,
+#metro #Portfolio_B > article > .inner .vidListE,
+#metro #Portfolio_B > article > .inner .vidListF,
+#metro #Portfolio_B > article > .inner .vidListG,
+#metro #Portfolio_B > article > .inner .vidListH,
+#metro #Portfolio_B > article > .inner .vidListI,
+#metro #Portfolio_B > article > .inner .vidListJ {
   margin: 0 auto;
   overflow: hidden;
 }
-#metro #youtube > article > .inner .vidListA > article,
-#metro #youtube > article > .inner .vidListB > article,
-#metro #youtube > article > .inner .vidListC > article,
-#metro #youtube > article > .inner .vidListD > article,
-#metro #youtube > article > .inner .vidListE > article,
-#metro #youtube > article > .inner .vidListF > article,
-#metro #youtube > article > .inner .vidListG > article,
-#metro #youtube > article > .inner .vidListH > article,
-#metro #youtube > article > .inner .vidListI > article,
-#metro #youtube > article > .inner .vidListJ > article {
+#metro #Portfolio_B > article > .inner .vidListA > article,
+#metro #Portfolio_B > article > .inner .vidListB > article,
+#metro #Portfolio_B > article > .inner .vidListC > article,
+#metro #Portfolio_B > article > .inner .vidListD > article,
+#metro #Portfolio_B > article > .inner .vidListE > article,
+#metro #Portfolio_B > article > .inner .vidListF > article,
+#metro #Portfolio_B > article > .inner .vidListG > article,
+#metro #Portfolio_B > article > .inner .vidListH > article,
+#metro #Portfolio_B > article > .inner .vidListI > article,
+#metro #Portfolio_B > article > .inner .vidListJ > article {
   border: 1px solid red;
   width: 100%;
   height: 100%;
   transition: 0.5s;
   cursor: pointer;
 }
-#metro #youtube > article > .inner .vidListA > article:hover,
-#metro #youtube > article > .inner .vidListB > article:hover,
-#metro #youtube > article > .inner .vidListC > article:hover,
-#metro #youtube > article > .inner .vidListD > article:hover,
-#metro #youtube > article > .inner .vidListE > article:hover,
-#metro #youtube > article > .inner .vidListF > article:hover,
-#metro #youtube > article > .inner .vidListG > article:hover,
-#metro #youtube > article > .inner .vidListH > article:hover,
-#metro #youtube > article > .inner .vidListI > article:hover,
-#metro #youtube > article > .inner .vidListJ > article:hover {
+#metro #Portfolio_B > article > .inner .vidListA > article:hover,
+#metro #Portfolio_B > article > .inner .vidListB > article:hover,
+#metro #Portfolio_B > article > .inner .vidListC > article:hover,
+#metro #Portfolio_B > article > .inner .vidListD > article:hover,
+#metro #Portfolio_B > article > .inner .vidListE > article:hover,
+#metro #Portfolio_B > article > .inner .vidListF > article:hover,
+#metro #Portfolio_B > article > .inner .vidListG > article:hover,
+#metro #Portfolio_B > article > .inner .vidListH > article:hover,
+#metro #Portfolio_B > article > .inner .vidListI > article:hover,
+#metro #Portfolio_B > article > .inner .vidListJ > article:hover {
   transform: scale(1.1);
 }
-#metro #youtube > article > .inner .vidListA > article > .pic,
-#metro #youtube > article > .inner .vidListB > article > .pic,
-#metro #youtube > article > .inner .vidListC > article > .pic,
-#metro #youtube > article > .inner .vidListD > article > .pic,
-#metro #youtube > article > .inner .vidListE > article > .pic,
-#metro #youtube > article > .inner .vidListF > article > .pic,
-#metro #youtube > article > .inner .vidListG > article > .pic,
-#metro #youtube > article > .inner .vidListH > article > .pic,
-#metro #youtube > article > .inner .vidListI > article > .pic,
-#metro #youtube > article > .inner .vidListJ > article > .pic {
+#metro #Portfolio_B > article > .inner .vidListA > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListB > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListC > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListD > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListE > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListF > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListG > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListH > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListI > article > .pic,
+#metro #Portfolio_B > article > .inner .vidListJ > article > .pic {
   display: block;
   width: 100%;
   height: 100%;
 }
-#metro #youtube > article > .inner .vidListA > article > .pic > img,
-#metro #youtube > article > .inner .vidListB > article > .pic > img,
-#metro #youtube > article > .inner .vidListC > article > .pic > img,
-#metro #youtube > article > .inner .vidListD > article > .pic > img,
-#metro #youtube > article > .inner .vidListE > article > .pic > img,
-#metro #youtube > article > .inner .vidListF > article > .pic > img,
-#metro #youtube > article > .inner .vidListG > article > .pic > img,
-#metro #youtube > article > .inner .vidListH > article > .pic > img,
-#metro #youtube > article > .inner .vidListI > article > .pic > img,
-#metro #youtube > article > .inner .vidListJ > article > .pic > img {
+#metro #Portfolio_B > article > .inner .vidListA > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListB > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListC > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListD > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListE > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListF > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListG > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListH > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListI > article > .pic > img,
+#metro #Portfolio_B > article > .inner .vidListJ > article > .pic > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#metro #youtube > article > .inner .vidListA > article .con,
-#metro #youtube > article > .inner .vidListB > article .con,
-#metro #youtube > article > .inner .vidListC > article .con,
-#metro #youtube > article > .inner .vidListD > article .con,
-#metro #youtube > article > .inner .vidListE > article .con,
-#metro #youtube > article > .inner .vidListF > article .con,
-#metro #youtube > article > .inner .vidListG > article .con,
-#metro #youtube > article > .inner .vidListH > article .con,
-#metro #youtube > article > .inner .vidListI > article .con,
-#metro #youtube > article > .inner .vidListJ > article .con {
+#metro #Portfolio_B > article > .inner .vidListA > article .con,
+#metro #Portfolio_B > article > .inner .vidListB > article .con,
+#metro #Portfolio_B > article > .inner .vidListC > article .con,
+#metro #Portfolio_B > article > .inner .vidListD > article .con,
+#metro #Portfolio_B > article > .inner .vidListE > article .con,
+#metro #Portfolio_B > article > .inner .vidListF > article .con,
+#metro #Portfolio_B > article > .inner .vidListG > article .con,
+#metro #Portfolio_B > article > .inner .vidListH > article .con,
+#metro #Portfolio_B > article > .inner .vidListI > article .con,
+#metro #Portfolio_B > article > .inner .vidListJ > article .con {
   background-color: #fff;
   width: 100%;
   padding: 10px 20px 80px;
 }
-#metro #youtube > article > .inner .vidListA > article .con h2,
-#metro #youtube > article > .inner .vidListB > article .con h2,
-#metro #youtube > article > .inner .vidListC > article .con h2,
-#metro #youtube > article > .inner .vidListD > article .con h2,
-#metro #youtube > article > .inner .vidListE > article .con h2,
-#metro #youtube > article > .inner .vidListF > article .con h2,
-#metro #youtube > article > .inner .vidListG > article .con h2,
-#metro #youtube > article > .inner .vidListH > article .con h2,
-#metro #youtube > article > .inner .vidListI > article .con h2,
-#metro #youtube > article > .inner .vidListJ > article .con h2 {
+#metro #Portfolio_B > article > .inner .vidListA > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListB > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListC > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListD > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListE > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListF > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListG > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListH > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListI > article .con h2,
+#metro #Portfolio_B > article > .inner .vidListJ > article .con h2 {
   font-size: 22px;
   line-height: 1.2;
   font-family: "Open Sans";
   color: #333;
   margin-bottom: 3px;
 }
-#metro #youtube > article > .inner .vidListA > article .con p,
-#metro #youtube > article > .inner .vidListB > article .con p,
-#metro #youtube > article > .inner .vidListC > article .con p,
-#metro #youtube > article > .inner .vidListD > article .con p,
-#metro #youtube > article > .inner .vidListE > article .con p,
-#metro #youtube > article > .inner .vidListF > article .con p,
-#metro #youtube > article > .inner .vidListG > article .con p,
-#metro #youtube > article > .inner .vidListH > article .con p,
-#metro #youtube > article > .inner .vidListI > article .con p,
-#metro #youtube > article > .inner .vidListJ > article .con p {
+#metro #Portfolio_B > article > .inner .vidListA > article .con p,
+#metro #Portfolio_B > article > .inner .vidListB > article .con p,
+#metro #Portfolio_B > article > .inner .vidListC > article .con p,
+#metro #Portfolio_B > article > .inner .vidListD > article .con p,
+#metro #Portfolio_B > article > .inner .vidListE > article .con p,
+#metro #Portfolio_B > article > .inner .vidListF > article .con p,
+#metro #Portfolio_B > article > .inner .vidListG > article .con p,
+#metro #Portfolio_B > article > .inner .vidListH > article .con p,
+#metro #Portfolio_B > article > .inner .vidListI > article .con p,
+#metro #Portfolio_B > article > .inner .vidListJ > article .con p {
   font-size: 16px;
   line-height: 1.2;
   color: #333;
   font-family: "Work Sans";
   font-weight: 300;
 }
-#metro #youtube > article > .inner .vidListA > article .con span,
-#metro #youtube > article > .inner .vidListB > article .con span,
-#metro #youtube > article > .inner .vidListC > article .con span,
-#metro #youtube > article > .inner .vidListD > article .con span,
-#metro #youtube > article > .inner .vidListE > article .con span,
-#metro #youtube > article > .inner .vidListF > article .con span,
-#metro #youtube > article > .inner .vidListG > article .con span,
-#metro #youtube > article > .inner .vidListH > article .con span,
-#metro #youtube > article > .inner .vidListI > article .con span,
-#metro #youtube > article > .inner .vidListJ > article .con span {
+#metro #Portfolio_B > article > .inner .vidListA > article .con span,
+#metro #Portfolio_B > article > .inner .vidListB > article .con span,
+#metro #Portfolio_B > article > .inner .vidListC > article .con span,
+#metro #Portfolio_B > article > .inner .vidListD > article .con span,
+#metro #Portfolio_B > article > .inner .vidListE > article .con span,
+#metro #Portfolio_B > article > .inner .vidListF > article .con span,
+#metro #Portfolio_B > article > .inner .vidListG > article .con span,
+#metro #Portfolio_B > article > .inner .vidListH > article .con span,
+#metro #Portfolio_B > article > .inner .vidListI > article .con span,
+#metro #Portfolio_B > article > .inner .vidListJ > article .con span {
   font-size: 14px;
   line-height: 1.2;
   font-family: "Open Sans";
   color: rgb(2, 126, 196);
 }
-#metro #youtube > article figure.pop {
+#metro #Portfolio_B > article figure.pop {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -1362,7 +1362,7 @@ footer.on .lower {
   display: flex;
   justify-content: center;
 }
-#metro #youtube > article figure.pop > .btnClose {
+#metro #Portfolio_B > article figure.pop > .btnClose {
   position: absolute;
   top: 20px;
   right: 20px;
