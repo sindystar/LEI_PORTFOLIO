@@ -200,22 +200,19 @@ footer.on .lower {
 
 @media screen and (max-width: 1179px) {
   .footer {
-    padding: 100px 30px;
+    position: relative;
+    padding: 0;
   }
-  .footer .inner {
+  .footer section {
     width: 100%;
   }
 }
 @media screen and (max-width: 539px) {
-  #footer .inner h1 {
-    margin-bottom: 10px;
+  #footer {
+    position: relative;
   }
-  #footer .inner ul {
+  #footer .upper .inner {
     width: 100%;
-  }
-  #footer .inner ul li {
-    margin-left: 0px;
-    margin: 5px;
   }
 }
 #header_sub {
