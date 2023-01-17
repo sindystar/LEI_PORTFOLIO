@@ -340,12 +340,15 @@
 						clear: both;					
 					}
 					.bg_Box{
+						position: relative;
 						width: 100%;
 						height: 100%;
+						cursor: pointer;
 
 						&::hover .txtBox {
 							opacity: 1;
 							transition: 0.5s;
+							// transform: scale(1.1);
 						}
 						&.bg_box1 {
 							background:url(../../img/portfolioA/pic1.jpg)
@@ -390,24 +393,24 @@
 					}
 					.txtBox {
 						position: relative;
-						// opacity: 0;
+						opacity: 0;
 						width: 100%;
 						height: 100%;
 						// position: absolute;
 						top: 0;
 						left: 0;
-						background: rgba(255, 255, 255, 0.5);
-						padding: 100px 80px 0;
+						background: rgba(0, 0, 0, 0.5);
+						padding: 150px 100px 0;
 
 						&::after {
 							content: '';
 							display: block;
 							position: absolute;
-							bottom: 60px;
+							top: 400px;
 							left: 50%;
 							transform: translateX(-50%);
-							width: calc(100% - 40px);
-							height: 2px;
+							width: calc(100% - 120px);
+							height: 1px;
 							background: #fff;
 						}
 						> h2{
@@ -415,12 +418,46 @@
 							line-height: 1.4;
 							font-family: 'Open Sans', sans-serif;
 							color:#fff;
+							margin-bottom: 30px;
 						}
 						> p {
 							font-size: 20px;
 							line-height: 1.4;
 							font-family: 'Open Sans', sans-serif;
 							color:#fff;
+							
+						}
+						> a {
+							display: block;
+							color: #fff;
+							font-size: 14px;
+						}
+
+						.bottom_box {
+							width: 100%;
+							position: absolute;
+							top: 360px;
+							left: 0;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							padding: 50px 80px;
+
+							p {
+								font-family: 'Open Sans', sans-serif;
+								color: #fff;
+								i {
+									margin-right: 10px;
+								}
+							}
+							a {
+								display: block;
+								font-family: 'Open Sans', sans-serif;
+								color: #fff;
+								i {
+									margin-right: 10px;
+								}
+							}
 						}
 							
 							

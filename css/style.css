@@ -1218,8 +1218,10 @@ footer.on .lower {
   clear: both;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box {
+  position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box::hover .txtBox {
   opacity: 1;
@@ -1257,22 +1259,23 @@ footer.on .lower {
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox {
   position: relative;
+  opacity: 0;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 100px 80px 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 150px 100px 0;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 60px;
+  top: 400px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 40px);
-  height: 2px;
+  width: calc(100% - 120px);
+  height: 1px;
   background: #fff;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox > h2 {
@@ -1280,12 +1283,43 @@ footer.on .lower {
   line-height: 1.4;
   font-family: "Open Sans", sans-serif;
   color: #fff;
+  margin-bottom: 30px;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox > p {
   font-size: 20px;
   line-height: 1.4;
   font-family: "Open Sans", sans-serif;
   color: #fff;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox > a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box {
+  width: 100%;
+  position: absolute;
+  top: 360px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box p {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box p i {
+  margin-right: 10px;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box a {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box a i {
+  margin-right: 10px;
 }
 #metro #Portfolio_B > article:nth-of-type(3), #metro #Portfolio_B > article:nth-of-type(8) {
   width: 50%;
