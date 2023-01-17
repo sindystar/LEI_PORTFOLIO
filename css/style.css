@@ -1209,6 +1209,56 @@ footer.on .lower {
 }
 #metro #Portfolio_A article .inner {
   background: lightgreen;
+  width: 100%;
+  overflow: hidden;
+}
+#metro #Portfolio_A article .inner .boxWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box {
+  width: 100%;
+  height: 100%;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box::hover .txtBox {
+  opacity: 1;
+  transition: 0.5s;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box1 {
+  background: url(../../img/space/pic1.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box2 {
+  background: url(../../img/space/pic2.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box3 {
+  background: url(../../img/space/pic4.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box4 {
+  background: url(../../img/identity/pic1.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box5 {
+  background: url(../../img/identity/pic2.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box6 {
+  background: url(../../img/identity/pic3.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box7 {
+  background: url(../../img/identity/pic4.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box8 {
+  background: url(../../img/people/people3.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box9 {
+  background: url(../../img/people/people4.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box10 {
+  background: url(../../img/people/people4.jpg) no-repeat center/cover;
+}
+#metro #Portfolio_A article .inner .boxWrap .txtBox {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 #metro #Portfolio_B > article:nth-of-type(3), #metro #Portfolio_B > article:nth-of-type(8) {
   width: 50%;
