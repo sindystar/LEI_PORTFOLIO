@@ -348,61 +348,81 @@
 							transition: 0.5s;
 						}
 						&.bg_box1 {
-							background:url(../../img/space/pic1.jpg)
+							background:url(../../img/portfolioA/pic1.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box2 {
-							background:url(../../img/space/pic2.jpg)
+							background:url(../../img/portfolioA/pic2.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box3 {
-							background:url(../../img/space/pic4.jpg)
+							background:url(../../img/portfolioA/pic19.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box4 {
-							background:url(../../img/identity/pic1.jpg)
+							background:url(../../img/portfolioA/pic3.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box5 {
-							background:url(../../img/identity/pic2.jpg)
+							background:url(../../img/portfolioA/pic4.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box6 {
-							background:url(../../img/identity/pic3.jpg)
+							background:url(../../img/portfolioA/pic8.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box7 {
-							background:url(../../img/identity/pic4.jpg)
+							background:url(../../img/portfolioA/pic16.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box8 {
-							background:url(../../img/people/people3.jpg)
+							background:url(../../img/portfolioA/pic17.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box9 {
-							background:url(../../img/people/people4.jpg)
+							background:url(../../img/portfolioA/pic20.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box10 {
-							background:url(../../img/people/people4.jpg)
+							background:url(../../img/portfolioA/pic18.jpg)
 							no-repeat center/cover;
 						}
 					}
 					.txtBox {
-						opacity: 0;
+						position: relative;
+						// opacity: 0;
 						width: 100%;
 						height: 100%;
 						// position: absolute;
-						// top: 0;
-						// left: 0;
-						// background: rgba(255, 255, 255, 0.6);
-						// padding: 30px 20px 0;
+						top: 0;
+						left: 0;
+						background: rgba(255, 255, 255, 0.5);
+						padding: 100px 80px 0;
 
-						//  bottom: 60px;
-						// 	transform: translateX(-50%);
-						// 	width: calc(100% - 40px);
-						// 	height: 2px;
-						// 	background: #fff;
+						&::after {
+							content: '';
+							display: block;
+							position: absolute;
+							bottom: 60px;
+							left: 50%;
+							transform: translateX(-50%);
+							width: calc(100% - 40px);
+							height: 2px;
+							background: #fff;
+						}
+						> h2{
+							font-size: 30px;
+							line-height: 1.4;
+							font-family: 'Open Sans', sans-serif;
+							color:#fff;
+						}
+						> p {
+							font-size: 20px;
+							line-height: 1.4;
+							font-family: 'Open Sans', sans-serif;
+							color:#fff;
+						}
+							
 							
 							
 						
