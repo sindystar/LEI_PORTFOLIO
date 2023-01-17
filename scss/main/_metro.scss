@@ -330,7 +330,7 @@
 			}
 
 			.inner {
-				background: lightgreen;
+				background: #ddd;
 				width: 100%;
 				overflow: hidden;
 				.boxWrap {
@@ -345,7 +345,7 @@
 						height: 100%;
 						cursor: pointer;
 
-						&::hover .txtBox {
+						&:hover .txtBox {
 							opacity: 1;
 							transition: 0.5s;
 							// transform: scale(1.1);
@@ -361,10 +361,12 @@
 						&.bg_box3 {
 							background:url(../../img/portfolioA/pic19.jpg)
 							no-repeat center/cover;
+							opacity: 0.5;
 						}
 						&.bg_box4 {
 							background:url(../../img/portfolioA/pic3.jpg)
 							no-repeat center/cover;
+							opacity: 0.9;
 						}
 						&.bg_box5 {
 							background:url(../../img/portfolioA/pic4.jpg)
@@ -373,22 +375,28 @@
 						&.bg_box6 {
 							background:url(../../img/portfolioA/pic8.jpg)
 							no-repeat center/cover;
+							opacity: 0.9;
 						}
 						&.bg_box7 {
 							background:url(../../img/portfolioA/pic16.jpg)
 							no-repeat center/cover;
+							opacity: 0.8;
 						}
 						&.bg_box8 {
 							background:url(../../img/portfolioA/pic17.jpg)
 							no-repeat center/cover;
+							opacity: 0.8;
 						}
 						&.bg_box9 {
-							background:url(../../img/portfolioA/pic20.jpg)
+							background:url(../../img/portfolioA/pic26.jpg)
 							no-repeat center/cover;
+							opacity: 0.8;
+							
 						}
 						&.bg_box10 {
 							background:url(../../img/portfolioA/pic18.jpg)
 							no-repeat center/cover;
+							opacity: 0.9;
 						}
 					}
 					.txtBox {
@@ -400,16 +408,16 @@
 						top: 0;
 						left: 0;
 						background: rgba(0, 0, 0, 0.5);
-						padding: 150px 100px 0;
+						padding: 100px 100px 0;
 
 						&::after {
 							content: '';
 							display: block;
 							position: absolute;
-							top: 400px;
+							top: 380px;
 							left: 50%;
 							transform: translateX(-50%);
-							width: calc(100% - 120px);
+							width: calc(100% - 100px);
 							height: 1px;
 							background: #fff;
 						}
@@ -418,7 +426,7 @@
 							line-height: 1.4;
 							font-family: 'Open Sans', sans-serif;
 							color:#fff;
-							margin-bottom: 30px;
+							margin-bottom: 20px;
 						}
 						> p {
 							font-size: 20px;
@@ -441,13 +449,13 @@
 							display: flex;
 							justify-content: space-between;
 							align-items: center;
-							padding: 50px 80px;
+							padding:40px 60px;
 
 							p {
 								font-family: 'Open Sans', sans-serif;
 								color: #fff;
 								i {
-									margin-right: 10px;
+									margin-right: 5px;
 								}
 							}
 							a {
@@ -455,7 +463,7 @@
 								font-family: 'Open Sans', sans-serif;
 								color: #fff;
 								i {
-									margin-right: 10px;
+									margin-right: 5px;
 								}
 							}
 						}

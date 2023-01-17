@@ -1208,7 +1208,7 @@ footer.on .lower {
   width: 50%;
 }
 #metro #Portfolio_A article .inner {
-  background: lightgreen;
+  background: #ddd;
   width: 100%;
   overflow: hidden;
 }
@@ -1223,7 +1223,7 @@ footer.on .lower {
   height: 100%;
   cursor: pointer;
 }
-#metro #Portfolio_A article .inner .boxWrap .bg_Box::hover .txtBox {
+#metro #Portfolio_A article .inner .boxWrap .bg_Box:hover .txtBox {
   opacity: 1;
   transition: 0.5s;
 }
@@ -1235,27 +1235,34 @@ footer.on .lower {
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box3 {
   background: url(../../img/portfolioA/pic19.jpg) no-repeat center/cover;
+  opacity: 0.5;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box4 {
   background: url(../../img/portfolioA/pic3.jpg) no-repeat center/cover;
+  opacity: 0.9;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box5 {
   background: url(../../img/portfolioA/pic4.jpg) no-repeat center/cover;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box6 {
   background: url(../../img/portfolioA/pic8.jpg) no-repeat center/cover;
+  opacity: 0.9;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box7 {
   background: url(../../img/portfolioA/pic16.jpg) no-repeat center/cover;
+  opacity: 0.8;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box8 {
   background: url(../../img/portfolioA/pic17.jpg) no-repeat center/cover;
+  opacity: 0.8;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box9 {
-  background: url(../../img/portfolioA/pic20.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioA/pic26.jpg) no-repeat center/cover;
+  opacity: 0.8;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box10 {
   background: url(../../img/portfolioA/pic18.jpg) no-repeat center/cover;
+  opacity: 0.9;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox {
   position: relative;
@@ -1265,16 +1272,16 @@ footer.on .lower {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  padding: 150px 100px 0;
+  padding: 100px 100px 0;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox::after {
   content: "";
   display: block;
   position: absolute;
-  top: 400px;
+  top: 380px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 120px);
+  width: calc(100% - 100px);
   height: 1px;
   background: #fff;
 }
@@ -1283,7 +1290,7 @@ footer.on .lower {
   line-height: 1.4;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox > p {
   font-size: 20px;
@@ -1304,14 +1311,14 @@ footer.on .lower {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 80px;
+  padding: 40px 60px;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box p {
   font-family: "Open Sans", sans-serif;
   color: #fff;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box p i {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box a {
   display: block;
@@ -1319,7 +1326,7 @@ footer.on .lower {
   color: #fff;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box a i {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 #metro #Portfolio_B > article:nth-of-type(3), #metro #Portfolio_B > article:nth-of-type(8) {
   width: 50%;
