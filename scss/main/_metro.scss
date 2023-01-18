@@ -351,50 +351,50 @@
 							// transform: scale(1.1);
 						}
 						&.bg_box1 {
-							background:url(../../img/portfolioA/pic1.jpg)
+							background:url(../../img/portfolioA/port1.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box2 {
-							background:url(../../img/portfolioA/pic2.jpg)
+							background:url(../../img/portfolioA/port2.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box3 {
-							background:url(../../img/portfolioA/pic19.jpg)
+							background:url(../../img/portfolioA/port3.jpg)
 							no-repeat center/cover;
 							opacity: 0.5;
 						}
 						&.bg_box4 {
-							background:url(../../img/portfolioA/pic3.jpg)
+							background:url(../../img/portfolioA/port4.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
 						&.bg_box5 {
-							background:url(../../img/portfolioA/pic4.jpg)
+							background:url(../../img/portfolioA/port5.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box6 {
-							background:url(../../img/portfolioA/pic8.jpg)
+							background:url(../../img/portfolioA/port6.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
 						&.bg_box7 {
-							background:url(../../img/portfolioA/pic16.jpg)
+							background:url(../../img/portfolioA/port7.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 						}
 						&.bg_box8 {
-							background:url(../../img/portfolioA/pic17.jpg)
+							background:url(../../img/portfolioA/port8.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 						}
 						&.bg_box9 {
-							background:url(../../img/portfolioA/pic26.jpg)
+							background:url(../../img/portfolioA/port9.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 							
 						}
 						&.bg_box10 {
-							background:url(../../img/portfolioA/pic18.jpg)
+							background:url(../../img/portfolioA/port10.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
@@ -484,91 +484,149 @@
 				width: 50%;
 			}
 
-			> .inner {
-				position: relative;
-				padding: 0;
+			.inner {
+				background: #333;
 				width: 100%;
-				height: 100%;
-				background: #ddd;
-				.vidListA,
-				.vidListB,
-				.vidListC,
-				.vidListD,
-				.vidListE,
-				.vidListF,
-				.vidListG,
-				.vidListH,
-				.vidListI,
-				.vidListJ {
-					margin: 0 auto;
-					overflow: hidden;
-
-					> article {
-						border: 1px solid red;
-						// display: flex;
-						// flex-wrap: wrap;
+				overflow: hidden;
+				.boxWrap {
+					&::after {
+						content: '';
+						display: block;
+						clear: both;					
+					}
+					.bg_Box{
+						position: relative;
 						width: 100%;
 						height: 100%;
-						transition: 0.5s;
 						cursor: pointer;
-						&:hover {
-							transform: scale(1.1);
+
+						&:hover .txtBox {
+							opacity: 1;
+							transition: 0.5s;
+							// transform: scale(1.1);
 						}
-						> .pic {
-							display: block;
-							width: 100%;
-							height: 100%;
-							> img {
-								width: 100%;
-								height: 100%;
-								object-fit: cover;
-							}
+						&.bg_box1 {
+							background:url(../../img/portfolioB/pic7.jpg)
+							no-repeat center/cover;
 						}
-						.con {
-							background-color: #fff;
-							width: 100%;
-							padding: 10px 20px 80px;
-							h2 {
-								font-size: 22px;
-								line-height: 1.2;
-								font-family: 'Open Sans';
-								color: #333;
-								margin-bottom: 3px;
-							}
-							p {
-								font-size: 16px;
-								line-height: 1.2;
-								color: #333;
-								font-family: 'Work Sans';
-								font-weight: 300;
-							}
-							span {
-								font-size: 14px;
-								line-height: 1.2;
-								font-family: 'Open Sans';
-								color: $keycolor;
-							}
+						&.bg_box2 {
+							background:url(../../img/portfolioA/port2.jpg)
+							no-repeat center/cover;
+						}
+						&.bg_box3 {
+							background:url(../../img/portfolioA/port3.jpg)
+							no-repeat center/cover;
+							opacity: 0.5;
+						}
+						&.bg_box4 {
+							background:url(../../img/portfolioA/port4.jpg)
+							no-repeat center/cover;
+							opacity: 0.9;
+						}
+						&.bg_box5 {
+							background:url(../../img/portfolioA/port5.jpg)
+							no-repeat center/cover;
+						}
+						&.bg_box6 {
+							background:url(../../img/portfolioA/port6.jpg)
+							no-repeat center/cover;
+							opacity: 0.9;
+						}
+						&.bg_box7 {
+							background:url(../../img/portfolioA/port7.jpg)
+							no-repeat center/cover;
+							opacity: 0.8;
+						}
+						&.bg_box8 {
+							background:url(../../img/portfolioA/port8.jpg)
+							no-repeat center/cover;
+							opacity: 0.8;
+						}
+						&.bg_box9 {
+							background:url(../../img/portfolioA/port9.jpg)
+							no-repeat center/cover;
+							opacity: 0.8;
+							
+						}
+						&.bg_box10 {
+							background:url(../../img/portfolioA/port10.jpg)
+							no-repeat center/cover;
+							opacity: 0.9;
 						}
 					}
-				}
-			}
-			figure.pop {
-				width: 100%;
-				height: 100vh;
-				position: fixed;
-				top: 0;
-				left: 0;
-				background: rgba(0, 0, 0, 0.8);
-				overflow: hidden;
-				padding: 2vw;
-				display: flex;
-				justify-content: center;
-				> .btnClose {
-					position: absolute;
-					top: 20px;
-					right: 20px;
-					color: #fff;
-					cursor: pointer;
+					.txtBox {
+						position: relative;
+						opacity: 0;
+						width: 100%;
+						height: 100%;
+						// position: absolute;
+						top: 0;
+						left: 0;
+						background: rgba(0, 0, 0, 0.5);
+						padding: 100px 100px 0;
+
+						&::after {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 380px;
+							left: 50%;
+							transform: translateX(-50%);
+							width: calc(100% - 100px);
+							height: 1px;
+							background: #fff;
+						}
+						> h2{
+							font-size: 30px;
+							line-height: 1.4;
+							font-family: 'Open Sans', sans-serif;
+							color:#fff;
+							margin-bottom: 20px;
+						}
+						> p {
+							font-size: 20px;
+							line-height: 1.4;
+							font-family: 'Open Sans', sans-serif;
+							color:#fff;
+							
+						}
+						> a {
+							display: block;
+							color: #fff;
+							font-size: 14px;
+						}
+
+						.bottom_box {
+							width: 100%;
+							position: absolute;
+							top: 360px;
+							left: 0;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							padding:40px 60px;
+
+							p {
+								font-family: 'Open Sans', sans-serif;
+								color: #fff;
+								i {
+									margin-right: 5px;
+								}
+							}
+							a {
+								display: block;
+								font-family: 'Open Sans', sans-serif;
+								color: #fff;
+								i {
+									margin-right: 5px;
+								}
+							}
+						}
+							
+							
+							
+						
+					}
 				}
 			}
 		}
