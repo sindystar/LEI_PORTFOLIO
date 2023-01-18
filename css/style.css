@@ -1352,40 +1352,41 @@ footer.on .lower {
   transition: 0.5s;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box1 {
-  background: url(../img/portfolioB/pic7.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio1.jpg) no-repeat center/cover;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box2 {
-  background: url(../img/portfolioA/port2.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio2.jpg) no-repeat center/cover;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box3 {
-  background: url(../img/portfolioA/port3.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio3.jpg) no-repeat center/cover;
   opacity: 0.5;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box4 {
-  background: url(../img/portfolioA/port4.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio4.jpg) no-repeat center/cover;
   opacity: 0.9;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box5 {
-  background: url(../img/portfolioA/port5.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio5.jpg) no-repeat center/cover;
+  opacity: 0.7;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box6 {
-  background: url(../img/portfolioA/port6.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio6.jpg) no-repeat center/cover;
   opacity: 0.9;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box7 {
-  background: url(../img/portfolioA/port7.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio7.jpg) no-repeat center/cover;
   opacity: 0.8;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box8 {
-  background: url(../img/portfolioA/port8.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio8.jpg) no-repeat center/cover;
   opacity: 0.8;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box9 {
-  background: url(../img/portfolioA/port9.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio9.jpg) no-repeat center/cover;
   opacity: 0.8;
 }
 #metro #Portfolio_B > article .inner .boxWrap .bg_Box.bg_box10 {
-  background: url(../img/portfolioA/port10.jpg) no-repeat center/cover;
+  background: url(../../img/portfolioB/folio10.jpg) no-repeat center/cover;
   opacity: 0.9;
 }
 #metro #Portfolio_B > article .inner .boxWrap .txtBox {
