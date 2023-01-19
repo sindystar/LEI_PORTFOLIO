@@ -759,6 +759,63 @@
 				}
 			}
 		}
+
+		#Portfolio_B {
+			article {
+				.inner {
+					.boxWrap {
+						.bg_Box {
+							width: 100%;
+						}
+						.txtBox {
+							padding: 3vw;
+							> h2{
+								font-size: 24px;
+								line-height: 1.4;
+								font-family: 'Open Sans', sans-serif;
+								margin-bottom: 20px;
+							}
+							> p {
+								font-size: 14px;
+								line-height: 1.4;
+								font-family: 'Open Sans', sans-serif;
+								
+							}
+							> a {
+								font-size: 10px;
+							}
+	
+							.bottom_box {
+								width: 100%;
+								position: absolute;
+								top: 22vh;
+								left: 0;
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								padding:4vw 4vw;
+	
+								p {
+									font-size: 12px;
+									font-family: 'Open Sans', sans-serif;
+									i {
+										font-size: 12px;
+										margin-right: 1vw;
+									}
+								}
+								a {
+									font-size: 12px;
+									i {
+										font-size: 12px;
+										margin-right: 1vw;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
