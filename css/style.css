@@ -1224,7 +1224,6 @@ footer.on .lower {
   cursor: pointer;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box:hover .txtBox {
-  opacity: 1;
   transition: 0.5s;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box1 {
@@ -1266,7 +1265,6 @@ footer.on .lower {
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox {
   position: relative;
-  opacity: 0;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1504,6 +1502,48 @@ footer.on .lower {
   }
   #metro #news article > .inner > .box .bgBox {
     display: none;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .bg_Box {
+    width: 100%;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox {
+    padding: 3vw;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox > h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox > p {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox > a {
+    font-size: 10px;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box {
+    width: 100%;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box p {
+    font-family: "Open Sans", sans-serif;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box p i {
+    margin-right: 5px;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box a {
+    font-family: "Open Sans", sans-serif;
+  }
+  #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box a i {
+    margin-right: 5px;
   }
 }
 @media screen and (max-width: 880px) {
