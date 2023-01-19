@@ -506,51 +506,51 @@
 							// transform: scale(1.1);
 						}
 						&.bg_box1 {
-							background:url(../../img/portfolioB/folio1.jpg)
+							background:url(../img/portfolioB/folio1.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box2 {
-							background:url(../../img/portfolioB/folio2.jpg)
+							background:url(../img/portfolioB/folio2.jpg)
 							no-repeat center/cover;
 						}
 						&.bg_box3 {
-							background:url(../../img/portfolioB/folio3.jpg)
+							background:url(../img/portfolioB/folio3.jpg)
 							no-repeat center/cover;
 							opacity: 0.5;
 						}
 						&.bg_box4 {
-							background:url(../../img/portfolioB/folio4.jpg)
+							background:url(../img/portfolioB/folio4.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
 						&.bg_box5 {
-							background:url(../../img/portfolioB/folio5.jpg)
+							background:url(../img/portfolioB/folio5.jpg)
 							no-repeat center/cover;
 							opacity: 0.7;
 						}
 						&.bg_box6 {
-							background:url(../../img/portfolioB/folio6.jpg)
+							background:url(../img/portfolioB/folio6.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
 						&.bg_box7 {
-							background:url(../../img/portfolioB/folio7.jpg)
+							background:url(../img/portfolioB/folio7.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 						}
 						&.bg_box8 {
-							background:url(../../img/portfolioB/folio8.jpg)
+							background:url(../img/portfolioB/folio8.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 						}
 						&.bg_box9 {
-							background:url(../../img/portfolioB/folio9.jpg)
+							background:url(../img/portfolioB/folio9.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 							
 						}
 						&.bg_box10 {
-							background:url(../../img/portfolioB/folio10.jpg)
+							background:url(../img/portfolioB/folio10.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
@@ -731,23 +731,26 @@
 							.bottom_box {
 								width: 100%;
 								position: absolute;
-								top: 20vh;
+								top: 22vh;
 								left: 0;
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
-								padding:40px 60px;
+								padding:4vw 4vw;
 	
 								p {
+									font-size: 12px;
 									font-family: 'Open Sans', sans-serif;
 									i {
-										margin-right: 5px;
+										font-size: 12px;
+										margin-right: 1vw;
 									}
 								}
 								a {
-									font-family: 'Open Sans', sans-serif;
+									font-size: 12px;
 									i {
-										margin-right: 5px;
+										font-size: 12px;
+										margin-right: 1vw;
 									}
 								}
 							}
