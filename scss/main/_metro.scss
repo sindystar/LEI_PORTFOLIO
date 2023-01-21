@@ -408,13 +408,13 @@
 						top: 0;
 						left: 0;
 						background: rgba(0, 0, 0, 0.5);
-						padding: 120px 80px 0;
+						padding: 5vw 5vw 0;
 
 						&::after {
 							content: '';
 							display: block;
 							position: absolute;
-							top: 380px;
+							top: 370px;
 							left: 50%;
 							transform: translateX(-50%);
 							width: calc(100% - 100px);
@@ -444,7 +444,7 @@
 						.bottom_box {
 							width: 100%;
 							position: absolute;
-							top: 360px;
+							top: 350px;
 							left: 0;
 							display: flex;
 							justify-content: space-between;
@@ -476,7 +476,7 @@
 			}
 		}
 	}
-	//youtube
+
 	#Portfolio_B {
 		> article {
 			&:nth-of-type(3),
@@ -564,7 +564,7 @@
 						top: 0;
 						left: 0;
 						background: rgba(0, 0, 0, 0.5);
-						padding: 120px 80px 0;
+						padding: 5vw 5vw 0;
 
 						&::after {
 							content: '';
@@ -727,30 +727,7 @@
 							}
 	
 							.bottom_box {
-								width: 100%;
-								position: absolute;
-								top: 22vh;
-								left: 0;
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-								padding:4vw 4vw;
-	
-								p {
-									font-size: 12px;
-									font-family: 'Open Sans', sans-serif;
-									i {
-										font-size: 12px;
-										margin-right: 1vw;
-									}
-								}
-								a {
-									font-size: 12px;
-									i {
-										font-size: 12px;
-										margin-right: 1vw;
-									}
-								}
+								display: none;
 							}
 						}
 					}
@@ -851,11 +828,7 @@
 		}
 		#Portfolio_A {
 			> article {
-				&:nth-of-type(3),
-				&:nth-of-type(9), {
-					width: 100%;
-					height: 28vh;
-				}
+				
 				&:nth-of-type(1),
 				&:nth-of-type(2),
 				&:nth-of-type(4),
@@ -867,25 +840,19 @@
 					width: 50%;
 					height: 28vh;
 				}
+				&:nth-of-type(3),
+				&:nth-of-type(9), {
+					width: 100%;
+					height: 28vh;
+				}
 				> .inner {
-					> .box {
+					> .boxWrap {
 						.txtBox {
-	
-							&::after {
-								content: '';
-								display: block;
-								position: absolute;
-								bottom: 5vh;
-								left: 50%;
-								transform: translateX(-50%);
-								width: calc(100% - 100px);
-								height: 1px;
-								background: #fff;
-							}
+							padding: 4vw;
 							> h2{
-								font-size: 100px;
+								font-size: 20px;
 								line-height: 1.4;
-								margin-bottom: 10vw;
+								margin-bottom: 3vw;
 							}
 							> p {
 								font-size: 14px;
@@ -896,21 +863,7 @@
 							}
 	
 							.bottom_box {
-								width: 100%;
-								top: 40vh;
-								left: 0;
-								padding:4vw 4vw;
-	
-								p {
-									i {
-										margin-right: 1vw;
-									}
-								}
-								a {
-									i {
-										margin-right: 5px;
-									}
-								}
+								display: none;
 							}																														
 						}
 					}
@@ -944,9 +897,37 @@
 					height: 30vh;
 				}
 				> .inner {
-					> .box {
+					> .boxWrap {
 						.txtBox {
-							padding: 10vw;
+							padding: 3vw;
+						}
+					}
+				}
+			}
+		}
+
+		#Portfolio_A {
+			> article {
+				&:nth-of-type(3),
+				&:nth-of-type(9) {
+					width: 100%;
+					height: 30vh;
+				}
+				&:nth-of-type(1),
+				&:nth-of-type(2),
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(7),
+				&:nth-of-type(8)
+				&:nth-of-type(10) {
+					width: 100%;
+					height: 30vh;
+				}
+				> .inner {
+					> .boxWrap {
+						.txtBox {
+							padding: 7vw;
 						}
 					}
 				}
