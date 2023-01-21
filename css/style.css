@@ -1224,6 +1224,7 @@ footer.on .lower {
   cursor: pointer;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box:hover .txtBox {
+  opacity: 1;
   transition: 0.5s;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box1 {
@@ -1265,6 +1266,7 @@ footer.on .lower {
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox {
   position: relative;
+  opacity: 0;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1505,6 +1507,7 @@ footer.on .lower {
   }
   #metro #Portfolio_A article .inner .boxWrap .bg_Box {
     width: 100%;
+    height: 100%;
   }
   #metro #Portfolio_A article .inner .boxWrap .txtBox {
     padding: 3vw;

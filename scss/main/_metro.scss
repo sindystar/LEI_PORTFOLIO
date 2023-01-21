@@ -321,7 +321,7 @@
 		}
 	}
 
-	//flickr
+
 	#Portfolio_A {
 		article {
 			&:nth-of-type(3),
@@ -346,7 +346,7 @@
 						cursor: pointer;
 
 						&:hover .txtBox {
-							// opacity: 1;
+							opacity: 1;
 							transition: 0.5s;
 							// transform: scale(1.1);
 						}
@@ -401,7 +401,7 @@
 					}
 					.txtBox {
 						position: relative;
-						// opacity: 0;
+						opacity: 0;
 						width: 100%;
 						height: 100%;
 						// position: absolute;
@@ -709,6 +709,7 @@
 					.boxWrap {
 						.bg_Box {
 							width: 100%;
+							height: 100%;
 						}
 						.txtBox {
 							padding: 3vw;
