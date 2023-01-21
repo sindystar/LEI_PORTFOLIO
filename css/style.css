@@ -1518,7 +1518,6 @@ footer.on .lower {
   #metro #Portfolio_A article .inner .boxWrap .txtBox > p {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "Open Sans", sans-serif;
   }
   #metro #Portfolio_A article .inner .boxWrap .txtBox > a {
     font-size: 10px;
@@ -1609,15 +1608,48 @@ footer.on .lower {
   #metro #news > article > .inner > .box .txtBox {
     padding: 5vw;
   }
-  #metro #Portfolio_A article .inner .boxWrap {
+  #metro #Portfolio_A > article:nth-of-type(3), #metro #Portfolio_A > article:nth-of-type(9) {
     width: 100%;
     height: 28vh;
   }
-  #metro #Portfolio_A article .inner .boxWrap .bg_Box {
-    width: 100%;
+  #metro #Portfolio_A > article:nth-of-type(1), #metro #Portfolio_A > article:nth-of-type(2), #metro #Portfolio_A > article:nth-of-type(4), #metro #Portfolio_A > article:nth-of-type(5), #metro #Portfolio_A > article:nth-of-type(6), #metro #Portfolio_A > article:nth-of-type(7), #metro #Portfolio_A > article:nth-of-type(8), #metro #Portfolio_A > article:nth-of-type(10) {
+    width: 50%;
+    height: 28vh;
   }
-  #metro #Portfolio_A article .inner .boxWrap .txtBox {
-    padding: 2vw;
+  #metro #Portfolio_A > article > .inner > .box .txtBox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 100px);
+    height: 1px;
+    background: #fff;
+  }
+  #metro #Portfolio_A > article > .inner > .box .txtBox > h2 {
+    font-size: 100px;
+    line-height: 1.4;
+    margin-bottom: 10vw;
+  }
+  #metro #Portfolio_A > article > .inner > .box .txtBox > p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #metro #Portfolio_A > article > .inner > .box .txtBox > a {
+    font-size: 12px;
+  }
+  #metro #Portfolio_A > article > .inner > .box .txtBox .bottom_box {
+    width: 100%;
+    top: 40vh;
+    left: 0;
+    padding: 4vw 4vw;
+  }
+  #metro #Portfolio_A > article > .inner > .box .txtBox .bottom_box p i {
+    margin-right: 1vw;
+  }
+  #metro #Portfolio_A > article > .inner > .box .txtBox .bottom_box a i {
+    margin-right: 5px;
   }
 }
 @media screen and (max-width: 539px) {

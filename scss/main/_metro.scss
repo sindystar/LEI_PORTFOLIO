@@ -721,8 +721,6 @@
 							> p {
 								font-size: 14px;
 								line-height: 1.4;
-								font-family: 'Open Sans', sans-serif;
-								
 							}
 							> a {
 								font-size: 10px;
@@ -852,16 +850,68 @@
 			}
 		}
 		#Portfolio_A {
-			article {
-				.inner {
-					.boxWrap{
-						width: 100%;
-							height: 28vh;
-						.bg_Box {
-							width: 100%;
-						}
+			> article {
+				&:nth-of-type(3),
+				&:nth-of-type(9), {
+					width: 100%;
+					height: 28vh;
+				}
+				&:nth-of-type(1),
+				&:nth-of-type(2),
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(7),
+				&:nth-of-type(8),
+				&:nth-of-type(10){
+					width: 50%;
+					height: 28vh;
+				}
+				> .inner {
+					> .box {
 						.txtBox {
-							padding: 2vw;
+	
+							&::after {
+								content: '';
+								display: block;
+								position: absolute;
+								bottom: 5vh;
+								left: 50%;
+								transform: translateX(-50%);
+								width: calc(100% - 100px);
+								height: 1px;
+								background: #fff;
+							}
+							> h2{
+								font-size: 100px;
+								line-height: 1.4;
+								margin-bottom: 10vw;
+							}
+							> p {
+								font-size: 14px;
+								line-height: 1.4;
+							}
+							> a {
+								font-size: 12px;
+							}
+	
+							.bottom_box {
+								width: 100%;
+								top: 40vh;
+								left: 0;
+								padding:4vw 4vw;
+	
+								p {
+									i {
+										margin-right: 1vw;
+									}
+								}
+								a {
+									i {
+										margin-right: 5px;
+									}
+								}
+							}																														
 						}
 					}
 				}
