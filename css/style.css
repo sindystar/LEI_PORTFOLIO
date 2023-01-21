@@ -1204,7 +1204,7 @@ footer.on .lower {
   height: 100%;
   background-image: url(../img/mainNews/pic9.jpg);
 }
-#metro #Portfolio_A article:nth-of-type(3), #metro #Portfolio_A article:nth-of-type(9) {
+#metro #Portfolio_A article:nth-of-type(3), #metro #Portfolio_A article:nth-of-type(10) {
   width: 50%;
 }
 #metro #Portfolio_A article .inner {
@@ -1256,11 +1256,11 @@ footer.on .lower {
   opacity: 0.8;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box9 {
-  background: url(../img/portfolioA/port9.jpg) no-repeat center/cover;
+  background: url(../img/portfolioA/port10.jpg) no-repeat center/cover;
   opacity: 0.8;
 }
 #metro #Portfolio_A article .inner .boxWrap .bg_Box.bg_box10 {
-  background: url(../img/portfolioA/port10.jpg) no-repeat center/cover;
+  background: url(../img/portfolioA/port9.jpg) no-repeat center/cover;
   opacity: 0.9;
 }
 #metro #Portfolio_A article .inner .boxWrap .txtBox {
@@ -1586,21 +1586,21 @@ footer.on .lower {
   #metro #news > article > .inner > .box .txtBox {
     padding: 5vw;
   }
-  #metro #Portfolio_A > article:nth-of-type(1), #metro #Portfolio_A > article:nth-of-type(2), #metro #Portfolio_A > article:nth-of-type(4), #metro #Portfolio_A > article:nth-of-type(5), #metro #Portfolio_A > article:nth-of-type(6), #metro #Portfolio_A > article:nth-of-type(7), #metro #Portfolio_A > article:nth-of-type(8), #metro #Portfolio_A > article:nth-of-type(10) {
+  #metro #Portfolio_A > article:nth-of-type(1), #metro #Portfolio_A > article:nth-of-type(2), #metro #Portfolio_A > article:nth-of-type(4), #metro #Portfolio_A > article:nth-of-type(5), #metro #Portfolio_A > article:nth-of-type(6), #metro #Portfolio_A > article:nth-of-type(7), #metro #Portfolio_A > article:nth-of-type(8), #metro #Portfolio_A > article:nth-of-type(9) {
     width: 50%;
     height: 28vh;
   }
-  #metro #Portfolio_A > article:nth-of-type(3), #metro #Portfolio_A > article:nth-of-type(9) {
+  #metro #Portfolio_A > article:nth-of-type(3), #metro #Portfolio_A > article:nth-of-type(10) {
     width: 100%;
     height: 28vh;
   }
   #metro #Portfolio_A > article > .inner > .boxWrap .txtBox {
-    padding: 4vw;
+    padding: 5vw;
   }
   #metro #Portfolio_A > article > .inner > .boxWrap .txtBox > h2 {
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
   }
   #metro #Portfolio_A > article > .inner > .boxWrap .txtBox > p {
     font-size: 14px;
@@ -1628,16 +1628,16 @@ footer.on .lower {
   #metro #news > article > .inner > .boxWrap .txtBox {
     padding: 3vw;
   }
-  #metro #Portfolio_A > article:nth-of-type(3), #metro #Portfolio_A > article:nth-of-type(9) {
+  #metro #Portfolio_A > article:nth-of-type(3), #metro #Portfolio_A > article:nth-of-type(10) {
     width: 100%;
     height: 30vh;
   }
-  #metro #Portfolio_A > article:nth-of-type(1), #metro #Portfolio_A > article:nth-of-type(2), #metro #Portfolio_A > article:nth-of-type(4), #metro #Portfolio_A > article:nth-of-type(5), #metro #Portfolio_A > article:nth-of-type(6), #metro #Portfolio_A > article:nth-of-type(7), #metro #Portfolio_A > article:nth-of-type(8) #metro #Portfolio_A > article:nth-of-type(10) {
+  #metro #Portfolio_A > article:nth-of-type(1), #metro #Portfolio_A > article:nth-of-type(2), #metro #Portfolio_A > article:nth-of-type(4), #metro #Portfolio_A > article:nth-of-type(5), #metro #Portfolio_A > article:nth-of-type(6), #metro #Portfolio_A > article:nth-of-type(7), #metro #Portfolio_A > article:nth-of-type(8), #metro #Portfolio_A > article:nth-of-type(9) {
     width: 100%;
     height: 30vh;
   }
   #metro #Portfolio_A > article > .inner > .boxWrap .txtBox {
-    padding: 7vw;
+    padding: 6vw;
   }
 }
 #location {

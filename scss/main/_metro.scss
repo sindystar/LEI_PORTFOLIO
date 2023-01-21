@@ -325,7 +325,7 @@
 	#Portfolio_A {
 		article {
 			&:nth-of-type(3),
-			&:nth-of-type(9) {
+			&:nth-of-type(10) {
 				width: 50%;
 			}
 
@@ -388,13 +388,13 @@
 							opacity: 0.8;
 						}
 						&.bg_box9 {
-							background:url(../img/portfolioA/port9.jpg)
+							background:url(../img/portfolioA/port10.jpg)
 							no-repeat center/cover;
 							opacity: 0.8;
 							
 						}
 						&.bg_box10 {
-							background:url(../img/portfolioA/port10.jpg)
+							background:url(../img/portfolioA/port9.jpg)
 							no-repeat center/cover;
 							opacity: 0.9;
 						}
@@ -836,23 +836,23 @@
 				&:nth-of-type(6),
 				&:nth-of-type(7),
 				&:nth-of-type(8),
-				&:nth-of-type(10){
+				&:nth-of-type(9){
 					width: 50%;
 					height: 28vh;
 				}
 				&:nth-of-type(3),
-				&:nth-of-type(9), {
+				&:nth-of-type(10), {
 					width: 100%;
 					height: 28vh;
 				}
 				> .inner {
 					> .boxWrap {
 						.txtBox {
-							padding: 4vw;
+							padding: 5vw;
 							> h2{
 								font-size: 20px;
 								line-height: 1.4;
-								margin-bottom: 3vw;
+								margin-bottom: 2vw;
 							}
 							> p {
 								font-size: 14px;
@@ -909,7 +909,7 @@
 		#Portfolio_A {
 			> article {
 				&:nth-of-type(3),
-				&:nth-of-type(9) {
+				&:nth-of-type(10) {
 					width: 100%;
 					height: 30vh;
 				}
@@ -919,15 +919,15 @@
 				&:nth-of-type(5),
 				&:nth-of-type(6),
 				&:nth-of-type(7),
-				&:nth-of-type(8)
-				&:nth-of-type(10) {
+				&:nth-of-type(8),
+				&:nth-of-type(9), {	
 					width: 100%;
-					height: 30vh;
+					height: 30vh;				
 				}
 				> .inner {
 					> .boxWrap {
 						.txtBox {
-							padding: 7vw;
+							padding: 6vw;
 						}
 					}
 				}
