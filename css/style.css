@@ -1404,7 +1404,7 @@ footer.on .lower {
   content: "";
   display: block;
   position: absolute;
-  top: 380px;
+  top: 370px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 100px);
@@ -1432,7 +1432,7 @@ footer.on .lower {
 #metro #Portfolio_B > article .inner .boxWrap .txtBox .bottom_box {
   width: 100%;
   position: absolute;
-  top: 360px;
+  top: 350px;
   left: 0;
   display: flex;
   justify-content: space-between;
@@ -1623,9 +1623,6 @@ footer.on .lower {
   #metro #Portfolio_B > article > .inner > .boxWrap .txtBox > a {
     font-size: 12px;
   }
-  #metro #Portfolio_B > article > .inner > .boxWrap .txtBox .bottom_box {
-    display: none;
-  }
 }
 @media screen and (max-width: 539px) {
   #metro .nav {
@@ -1651,6 +1648,17 @@ footer.on .lower {
     height: 30vh;
   }
   #metro #Portfolio_A > article > .inner > .boxWrap .txtBox {
+    padding: 6vw;
+  }
+  #metro #Portfolio_B > article:nth-of-type(3), #metro #Portfolio_B > article:nth-of-type(8) {
+    width: 100%;
+    height: 30vh;
+  }
+  #metro #Portfolio_B > article:nth-of-type(1), #metro #Portfolio_B > article:nth-of-type(2), #metro #Portfolio_B > article:nth-of-type(4), #metro #Portfolio_B > article:nth-of-type(5), #metro #Portfolio_B > article:nth-of-type(6), #metro #Portfolio_B > article:nth-of-type(7), #metro #Portfolio_B > article:nth-of-type(9), #metro #Portfolio_B > article:nth-of-type(10) {
+    width: 100%;
+    height: 30vh;
+  }
+  #metro #Portfolio_B > article > .inner > .boxWrap .txtBox {
     padding: 6vw;
   }
 }
