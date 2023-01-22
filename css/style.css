@@ -1505,6 +1505,10 @@ footer.on .lower {
   #metro #news article > .inner > .box .bgBox {
     display: none;
   }
+  #metro #Portfolio_A article .inner {
+    width: 100%;
+    height: 100%;
+  }
   #metro #Portfolio_A article .inner .boxWrap .bg_Box {
     width: 100%;
     height: 100%;
@@ -1515,7 +1519,6 @@ footer.on .lower {
   #metro #Portfolio_A article .inner .boxWrap .txtBox > h2 {
     font-size: 24px;
     line-height: 1.4;
-    font-family: "Open Sans", sans-serif;
     margin-bottom: 20px;
   }
   #metro #Portfolio_A article .inner .boxWrap .txtBox > p {
@@ -1528,50 +1531,31 @@ footer.on .lower {
   #metro #Portfolio_A article .inner .boxWrap .txtBox .bottom_box {
     display: none;
   }
+  #metro #Portfolio_B article .inner {
+    width: 100%;
+    height: 100%;
+  }
   #metro #Portfolio_B article .inner .boxWrap .bg_Box {
     width: 100%;
+    height: 100%;
   }
   #metro #Portfolio_B article .inner .boxWrap .txtBox {
-    padding: 2vw;
+    padding: 3vw;
   }
   #metro #Portfolio_B article .inner .boxWrap .txtBox > h2 {
     font-size: 24px;
     line-height: 1.4;
-    font-family: "Open Sans", sans-serif;
     margin-bottom: 20px;
   }
   #metro #Portfolio_B article .inner .boxWrap .txtBox > p {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "Open Sans", sans-serif;
   }
   #metro #Portfolio_B article .inner .boxWrap .txtBox > a {
     font-size: 10px;
   }
   #metro #Portfolio_B article .inner .boxWrap .txtBox .bottom_box {
-    width: 100%;
-    position: absolute;
-    top: 22vh;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vw 4vw;
-  }
-  #metro #Portfolio_B article .inner .boxWrap .txtBox .bottom_box p {
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-  }
-  #metro #Portfolio_B article .inner .boxWrap .txtBox .bottom_box p i {
-    font-size: 12px;
-    margin-right: 1vw;
-  }
-  #metro #Portfolio_B article .inner .boxWrap .txtBox .bottom_box a {
-    font-size: 12px;
-  }
-  #metro #Portfolio_B article .inner .boxWrap .txtBox .bottom_box a i {
-    font-size: 12px;
-    margin-right: 1vw;
+    display: none;
   }
 }
 @media screen and (max-width: 880px) {
