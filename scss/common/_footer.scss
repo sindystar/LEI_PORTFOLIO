@@ -58,7 +58,7 @@ footer {
 		background-repeat: no-repeat;
 		overflow: hidden;
 		.inner {
-			width: 1180px;
+			width: 100%;
 			margin: 0 auto;
 			position: relative;
 			display: flex;
@@ -182,11 +182,6 @@ footer.on {
 			.inner {
 				position: relative;
 				width: 100%;
-				margin: 0 auto;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
 			}
 			
 		}

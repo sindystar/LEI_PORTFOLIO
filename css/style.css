@@ -103,7 +103,7 @@ footer .upper {
   overflow: hidden;
 }
 footer .upper .inner {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -209,11 +209,6 @@ footer.on .lower {
   .footer .upper .inner {
     position: relative;
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (max-width: 539px) {
