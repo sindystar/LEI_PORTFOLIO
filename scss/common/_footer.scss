@@ -178,6 +178,18 @@ footer.on {
 		section {
 			width: 100%;
 		}
+		.upper {
+			.inner {
+				position: relative;
+				width: 100%;
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+			}
+			
+		}
 	}
 }
 
