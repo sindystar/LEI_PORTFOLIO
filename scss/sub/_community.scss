@@ -59,7 +59,7 @@ $mobile: 539px;
 						filter: grayscale(1);						
 						transition: 0.5s;
 						&:hover {		
-							cursor: pointer;					
+							cursor: pointer;				
 							filter: grayscale(0);
 						}
 					}
@@ -70,7 +70,7 @@ $mobile: 539px;
 
 		table {
 			width: 100%;
-			border-bottom: 2px solid $keycolor;
+			border-bottom: 2px solid #555;
 			border-collapse: collapse;
 			margin-bottom: 50px;
 			font-family:'Open Sans', sans-serif;
@@ -83,8 +83,10 @@ $mobile: 539px;
 				}
 				th {
 					padding: 15px;
-					background: skyblue;
-					color: #fff;
+					background: none;
+					color: #555;
+					border-top: 2px solid #555;
+					border-bottom: 1px solid #ddd;
 					&:nth-of-type(1) {
 						width: 10%;
 					}
@@ -132,7 +134,7 @@ $mobile: 539px;
 				width: 30px;
 				height: 30px;
 				background: #fafafa;
-				color: $keycolor;
+				color: #555;
 				font-size: 20px;
 				// line-height: 30px;
 				text-align: center;
@@ -144,7 +146,7 @@ $mobile: 539px;
 				width: 30px;
 				height: 30px;
 				background: #fafafa;
-				color: $keycolor;
+				color: #555;
 				font-size: 20px;
 				text-align: center;
 				// margin-top: -10px;
@@ -159,15 +161,15 @@ $mobile: 539px;
 					height: 30px;
 					// border: 1px solid $keycolor;
 					border-radius: 50%;
-					font: bold 11px/30px 'arial';
-					color: $keycolor;
+					font: normal 14px/30px 'arial';
+					color: #555;
 					margin: 0 5px;
 					transition: 0.5s;
 					&:hover {
-						background: $keycolor;
+						background: #555;
 						color: #fff;
 						&.on {
-							color: $keycolor;
+							color: #555;
 						}
 					}
 				}

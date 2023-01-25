@@ -2238,7 +2238,7 @@ footer.on .lower {
 }
 .community .inner table {
   width: 100%;
-  border-bottom: 2px solid rgb(2, 126, 196);
+  border-bottom: 2px solid #555;
   border-collapse: collapse;
   margin-bottom: 50px;
   font-family: "Open Sans", sans-serif;
@@ -2251,8 +2251,10 @@ footer.on .lower {
 }
 .community .inner table tr th {
   padding: 15px;
-  background: skyblue;
-  color: #fff;
+  background: none;
+  color: #555;
+  border-top: 2px solid #555;
+  border-bottom: 1px solid #ddd;
 }
 .community .inner table tr th:nth-of-type(1) {
   width: 10%;
@@ -2296,7 +2298,7 @@ footer.on .lower {
   width: 30px;
   height: 30px;
   background: #fafafa;
-  color: rgb(2, 126, 196);
+  color: #555;
   font-size: 20px;
   text-align: center;
 }
@@ -2306,7 +2308,7 @@ footer.on .lower {
   width: 30px;
   height: 30px;
   background: #fafafa;
-  color: rgb(2, 126, 196);
+  color: #555;
   font-size: 20px;
   text-align: center;
 }
@@ -2320,17 +2322,17 @@ footer.on .lower {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  font: bold 11px/30px "arial";
-  color: rgb(2, 126, 196);
+  font: normal 14px/30px "arial";
+  color: #555;
   margin: 0 5px;
   transition: 0.5s;
 }
 .community .inner .pagination .numbers a:hover {
-  background: rgb(2, 126, 196);
+  background: #555;
   color: #fff;
 }
 .community .inner .pagination .numbers a:hover.on {
-  color: rgb(2, 126, 196);
+  color: #555;
 }
 
 @media screen and (max-width: 1179px) {
