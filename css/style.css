@@ -486,11 +486,11 @@ footer.on .lower {
 }
 #footer_sub .inner ul {
   float: right;
-  margin: 0;
+  margin: 10;
 }
 #footer_sub .inner ul li {
-  float: right;
-  margin: 0;
+  float: left;
+  margin: 10px;
 }
 #footer_sub .inner ul li a {
   font-family: "Open Sans", sans-serif;
