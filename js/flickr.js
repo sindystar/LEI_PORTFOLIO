@@ -2,7 +2,7 @@
 const base = "https://www.flickr.com/services/rest/?";
 const method = "flickr.interestingness.getList";
 const key = "ebb580daf8a6e1fcec5b215244ed1d71";
-const per_page = 100;
+const per_page = 20;
 const format = "json";
 
 const url = `${base}method=${method}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
