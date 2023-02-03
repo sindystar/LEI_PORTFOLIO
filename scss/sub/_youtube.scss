@@ -132,14 +132,17 @@ $mobile: 539px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 100;
 			
 			.btnClose {
 				position: absolute;
-				top: 150px;
+				top: 50px;
 				right: 50px;
 				color: #fff;
+				font-family:'Open Sans', sans-serif;
+				font-size: 15px;
 				cursor: pointer;
-				z-index: 100;
+				// z-index: 100;
 			}
 		}
 	}

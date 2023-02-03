@@ -2796,14 +2796,16 @@ footer.on .lower {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 .youtube .inner figure.pop .btnClose {
   position: absolute;
-  top: 150px;
+  top: 50px;
   right: 50px;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   cursor: pointer;
-  z-index: 100;
 }
 
 @media screen and (max-width: 1179px) {
