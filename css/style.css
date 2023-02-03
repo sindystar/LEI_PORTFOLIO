@@ -2799,10 +2799,11 @@ footer.on .lower {
 }
 .youtube .inner figure.pop .btnClose {
   position: absolute;
-  top: 50px;
+  top: 150px;
   right: 50px;
   color: #fff;
   cursor: pointer;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1179px) {
