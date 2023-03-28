@@ -1,7 +1,7 @@
 const vidList = document.querySelector('.vidList');
 const key = 'AIzaSyB-6xV4QXok9PwwPhxxeP3c4JzN_KmmKKY';
 const playlistId = 'PLfYNuKPjo-c-_IvgCMUV4AhGDTrFFI8Qu';
-const num = 12;
+const num = 10;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 
 fetch(url)
